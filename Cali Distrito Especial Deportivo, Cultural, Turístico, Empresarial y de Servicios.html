@@ -1,0 +1,2455 @@
+<style>
+    /* GLOBAL */
+
+    h1 {
+        display: none !important;
+    }
+
+    h5 {
+        font-size: 1.2em !important;
+    }
+
+
+    .micrositio p {
+        color: #565555 !important;
+    }
+
+    .micrositio {
+
+        width: 100%;
+        min-height: 600px;
+        position: relative;
+    }
+
+    .micrositio .row {
+        margin: 0;
+        margin-bottom: 2rem;
+        width: 100%;
+
+    }
+
+
+    .micrositio ul {
+        padding-left: 2em !important;
+    }
+
+    /*     Typo      */
+
+    .menu-principal>a {
+        color: #FAFAFA;
+        cursor: pointer;
+        margin-left: 1em;
+    }
+
+    .subtitulos {
+        font-size: x-large;
+    }
+
+    .sub-verde {
+        color: #0f6a6a;
+    }
+
+    h5.sub-verde {
+        font-size: large;
+    }
+
+    .brown-text {
+        color: #a06c04;
+    }
+
+    #inicio h4 {
+        margin-block: 2em;
+    }
+
+    .toggle-wrapper>div>h4 {
+        margin-top: 29%;
+        max-width: 67ch;
+        margin-inline: auto;
+    }
+
+    .sub-cafe {
+        color: #774c00;
+    }
+
+
+
+    /*   UTILITIES   */
+
+
+    .m-l-1 {
+        margin-left: 1em;
+    }
+
+    .m-r-3 {
+        margin-right: 3rem;
+    }
+
+    .p-0 {
+        padding: 0;
+    }
+
+    .d-flex {
+        display: flex;
+    }
+
+    .f-wrap {
+        flex-wrap: wrap;
+    }
+
+    .f-column {
+        flex-direction: column;
+    }
+
+    .f-row {
+        flex-direction: row;
+    }
+
+    .f-center {
+        align-content: center;
+        align-items: center;
+    }
+
+    .f-justify-center {
+        justify-content: center;
+    }
+
+    .f-justify-between {
+        justify-content: space-between;
+    }
+
+    .justify-content-center {
+        justify-content: center;
+    }
+
+    .justify-content-around {
+        justify-content: space-around;
+    }
+
+    .w-100 {
+        width: 100%;
+    }
+
+    .w-inherit {
+        width: inherit;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+
+    .border-left {
+        border-left: 0.5rem solid #0f6a6a2b;
+        padding-left: 2rem;
+    }
+
+    .border-left-brown {
+        border-left: 0.5rem solid #a06c042b;
+        padding-left: 2rem;
+    }
+
+    .border-left-gray {
+        border-left: 1px solid #7a7a7a;
+    }
+
+    .borde-verde1 {
+        border: solid 1px #0f6a6a;
+        border-radius: 25px;
+        padding: 1em;
+        color: #0f6a6a;
+    }
+
+    .borde-verde {
+        border: solid 1px #0f6a6a;
+        border-radius: 25px;
+        padding: 1em;
+        color: #0f6a6a;
+    }
+
+    .margen-subtitulos {
+        margin-block: 2em !important;
+    }
+
+
+    /*     Composition     */
+
+
+    .navbar-distrito {
+        padding: 1em !important;
+        color: #FAFAFA !important;
+        display: flex;
+        flex-direction: row;
+        float: right;
+    }
+
+    .navbar-distrito>a {
+        display: flex;
+        align-items: center;
+        color: #FAFAFA !important;
+        cursor: pointer;
+        margin-left: 1em;
+        margin-right: 1em;
+        position: relative;
+
+    }
+
+    .micrositio>.navbar-default {
+        background-color: #215a9a;
+    }
+
+    .micrositio>.navbar-default>.container-fluid>.navbar-header>.navbar-toggle {
+        background-color: #215a9a;
+    }
+
+    .new-window {
+        width: 100%;
+    }
+
+    .menu-principal {
+        padding: 1em;
+        background: #215a9a;
+        float: right;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .toggle-wrapper {
+        background-image: url(https://www.cali.gov.co/info/principal/media/galeria235667.jpg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+    }
+
+
+    .timeline-convenciones {
+        margin-bottom: 4em;
+    }
+
+    .timeline-convenciones>.d-flex {
+        text-align: center;
+        justify-content: center;
+        padding: 0 1em;
+    }
+
+    .timeline-convenciones>.d-flex>img {
+        margin-right: 1em;
+        max-height: 15px;
+    }
+
+    .botones-menu2 {
+        padding: 0.3em;
+        color: #ffffff;
+        font-size: x-large;
+    }
+
+    .imagen-desplegable {
+        max-height: 5em;
+    }
+
+
+    .content-wrap a {
+        display: flex;
+        align-items: center;
+
+    }
+
+    span.sub-verde {
+        margin-left: 5px;
+    }
+
+    .cuadro-verde {
+        padding: 1em;
+        border: 1px solid #0f6a6a2e;
+        border-radius: 25px;
+        margin-bottom: 1em;
+    }
+
+    .borde-verde {
+        position: relative;
+        line-height: 50px;
+        text-align: center;
+        background-color: #fff;
+        z-index: 2;
+    }
+
+    .borde-verde:first-child {
+        margin-top: 0;
+    }
+
+    .borde-verde:before {
+        position: absolute;
+        border: 1px solid #999;
+        width: 0;
+        height: 100px;
+        display: block;
+        content: '';
+        left: 50%;
+        z-index: 1;
+        top: 100%;
+        margin-left: -1px;
+    }
+
+    /* TABLA */
+
+    table,
+    td,
+    th {
+        border: 1px solid #0f6a6a80;
+        text-align: left;
+        empty-cells: hide;
+    }
+
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: none;
+        border-radius: 25%;
+    }
+
+    th {
+        text-align: center;
+        color: #0f6a6a;
+        border: none !important;
+    }
+
+    th.bg-g {
+        background-color: #0f6a6a7c;
+    }
+
+    tr>th:first-child {
+        background-color: #0f6a6a2e;
+    }
+
+    table tr:first-child td:nth-child(1) {
+        background-color: transparent;
+        border: 1px transparent;
+    }
+
+    th,
+    td {
+        padding: 15px;
+    }
+
+
+
+    .borde-verde:first-child:before {
+        display: none;
+    }
+
+    .borde-verde:last-child:before {
+        display: none;
+    }
+
+    .last::before {
+        border: none !important;
+    }
+
+    .fondo {
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .logos-historicos {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+
+
+    .ul-columns {
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+    }
+
+
+
+    .img-size {
+        max-height: 50px;
+        margin-right: 5px;
+    }
+
+
+
+    /* TIMELINE */
+
+    .timeline {
+        position: relative;
+    }
+
+    .timeline::before {
+        content: '';
+        background: #999999;
+        width: 5px;
+        height: 95%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .timeline-item {
+        width: 100%;
+
+    }
+
+    .timeline-item:nth-child(even) .timeline-content {
+        float: right;
+        left: 30px !important;
+    }
+
+
+    .timeline-item:nth-child(even) .timeline-content .date {
+        right: auto;
+        left: 0;
+    }
+
+    .timeline-item:nth-child(even) .timeline-content::after {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        width: 0;
+        height: 0;
+        top: 30px;
+        left: -15px;
+        border-width: 10px 15px 10px 0;
+        border-color: transparent #f5f5f5 transparent transparent;
+    }
+
+    .timeline-item::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .timeline-content {
+        position: relative;
+        width: 45%;
+        padding: 10px 30px;
+        border-radius: 4px;
+        background: #f5f5f5;
+        box-shadow: 0 20px 25px -15px rgba(0, 0, 0, .3);
+        left: -20px !important;
+    }
+
+    .timeline-content::after {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        width: 0;
+        height: 0;
+        top: 30px;
+        right: -15px;
+        border-width: 10px 0 10px 15px;
+        border-color: transparent transparent transparent #f5f5f5;
+    }
+
+    .timeline-img {
+        width: 100px;
+        height: fit-content;
+        background: #ffffff;
+        position: absolute;
+        left: 50%;
+        margin-top: 25px;
+        margin-left: -50px;
+        text-align: center;
+    }
+
+
+    .timeline-card {
+        padding: 0 !important;
+    }
+
+    .timeline-card p {
+        padding: 0 20px;
+    }
+
+    .timeline-card a {
+        margin-left: 20px;
+    }
+
+    .timeline-item .timeline-img-header {
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .4)), url('https://picsum.photos/1000/800/?random') center center no-repeat;
+        background-size: cover;
+    }
+
+    .timeline-img-header {
+        height: 200px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .timeline-img-header h2 {
+        color: #fff;
+        position: absolute;
+        bottom: 5px;
+        left: 20px;
+    }
+
+    blockquote {
+        margin-top: 30px;
+        color: #757575;
+        border-left-color: #3f51b5;
+        padding: 0 20px;
+    }
+
+    .date {
+        background: #ff4081;
+        display: inline-block;
+        color: #fff;
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .timeline>.container {
+        background: none !important;
+        width: 75%;
+    }
+
+    /* Botones */
+
+    .btn,
+    .button {
+        font-weight: none;
+        font-size: none;
+        line-height: none;
+        text-transform: none;
+        text-decoration: none;
+        padding: 0.3em !important;
+    }
+
+    .btn:hover,
+    .btn:focus {
+        color: #FFFFFF;
+        background: none;
+        border-color: none;
+        outline: none;
+    }
+
+    .btn {
+        border: none !important;
+        font-weight: none !important;
+        line-height: unset !important;
+        text-align: unset !important;
+        padding: 0;
+    }
+
+    .botones-menu3 {
+        padding: 1em;
+        border: 1px solid #0f6a6a2e;
+        border-radius: 25px;
+        margin-bottom: 1em;
+        display: flex;
+        align-items: center;
+    }
+
+    .botones-menu3:hover {
+        background-color: #0f6a6a2e;
+    }
+
+    .botones-menu3:focus {
+        background-color: #0f6a6a2e;
+    }
+
+
+    .gray-text-title {
+        font-weight: bold;
+        font-size: larger;
+    }
+
+
+
+
+    @media (max-width: 768px) {
+        .timeline-convenciones {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .border-left-gray {
+            border-left: none;
+        }
+
+        .timeline-convenciones>.d-flex {
+            margin-bottom: 1em;
+            font-size: medium;
+            font-weight: bold;
+        }
+
+
+
+        .borde-verde:before {
+            height: calc(100%*3);
+        }
+
+        .content-wrap {
+            flex-direction: column;
+            display: flex;
+            align-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .first-row {
+            flex-direction: column;
+        }
+
+        .row-direction {
+            flex-direction: column;
+        }
+
+        .lineas-de-accion {
+            flex-direction: column;
+            justify-content: left;
+            align-items: flex-start;
+        }
+
+        .border-left {
+            border: none;
+            padding-left: 0;
+        }
+
+        .ul-columns {
+
+            columns: 1;
+            -webkit-columns: 1;
+            -moz-columns: 1;
+        }
+
+        .border-left-brown {
+            padding-left: 2rem;
+            border-left: none;
+            border-bottom: 0.5rem solid #a06c042b;
+            padding-bottom: 1em;
+
+        }
+
+    }
+
+
+
+
+    @media screen and (max-width: 768px) {
+
+        .timeline-item .timeline-content {
+            left: 30px !important;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            flex-direction: row-reverse;
+        }
+
+        .timeline-item {
+            margin-bottom: 1em;
+        }
+
+        .timeline>.container {
+            background: none !important;
+            width: 100% !important;
+            padding: 0;
+        }
+
+        .timeline::before {
+            left: 50px;
+        }
+
+        .timeline .timeline-img {
+            left: 50px;
+        }
+
+        .timeline .timeline-content {
+            max-width: 100%;
+            width: auto;
+            margin-left: 70px;
+        }
+
+        .timeline .timeline-item:nth-child(even) .timeline-content {
+            float: none;
+        }
+
+        .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            width: 0;
+            height: 0;
+            top: 30px;
+            left: -15px;
+            border-width: 10px 15px 10px 0;
+            border-color: transparent #f5f5f5 transparent transparent;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .navbar-distrito {
+            flex-direction: column !important;
+            float: left !important;
+            width: 100%;
+        }
+
+        .navbar-distrito>a {
+            margin-bottom: 1em;
+        }
+
+        .new-window>i {
+            color: #FAFAFA !important;
+        }
+
+    }
+
+    .new-window:hover>i {
+        color: #FAFAFA !important;
+    }
+</style>
+
+
+<div class="micrositio">
+    <!-- Navegador -->
+    <nav class="navbar navbar-default" style="margin-bottom: 0;">
+        <div class="container-fluid">
+            <!-- Toggle navbar -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-distrito-b" aria-expanded="false">
+                    <span class="sr-only">Desplegar menú</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Menú -->
+            <div class="collapse navbar-collapse" id="navbar-distrito-b">
+                <ul class="nav navbar-nav navbar-distrito">
+                    <!-- Click para desplegar -->
+                    <a href="#inicio" class="botones-menu btn disabled" id="inicio">Inicio</a>
+                    <a href="#normatividad" class="botones-menu" id="normatividad">Normatividad</a>
+                    <a href="#historico" class="botones-menu" id="historico">Histórico</a>
+                    <a href="https://www.cali.gov.co/galeria/17119/cali-distrito/" target="_blank"
+                        class="new-window">Galería <i class="fa fa-2x fa-external-link" style="position: absolute;
+                            right: -3ch; font-size: 15px; color: transparent;"></i></a>
+                    <a href="https://www.cali.gov.co/168389" target="_blank" class="new-window">2019 <i
+                            class="fa fa-2x fa-external-link" style="position: absolute;
+                            right: -3ch; font-size: 15px; color: transparent;"></i></a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenedor toggle -->
+    <div id="toggle-wrapper" class="toggle-wrapper">
+        <!-- Toggle 1 - Inicio -->
+        <div class="row" id="dinicio">
+            <h4 class="gray-text-title center">Evolucionar institucionalmente para fortalecer
+                la autonomía
+                de nuestro territorio</h4>
+            <div class="row d-flex f-center first-row" style="margin-top: 6em">
+
+
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <video src="https://www.cali.gov.co/info/principal/media/videos/mp4235910.mp4" width="100%"
+                        controls></video>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <h3 class="subtitulos sub-verde">
+                        ¿Por qué Distrito Especial?
+                    </h3>
+                    <p>
+                        La <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=51601"
+                            target="_blank">ley 1617 de
+                            2013</a> les otorga a los distritos especiales diferentes instrumentos de gestión
+                        para
+                        transformar la institucionalidad político-administrativa, profundizar la democracia y alcanzar
+                        mayores
+                        grados de desarrollo y bienestar social.
+
+                    <p>
+                        Se trata de un proceso de fortalecimiento institucional que pone en el centro el mejoramiento de
+                        la
+                        capacidad de la administración para gestionar y aprovechar los recursos disponibles de forma
+                        efectiva y
+                        eficiente con el fin de prestar servicios de calidad orientados a las necesidades de la
+                        población.
+
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="row d-flex f-center f-justify-center center">
+                <div class="content-wrap w-100">
+
+                    <!-- <div class="col-md-4 col-sm-4" style="background-color: #911f3b;">
+                        <a class="botones-menu2" href="#toggle" id="localidades"
+                            style="color: #ffffff; pointer-events: none; opacity: .4;">
+                            Localidades
+                        </a>
+                    </div> -->
+
+                    <a class=" col-md-6 col-sm-6 botones-menu2 btn disabled" href="#componentes" id="componentes"
+                        style="color: #ffffff; background-color: #0b6766;">
+                        Componentes
+                    </a>
+
+
+                    <a class="col-md-6 col-sm-6 botones-menu2" href="#proyecto" id="proyecto"
+                        style="color: #ffffff; background-color: #b78006;">
+                        Proyecto de Acuerdo
+                    </a>
+
+                </div>
+            </div>
+            <div class="row toggle-wrapper2">
+                <!-- <div class="row" id="dlocalidades" style="display: none;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aspernatur nam nihil tempore officiis praesentium rerum alias molestias magni, ea sunt harum incidunt vero, quia possimus recusandae veritatis, voluptatum quaerat?
+                </div> -->
+
+                <div class="row" id="dcomponentes">
+                    <h4 class="sub-verde center margen-subtitulos">Para gestionar la transición de Santiago de Cali a
+                        Distrito Especial se
+                        han definido cuatro <br>
+                        componentes principales y una estrategia: </h4>
+
+                    <!-- Click para desplegar (2) -->
+                    <div class="content-wrap d-flex f-wrap f-center f-justify-between">
+                        <a class="botones-menu3" href="#articulacion" id="articulacion">
+                            <img class="imagen-desplegable"
+                                src="https://www.cali.gov.co/info/principal/media/galeria235642.png" height="100%"
+                                alt="">
+                            <span class="sub-verde">Articulación <br> Vocaciones</span>
+
+                        </a>
+                        <a class="botones-menu3" href="#publica" id="publica">
+
+                            <img class="imagen-desplegable"
+                                src="https://www.cali.gov.co/info/principal/media/galeria235643.png" height="100%"
+                                alt="">
+                            <span class="sub-verde">Gestión <br> Pública</span>
+                        </a>
+                        <a class="botones-menu3" href="#expansion" id="expansion">
+
+                            <img class="imagen-desplegable"
+                                src="https://www.cali.gov.co/info/principal/media/galeria235640.png" height="100%"
+                                alt="">
+                            <span class="sub-verde">Expansión <br> Democracia</span>
+                        </a>
+                        <a class="botones-menu3" href="#desarrollo" id="desarrollo">
+
+                            <img class="imagen-desplegable"
+                                src="https://www.cali.gov.co/info/principal/media/galeria235644.png" height="100%"
+                                alt="">
+                            <span class="sub-verde">Desarrollo Regional <br>
+                                Sostenible</span>
+                        </a>
+                        <a class="botones-menu3" href="#conocimiento" id="conocimiento">
+
+                            <img class="imagen-desplegable"
+                                src="https://www.cali.gov.co/info/principal/media/galeria235641.png" height="100%"
+                                alt="">
+                            <span class="sub-verde">Gestión del <br>
+                                Conocimiento</span>
+                        </a>
+                    </div>
+
+                    <!-- DESPLEGABLES 2 -->
+                    <div class="toggle-wrapper3">
+
+                        <!-- Item 1 - Articulación Vocaciones -->
+                        <div class="row d-flex f-column f-center" id="darticulacion" style="display: none;">
+                            <div class="row d-flex row-direction f-center f-justify-center">
+                                <div class="col-md-6 p-0">
+                                    <h5 class="sub-verde">Objetivo</h5>
+                                    <p>
+                                        Potenciar las vocaciones para el fortalecimiento
+                                        del desarrollo y la competitividad de l distrito.
+                                    </p>
+                                </div>
+                                <div class="col-md-6 p-0 border-left">
+                                    <h5 class="sub-verde">Reto</h5>
+                                    <p>
+                                        Implementar las vocaciones en forma articulada
+                                        para aportar al desarrollo humano y la identidad
+                                        de la población de Cali.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="d-flex f-center lineas-de-accion">
+                                    <div class="m-r-3 p-0">
+                                        <h5 class="sub-verde">Líneas de acción</h5>
+                                    </div>
+                                    <div class="col-md-8 p-0 border-left">
+                                        <ul>
+                                            <li>Definir la visión vocacional</li>
+                                            <li>Articulación de las vocaciones</li>
+                                            <li>Alianzas estratégicas - Vocación Municipios</li>
+                                            <li>Competitividad y desarrollo distrital</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <h4 class="subtitulo sub-verde center">Vocaciones</h4>
+                                <div class="row d-flex f-center f-justify-center">
+                                    <div class="d-flex p-0 f-center">
+                                        <h5 class="subtitulo sub-verde"
+                                            style="max-width: fit-content; margin-right: 1em;">
+                                            Deportivo
+                                        </h5>
+                                        <img src="https://www.cali.gov.co/info/principal/media/galeria235525.png"
+                                            height="100%" alt="">
+                                    </div>
+                                    <div class="w-inherit m-l-1" style="border-top: 1px solid green;"></div>
+                                </div>
+
+                                <div class="row">
+                                    <h5>VISIÓN 2050</h5>
+                                    <p>Una ciudadanía empoderada reconociendo al deporte y la
+                                        recreación como
+                                        su
+                                        derecho,
+                                        dotada
+                                        de instalaciones deportivas que permitan la accesibilidad universal, conformada
+                                        para
+                                        transmitir
+                                        la
+                                        cultura
+                                        de la caleñidad y la promoción de hábitos de vida saludable. Anfitriona de
+                                        certámenes
+                                        deportivos
+                                        internacionales, con el deporte como dinamizador de la economía a través del
+                                        clúster y
+                                        la
+                                        zona
+                                        franca.
+                                        Todo
+                                        lo anterior complementado con una agencia de conocimiento e innovación como eje
+                                        transversal
+                                        de
+                                        la
+                                        toma
+                                        de
+                                        decisiones para el sector. </p>
+                                </div>
+
+                                <div class="row">
+                                    <div class="d-flex f-center lineas-de-accion">
+                                        <div class="m-r-3 p-0">
+                                            <p>
+                                                LÍNEAS ESTRATÉGICAS
+                                            </p>
+                                        </div>
+                                        <div class="col-md-8 border-left">
+                                            <ul>
+                                                <li>Fomento del deporte, recreación y actividad física. </li>
+                                                <li>Instalaciones deportivas y sostenibilidad </li>
+                                                <li>Laboratorio del Conocimiento e innovación </li>
+                                                <li>Ciudad de eventos deportivos, recreativos y de actividad física</li>
+                                                <li>Industria deportiva</li>
+                                                <li>Gobernanza del sistema distrital DRAF (Deporte, Recreación y
+                                                    Actividad
+                                                    Física)
+                                                    Cali
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="row d-flex f-center f-justify-center">
+                                    <div class="d-flex p-0 f-center">
+                                        <h5 class="subtitulo sub-verde"
+                                            style="max-width: fit-content; margin-right: 1em;">
+                                            Cultural
+                                        </h5>
+                                        <img src="https://www.cali.gov.co/info/principal/media/galeria235524.png"
+                                            height="100%" alt="">
+                                    </div>
+                                    <div class="w-inherit m-l-1" style="border-top: 1px solid green;"></div>
+                                </div>
+
+                                <div class="row">
+                                    <h5>VISIÓN 2050</h5>
+                                    <p>Tendrá un ecosistema cultural que reconoce, transmite, cultiva,
+                                        respeta
+                                        y
+                                        valora
+                                        la diversidad y el patrimonio cultural que lo identifica; garantiza los derechos
+                                        culturales,
+                                        el
+                                        acceso a las expresiones artísticas, la gobernanza activa, el desarrollo
+                                        sostenible y
+                                        sustentable
+                                        del territorio, en condiciones de igualdad, equidad e inclusión, siendo
+                                        reconocido
+                                        local,
+                                        nacional e
+                                        internacionalmente como epicentro cultural.</p>
+                                </div>
+
+                                <div class="row">
+                                    <div class="d-flex f-center lineas-de-accion">
+                                        <div class="m-r-3 p-0">
+                                            <p>
+                                                LÍNEAS ESTRATÉGICAS
+                                            </p>
+                                        </div>
+                                        <div class="col-md-8 border-left">
+                                            <ul>
+                                                <li>Diversificar y consolidar la cadena de valor de las expresiones
+                                                    artísticas y
+                                                    culturales
+                                                    de Cali </li>
+                                                <li>Salvaguardar, conservar y valorar el patrimonio cultural como parte
+                                                    de
+                                                    nuestra
+                                                    identidad
+                                                    caleña, desarrollando una ruta histórica e identitaria del Distrito
+                                                </li>
+                                                <li>Fomentar la formación de públicos a través de las expresiones
+                                                    artísticas y
+                                                    culturales
+                                                </li>
+                                                <li>Consolidar a Cali como la primera ciudad lectora de Colombia </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="row d-flex f-center f-justify-center">
+                                    <div class="d-flex p-0 f-center">
+                                        <h5 class="subtitulo sub-verde"
+                                            style="max-width: fit-content; margin-right: 1em;">
+                                            Turístico
+                                        </h5>
+                                        <img src="https://www.cali.gov.co/info/principal/media/galeria235523.png"
+                                            height="100%" alt="">
+                                    </div>
+                                    <div class="w-inherit m-l-1" style="border-top: 1px solid green;"></div>
+                                </div>
+
+                                <div class="row">
+                                    <h5>VISIÓN 2050</h5>
+                                    <p>Será reconocido a nivel nacional e internacional como un
+                                        destino
+                                        turístico
+                                        integrado al mundo, multicultural, bilingüe y biodiverso, que salvaguarda el
+                                        entorno y
+                                        la
+                                        autenticidad del territorio y cuenta con una oferta experiencial universal e
+                                        histórica
+                                        que
+                                        se
+                                        traduce en su cultura turística, infraestructura, educación y espacios públicos
+                                        que
+                                        impulsan
+                                        el
+                                        desarrollo socioeconómico y apunta hacía los objetivos de desarrollo sostenible.
+                                    </p>
+                                </div>
+
+                                <div class="row">
+                                    <div class="d-flex f-center lineas-de-accion">
+                                        <div class="m-r-3 p-0">
+                                            <p>
+                                                LÍNEAS ESTRATÉGICAS
+                                            </p>
+                                        </div>
+                                        <div class="col-md-8 border-left">
+                                            <ul>
+                                                <li>Capacidad institucional, Gestión eficiente y Gobernanza sectorial
+                                                    Gestión del territorio y su infraestructura para el turismo</li>
+                                                <li>Desarrollo sostenible, creativo e innovador para la competitividad
+                                                    de la
+                                                    oferta
+                                                </li>
+                                                <li>Promoción y posicionamiento del destino Cali Distrito </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="row d-flex f-center f-justify-center">
+                                    <div class="col-md-4 d-flex p-0">
+                                        <h5 class="subtitulo sub-verde"
+                                            style="max-width: fit-content; margin-right: 1em;">
+                                            Empresarial y
+                                            de
+                                            Servicios</h5>
+                                        <img src="https://www.cali.gov.co/info/principal/media/galeria235522.png"
+                                            height="100%" alt="">
+                                    </div>
+                                    <div class="w-inherit m-l-1" style="border-top: 1px solid green;"></div>
+                                </div>
+
+                                <div class="row">
+                                    <h5>VISIÓN 2050</h5>
+                                    <p>Se consolidará como una ciudad-región del conocimiento,
+                                        inteligente y
+                                        sostenible,
+                                        que, a través de la economía creativa, digital y circular, se posicionará como
+                                        un
+                                        epicentro
+                                        empresarial con ventajas competitivas en servicios, desarrollo tecnológico,
+                                        producción y
+                                        consumo
+                                        responsable, con miras al bienestar social de sus habitantes.</p>
+                                </div>
+
+                                <div class="row">
+                                    <div class="d-flex f-center lineas-de-accion">
+                                        <div class="m-r-3 p-0">
+                                            <p>
+                                                LÍNEAS ESTRATÉGICAS
+                                            </p>
+                                        </div>
+                                        <div class="col-md-8 border-left">
+                                            <ul>
+                                                <li>Desarrollo empresarial y de negocios
+                                                </li>
+                                                <li>Economía creativa (donde se tuvieron en cuenta acciones dirigidas al
+                                                    turismo, la
+                                                    cultura
+                                                    y el deporte)
+                                                </li>
+                                                <li>Economía digital
+                                                </li>
+                                                <li>Economía sostenible/circular</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 - Gestión Pública -->
+                        <div class="row d-flex f-column f-center" id="dpublica" style="display: none;">
+                            <div class="row d-flex row-direction f-center f-justify-center">
+                                <div class="col-md-6 p-0">
+                                    <h5 class="sub-verde">Objetivo</h5>
+                                    <p>
+                                        Implementar un rediseño institucional que responda de manera efectiva a los
+                                        problemas y
+                                        necesidades
+                                        de la población.
+                                    </p>
+                                </div>
+                                <div class="col-md-6 p-0 border-left">
+                                    <h5 class="sub-verde">Reto</h5>
+                                    <p>
+                                        Mejorar la efectividad de la administración pública para que responda de manera
+                                        efectiva
+                                        a
+                                        las
+                                        necesidades de la población.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="d-flex  f-center lineas-de-accion">
+                                    <div class="m-r-3 p-0">
+                                        <h5 class="sub-verde">Líneas de acción</h5>
+                                    </div>
+                                    <div class="col-md-8 p-0 border-left">
+                                        <ul>
+                                            <li>Rediseño de la estructura administrativa distrital y local
+                                            </li>
+                                            <li>Mejorar el servicio al ciudadano
+                                            </li>
+                                            <li>Fortalecimiento a las finanzas del distrito
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <h4 class="sub-verde center">Sistema Distrital de Planeación (SDP)</h4>
+
+                            <div style="width: 100%; overflow: auto;">
+                                <table>
+                                    <tr>
+                                        <td></td>
+                                        <th>
+                                            Distrital
+                                        </th>
+                                        <th>Sectorial</th>
+                                        <th>Local</th>
+                                    </tr>
+                                    <tr>
+                                        <th>NIVELES</th>
+                                        <td>Estratégico-político. <br>
+                                            Encargado de la puesta en marcha y evaluación sistemática de la visión de
+                                            largo
+                                            plazo y
+                                            los
+                                            planes
+                                            de desarrollo integral del distrito. </td>
+                                        <td>Misional de prestación de servicios del Estado a la Ciudadanía.
+                                        </td>
+                                        <td>Operativo de planeación distrital.
+                                            Se encuentra más cerca a la ciudadanía y demás organizaciones sociales y
+                                            económicas
+                                            que
+                                            conforman el
+                                            entramado de actores en lo local.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>INSTRUMENTOS</th>
+                                        <td>
+                                            <ul>
+                                                <li>Visión y Plan de largo plazo
+                                                    (24 años)</li>
+                                                <li>Plan de Ordenamento Territorial (POT) (12 años)
+                                                </li>
+                                                <li>Plan de Desarrollo Distrital (PDD) (4 años)</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li>Políticas Públicas
+                                                </li>
+                                                <li>Planes sectoriales (4 a 12 años)</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li>Plan de Desarrollo Local (PDL) (4 años). Se ejecutan a través de :
+                                                </li>
+                                                <li>Fondos de Desarrollo Local (FDL). A partir de proyectos inscritos
+                                                    en:
+                                                </li>
+                                                <li>Bancos de Proyectos Locales
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>ACTORES</th>
+                                        <td>
+                                            <ul>
+                                                <li>El Alcalde Distrital
+                                                </li>
+                                                <li>Departamentos Administrativos de Planeación (Coordinador del SDP)
+                                                    Hacienda
+                                                    Gestión
+                                                    Jurídica
+                                                    Pública
+
+                                                </li>
+                                                <li>Organismos <br> Secretarias, Departamentos Administrativos y
+                                                    Entidades
+                                                    Descentralizadas.
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            Organismos <br> Secretarias, Departamentos Administrativos y Entidades
+                                            Descentralizadas.
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li>Alcaldías Locales <br>
+                                                    Oficinas de apoyo técnico a la gestión. <br> (Concerniente a
+                                                    Planeación y
+                                                    manejo
+                                                    del
+                                                    Banco
+                                                    de Proyectos, en este caso, la oficina de Planeación Local)</li>
+                                                <li>Oficinas de los organismos sectoriales. <br> Encargadas de prestar
+                                                    los
+                                                    servicios
+                                                    del
+                                                    Estado
+                                                    a la ciudadanía en cada Localidad.
+                                                </li>
+
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>INSTANCIAS ARTICULADORAS DE LA GESTIÓN</th>
+                                        <td>
+                                            <ul>
+                                                <li>Concejo Distrital (Antes Consejo Municipal)
+
+                                                </li>
+                                                <li>Consejo de Gobierno (Incluye Alcaldes Locales)
+
+
+                                                </li>
+                                                <li>Consejo Distrital de Gobiernos Locales
+                                                    (CDGL)
+                                                </li>
+                                                <li>Consejo Distrital de Planeación (CTPD)
+                                                </li>
+                                                <li>Consejo Técnico de Planeación Distrital (CTePD)</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            Consejos Intersectoriales de Gobierno
+                                            (CIG)
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li>Juntas Administradoras Locales (JAL)
+                                                </li>
+                                                <li>Consejos de Planeación Local (CPL)
+                                                </li>
+
+                                                <li>Consejos de Gobierno Local (CGL)
+                                                </li>
+
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            AUTORIDAD
+                                        </th>
+                                        <td colspan="3">
+                                            <p>El Alcalde Distrital es la máxima autoridad y orientador del SDP</p>
+                                            <p>Departamento Administrativo de Planeación Distrital (DAPD)
+                                                Coordinador del SDP</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+
+                            <h4 class="sub-verde center">Sistema Distrital de Planeación</h4>
+
+                            <div class="wrapper-sistema" width="100%">
+
+                                <div class="row d-flex center f-center f-justify-center">
+                                    <div class="col-md-4 col-sm-4 col-xs-4 borde-verde1">Modelo de Planeación Actual
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4 borde-verde" style="border: none;">Actividad
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4 borde-verde1">Modelo de Planeación Distrital
+                                    </div>
+                                </div>
+
+                                <div class="row d-flex center f-center f-justify-center">
+                                    <div class="col-md-4 col-sm-4 col-xs-4">Sí</div>
+                                    <div class="borde-verde col-md-4 col-sm-4 col-xs-4">Plan de Desarrollo Distrital
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4">Sí</div>
+                                </div>
+
+                                <div class="row d-flex center f-center f-justify-center">
+                                    <div class="col-md-4 col-sm-4 col-xs-4">Jefes de Oficina CALI y personal de apoyo
+                                    </div>
+                                    <div class="borde-verde col-md-4 col-sm-4 col-xs-4">Estructura Administrativa</div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4">Alcaldías Locales con su correspondiente
+                                        estructura
+                                        administrativa.
+                                        <br>
+                                        Se propone que los CALI sigan funcionando como Centros de Administración Local
+                                        para
+                                        prestación
+                                        de
+                                        trámites y servicios.
+                                    </div>
+                                </div>
+
+                                <div class="row d-flex center f-center f-justify-center">
+                                    <div class="col-md-4 col-sm-4 col-xs-4">Comunas y Corregimientos (37 documentos)
+                                        <br>
+                                        Alineados
+                                        al
+                                        Plan
+                                        de
+                                        Desarrollo
+                                        Distrital
+                                    </div>
+                                    <div class="borde-verde col-md-4 col-sm-4 col-xs-4">Planes de Desarrollo
+                                        Territoriales</div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4">Localidades (6 documentos) <br>
+                                        Alineados al Plan de Desarrollo Distrital</div>
+                                </div>
+
+                                <div class="row d-flex center f-center f-justify-center">
+                                    <div class="col-md-4 col-sm-4 col-xs-4">Un (1) Central administrado por el DAP.
+                                    </div>
+                                    <div class="borde-verde col-md-4 col-sm-4 col-xs-4">Banco de proyectos</div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4">Un (1) Distrital y un (1) en cada localidad,
+                                        administrado
+                                        por la
+                                        Alcaldía Local
+                                        respectiva. <br> Dada la condición para poder ejecutar los FDL.
+                                    </div>
+                                </div>
+
+                                <div class="row d-flex center f-center f-justify-center">
+                                    <div class="col-md-4 col-sm-4 col-xs-4">Ejecución por parte de la Administración
+                                        Central,
+                                        por
+                                        cada
+                                        uno
+                                        de
+                                        los organismos
+                                        competentes.
+                                    </div>
+                                    <div class="borde-verde col-md-4 col-sm-4 col-xs-4">Ejecución de proyectos</div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4">Por cada una de las Alcaldía Locales
+                                    </div>
+                                </div>
+
+                                <div class="row d-flex center f-center f-justify-center">
+                                    <div class="col-md-4 col-sm-4 col-xs-4">Presupuesto Participativo
+                                    </div>
+                                    <div class="borde-verde col-md-4 col-sm-4 col-xs-4">Presupuesto de inversión</div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4">Fondos de Desarrollo Local (10% de los
+                                        ingresos
+                                        corrientes
+                                        de
+                                        libre
+                                        destinación). <br>
+                                        Para su calculo se tienen las siguientes variables por localidad: Población
+                                        urbana-rural,
+                                        esfuerzo
+                                        fiscal, viviendas estrato 1 y 2
+                                    </div>
+                                </div>
+
+                                <div class="row d-flex center f-center f-justify-center">
+                                    <div class="col-md-4 col-sm-4 col-xs-4">Metas de los Planes de Desarrollo de Comunas
+                                        y
+                                        Corregimientos
+                                        (Presupuesto
+                                        participativo 1% del presupuesto de inversión)
+                                    </div>
+                                    <div class="borde-verde col-md-4 col-sm-4 col-xs-4">Orientación del gasto
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4">Metas de los Planes de Desarrollo de las
+                                        Localidades
+                                        y
+                                        pago
+                                        de
+                                        ediles (Fondos de
+                                        Desarrollo Local). <br> Representante legal de los FDL es el Alcalde Distrital
+                                    </div>
+                                </div>
+
+                                <div class="row d-flex center f-center f-justify-center">
+                                    <div class="col-md-4 col-sm-4 col-xs-4">Se empiezan a pagar desde 2022. Nueve (9)
+                                        ediles
+                                        para
+                                        cada
+                                        una
+                                        de
+                                        las comunas y
+                                        corregimientos (total 333 ediles)
+                                    </div>
+                                    <div class="borde-verde col-md-4 col-sm-4 col-xs-4">Ediles</div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4">Máximo 15 ediles por localidad (total 90
+                                        ediles)
+                                        recibirán
+                                        remuneración por cada
+                                        sesión.</div>
+                                </div>
+
+                                <div class="row d-flex center f-center f-justify-center">
+                                    <div class="col-md-4 col-sm-4 col-xs-4">Aprueban el Plan de Desarrollo y
+                                        distribución de
+                                        partidas
+                                        presupuestales en el marco
+                                        del POAI de cada vigencia.
+
+                                    </div>
+                                    <div class="borde-verde col-md-4 col-sm-4 col-xs-4 last">Rol de la JAL</div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4">Aprueban el Plan de Desarrollo Local y POAI
+                                        Local,
+                                        postula
+                                        ternas
+                                        para elección
+                                        Alcaldes Locales, además de otras funciones establecidas en la normatividad que
+                                        los
+                                        regula.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 - Expansión Democracia -->
+                        <div class="row d-flex f-column" id="dexpansion" style="display: none;">
+                            <div class="row d-flex row-direction f-center f-justify-center">
+                                <div class="col-md-6 p-0">
+                                    <h5 class="sub-verde">Objetivo</h5>
+                                    <p>
+                                        Fortalecer los medios de participación ciudadana bajo una nueva estructura
+                                        política,
+                                        administrativa
+                                        y fiscal de Cali como Distrito Especial, donde prime los enfoques de derecho,
+                                        diferencial,
+                                        género y
+                                        curso de vida.
+                                    </p>
+                                </div>
+                                <div class="col-md-6 p-0 border-left">
+                                    <h5 class="sub-verde">Reto</h5>
+                                    <p>
+                                        Generar las condiciones para la participación e incidencia de la ciudadanía en
+                                        los
+                                        asuntos
+                                        de
+                                        interés público en sus territorios y en el Distrito.
+
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="d-flex f-center lineas-de-accion">
+                                    <div class="m-r-3 p-0">
+                                        <h5 class="sub-verde">Líneas de acción</h5>
+                                    </div>
+                                    <div class="col-md-8 p-0 border-left">
+                                        <ul>
+                                            <li>Impacto Fiscal del Distrito</li>
+                                            <li>Cartografía Social como herramienta de análisis poblacional en el
+                                                territorio.
+                                            </li>
+                                            <li>Articulación con Secretaría de Salud Pública</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="row d-flex f-center f-justify-center">
+                                    <div class="d-flex p-0 f-center">
+                                        <h5 class="subtitulo sub-verde"
+                                            style="max-width: fit-content; margin-right: 1em;">
+                                            Impacto
+                                            Fiscal
+                                            del Distrito</h5>
+                                        <img src="https://www.cali.gov.co/info/principal/media/galeria235609.png"
+                                            height="100%" alt="">
+                                    </div>
+                                    <div class="w-inherit m-l-1" style="border-top: 1px solid green;"></div>
+
+
+                                </div>
+
+                                <div class="row">
+                                    <ul>
+                                        <li>Análisis de ingresos y gastos de funcionamiento de las Localidades conforme
+                                            a la ley
+                                            1617/2013.
+                                        </li>
+                                        <li>Análisis de posibles fuentes de financiación
+                                        </li>
+                                        <li>Cartografía Administrativa y Fiscal
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+
+                                <div>
+                                    <div class="row d-flex f-center f-justify-center">
+                                        <div class="d-flex p-0 f-center">
+                                            <h5 class="subtitulo sub-verde"
+                                                style="max-width: fit-content; margin-right: 1em;">
+                                                Cartografía
+                                                Social</h5>
+                                            <img src="https://www.cali.gov.co/info/principal/media/galeria235608.png"
+                                                height="100%" alt="">
+                                        </div>
+                                        <div class="w-inherit m-l-1" style="border-top: 1px solid green;"></div>
+
+
+                                    </div>
+
+                                    <div class="row">
+                                        <p>
+                                            La Cartografía Social tiene como objetivo estratégico graficar el territorio
+                                            para
+                                            comprenderlo e
+                                            identificar las necesidades básicas insatisfechas de la población,
+                                            facilitando la
+                                            toma
+                                            de
+                                            decisiones
+                                            de inversión social futura y la planificación y gestión efectiva del
+                                            territorio.
+
+                                        </p>
+                                        <ul>
+                                            <li>Análisis poblacional</li>
+                                            <li>Conflictos limítrofes</li>
+                                            <li>Densidad poblacional</li>
+                                            <li>Grupos focales etarios, étnicos y poblaciones vulnerables, entre otros.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+
+                                <div>
+                                    <div class="row d-flex f-center f-justify-center">
+
+                                        <div class="d-flex p-0 f-center">
+                                            <h5 class="subtitulo sub-verde"
+                                                style="max-width: fit-content; margin-right: 1em;">
+                                                Secretaría de
+                                                Salud</h5>
+                                            <img src="https://www.cali.gov.co/info/principal/media/galeria235607.png"
+                                                height="100%" alt="">
+                                        </div>
+                                        <div class="w-inherit m-l-1" style="border-top: 1px solid green;"></div>
+
+
+                                    </div>
+
+                                    <div class="row">
+                                        <p>
+                                            La Secretaria de Salud, asumirá nuevas funciones en el marco de la asunción
+                                            a
+                                            Secretaria
+                                            Distrital
+                                            de Salud, para lo cual deberá adelantar lo siguiente:
+                                        </p>
+                                        <ul>
+                                            <li>Programa territorial de reorganización y rediseño en la prestación del
+                                                servicio
+                                                de
+                                                salud.
+                                                (Programa que se encuentra en trámite y ajustes ante el ministerio).
+                                            </li>
+                                            <li>Elaborar un plan bienal de inversiones.
+                                            </li>
+                                            <li>Elaborar plan financiero territorial de servicios.
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                        <!-- Item 4 - Desarrollo Regional Sostenible -->
+                        <div class="row d-flex f-column f-center" id="ddesarrollo" style="display: none;">
+                            <div class="row d-flex row-direction f-center f-justify-center">
+                                <div class="col-md-6 p-0">
+                                    <h5 class="sub-verde">Objetivo</h5>
+                                    <p>
+                                        Fortalecer el desarrollo regional competitivo y sostenible, posicionando la
+                                        región en el
+                                        ámbito
+                                        nacional e internacional.
+
+                                    </p>
+                                </div>
+                                <div class="col-md-6 p-0 border-left">
+                                    <h5 class="sub-verde">Reto</h5>
+                                    <p>
+                                        Liderar el posicionamiento de una región competitiva y sostenible, en el
+                                        contexto
+                                        nacional e
+                                        internacional.
+
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="d-flex f-center lineas-de-accion">
+                                    <div class="m-r-3 p-0">
+                                        <h5 class="sub-verde">Líneas de acción</h5>
+                                    </div>
+                                    <div class="col-md-8 p-0 border-left">
+                                        <ul>
+                                            <li>Gestión regional articulada</li>
+                                            <li>Asociatividad</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <h4 class="sub-verde center">Contexto metropolitano objeto de estudio de esquemas de
+                                    asociatividad
+                                    para
+                                    Cali
+                                    Distrito y municipios aledaños (Palmira, Yumbo, Candelaria, Jamundí)</h4>
+
+                                <div class="row cuadro-verde">
+
+                                    <img src="https://www.cali.gov.co/info/principal/media/galeria235654.png"
+                                        width="100%" class="mapa" alt="Mapa Cali Distrito">
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                        <!-- Item 5 - Gestión del Conocimiento -->
+                        <div class="row d-flex f-column f-center" id="dconocimiento" style="display: none;">
+                            <div class="row d-flex row-direction f-center f-justify-center">
+                                <div class="col-md-6 p-0">
+                                    <h5 class="sub-verde">Objetivo</h5>
+                                    <p>
+                                        Coordinar la implementación de acciones orientadas a generar, preservar y
+                                        transferir el
+                                        conocimiento, para fortalecer de forma transversal el proceso de transición de
+                                        Cali a
+                                        Distrito
+                                        Especial.
+                                    </p>
+                                </div>
+                                <div class="col-md-6 p-0 border-left">
+                                    <h5 class="sub-verde">Reto</h5>
+                                    <p>
+                                        Comprensión y aprendizaje colectivo en la ciudad con diferentes actores
+                                        (academia,
+                                        administración,
+                                        comunidad, entre otros) sobre la transición de Cali a Distrito especial.
+
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="d-flex f-center f-column">
+                                    <div class="d-flex f-center row lineas-de-accion">
+                                        <div class="m-r-3 p-0">
+                                            <h5 class="sub-verde">Líneas de acción</h5>
+                                        </div>
+                                        <div class="p-0 border-left">
+                                            <ul>
+                                                <li>Investigación y Sistematización
+                                                </li>
+                                                <li>Gestión de Datos e información
+                                                </li>
+                                                <li>Análisis y toma de decisiones
+                                                </li>
+                                                <li>Pedagogía para compartir y aprender</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="row w-100">
+                                        <p>La getión del conocimiento es un proceso de apoyo
+                                            transversal a
+                                            través
+                                            del
+                                            cual se
+                                            implementan acciones para generar, transferir y preservar el conocimiento
+                                            que
+                                            permite
+                                            fortalecer
+                                            la
+                                            transición, a partir del aprovechamiento de la inteligencia colectiva y la
+                                            información.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <h4 class="sub-verde center">Oferta de apoyo a la transición</h4>
+
+                                <ul>
+                                    <li>Espacios de formación y aprendizaje.</li>
+                                    <li>Caja de herramientas para el desarrollo de actividades con la comunidad.</li>
+                                    <li>Conceptos técnicos sobre estudios, investigaciones e información para la toma de
+                                        decisiones.
+                                    </li>
+                                    <li>Gestión de la información a través del repositorio digital y fisico de fácil
+                                        acceso y
+                                        monitoreado.
+                                    </li>
+                                    <li>Apoyo metodológico en investigación y sistematización. Reconstrucción de la
+                                        experiencia.
+                                    </li>
+                                    <li>Apoyo en la generación de contenidos para divulgación.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row d-flex f-column" id="dproyecto" style="display: none;">
+                    <h4 class="brown-text center margen-subtitulos">Mediante el cual se organiza para su administración
+                        del territorio
+                        del distrito de Santiago de Cali.</h4>
+                    <div class="row d-flex f-justify-center row-direction">
+
+                        <div class="col-md-4 p-0 border-left-brown" style="border-left: none !important;">
+                            <div class="d-flex p-0 f-center" style="height: 100px;">
+                                <img class="img-size"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria235894.png" height="100%"
+                                    alt="">
+                                <h5 class="subtitulo brown-text" style="max-width: fit-content; margin-right: 1em;">
+                                    Localidades
+                                </h5>
+                            </div>
+                            <p>
+                                Definición de los límites
+                                de las localidades
+                            </p>
+
+                            <div class="d-flex p-0 f-center">
+
+                                <h5 class="subtitulo brown-text" style="max-width: fit-content; margin-right: 1em;">
+                                    Estudio
+                                    técnico
+                                </h5>
+                                <img class="img-size"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria235898.png" height="100%"
+                                    alt="">
+                            </div>
+                            <p>
+                                Justifica el número de localidades propuestas
+
+                            </p>
+                        </div>
+
+
+
+                        <div class="col-md-4 p-0 border-left-brown">
+                            <div class="d-flex p-0 f-center" style="height: 100px;">
+                                <img class="img-size"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria235899.png" height="100%"
+                                    alt="">
+                                <h5 class="subtitulo brown-text" style="max-width: fit-content; margin-right: 1em;">
+                                    Descentralización y
+                                    desconcentración
+                                    de funciones
+                                </h5>
+                            </div>
+                            <ul>
+                                <li>Competencias de las Alcaldías Locales
+                                </li>
+                                <li>Estructura administrativa de las Alcaldías Locales
+                                </li>
+                                <li>Alcaldes Locales y sus funciones
+                                </li>
+                                <li>Juntas Administradoras Locales
+                                </li>
+                                <li>Corregidores y sus funciones</li>
+                            </ul>
+
+                            <div class="d-flex p-0 f-center">
+
+                                <h5 class="subtitulo brown-text" style="max-width: fit-content; margin-right: 1em;">
+                                    Estudio
+                                    técnico
+                                </h5>
+                                <img class="img-size"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria235897.png" height="100%"
+                                    alt="">
+                            </div>
+                            <p>
+                                Soporta las competencias y estructura administrativa de las localidades, las funciones
+                                de
+                                alcaldes y corregidores y la planta de empleos mínima
+                            </p>
+                        </div>
+
+
+
+                        <div class="col-md-4 p-0 border-left-brown">
+                            <div class="d-flex p-0 f-center" style="height: 100px;">
+                                <img class="img-size"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria235895.png" height="100%"
+                                    alt="">
+                                <h5 class="subtitulo brown-text" style="max-width: fit-content; margin-right: 1em;">
+                                    Sistema
+                                    Distrital de Planeación
+                                </h5>
+                            </div>
+                            <ul>
+                                <li>Fondos de desarrollo local
+                                </li>
+                                <li>Bancos de proyectos locales</li>
+                            </ul>
+
+                            <div class="d-flex p-0 f-center">
+
+                                <h5 class="subtitulo brown-text" style="max-width: fit-content; margin-right: 1em;">
+                                    Estudio
+                                    técnico
+                                </h5>
+                                <img class="img-size"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria235896.png" height="100%"
+                                    alt="">
+                            </div>
+                            <p>
+                                Soporta el impacto fiscal previsto por creación de localidades y funcionamiento de
+                                fondos de
+                                desarrollo local.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="row d-flex f-justify-center f-column">
+                        <h4 class="brown-text center">Cronograma 2022</h4>
+
+                        <img src="https://www.cali.gov.co/info/principal/media/galeria235854.jpg" width="100%"
+                            alt="Cronograma 2022">
+
+                        <div class="sr-only">
+                            <ol>
+                                <li>
+                                    <h5>Abril 30 - Culminación de estudios técnicos</h5>
+                                    <p>DADII - DAMP - Hacienda</p>
+                                </li>
+                                <li>
+                                    <h5>Mayo 1-8 - Entrega Proyecto de Acuerdo versión final</h5>
+                                    <p>Comité Coordinador de Proyectos de Acuerdo</p>
+                                </li>
+                                <li>
+                                    <h5>Mayo 9-18 - Estudio del Proyecto
+                                        de Acuerdo y anexos</h5>
+                                    <p>Comité Coordinador
+                                        de Proyectos de Acuerdo</p>
+                                </li>
+                                <li>
+                                    <h5>Mayo 19-30 - Ajuste de entrega del Proyecto de Acuerdo</h5>
+                                    <p>Comité Coordinador
+                                        de Proyectos de Acuerdo</p>
+                                </li>
+                                <li>
+                                    <h5>Junio 1 - Radicación del
+                                        Proyecto de Acuerdo</h5>
+                                    <p>Concejo Distrital de
+                                        Santiago de Cali</p>
+                                </li>
+                                <li>
+                                    <h5>Julio 31</h5>
+                                    <p>Discusión y aprobación del Proyecto de Acuerdo </p>
+                                </li>
+                                <li>
+                                    <h5>Agosto 1</h5>
+                                    <p>Inicio fase 1
+                                        implementación</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Toggle 2 - Normatividad -->
+        <div class="row" id="dnormatividad" style="display: none;">
+            <h4 class="gray-text-title center">Disponemos al servicio de la ciudadanía toda la
+                informacion relacionada con normativad y documentos anexos de apoyo.</h4>
+
+            <div style="margin-top: 6em">
+                <div class="row">
+                    DISPLAYARCHIVO(63671)
+                    DISPLAYARCHIVO(63672)
+                    DISPLAYARCHIVO(63673)
+                </div>
+
+                <div class="row" style="margin-top: 2em;">
+                    <h2 class="text-center">Anexos</h2>
+                    DISPLAYARCHIVO(63674)
+                    DISPLAYARCHIVO(63675)
+                    DISPLAYARCHIVO(63676)
+                    DISPLAYARCHIVO(63677)
+                    DISPLAYARCHIVO(63678)
+                    DISPLAYARCHIVO(63679)
+                    DISPLAYARCHIVO(63680)
+                    DISPLAYARCHIVO(63681)
+                    DISPLAYARCHIVO(63682)
+                    DISPLAYARCHIVO(63683)
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        <!-- Toggle 3 - Historico -->
+        <div class="row" id="dhistorico" style="display: none;">
+            <h4 class="gray-text-title center">La transición a Distrito, un nuevo hito en el
+                desarrollo de Santiago de Cali, una historia de desafíos y liderazgos.</h4>
+            <div class="row d-flex f-column" id="dtimeline" style="margin-top: 6em">
+                <div class="d-flex timeline-convenciones justify-content-center">
+                    <div class="d-flex">
+                        <img src="https://www.cali.gov.co/info/principal/media/galeria236199.png" alt="">
+                        <span style="font-size: smaller; color: #911f3c;">Dimensión Política</span>
+                    </div>
+                    <div class="d-flex border-left-gray">
+                        <img src="https://www.cali.gov.co/info/principal/media/galeria236203.png" alt="">
+                        <span style="font-size: smaller; color: #0f6a6a;">Dimensión Económica</span>
+                    </div>
+                    <div class="d-flex border-left-gray">
+                        <img src="https://www.cali.gov.co/info/principal/media/galeria236202.png" alt="">
+                        <span style="font-size: smaller; color: #215a99;">Dimensión Urbana y Ambiental</span>
+                    </div>
+                    <div class="d-flex border-left-gray">
+                        <img src="https://www.cali.gov.co/info/principal/media/galeria236200.png" alt="">
+                        <span style="font-size: smaller; color: #b78006;">Dimensión Étnica</span>
+                    </div>
+                    <div class="d-flex border-left-gray">
+                        <img src="https://www.cali.gov.co/info/principal/media/galeria236201.png" alt="">
+                        <span style="font-size: smaller; color: #564e3c;">Dimensión Administrativa</span>
+                    </div>
+                </div>
+
+                <!-- Linea de tiempo -->
+                <section class="timeline">
+                    <div class="container">
+                        <div class="timeline-item">
+                            <div class="timeline-img">Siglo XVI -XVIII</div>
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em;">
+                                    Llegada de población negra esclavizada y consolidación de segregación racial
+                                </p>
+                                <img src="https://www.cali.gov.co/info/principal/media/galeria235876.png"
+                                    class="logos-historicos" alt="">
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">Siglo XIX</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+                                <img src=" https://www.cali.gov.co/info/principal/media/galeria235879.png"
+                                    class="logos-historicos" alt="">
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em;">
+                                    Ciudad aislada y con poca dinámica urbana
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="timeline-item">
+
+                            <div class="timeline-img">1811</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+
+
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em;">
+                                    Ciudades
+                                    Confederadas
+                                </p>
+                                <img src="https://www.cali.gov.co/info/principal/media/galeria235877.png"
+                                    class="logos-historicos" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">1910</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+
+                                <img src="https://www.cali.gov.co/info/principal/media/galeria235877.png"
+                                    class="logos-historicos" alt="">
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em;">
+                                    Creación del Valle del Cauca y designación de Cali como capital del departamento.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">1915</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+
+
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em;">
+                                    Llegada del Ferrocarril del Pacífico a Cali
+                                </p>
+                                <img src="https://www.cali.gov.co/info/principal/media/galeria235880.png"
+                                    class="logos-historicos" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">1920 - 1970</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+
+                                <img src="https://www.cali.gov.co/info/principal/media/galeria235876.png"
+                                    class="logos-historicos" alt="">
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em;">
+                                    Migraciones provenientes principalmente de zonas andinas
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">1940</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+
+
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em;">
+                                    Segundo proceso de industrialización y creación de la zona industrial Cali – Yumbo
+                                </p>
+                                <img src="https://www.cali.gov.co/info/principal/media/galeria235880.png"
+                                    class="logos-historicos" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">1940 - 1950</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+
+                                <img src="https://www.cali.gov.co/info/principal/media/galeria235879.png"
+                                    class="logos-historicos" alt="">
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em;">
+                                    Intensificación del proceso de urbanización y problemas de
+                                    planificación
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">1950 - 1970</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+
+
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em;">
+                                    Plan piloto modernización urbana
+                                </p>
+                                <img src="https://www.cali.gov.co/info/principal/media/galeria235879.png"
+                                    class="logos-historicos" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">1950 - 1990</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+
+                                <img src="https://www.cali.gov.co/info/principal/media/galeria235876.png"
+                                    class="logos-historicos" alt="">
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em;">
+                                    Migrantes relacionados con violencia política y población proveniente del Pacífico
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">1960 - 1980</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+
+
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em;">
+                                    Auge del desarrollo regional
+                                </p>
+                                <img src="https://www.cali.gov.co/info/principal/media/galeria235880.png"
+                                    class="logos-historicos" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">1980</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+
+                                <img src="https://www.cali.gov.co/info/principal/media/galeria235879.png"
+                                    class="logos-historicos" alt="">
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em;">
+                                    Surgimiento del Distrito de Aguablanca (oriente de la ciudad) y ocupación de laderas
+                                </p>
+
+
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">1988</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+
+
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em;">
+                                    Elección popular de alcaldes y el surgimiento de nuevos liderazgos.
+                                </p>
+                                <img src="https://www.cali.gov.co/info/principal/media/galeria235877.png"
+                                    class="logos-historicos" alt="">
+                            </div>
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+
+
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em;">
+                                    Subdivisión territorial del municipio en comunas y corregimientos.
+                                    Centros de Administración Local Integrada (CALI).
+
+                                </p>
+                                <img src="https://www.cali.gov.co/info/principal/media/galeria235878.png"
+                                    class="logos-historicos" alt="">
+
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">1990</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+
+                                <img src="https://www.cali.gov.co/info/principal/media/galeria235880.png"
+                                    class="logos-historicos" alt="">
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em;">
+                                    Desindustrialización y pérdida de liderazgo de la región
+                                </p>
+
+
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">1990 - 1992</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+
+
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em;">
+                                    Sistemas Locales de Salud (SILOS) Referentes de la planificación local.
+                                </p>
+                                <img src="https://www.cali.gov.co/info/principal/media/galeria235878.png"
+                                    class="logos-historicos" alt="">
+
+                            </div>
+                        </div>
+
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">1991</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+
+                                <img src="https://www.cali.gov.co/info/principal/media/galeria235877.png"
+                                    class="logos-historicos" alt="">
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em;">
+                                    La Constitución Política de 1991.Mayor autonomía municipal y crisis de los entes
+                                    territoriales
+                                </p>
+
+
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">2000-2009</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+
+
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em;">
+                                    Reforma a la estructura del municipio de Santiago de Cali. Desaparecen las
+                                    jefaturas, incluidas las Unidades de planeación centralizadas y de los CALI
+                                </p>
+                                <img src="https://www.cali.gov.co/info/principal/media/galeria235878.png"
+                                    class="logos-historicos" alt="">
+
+                            </div>
+                        </div>
+
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">2013</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+
+                                <img src="https://www.cali.gov.co/info/principal/media/galeria235878.png"
+                                    class="logos-historicos" alt="">
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em;">
+                                    Se solicita concepto favorable para categorizar a Santiago de Cali como Distrito
+                                    Especial a los senadores y representantes del Congreso de la República de Colombia.
+
+                                </p>
+
+
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">2018</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+
+
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em;">
+                                    Se categoriza a Santiago de Cali como Distrito Especial Deportivo, Cultural,
+                                    Turístico, Empresarial y de Servicios. <a
+                                        href="https://www.cali.gov.co/gobierno/loader.php?lServicio=Tools2&lTipo=descargas&lFuncion=descargar&idFile=63671"
+                                        style="font-weight: bold;">(Ley
+                                        1933 de agosto de 2018).</a>
+                                </p>
+                                <img src="https://www.cali.gov.co/info/principal/media/galeria235877.png"
+                                    class="logos-historicos" alt="">
+
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+
+                            <div class="timeline-img">2019</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+
+                                <img src="https://www.cali.gov.co/info/principal/media/galeria235878.png"
+                                    class="logos-historicos" alt="">
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em;">
+                                    Propuesta técnica de división territorial del Distrito Especial en seis localidades,
+                                    presentada al Concejo local, no fue discutida.
+
+                                </p>
+
+
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">2020</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+
+
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em;">
+                                    Incorporación de línea estratégica de transición hacia Cali Distrito Especial en el
+                                    Plan de Desarrollo 2020-2023 “Cali Unida por la Vida” Dimensión 4: Cali, Gobierno
+                                    incluyente.
+
+                                </p>
+                                <img src="https://www.cali.gov.co/info/principal/media/galeria235878.png"
+                                    class="logos-historicos" alt="">
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div>DISPLAYBLOQUE(216489)</div>
+
+</div>
+
+
+<script>
+    $(document).ready(function () {
+
+
+        $('.botones-menu2').click(function (e) {
+            $this = $(this).attr("id");
+            $div = '#d' + $this;
+            $(".botones-menu2").not(this).removeClass('btn');
+            $(".botones-menu2").not(this).removeClass('disabled');
+            $(".toggle-wrapper2").children().not($div).hide('fast');
+            $($div).toggle('fast');
+            $(this).toggleClass('btn');
+            $(this).toggleClass('disabled');
+
+            // if ($(window).width() < 768) {
+
+            //     return true;
+            // }
+            // else {
+
+            //     return false;
+            // }
+            return false;
+        });
+
+        $('.botones-menu3').click(function (e) {
+            $this = $(this).attr("id");
+            $div = '#d' + $this;
+            $(".botones-menu3").not(this).removeClass('btn');
+            $(".botones-menu3").not(this).removeClass('disabled');
+            $(".toggle-wrapper3").children().not($div).hide('fast');
+            $($div).toggle('fast');
+            $(this).toggleClass('btn');
+            $(this).toggleClass('disabled');
+
+            // if ($(window).width() < 768) {
+
+            //     return true;
+            // }
+            // else {
+
+            //     return false;
+            // }
+            return false;
+        });
+
+        $('.botones-menu').click(function (e) {
+            $this = $(this).attr("id");
+            $div = '#d' + $this;
+            $(".botones-menu").not(this).removeClass('btn');
+            $(".botones-menu").not(this).removeClass('disabled');
+            $(".toggle-wrapper").children().not($div).hide('fast');
+            $($div).toggle('fast');
+            $(this).toggleClass('btn');
+            $(this).toggleClass('disabled');
+
+            // if ($(window).width() < 768) {
+
+            //     return true;
+            // }
+            // else {
+
+            //     return false;
+            // }
+            return false;
+        });
+
+    }); 
+</script>

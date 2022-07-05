@@ -1,0 +1,566 @@
+<style>
+	.d-flex {
+		display: flex;
+	}
+
+	.flex-column {
+		flex-direction: column;
+	}
+
+	.justify-content-center {
+		justify-content: center;
+	}
+
+	.justify-content-between {
+		justify-content: space-between;
+	}
+
+	.w-100 {
+		width: 100% !important;
+	}
+
+	.p-0 {
+		padding: 0;
+	}
+
+	.columns {
+		display: flex;
+	}
+
+	.column {
+		display: flex;
+		background: #eee;
+		border: 5px solid #ccc;
+		flex: 1;
+		padding: 20px;
+		flex-direction: column;
+	}
+
+	.column-25 {
+		flex: 2 25%;
+	}
+
+	.column-50 {
+		flex: 2 50%;
+	}
+
+	.column-75 {
+		flex: 1 75%;
+	}
+
+	.columna-4 {
+		flex: 1;
+	}
+
+	.imagenes {
+		max-width: 100%;
+	}
+
+	.nested-column {
+		flex: 1 75%;
+	}
+
+	.wrapper {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+	}
+
+	.box {
+		padding: 1px;
+	}
+
+	.a {
+		grid-column: auto / span 1;
+		grid-row: auto / span 2;
+	}
+
+	.b {
+		grid-column: 2 / span 3;
+	}
+
+	.c {
+		grid-row: 2;
+		grid-column: 2;
+	}
+
+	.d {
+		grid-column: 3;
+		grid-row: 2 / span 3;
+	}
+
+	.e {
+		grid-column: 4 / span 1;
+		grid-row: 2 / span 3;
+	}
+
+	.f {
+		grid-column: 1 / span 2;
+		display: flex;
+		flex-direction: column;
+		min-height: 100% !important;
+		grid-row-end: 6;
+		grid-row-start: 3;
+		justify-content: space-around;
+	}
+
+	.botones-toggle {
+		text-align: center;
+		align-items: center;
+	}
+
+	.botones-toggle>div>a {
+		background-color: #79b5bd;
+		color: #fafafa;
+		border-radius: 0 2em 2em 0;
+		width: 250px;
+		font-weight: bold;
+		max-height: 5rem;
+		padding: 1rem 12.5%;
+	}
+
+	.blue-title {
+		color: #215a96;
+		font-weight: bold;
+		font-size: large;
+	}
+
+	.texto-aqua {
+		color: #79b5bd;
+	}
+
+	.fechas {
+		color: #79b5bd;
+		font-size: 23px;
+		font-weight: bold;
+	}
+
+	.valores {
+		color: #5d4d87;
+		font-size: xx-large;
+		font-weight: bold;
+	}
+
+	.blue-sec {
+		background-color: #215a96;
+		color: #fafafa !important;
+		padding: 1em;
+		text-align: center;
+		font-weight: bold !important;
+	}
+
+	.text-align-justify {
+		text-align: justify;
+	}
+
+	.p-5 {
+		padding: 0 5em;
+	}
+
+	.datos {
+		gap: 2em;
+	}
+
+	.datos>div {
+		flex: 1 1 0px;
+		padding: 0 2em;
+	}
+
+	.border-left {
+		border-left: 2px dashed gray;
+		padding-left: 2em;
+	}
+
+	.m-2 {
+		margin-bottom: 2em;
+	}
+
+	.financiacion {
+		padding-left: 2em;
+	}
+
+	.fechas {
+		padding-right: 2em;
+	}
+
+	.botones-logos {
+		margin-bottom: 3em;
+		gap: 3em;
+		flex-wrap: wrap;
+	}
+
+	.botones-logos>a {
+		background-color: #79b5bd;
+		color: #fafafa;
+		border-radius: 0 2em 2em 0;
+		width: 250px;
+		font-weight: bold;
+		max-height: 5rem;
+
+		display: flex;
+		height: 3.5rem;
+		align-items: center;
+		text-align: center;
+	}
+
+	.logos {
+		width: 50px;
+		min-height: 50px;
+	}
+
+	.wrap-logos {
+		display: flex;
+		align-items: center;
+		width: 100%;
+	}
+
+	.textos-logos {
+		color: #fafafa !important;
+		font-weight: bold;
+		margin: 0 10% 0 0;
+	}
+
+	.grid-videos {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 3em;
+	}
+
+	.grid-videos video,
+	.videos-site {
+		width: 100%;
+		aspect-ratio: 16 / 9;
+	}
+
+	.flex-direction {
+		flex-direction: row;
+	}
+
+	.blue-title-center {
+		text-align: center;
+		margin: 2em 0em;
+	}
+
+	@media (max-width: 991px) {
+		.wrapper {
+			display: block;
+		}
+
+		.imagenes {
+			margin: 2em 0;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.botones-toggle {
+			flex-direction: column;
+		}
+
+		.datos {
+			flex-direction: column;
+		}
+
+		.mb-column {
+			flex-direction: column;
+		}
+
+		.mb-100 {
+			width: 100% !important;
+		}
+
+		.border-left {
+			border-left: none;
+		}
+
+		.grid-videos {
+			display: block;
+			margin-bottom: 3em;
+		}
+
+		.flex-direction {
+			flex-direction: column;
+		}
+
+		.p-5 {
+			padding: 0 !important;
+		}
+
+		.p-xs-0 {
+			padding: 0 !important;
+		}
+
+		.wrap-fechas {
+			padding-left: 1rem !important;
+		}
+	}
+
+	.wrap-fechas {
+		position: relative !important;
+	}
+
+	.wrap-fechas li {
+		list-style: none;
+	}
+
+	.test2 {
+		position: relative;
+		border-left: 1px solid #215a96;
+		padding-left: 1.5em;
+	}
+
+	.test2::before {
+		content: "";
+		width: 30px;
+		aspect-ratio: 1;
+		border-radius: 50%;
+		background-color: #215a96;
+		position: absolute;
+		left: -16px;
+		top: 0px;
+	}
+
+	.wrap-fechas>li:last-child {
+		border: 0px;
+	}
+</style>
+
+<div class="d-flex justify-content-center botones-logos">
+	<a href="" class="toggle-div" id="inicio">
+		<div class="wrap-logos">
+			<div>
+				<img class="logos" src="https://www.cali.gov.co/info/principal/media/galeria236129.png" alt="" />
+			</div>
+
+			<div style="flex: 1">
+				<p class="textos-logos">Inicio</p>
+			</div>
+		</div>
+	</a>
+
+	<a href="" class="toggle-div" id="historia">
+		<div class="wrap-logos">
+			<div>
+				<img class="logos" src="https://www.cali.gov.co/info/principal/media/galeria236129.png" alt="" />
+			</div>
+
+			<div style="flex: 1">
+				<p class="textos-logos">Historia</p>
+			</div>
+		</div>
+	</a>
+
+	<a href="" class="toggle-div" id="videos">
+		<div class="wrap-logos">
+			<div>
+				<img class="logos" src="https://www.cali.gov.co/info/principal/media/galeria236128.png" alt="" />
+			</div>
+
+			<div style="flex: 1">
+				<p class="textos-logos">Videos</p>
+			</div>
+		</div>
+	</a>
+</div>
+
+<div class="toggle">
+	<div class="d-flex flex-column" id="dinicio">
+		<div class="m-2">
+			<p>Contempla 18.000 metros cuadrados (m2) de espacio público, aproximadamente 14.000 m2 en edificaciones, donde se ubicarán parqueaderos y tres estructuras: Centro de Ciencias, Centro de innovación Digital y Centro de Artes Performativas.</p>
+
+			<p>
+				Los propósitos principales son generar espacio público abierto a la ciudad; procesos de apropiación
+				social del conocimiento, que es a lo que apuntan los parques tecnológicos; así como la re significación
+				del lote, que ha estado abandonado durante mucho tiempo.
+			</p>
+
+			<div class="d-flex mb-column flex-direction">
+				<div class="text-align-justify mb-100" style="flex: 1">
+					<p>
+						Esta obra busca ofrecer a las familias un equipamiento de escala regional, donde se van a
+						integrar actividades para el público en general relacionadas con ciencia, tecnología e
+						innovación.
+					</p>
+					<p>
+						Este proyecto no sólo le va a aportar a la ciencia, la tecnología y la innovación, también se
+						beneficia la cultura, el turismo y la economía. Generará una gran cantidad de encadenamientos
+						productivos y conectará con el proceso de definición de áreas de desarrollo naranja que adelanta
+						Santiago de Cali.
+					</p>
+				</div>
+				<div class="w-100 p-5 d-flex justify-content-center" style="flex: 1">
+					<video class="videos-site" src="https://www.cali.gov.co/info/principal/media/videos/mp4236852.mp4"
+						controls></video>
+				</div>
+			</div>
+		</div>
+
+		<div class="d-flex datos m-2">
+			<div class="d-flex flex-column justify-content-between p-xs-0">
+				<h3 class="blue-title">Fechas importantes</h3>
+				<ul class="wrap-fechas d-flex flex-column justify-content-between p-xs-0">
+					<li class="test2">
+						<span class="fechas">2020</span>
+						<p>Nuestro primer año de gobierno, la actividad principal estuvo en función de adquirir el lote que pertenecía a la Sociedad de Activos Especiales (SAE) y que, incluso, tenía algunos líos jurídicos que se solucionaron.</p>
+					</li>
+					<li class="test2">
+						<span class="fechas">2021</span>
+						<p>En agosto se firmó la escritura de transferencia de dominio, a través de un cruce de cuentas con la SAE. Se adquiere el lote a un costo de $30.500 millones.</p>
+					</li>
+					<li class="test2">
+						<span class="fechas">2022</span>
+						<p>Inicio de obra de la primera fase de construcción del equipamiento y su dotación tecnológica.</p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="border-left d-flex flex-column justify-content-between p-xs-0">
+				<h3 class="blue-title">Financiación</h3>
+
+				<div class="d-flex flex-column justify-content-between">
+					<div>
+						<span class="valores">$30.500 </span><span style="color: #63a1ad">millones</span>
+						<p>pago que realizó el municipio de Santiago de Cali a través de cruce de cuentas con la SAE.</p>
+					</div>
+					<div>
+						<h3 class="blue-title"></h3>
+						<span class="valores">$4.000 </span><span style="color: #63a1ad">millones</span>
+						<p>adicionales para realizar los estudios, diseños y contratación del equipo técnico estructurador del proyecto.</p>
+					</div>
+					<div>
+						<h3 class="blue-title"></h3>
+						<span class="valores">$60.000 </span><span style="color: #63a1ad">millones</span>
+						<p>corresponden al proceso constructivo y la interventoría, que se sacarán a licitación a finales de 2022.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a href="">
+			<div class="w-100 blue-sec m-2">Por medio de concurso de méritos abierto, se seleccionaron para realizar los estudios y diseños la Unión Temporal Zenón y la interventoría a cargo de Consorcio Interdiseños San Fernando</div>
+		</a>
+		DISPLAYBLOQUE(216498)
+	</div>
+
+	<div id="dhistoria" style="display: none">
+		<h3 class="blue-title blue-title-center">
+			Renace un espacio histórico de Cali para el mundo
+		</h3>
+
+		<div class="wrapper">
+			<div class="box a">
+				<p>El Club San Fernando de Santiago de Cali fue por más de 70 años el sitio para los
+					mejores eventos sociales, deportivos y políticos de la ciudad. Fue el primer club
+					social de la ciudad. Abrió sus puertas en septiembre de 1930 y se construyó en un
+					predio de la compañía norteamericana Colombian Holding Corporation of Cali S.A.</p>
+
+				<p>Según Víctor Hernández, presidente de la corporación Club San Fernando “los
+					únicos espacios atractivos de Cali eran el Charco del Burro y el río Pance, entonces
+					unos cuantos amigos convinieron construir en la casa de materiales de la empresa,
+					el tercer espacio de disfrute con las características de un club”.</p>
+
+				<p>En mayo del 2007, este referente social y cultural caleño fue demolido, dado que se
+					pretendía construir ahí un centro comercial a cuyo propietario se le iniciaría
+					procesos de extinción de dominio de sus propiedades, entre ellas, el Club San
+					Fernando.</p>
+			</div>
+			<div class="box b">
+				<img class="imagenes" src="https://www.cali.gov.co/info/principal/media/galeria236059.jpg"
+					style="height: 100%; object-fit: cover" alt="" />
+			</div>
+			<div class="box c">
+				<p>Al respecto, cuando el alcalde Jorge Iván Ospina, en 2020, se propuso recuperar
+					para la ciudad un lote que siempre nos perteneció, expresó “esta es una historia de
+					la que tenemos que reflexionar como caleños para transformar esas heridas
+					abiertas, en espacios de integración y de construcción”</p>
+			</div>
+
+			<div class="box d">
+				<p>La Alcaldía de Santiago de Cali gestionó la recuperación del predio para construir
+					allí el Parque Tecnológico y de Innovación San Fernando. Fue así, como en
+					agosto de 2020, se realizó un cruce de cuentas con la Sociedad de Activos
+					Especiales (SAE) por valor de $30.500 millones que adeudaba esa entidad, por
+					impuestos; allí se firmó la escritura de transferencia del dominio del lote.</p>
+				<p>Aquí, “tendremos un centro de ciencias relacionado con el origen del código
+					genético y la multiplicidad de la vida, un centro de artes performativas que parte
+					desde las notas musicales básicas hasta presentaciones artísticas majestuosas y el
+					centro de innovación digital que arranca desde el código binario” contó Diana Muñoz
+					Neira, líder de este proyecto movilizador.</p>
+
+				<p>El arquitecto Erick Figueroa destacó el componente ambiental y urbanístico con el
+					que cuenta el predio para su futuro desarrollo. “El barrio San Fernando carece de
+
+					miradores urbanos y tanto la brisa como las infraestructuras anexas se prestan para
+					que los ciudadanos se conecten más”.</p>
+
+			</div>
+
+			<div class="box e">
+				<div class="text-center">
+					<img class="imagenes" src="https://www.cali.gov.co/info/principal/media/galeria236058.jpg" alt="" />
+				</div>
+				<p>Cabe anotar que, el alcalde Ospina Gómez ha insistido en la necesidad de proveer
+					a la ciudad de más zonas verdes. “Este centro de ciencia es una oportunidad para
+					los caleños de recuperar lo propio, de acercarse y de ver su identidad en el otro, en
+					medio de muchas ofertas de aprendizaje e interacción”.</p>
+
+			</div>
+
+			<div class="box f">
+				<img class="imagenes" src="https://www.cali.gov.co/info/principal/media/galeria236061.jpg" alt="" />
+
+				<img class="imagenes" src="https://www.cali.gov.co/info/principal/media/galeria236060.jpg" alt="" />
+			</div>
+		</div>
+	</div>
+
+	<div id="dvideos" class="grid-videos" style="display: none">
+		<div>
+			<video src="https://www.cali.gov.co/info/principal/media/videos/mp4236850.mp4" controls
+				preload="none"></video>
+			<p>
+				El Parque Tecnológico San Fernando abrió convocatoria para
+				firmas interesadas de estudios y diseños
+			</p>
+		</div>
+
+		<div>
+			<video src="https://www.cali.gov.co/info/principal/media/videos/mp4236853.mp4" controls
+				preload="none"></video>
+			<p>
+				Ampliación de la convocatoria de estudios y diseños del
+				Parque Tecnológico San Fernando
+			</p>
+		</div>
+
+		<div>
+			<video src="https://www.cali.gov.co/info/principal/media/videos/mp4236851.mp4" controls
+				preload="none"></video>
+			<p>
+				Unión Temporal Zenón fue la firma ganadora de la
+				convocatoria de estudios y diseños del Parque Tecnológico
+				San Fernando.
+			</p>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function () {
+		$(".toggle-div").click(function (e) {
+			e.preventDefault();
+
+			$this = $(this).attr("id");
+			$div = "#d" + $this;
+
+			$(".toggle-div")
+				.not(this)
+				.removeClass("imagenesLograrActive");
+
+			$(".toggle").children().not($div).hide("fast");
+			$($div).toggle("fast");
+			$(this).toggleClass("imagenesLograrActive");
+
+			return false;
+		});
+	});
+</script>

@@ -1,0 +1,731 @@
+<style>
+	:root {
+		--clr-white: #ffffff;
+
+		--clr-primary-blue: #074e92;
+		--clr-primary-green: #137480;
+		--clr-primary-aqua: #167a96;
+		--clr-primary-lb: #80c5d2;
+
+		--fs-700: 4.3rem;
+		--fs-400: 1.7rem;
+		--fs-300: 1.5rem;
+
+		--fw-400: 500;
+		--fw-700: 700;
+		--fw-900: 900;
+	}
+
+	.micro h3 {
+		font-size: var(--fs-700);
+		margin: 0 !important;
+		margin-bottom: 1rem !important;
+	}
+
+	.micro h4 {
+		font-size: var(--fs-400);
+		margin: 0 !important;
+		margin-bottom: 1rem !important;
+	}
+
+	/* Composition */
+
+	.micro>* {
+		margin-bottom: 2em;
+	}
+
+	.flow>*+* {
+		margin-bottom: 2rem;
+	}
+
+	.card>*:not(:last-child) {
+		margin-bottom: 2em;
+	}
+
+	.d-flex {
+		display: flex;
+	}
+
+	.flex-row {
+		flex-direction: row;
+	}
+
+	.flex-wrap {
+		flex-wrap: wrap;
+	}
+
+	.flex-1 {
+		flex: 1;
+	}
+
+	.justify-content-evenly {
+		justify-content: space-evenly;
+	}
+
+	.align-center {
+		align-items: center;
+	}
+
+	.justify-content-center {
+		justify-content: center;
+	}
+
+	[data-target] {
+		gap: 1rem;
+	}
+
+	/* Utility */
+
+	.margin-0 {
+		margin: 0 !important;
+	}
+
+	.padding-2 {
+		padding: 2rem;
+	}
+
+	.padding-4 {
+		padding: 4rem;
+	}
+
+	.text-white {
+		color: var(--clr-white) !important;
+	}
+
+	.text-green {
+		color: var(--clr-primary-green) !important;
+	}
+
+	.text-aqua {
+		color: var(--clr-primary-aqua) !important;
+	}
+
+	.text-blue {
+		color: var(--clr-primary-blue) !important;
+	}
+
+	.text-lb {
+		color: var(--clr-primary-lb) !important;
+	}
+
+	.bg-green {
+		background-color: var(--clr-primary-green);
+	}
+
+	.bg-aqua {
+		background-color: var(--clr-primary-aqua);
+	}
+
+	.bg-blue {
+		background-color: var(--clr-primary-blue);
+	}
+
+	.fw-500 {
+		font-weight: 500;
+	}
+
+	.fw-700 {
+		font-weight: 700;
+	}
+
+	.fw-900 {
+		font-weight: 900;
+	}
+
+	.fs-700 {
+		font-size: var(--fs-700);
+	}
+
+	.w-auto {
+		width: auto;
+	}
+
+	.w-100 {
+		max-width: 100%;
+	}
+
+	.w-70 {
+		max-width: 70%;
+	}
+
+	.w-5em {
+		max-width: 5em;
+	}
+
+	.w-10em {
+		max-width: 10em;
+	}
+
+
+	.disabled {
+		pointer-events: none;
+		cursor: not-allowed;
+		filter: alpha(opacity=65);
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		opacity: .65;
+		text-decoration: none;
+		transition: all 250ms ease-in-out;
+	}
+
+	/* block */
+
+	.modal-body p {
+		color: var(--clr-primary-blue);
+	}
+
+	.modal-body h4 {
+		color: var(--clr-primary-green);
+		font-weight: bold;
+	}
+
+	.nav-mic {
+		width: 100%;
+	}
+
+	.nav-mic>a {
+		padding: 0 2rem;
+	}
+
+	.nav-mic>a>img {
+		max-height: 5rem;
+		transform: translateY(-5px);
+	}
+
+	.nav-mic>a:not(:last-child) {
+		border-right: 1px solid #7c7c7c;
+	}
+
+	.content-row {
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 2em;
+		padding: 1em;
+	}
+
+	.content-row[data-type="secundary"] {
+		background-image: url(https://www.cali.gov.co/info/principal/media/galeria236424.png);
+		background-image: url(https://www.cali.gov.co/info/principal/media/galeria236424.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.content-row img {
+		max-width: 10em;
+	}
+
+	.nucleo-items>a {
+		flex-direction: column;
+		flex: 1;
+		margin-top: 2em;
+	}
+
+	.card {
+		border: 1px solid #14314f;
+		border-radius: 1em;
+		display: none;
+	}
+
+	.card:first-of-type {
+		display: block;
+	}
+
+	.card__content {
+		display: none;
+	}
+
+	.card__content:nth-of-type(1) {
+		display: block;
+	}
+
+	.card__content:nth-of-type(even)>div {
+		flex-direction: row-reverse;
+		gap: 1em;
+	}
+
+	.card__menu {
+		margin-left: -2.7em;
+		margin-right: -2.7em;
+		padding: 2rem 4rem !important;
+		gap: 1em;
+	}
+
+	.card__image {
+		position: relative;
+		width: auto;
+	}
+
+	.image img {
+		position: relative;
+	}
+
+	/* Exception */
+
+	[data-target] {
+		transition: all 150ms ease-in-out;
+	}
+
+	[data-target=convivencia].disabled>img {
+		content: url("https://www.cali.gov.co/info/principal/media/galeria236404.png");
+	}
+
+	[data-target=fomento].disabled>img {
+		content: url("https://www.cali.gov.co/info/principal/media/galeria238982.png");
+	}
+
+	[data-target=cuidado].disabled>img {
+		content: url("https://www.cali.gov.co/info/principal/media/galeria236799.png");
+	}
+
+	[data-target=movilidad].disabled>img {
+		content: url("https://www.cali.gov.co/info/principal/media/galeria238984.png");
+	}
+
+	[data-target=conservacion].disabled>img {
+		content: url("https://www.cali.gov.co/info/principal/media/galeria238979.png");
+	}
+
+	[data-target=construccion].disabled>img {
+		content: url("https://www.cali.gov.co/info/principal/media/galeria238964.png");
+	}
+
+	[data-target=investigacion].disabled>img {
+		content: url("https://www.cali.gov.co/info/principal/media/galeria238967.png");
+	}
+
+
+	@media (min-width: 660px) {
+		.row-nucleo {
+			text-align: center;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.flex-row {
+			flex-direction: column;
+		}
+
+		.image img {
+			position: relative;
+		}
+
+		.card-content {
+			justify-content: left;
+		}
+
+		.card__content:nth-of-type(even)>div {
+			flex-direction: column;
+		}
+	}
+
+	@media (max-width: 660px) {
+		.nav-mic {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		.nav-mic>a {
+			border-right: 0 !important;
+			border-bottom: 1px solid rgb(201, 201, 201);
+			width: 100%;
+			margin: 0;
+			padding: 1rem;
+		}
+
+		.nav-mic>a>img {
+			transform: translateY(0);
+		}
+
+		.content-row div {
+			max-width: 100%;
+		}
+	}
+</style>
+
+<div class="micro">
+	<div class="[ nav-mic ] [ d-flex justify-content-center align-center flex-wrap ]">
+		<a href="#" class="disabled" data-target="inicio" aria-controls="principal">Inicio</a>
+		<a href="#" class="" data-target="documentos" aria-controls="principal">Documentos</a>
+		<a href="#" data-target="resultados" aria-controls="principal">Resultado de
+			encuesta</a>
+		<a href="https://www.cali.gov.co/galeria/17601/Galeria/" target="_blank">Galería</a>
+		<a href="https://forms.gle/rGAgznNtiND5JsjG9" target="_blank">
+			<img src="https://www.cali.gov.co/info/principal/media/galeria236416.png" alt="Participa" />
+		</a>
+	</div>
+
+	<div data-parent="principal" id="inicio">
+		<div class="[ content-row ] [ d-flex ]">
+			<img src="https://www.cali.gov.co/info/principal/media/galeria236417.png" alt="" />
+
+			<div class="w-70">
+				<p>
+					Estamos en un proceso de construcción colectiva, donde buscamos identificar un problema público,
+					formular alternativas de
+					solución a través de un Plan de Acción, con un horizonte de tiempo de diez años, como un ejercicio
+					de
+					corresponsabilidad
+					ciudadana.
+				</p>
+			</div>
+		</div>
+
+		<div class="toggle-wrapper [ content-row ] [ d-flex ]" data-type="secundary">
+			<img src="https://www.cali.gov.co/info/principal/media/galeria236418.png" alt="" />
+
+			<div class="w-70">
+				<h3 class="text-lb fw-700">La cultura ciudadana es:</h3>
+				<p class="text-white">
+					“El conjunto de comportamientos, prácticas y capacidades de la ciudadanía que emergen en un proceso
+					dinámico de construcción
+					social de lo público, permitiendo el ejercicio de los deberes, de los derechos, el reconocimiento de
+					la
+					diversidad, las
+					relaciones de convivencia, el cuidado del entorno, el desarrollo del sentido de pertenencia y la
+					responsabilidad social,
+					(Alcaldía de Cali,2021).
+				</p>
+			</div>
+		</div>
+
+		<div class="row-nucleo">
+			<h3 style="color: #296c80">Núcleo probemático</h3>
+			<p>Transformar problemáticas asociadas a la cultura ciudadana en:</p>
+			<div class="[ nucleo-items ] [ d-flex flex-wrap justify-content-evenly ] [ ]">
+				<a href="#" class="d-flex align-center flex-column disabled" data-target="nucleo-convivencia"
+					aria-controls="nucleos">
+					<img class="w-10em" src="https://www.cali.gov.co/info/principal/media/galeria236796.png" alt="" />
+					<p class="margin-0">Convivencia</p>
+				</a>
+
+				<a href="#" class="d-flex align-center flex-column" data-target="nucleo-entorno"
+					aria-controls="nucleos">
+					<img class="w-10em" src="https://www.cali.gov.co/info/principal/media/galeria236795.png" alt="" />
+					<p class="margin-0">Entorno</p>
+				</a>
+
+				<a href="#" class="d-flex align-center flex-column" data-target="nucleo-capacidades"
+					aria-controls="nucleos">
+					<img class="w-10em" src="https://www.cali.gov.co/info/principal/media/galeria238968.png" alt="" />
+					<p class="margin-0 w-70">Capacidades comunitarias e institucionales</p>
+				</a>
+			</div>
+		</div>
+
+		<article class="[ card ] [ padding-4 ]" id="nucleo-convivencia" data-parent="nucleos">
+			<h3 class="text-green fw-700">Convivencia</h3>
+			<p>
+				Para abordar asuntos relacionados con el respeto y el buen trato entre ciudadanos tanto en los espacios
+				públicos como en los
+				diferentes escenarios de socialización. Igualmente, desarrollar acciones que promuevan el sentido de
+				pertenencia y la
+				identidad caleña.
+			</p>
+
+			<div class="[ card__menu ] [ d-flex flex-wrap justify-content-evenly ] [ bg-green ]">
+				<a href="#" class="d-flex align-center disabled" data-target="convivencia" aria-controls="convivencia">
+					<img class="w-5em" src="https://www.cali.gov.co/info/principal/media/galeria238985.png" alt="" />
+					<p class="text-white margin-0">
+						Convivencia <br />
+						en la diferencia
+					</p>
+				</a>
+
+				<a href="#" class="d-flex align-center" data-target="fomento" aria-controls="convivencia">
+					<img class="w-5em" src="https://www.cali.gov.co/info/principal/media/galeria236403.png" alt="" />
+					<p class="text-white margin-0">
+						Fomento de la identidad <br />
+						y el sentido de pertenecia
+					</p>
+				</a>
+			</div>
+
+			<div class="card__content__wrapper">
+				<div class="[ card__content ]" id="convivencia" data-parent="convivencia">
+					<div class="[ card__content__item ] [ d-flex flex-row align-center ]">
+						<div class="w-auto">
+							<h4 class="text-green fw-700">Convivencia en la diferencia</h4>
+							<p>
+								Al entender la convivencia como un asunto de respeto por el otro, es fundamental
+								reconocer
+								la diferencia y el surgimiento de
+								nuevas ciudadanías, que contribuyen a la diversidad en el distrito de Cali.
+							</p>
+							<p>
+								Se pretende contribuir al diálogo ciudadano como herramienta para la mediación social de
+								nuevas formas de relación en la
+								diversidad, basadas en el respeto y el reconocimiento de la diferencia.
+							</p>
+						</div>
+
+						<div class="card__image">
+							<img class="w-100" src="https://www.cali.gov.co/info/principal/media/galeria236405.png"
+								alt="" />
+						</div>
+					</div>
+				</div>
+
+				<div class="[ card__content ]" id="fomento" data-parent="convivencia">
+					<div class="[ card__content__item ] [ d-flex flex-row align-center ]">
+						<div class="w-auto">
+							<h4 class="text-green fw-700">Fomento de la identidad y el sentido de pertenencia</h4>
+							<p>
+								Al entender la convivencia como un asunto de respeto por el otro, es fundamental
+								reconocer
+								la diferencia y el surgimiento de
+								nuevas ciudadanías, que contribuyen a la diversidad en el distrito de Cali.
+							</p>
+							<p>
+								Se pretende contribuir al diálogo ciudadano como herramienta para la mediación social de
+								nuevas formas de relación en la
+								diversidad, basadas en el respeto y el reconocimiento de la diferencia.
+							</p>
+						</div>
+
+						<div class="card__image">
+							<img class="w-100" src="https://www.cali.gov.co/info/principal/media/galeria238958.jpg"
+								alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article class="[ card ] [ padding-4 ]" id="nucleo-entorno" data-parent="nucleos">
+			<h3 class="text-aqua fw-700">Entorno</h3>
+			<p>
+				Busca trabajar la cultura ciudadana desde los diferentes lugares donde se desarrolla. Entendemos que las
+				prácticas,
+				comportamientos y creencias de la ciudadanía que se dan en la interacción cotidiana en los espacios
+				públicos, en la movilidad
+				y en su relación con el ambiente.
+			</p>
+
+			<div class="[ card__menu ] [ d-flex flex-wrap justify-content-evenly ] [ bg-aqua ]">
+				<a href="#" class="d-flex align-center disabled" data-target="cuidado" aria-controls="entorno"> <img
+						class="w-5em" src="https://www.cali.gov.co/info/principal/media/galeria238983.png" alt="" />
+					<p class="text-white margin-0">Cuidado del espacio público</p>
+				</a>
+
+				<a href="#" class="d-flex align-center" data-target="movilidad" aria-controls="entorno">
+					<img class="w-5em" src="https://www.cali.gov.co/info/principal/media/galeria236798.png" alt="" />
+					<p class="text-white margin-0">Movilidad segura</p>
+				</a>
+
+				<a href="#" class="d-flex align-center" data-target="conservacion" aria-controls="entorno"> <img
+						class="w-5em" src="https://www.cali.gov.co/info/principal/media/galeria236797.png" alt="" />
+					<p class="text-white margin-0">Conservación del medio ambiente</p>
+				</a>
+			</div>
+
+			<div class="card__content_wrapper">
+				<div class="[ card__content ]" id="cuidado" data-parent="entorno">
+					<div class="[ card__content__item ] [ d-flex flex-row align-center ]">
+						<div class="w-auto">
+							<h4 class="text-aqua fw-700">Cuidado del espacio público</h4>
+							<p>
+								Se entiende el espacio público, como los lugares de interacción entre las personas, y
+								que no
+								corresponde al espacio privado o
+								limitado gubernamentalmente, mediadas por las prácticas, comportamientos y creencias. Se
+								abordarán espacios focalizados de
+								interés para la ciudad, buscando desarrollar prácticas de cuidado a partir de la auto y
+								mutua regulación.
+							</p>
+						</div>
+
+						<div class="card__image">
+							<img class="w-100" src="https://www.cali.gov.co/info/principal/media/galeria238959.jpg"
+								alt="" />
+						</div>
+					</div>
+				</div>
+
+				<div class="[ card__content ]" id="movilidad" data-parent="entorno">
+					<div class="[ card__content__item ] [ d-flex flex-row align-center ]">
+						<div class="w-auto">
+							<h4 class="text-aqua fw-700">Movilidad segura</h4>
+							<p>
+								Busca promover acciones cívicas entre todos los actores del espacio público como los
+								peatones, bici usuarios, conductores y
+								usuarios de vehículos de servicio público y privado, buscando fortalecer prácticas y
+								comportamientos seguros entre los
+								diferentes actores.
+							</p>
+						</div>
+
+						<div class="card__image">
+							<img class="w-100" src="https://www.cali.gov.co/info/principal/media/galeria238960.jpg"
+								alt="" />
+						</div>
+					</div>
+				</div>
+
+				<div class="[ card__content ]" id="conservacion" data-parent="entorno">
+					<div class="[ card__content__item ] [ d-flex flex-row align-center ]">
+						<div class="w-auto">
+							<h4 class="text-aqua fw-700">Conservación del medio ambiente</h4>
+							<p>
+								Busca fomentar el reconocimiento, apropiación de metodologías y técnicas innovadoras
+								para
+								desarrollar iniciativas de Cultura
+								Ciudadana, que contribuyan al desarrollo de interacciones armónicas entre la ciudadanía,
+								los
+								seres sintientes y la naturaleza
+								en un marco amplio de lo reconocido como medio ambiente.
+							</p>
+						</div>
+
+						<div class="card__image">
+							<img class="w-100" src="https://www.cali.gov.co/info/principal/media/galeria238961.jpg"
+								alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article class="[ card ] [ padding-4 ]" id="nucleo-capacidades" data-parent="nucleos">
+			<h3 class="text-blue fw-700">Capacidades</h3>
+			<p>
+				Para abordar asuntos relacionados con el respeto y el buen trato entre ciudadanos tanto en los espacios
+				públicos como en los
+				diferentes escenarios de socialización. Igualmente, desarrollar acciones que promuevan el sentido de
+				pertenencia y la
+				identidad caleña.
+			</p>
+
+			<div class="[ card__menu ] [ d-flex flex-wrap justify-content-evenly ] [ bg-blue ]">
+				<a href="#" class="d-flex align-center disabled" data-target="construccion" aria-controls="capacidades">
+					<img class="w-5em" src="https://www.cali.gov.co/info/principal/media/galeria238981.png" alt="" />
+					<p class="text-white margin-0">Construcción de confianza institucional</p>
+				</a>
+
+				<a href="#" class="d-flex align-center" data-target="investigacion" aria-controls="capacidades">
+					<img class="w-5em" src="https://www.cali.gov.co/info/principal/media/galeria238980.png" alt="" />
+					<p class="text-white margin-0">Investigación, monitoreo y evaluación</p>
+				</a>
+			</div>
+
+			<div class="card__content__wrapper">
+				<div class="[ card__content ]" id="construccion" data-parent="capacidades">
+					<div class="[ card__content__item ] [ d-flex flex-row align-center ]">
+						<div class="w-auto">
+							<h4 class="text-blue fw-700">Construcción de confianza institucional</h4>
+							<p>
+								La afectación de la confianza ciudadana en la administración pública, pone como reto
+								mejorar
+								la gestión del Estado en cuanto
+								a la pertinencia y correspondencia de su accionar con las necesidades ciudadanas y la
+								transparencia institucional, mejorando
+								la percepción sobre la Administración Distrital.
+							</p>
+						</div>
+
+						<div class="card__image">
+							<img class="w-100" src="https://www.cali.gov.co/info/principal/media/galeria238962.jpg"
+								alt="" />
+						</div>
+					</div>
+				</div>
+
+				<div class="[ card__content ]" id="investigacion" data-parent="capacidades">
+					<div class="[ card__content__item ] [ d-flex flex-row align-center ]">
+						<div class="w-auto">
+							<h4 class="text-blue fw-700">Investigación, monitoreo y evaluación</h4>
+							<p>
+								Se busca contribuir en la generación de insumos para la correcta promoción de la Cultura
+								Ciudadana, por medio de la
+								aplicación de instrumentos que permitan evidenciar los alcances de la política pública
+								en
+								esta materia y fortalecer aquellos
+								aspectos que sean necesario durante su ejecución.
+							</p>
+
+							<p></p>
+						</div>
+
+						<div class="card__image">
+							<img class="w-100" src="https://www.cali.gov.co/info/principal/media/galeria238963.jpg"
+								alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+						<div>
+							<h4>Población</h4>
+							<p>Hombres y mujeres de 14 años en adelante, residentes en Cali</p>
+						</div>
+
+						<div class="d-flex align-center">
+							<p class="fw-700" style="max-width: 9ch">Tamaño de la muestra:</p>
+							<p class="fs-700">4.447</p>
+						</div>
+
+						<div>
+							<img src="" alt="" />
+							<h4>Recolección</h4>
+						</div>
+						<p>28 de junio - 6 de agosto 2021</p>
+
+						<a href=""><img src="" alt="Descargar" /></a>
+					</div>
+					<div class="modal-footer">
+						<!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div data-parent="principal" id="resultados" style="display: none;">
+		<iframe src="https://drive.google.com/file/d/1oPo1dFJXjJdsuSZyjLs1ss9gXkKUJMyW/preview" width="100%"
+			height="600" allow="autoplay"></iframe>
+	</div>
+
+<div data-parent="principal" id="documentos" style="display: none;">DISPLAYDOCUMENTOS(5574)</div>
+	
+	<div data-parent="principal" id="participa" style="display: none;"></div>
+
+</div>
+
+<script>
+	$(document).ready(function () {
+		// Handle toggles
+		$("[data-target]").click(function (e) {
+			// Guarda atributo de elemento clickeado
+			const dataAttr = $(this).attr("data-target");
+			const dataControls = $(this).attr("aria-controls")
+
+			const menuItems = $("[aria-controls='" + dataControls + "']")
+			const contentItems = $("[data-parent='" + dataControls + "']")
+			const selectedElement = document.getElementById(dataAttr)
+
+			// Manejo de clases
+			$(this).addClass("disabled");
+			menuItems.not($(this)).removeClass("disabled");
+
+			// Esconde todos menos el seleccionado
+			contentItems.not($(this)).hide("fast")
+
+			//Abre elemento seleccionado
+			$(selectedElement).toggle("fast");
+
+			return false;
+		});
+
+	});
+</script>

@@ -1,0 +1,234 @@
+<style>
+    .micrositio img,
+    video {
+        width: 100%;
+    }
+
+    .grid {
+        display: grid;
+    }
+
+    .grid-1by2 {
+        grid-template-columns: repeat(auto-fill, minmax(24em, 1fr));
+        justify-content: center;
+        gap: 2em;
+        align-items: center;
+
+
+    }
+
+    .grid-1by2 img {
+        border: 1px solid black;
+    }
+
+    #principios {
+        display: grid;
+        gap: 3em;
+    }
+
+    .menu {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2em;
+        text-align: center;
+        margin-block: 2em;
+    }
+
+    .info-grid {
+        grid-template-columns: 3em;
+        column-gap: 1rem;
+        border-left: 1px solid black;
+        padding-left: 1em;
+    }
+
+    .info-grid p {
+        margin: 0;
+    }
+
+
+    .numeral {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        align-self: center;
+        justify-self: center;
+        background-color: #3983a8;
+        color: #fafafa;
+        font-weight: 800;
+        padding: 1em;
+    }
+
+    .titulo {
+        color: #3983a8 !important;
+        font-weight: 800;
+        font-size: 18px !important;
+    }
+
+    .descripcion {
+        /* grid-column: 2 / span 1; */
+        color: #3983a8 !important;
+        font-size: 18px !important;
+    }
+
+    .texto {
+        margin-top: 1em !important;
+        grid-column: 1 / span 2;
+        grid-row: 3;
+
+    }
+
+    .menu a {
+        padding: .5em;
+    }
+    .menu>a:nth-child(1) {
+        background-color: #3983a8;
+        color: #fafafa;
+        font-weight: 800;
+    }
+
+    .menu>a:nth-child(2) {
+        background-color: transparent;
+        border: 2px solid #3983a8;
+        color: #3983a8;
+        font-weight: 800;
+    }
+
+    .menu>a:nth-child(3) {
+        background-color: #f5ac00;
+        color: #fafafa;
+        font-weight: 800;
+    }
+
+    .nxBlockDynamicLayout7 .new-tools-box {
+        position: relative !important;
+        text-align: center !important;
+    }
+
+    .noticias {
+        background-color: #3983a8;
+        color: #fafafa !important;
+        text-align: center;
+        padding: 1em;
+        font-weight: bold;
+    }
+
+    slick-slide {
+        max-width: 1110px;
+    }
+</style>
+
+
+<div class="micrositio">
+    <div class="grid grid-1by2">
+        <div>
+            <p>Este proyecto se ubica en la comuna 14, al oriente de Santiago de Cali, entre la transversal 103 con
+                calle 96
+                y
+                calle 73
+                con transversal 73, barrios Alfonso Bonilla Aragón y Marroquín 2.
+
+            <p>El área a intervenir es de 47.961 metros cuadrados que corresponden a 1.1 kilómetros, a un costo de
+                $27.808.522.413
+            </p>
+            <p>Tendrá jardines urbanos, zona de mascotas, cancha de fútbol, espacios multipropósito, teatrino, máquinas
+                para
+                hacer
+                ejercicios, huertas y demás elementos que permiten concebir este lugar como un sitio para el arte, la
+                cultura,
+                el
+                deporte y la familia.</p>
+            <p>Con esta iniciativa se pretende mejorar la calidad de vida de, por lo menos, 31 asentamientos de
+                desarrollo
+                incompleto.
+            </p>
+        </div>
+
+        <video src="https://www.cali.gov.co/info/principal/media/videos/mp4241953.mp4" controls></video>
+    </div>
+
+    <div class="grid menu">
+        <a href="#" data-target="principios" aria-controls="principal">Principios del proyecto</a>
+        <a href="#" data-target="panoramicas" aria-controls="principal">Panorámicas y renders</a>
+        <a
+            href="https://www.cali.gov.co/loader.php?lServicio=Tools2&lTipo=descargas&lFuncion=descargar&idFile=65122&id_comunidad=gobierno">Descargar
+            informe</a>
+    </div>
+
+    <div class="containers" data-parent="principal" id="principios" style="display: none;">
+        <video src="https://www.cali.gov.co/info/principal/media/videos/mp4241952.mp4" controls></video>
+        <div class="grid grid-1by2">
+            <img src="https://www.cali.gov.co/info/principal/media/galeria239441.jpg" alt="">
+            <div class="grid info-grid">
+                <span class="numeral">1</span>
+                <p class="titulo">Reivindicar</p>
+                <p class="descripcion">Memoria ambiental</p>
+                <p class="texto">El Bulevar busca reivindicar la memoria ambiental por medio de actividades enfocadas en
+                    una pedagogía
+                    con
+                    el fin de recomponer la red ecológica urbana de la memoria ambiental, la reestructuración ambiental,
+                    la
+                    conectividad ecosistémica, la conservación y el uso sostenible de entornos biodiversos.</p>
+            </div>
+        </div>
+
+        <div class="grid grid-1by2">
+            <img src="https://www.cali.gov.co/info/principal/media/galeria239440.jpg" alt="">
+            <div class="grid info-grid">
+                <span class="numeral">2</span>
+                <p class="titulo">Integrar</p>
+                <p class="descripcion">Ciudad / oriente / barrio</p>
+                <p class="texto">El proyecto se estructura con una secuencia de estaciones de actividades al aire libre
+                    que tienen como objetivo
+                    reafirmar la continuidad de la unidad ambiental, paisajística y cultural a lo largo del corredor a
+                    través de la
+                    participación directa de los visitantes. Intregrando por medio de corredores urbanos escenarios
+                    complementarios de las
+                    diferentes escalas: Barrial, Comunal y de Ciudad.</p>
+            </div>
+        </div>
+
+        <div class="grid grid-1by2">
+            <img src="https://www.cali.gov.co/info/principal/media/galeria239439.jpg" alt="">
+            <div class="grid info-grid">
+                <span class="numeral">3</span>
+                <p class="titulo">Dinamizar</p>
+                <p class="descripcion">Programa socio ambiental</p>
+                <p class="texto">Por medio de una línea de tiempo el parque busca responder a las actividades culturales
+                    y ambientales programadas en los
+                    barrios del oriente, funcionando como plataforma de actividades y garantizar una programación
+                    dinámica, variable y
+                    transformable del parque.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="containers" data-parent="principal" id="panoramicas"> 
+        DISPLAYBLOQUE(216674)
+    </div>
+    <div>
+        <p class="noticias">Noticias</p>
+        DISPLAYBLOQUE(216665)
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        // Handle toggles
+        $("[data-target]").click(function (e) {
+            // Guarda atributo de elemento clickeado
+            const dataAttr = $(this).attr("data-target");
+            const dataControls = $(this).attr("aria-controls")
+            const menuItems = $("[aria-controls='" + dataControls + "']")
+            const contentItems = $("[data-parent='" + dataControls + "']")
+            const selectedElement = document.getElementById(dataAttr)
+            // Manejo de clases
+
+            $(this).addClass("disabled");
+            menuItems.not($(this)).removeClass("disabled");
+            // Esconde todos menos el seleccionado
+            contentItems.not($(this)).hide("fast")
+            //Abre elemento seleccionado
+            $(selectedElement).toggle("fast");
+
+            return false;
+        });
+    });
+</script>
