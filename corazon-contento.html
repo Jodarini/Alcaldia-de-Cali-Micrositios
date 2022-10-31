@@ -1,0 +1,106 @@
+<style>
+    .d-flex {
+        display: flex;
+    }
+
+    .justify-center {
+        justify-content: center;
+    }
+
+    .gap-5 {
+        gap: 5em;
+    }
+
+    .datos {
+        color: #0090cf;
+        font-size: 6em;
+        font-weight: bolder;
+    }
+
+    .info {
+        color: #cd2723;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    .border-right {
+        border-right: 1px solid #adadad;
+    }
+
+    .align-right {
+        text-align: right;
+    }
+
+    .blue-background {
+        background-color: #0090cf;
+        color: white;
+        padding-inline: 5em;
+        padding-block: 3em;
+    }
+
+    .blue-background::after {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 25px linear-gradient(to right, #9ac04e, #4d973a) #4d973a;
+        bottom: 16%;
+        right: 0px;
+    }
+
+    .beneficiarios {
+        background: linear-gradient(to right, #9ac04e, #4d973a);
+        color: white;
+        font-weight: bolder;
+        width: fit-content;
+        padding-inline: 2em;
+        padding-block: 5px;
+        translate: 1em -3.4em;
+        position: absolute;
+    }
+</style>
+
+<div class="row">
+    <div class="col-md-6">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus a esse ipsum tempore unde error
+            architecto facilis eos quos dicta?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque itaque dignissimos quis reprehenderit qui
+            amet ipsa facere ad? Odit aperiam veniam at quaerat nulla error, pariatur, omnis reiciendis quia ipsum ex
+            minus corrupti quos cupiditate totam nihil asperiores. Inventore, consequatur.</p>
+    </div>
+    <div class="col-md-6">
+        <video src=""></video>
+    </div>
+</div>
+<div class="row d-flex justify-center">
+    <div class="col-md-6 align-right border-right">
+        <span class="datos">762 <br></span>
+        <span class="info">comedores</span>
+    </div>
+    <div class="col-md-6 ">
+        <span class="datos">89.000 <br></span>
+        <span class="info">beneficiarios</span>
+    </div>
+</div>
+
+<div class="blue-background">
+    <h3 class="beneficiarios">Beneficiarios</h3>
+    <ul>
+        <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus unde veniam natus esse et explicabo.
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, numquam.
+                </li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, expedita.</li>
+            </ul>
+        </li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, amet voluptas. Et provident quasi in enim
+            quis. Exercitationem facere possimus aliquid numquam fugit, provident neque!</li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint consequatur, odit unde distinctio quaerat
+            ipsam.</li>
+    </ul>
+</div>
+
+
+DISPLAYBLOQUE()
