@@ -1,4 +1,4 @@
-<style type="text/css">
+<style>
     .g2x2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -87,6 +87,12 @@
 
     .nxBlockDynamicLayout4 .new-tools-box {
         background: none;
+    }
+
+
+    .slider214852>.slick-list>.slick-track {
+        display: flex !important;
+        flex-direction: row-reverse !important;
     }
 
     .margin-bottom-sm {
@@ -232,7 +238,11 @@
 
     .col-md-2 {
         padding: 0 !important;
-        width: 11.7% !important;
+        width: 10.7% !important;
+    }
+
+    #dconvocatorias .new-tools-box {
+        display: none;
     }
 
     @media (max-width: 992px) {
@@ -469,7 +479,24 @@
 
 
 
+    /* .modal-dialog {
+        width: auto;
+        height: 90%;
+    }
+
+    .modal-content {
+        max-height: 100%;
+    }
+
+    .modal {
+        max-height: 98%;
+    } */
+
     @media (max-width: 768px) {
+        /* .modal-dialog {
+            width: auto;
+        } */
+
         a-scene {
             aspect-ratio: 16 / 9;
         }
@@ -604,9 +631,11 @@
         }
     }
 </style>
+<!-- <a href="https://www.cali.gov.co/gobierno/calendario/5499/festival-de-ciencia-tecnologia-e-innovacion/" target="_blank">
 
-
-
+    <img style="width: 100%; margin-bottom: 2em;" src="https://www.cali.gov.co/info/principal/media/galeria255337.jpg"
+        alt="Evento Festival de ciencia, tecnología e innovación">
+</a> -->
 <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
 
 <a-scene embedded>
@@ -622,13 +651,14 @@
         <img src="https://www.cali.gov.co/info/principal/media/galeria244144.png" class="logos-360" alt="logos-360">
 
         <img src="https://www.cali.gov.co/info/principal/media/galeria241144.png" class="logo-360" alt="360">
+    </a-sky>
 </a-scene>
 
 <div class="row" style="margin-bottom: 4rem;">
     <div class="row" style="margin-left: 0;margin-right: 0;margin-bottom: 2em;">
         <div class="col-md-6 col-xs-12">
             <!-- TEXTO INTRODUCTORIO -->
-            <p class="texto-gris">Calintelitente es una estrategia movilizadora del Plan de Desarrollo ‘Cali
+            <p class="texto-gris">Calinteligente es una estrategia movilizadora del Plan de Desarrollo ‘Cali
                 Unida por la Vida’ de
                 la actual Administración Distrital que busca impulsar el desarrollo social, económico y ambiental de la
                 urbe, a través del uso de las tecnologías de la información y las comunicaciones, la construcción
@@ -640,7 +670,9 @@
                 una ciudad inteligente.</p>
         </div>
         <div class="col-md-6 col-xs-12">
+
             <video controls="" id="video-introductorio">
+
                 <source src="https://www.cali.gov.co/info/principal/media/videos/mp4225108.mp4" type="video/mp4" />
             </video>
         </div>
@@ -694,6 +726,15 @@
                     src="https://www.cali.gov.co/info/principal/media/galeria224832.png" />
             </a>
         </div>
+        <!-- BOTÓN CONVOCATORIAS -->
+
+        <div class="col-md-2 col-sm-3 botones-menu">
+            <a class="imagen-desplegable" id="convocatorias">
+                <img alt="Convocatorias" class="iconos-menu"
+                    src="https://www.cali.gov.co/info/principal/media/galeria248921.png" />
+            </a>
+        </div>
+
         <!-- BOTÓN SOCIALIZACION Y VALIDACION DEL MODELO -->
         <div class="col-md-2 col-sm-3 botones-menu">
             <a class="imagen-desplegable" id="socializacion">
@@ -709,6 +750,7 @@
                     src="https://www.cali.gov.co/info/principal/media/galeria224881.png" />
             </a>
         </div>
+
     </div>
 </div>
 <!-- DESPLEGABLES MENÚ PRINCIPAL-->
@@ -716,16 +758,22 @@
 
     <div id="dquienes" style="display: none;">
         <div style="width: 100%; margin-bottom: 3em;">
-            <div style="position: relative; padding-bottom: 73.99%; padding-top: 0; height: 0;"><iframe frameborder="0"
-                    width="1515" height="1121" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+            <div style="position: relative; padding-bottom: 73.99%; padding-top: 0; height: 0;">
+                <iframe frameborder="0" width="1515" height="1121"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
                     src="https://view.genial.ly/62d80e2c9e695e0018254c19" type="text/html" allowscriptaccess="always"
-                    allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div>
+                    allowfullscreen="true" scrolling="yes" allownetworking="all">
+                </iframe>
+            </div>
         </div>
         <div style="width: 100%;">
-            <div style="position: relative; padding-bottom: 65.57%; padding-top: 0; height: 0;"><iframe frameborder="0"
-                    width="2074" height="1360" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+            <div style="position: relative; padding-bottom: 65.57%; padding-top: 0; height: 0;">
+                <iframe frameborder="0" width="2074" height="1360"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
                     src="https://view.genial.ly/62d09d34f1345800105a6e2e" type="text/html" allowscriptaccess="always"
-                    allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div>
+                    allowfullscreen="true" scrolling="yes" allownetworking="all">
+                </iframe>
+            </div>
         </div>
 
     </div>
@@ -1005,7 +1053,8 @@
     <div id="dmodelo">
         <h2 class="whiteText text-center titulo-modelo-de-ciudad">MODELO CALINTELIGENTE</h2>
         <div class="d-flex" style="justify-content: center">
-            <video src="https://www.cali.gov.co/info/principal/media/videos/mp4245396.mp4" controls
+
+            <video src="https://www.cali.gov.co/info/principal/media/videos/mp4252678.mp4" controls
                 style="width: 90%"></video>
         </div>
         <p class="texto-gris">
@@ -1311,7 +1360,7 @@
                                 <button type="button" class="close" data-dismiss="modal">
                                     <span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span>
                                 </button>
-                                <h3 class="subtitulos">Huertas Hurbanas</h3>
+                                <h3 class="subtitulos">Huertas Urbanas</h3>
                             </div>
                             <div class="modal-body">
                                 <div class="row" style="padding:15px">
@@ -1354,7 +1403,13 @@
                                         laboratorios
                                         vivos que
                                         fortalecen el intercambio de saberes y la conciencia ambiental.</p>
-                                    <iframe src="https://www.youtube.com/embed/ew8yywxH6MU"></iframe>
+                                    <!-- <iframe src="https://www.youtube.com/embed/ew8yywxH6MU"></iframe> -->
+
+                                </div>
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                                        type="text/html" src="https://www.youtube.com/embed/ew8yywxH6MU">
+                                    </iframe>
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -1509,7 +1564,12 @@
 
                                     <a class="boton-ver-infografia" target="_blank"
                                         href="https://www.cali.gov.co/gobierno/publicaciones/169475/cristo-rey/">Micrositio</a>
-                                    <iframe src="https://www.youtube.com/embed/Yyf4bGQiFiE"></iframe>
+                                    <div class="embed-responsive embed-responsive-16by9">
+
+                                        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                                            type="text/html" src="//www.youtube.com/embed/Yyf4bGQiFiE">
+                                        </iframe>
+                                    </div>
 
                                 </div>
                             </div>
@@ -1574,7 +1634,12 @@
                                     </p>
                                     <a class="boton-ver-infografia" target="_blank"
                                         href="https://www.cali.gov.co/gobierno/publicaciones/169476/bulevar-del-oriente/">Micrositio</a>
-                                    <iframe src="https://www.youtube.com/embed/ME7sRcDGvu8"></iframe>
+                                    <div class="embed-responsive embed-responsive-16by9">
+
+                                        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                                            type="text/html" src="https://www.youtube.com/embed/ME7sRcDGvu8">
+                                        </iframe>
+                                    </div>
 
                                 </div>
                             </div>
@@ -1635,8 +1700,11 @@
 
                                     <a class="boton-ver-infografia" target="_blank"
                                         href="https://www.cali.gov.co/gobierno/publicaciones/165383/parque-pacifico/">Micrositio</a>
-
-                                    <iframe src="https://www.youtube.com/embed/6Uppy5w8VzQ"></iframe>
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                                            type="text/html" src="https://www.youtube.com/embed/6Uppy5w8VzQ">
+                                        </iframe>
+                                    </div>
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -1694,8 +1762,11 @@
 
                                     <a class="boton-ver-infografia" target="_blank"
                                         href="www.cali.gov.co/dagma/publicaciones/156194/parque-ambiental-corazon-de-pance/">Micrositio</a>
-
-                                    <iframe src="https://www.youtube.com/embed/bgJ0rdzf6PM"></iframe>
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                                            type="text/html" src="https://www.youtube.com/embed/bgJ0rdzf6PM">
+                                        </iframe>
+                                    </div>
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -2013,7 +2084,11 @@
                                             gratuitos
                                             TIC</a>
                                     </div>
-                                    <iframe src="https://www.youtube.com/embed/gXCp7fFlGgs"></iframe>
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                                            type="text/html" src="https://www.youtube.com/embed/gXCp7fFlGgs">
+                                        </iframe>
+                                    </div>
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -2115,7 +2190,11 @@
                                         <a class="boton-ver-infografia" href="https://satic.cali.gov.co/geoportal"
                                             target="_blank">GEOPORTAL</a>
                                     </div>
-                                    <iframe src="https://www.youtube.com/embed/ebwfPLrOnuE"></iframe>
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                                            type="text/html" src="https://www.youtube.com/embed/ebwfPLrOnuE">
+                                        </iframe>
+                                    </div>
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -2161,10 +2240,12 @@
                 <div class="flex-new">
                     <img src="https://www.cali.gov.co/info/principal/media/galeria240598.png" alt="paneles"
                         class="items-menu" data-toggle="modal" href="#paneles">
+                    <img src="https://www.cali.gov.co/info/principal/media/galeria253633.png"
+                        alt="Monitoreo de la calidad del agua" class="items-menu" data-toggle="modal" href="#aguas">
                 </div>
 
-                <!-- Modal paneles-->
-                <div class="modal fade" id="paneles" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                <!-- Modal Aguas-->
+                <div class="modal fade" id="aguas" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -2172,9 +2253,7 @@
                                 <button type="button" class="close" data-dismiss="modal">
                                     <span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span>
                                 </button>
-                                <h3 class="subtitulos">Sistema de monitoreo de la calidad del agua
-
-                                </h3>
+                                <h3 class="subtitulos">Sistema de monitoreo de la calidad del agua</h3>
                             </div>
                             <div class="modal-body">
                                 <div class="row" style="padding:15px">
@@ -2203,8 +2282,49 @@
                                         claro ejemplo de
                                         sinergia entre comunidad y gobierno que se traduce en una mayor calidad de vida.
                                     </p>
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                                            type="text/html" src="https://www.youtube.com/embed/P4VbMsyydpE">
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                                    <iframe src="https://www.youtube.com/embed/eBbISqzuSLs"></iframe>
+                <div class="modal fade" id="paneles" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">
+                                    <span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span>
+                                </button>
+                                <h3 class="subtitulos">Paneles solares en acueductos rurales</h3>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row" style="padding:15px">
+                                    <p>Seis acueductos rurales de los corregimientos de El Hormiguero y Navarro son
+                                        pioneros en tener paneles solares en el Valle del Cauca. Este proyecto, liderado
+                                        por la Unidad Administrativa Especial de Servicios Públicos Uaesp, le permite a
+                                        estos acueductos comunitarios reducir notablemente el consumo de energía que se
+                                        requiere para la extracción del agua por bombeo. </p>
+
+                                    <p>El sistema, que genera energía fotovoltaica a pequeña escala a través de la
+                                        transformación de la radiación solar en electricidad, garantiza un suministro
+                                        sostenible, confiable y continuo del servicio de agua potable. Un claro ejemplo
+                                        de sinergia entre comunidad y gobierno que se traduce en una mayor calidad de
+                                        vida. </p>
+                                    <div class="embed-responsive embed-responsive-16by9">
+
+                                        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                                            type="text/html" src="https://www.youtube.com/embed/eBbISqzuSLs">
+                                        </iframe>
+                                    </div>
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -2214,6 +2334,8 @@
                     </div>
                 </div>
             </div>
+
+
 
             <!-- Iluminación Inteligente -->
             <div class="article">
@@ -2304,8 +2426,11 @@
                                         ambiental.
                                     </p>
 
-
-                                    <iframe src="https://www.youtube.com/embed/SGnRBpQT8Fo"></iframe>
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                                            type="text/html" src="https://www.youtube.com/embed/SGnRBpQT8Fo">
+                                        </iframe>
+                                    </div>
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -2705,8 +2830,11 @@
                                     <a class="boton-ver-infografia" target="_blank"
                                         href="https://drive.google.com/file/d/1yD1XxfcDBmrmUjAgROIFowyXGEom79KL/view?usp=sharing">Ver
                                         infografía</a>
-
-                                    <iframe src="https://www.youtube.com/embed/mA-xIbQH5Qo"></iframe>
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                                            type="text/html" src="https://www.youtube.com/embed/mA-xIbQH5Qo">
+                                        </iframe>
+                                    </div>
 
                                 </div>
                             </div>
@@ -2956,6 +3084,11 @@
                     de códigos QR ubicados en estaciones del Mio,
                     le permitirá a los usuarios acceder a más de 19
                     mil libros gratuitos en línea.</p>
+
+                <a class="boton-ver-infografia" target="_blank"
+                    href="https://www.cali.gov.co/movilidad/publicaciones/171305/leer-te-mueve-biblioteca-digital-gratuita-para-todos-los-calenos/">Más
+                    información
+                </a>
             </div>
             <div>
                 <img src="https://www.cali.gov.co/info/principal/media/galeria246447.jpg" alt="Leer te mueve"
@@ -2982,21 +3115,74 @@
                     href="https://docs.google.com/presentation/d/e/2PACX-1vQ391AdlDdTrxgoppD89w35Lg3-mX1402XEW-6N1Vtvpm3vXQ51g8LSmP7UzcHBZtXJ_Cw3ytrhnvEo/pub?start=true&loop=true&delayms=3000&slide=id.p1">Ver
                     diapositivas</a>
             </div>
+
+            <div>
+                <img src="https://www.cali.gov.co/info/principal/media/galeria255210.jpg" alt="Leer te mueve"
+                    style="max-width: 100%">
+
+                <h3 class="subtitulos-azules">Plan Piloto de Semaforización</h3>
+
+                <h4 class="subtitulos-azules" style="font-weight: 400">
+
+                    <svg fill="#2e3192" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z" />
+                    </svg>
+                    Intersección calle 11 con carrera 70
+                </h4>
+                <p>Con el objetivo de reducir los tiempos de espera de los ciudadanos y optimizar el flujo vehicular, se
+                    instaló un botón semafórico que funciona por la demanda peatonal, priorizando su movilidad de forma
+                    segura.
+                </p>
+                <a class="boton-ver-infografia" target="_blank" style="margin: 0 auto;"
+                    href="https://www.cali.gov.co/movilidad/publicaciones/171989/movilidad-inicia-plan-piloto-de-semaforizacion-por-la-seguridad-vial-de-los-peatones/">Más
+                    información</a>
+            </div>
         </div>
     </div>
     <!-- DESPLEGABLE EVENTOS -->
     <div id="deventos" style="display: none;">
         <div>
-            DISPLAYBLOQUE(214852)
 
+            <h2 class="titulo-proyectos">Eventos</h2>
+            DISPLAYBLOQUE(214852)
         </div>
         <div>
+            <h2 class="titulo-proyectos">Newsletter</h2>
+            <div class="grid g2x2">
+                <div style="margin-bottom: 3em;">
+                    <a data-toggle="modal" target="_blank"
+                        href="https://drive.google.com/file/d/1NRftVGgGzujCnd3I3VpL50hMxkWPOCUS/view?usp=sharing">
+                        <img src="https://www.cali.gov.co/info/principal/media/galeria254140.png" alt=""
+                            style="max-width: 100%">
 
-            DISPLAYDOCUMENTOS(5649)
+                        <h3 class="subtitulos-azules">
+                            Julio
+                            2022
+                        </h3>
+                    </a>
+                </div>
+                <div>
+                    <a data-toggle="modal" target="_blank"
+                        href="https://drive.google.com/file/d/1duNLhhfyyCXZsDgViN1LJpigYBH-Pv2U/view?usp=sharing">
+                        <img src="https://www.cali.gov.co/info/principal/media/galeria254141.png" alt=""
+                            style="max-width: 100%">
+
+                        <h3 class="subtitulos-azules">
+                            Agosto
+                            2022
+                        </h3>
+                    </a>
+                </div>
+            </div>
         </div>
-
-
     </div>
+
+    <!-- DESPLEGABLE CONVOCATORIAS -->
+    <div id="dconvocatorias" style="display: none;">
+        DISPLAYBLOQUE(217053)
+    </div>
+
     <!-- DESPLEGABLE DOCUMENTOS REFERENTES -->
     <div id="ddocumentos" style="display: none;">
 
@@ -3037,42 +3223,45 @@
 
     <div class="col-md-4">
         <blockquote class="twitter-tweet">
-            <p lang="es" dir="ltr">¡Se inauguraron las pantallas del Bulevar🥳!<br><br>“Estas 12 pantallas led van a
-                hacer parte de la historia que estamos construyendo y que queremos entregar a la ciudad&quot;, Juan
-                Diego Flórez, gerente de EMCALI. 💙❤️💚<a
-                    href="https://twitter.com/hashtag/Cali486A%C3%B1os?src=hash&amp;ref_src=twsrc%5Etfw">#Cali486Años</a><a
-                    href="https://twitter.com/hashtag/Calinteligente?src=hash&amp;ref_src=twsrc%5Etfw">#Calinteligente</a>
-                <a href="https://twitter.com/SergioMZamoraB?ref_src=twsrc%5Etfw">@SergioMZamoraB</a> <a
-                    href="https://t.co/QboIynatvj">pic.twitter.com/QboIynatvj</a>
-            </p>&mdash; EMCALI 🇨🇴
-            (@EMCALIoficial) <a
-                href="https://twitter.com/EMCALIoficial/status/1552281920230363143?ref_src=twsrc%5Etfw">July 27,
+            <p lang="es" dir="ltr">🤖🧠El VI Festival de Ciencia, Tecnología e Innovación puso a vibrar a todos los
+                asistentes con su agenda cargada de innovación e inmersión. <br><br>Cali busca ser una ciudad líder en
+                talento humano calificado y provisión de tecnología.<br><br>Más detalles: <a
+                    href="https://t.co/kUZ0s6oFf3">https://t.co/kUZ0s6oFf3</a> <a
+                    href="https://t.co/TT2tpYAVNL">pic.twitter.com/TT2tpYAVNL</a></p>&mdash; Alcaldía de Cali
+            (@AlcaldiaDeCali) <a
+                href="https://twitter.com/AlcaldiaDeCali/status/1579967058590466063?ref_src=twsrc%5Etfw">October 11,
                 2022</a>
         </blockquote>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
+
+
     <div class="col-md-4">
         <blockquote class="twitter-tweet">
-            <p lang="es" dir="ltr">🗣 “Cali se inserta con mayor fuerza dentro de esta red de cooperación internacional.
-                Un proyecto movilizador como ‘Calinteligente’ y una ciudad es inteligente, en la medida en que se
-                inserta en escenarios de cooperación internacional&quot;, <a
-                    href="https://twitter.com/MarmolejoRoldan?ref_src=twsrc%5Etfw">@MarmolejoRoldan</a> <a
-                    href="https://t.co/7EtFVtI5Lb">https://t.co/7EtFVtI5Lb</a></p>&mdash; Secretaría de Gobierno de Cali
-            (@GobiernoCali) <a
-                href="https://twitter.com/GobiernoCali/status/1549495435961810946?ref_src=twsrc%5Etfw">July 19, 2022</a>
+            <p lang="es" dir="ltr">Con gran éxito se realizó la clausura de <a
+                    href="https://twitter.com/hashtag/TalentoTic?src=hash&amp;ref_src=twsrc%5Etfw">#TalentoTic</a>👨🏽‍💻🤖👩🏼‍💻<br><br>Bajo
+                la estrategia <a
+                    href="https://twitter.com/hashtag/CaliTrabaja?src=hash&amp;ref_src=twsrc%5Etfw">#CaliTrabaja</a>
+                8️⃣8️⃣0️⃣beneficiarios se han formado en animación, BigData, Marketing Digital y más conocimientos con
+                alta demanda en el mercado actual🔝<br><br>¡Trabajamos por más oportunidades para los caleños! <a
+                    href="https://t.co/FKhQVzLQaU">pic.twitter.com/FKhQVzLQaU</a></p>&mdash; Secretaría de Desarrollo
+            Económico Cali (@DEconomicoCali) <a
+                href="https://twitter.com/DEconomicoCali/status/1580722864780869632?ref_src=twsrc%5Etfw">October 14,
+                2022</a>
         </blockquote>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
 
     <div class="col-md-4">
         <blockquote class="twitter-tweet">
-            <p lang="es" dir="ltr">¿Ya visitaste el gran mural tecnológico?<br><br>¡Ven y disfruta con tu familia y
-                amigos de una experiencia audiovisual única en la ciudad!<br><br>Música 🎶 luz ✨ y color 🌈 todas las
-                noches hasta el 16 de agosto en el Parque de las Banderas.<a
-                    href="https://twitter.com/UaespCali?ref_src=twsrc%5Etfw">@UaespCali</a><a
-                    href="https://twitter.com/hashtag/Cali486a%C3%B1os?src=hash&amp;ref_src=twsrc%5Etfw">#Cali486años</a>
-                💙❤️💚 <a href="https://t.co/RT6ILTFWqC">pic.twitter.com/RT6ILTFWqC</a></p>&mdash; MAR🦁 (@zelmar47) <a
-                href="https://twitter.com/zelmar47/status/1551895703441625095?ref_src=twsrc%5Etfw">July 26, 2022</a>
+            <p lang="es" dir="ltr">¡Participa!<br><br>Está abierto el proceso de licitación pública para la dotación y
+                construcción de la fase I del Parque Tecnológico de Innovación San Fernando.<br><br>Ingresa al Secop II
+                ▶️ <a href="https://t.co/EfZO30LJ5m">https://t.co/EfZO30LJ5m</a> <a
+                    href="https://twitter.com/hashtag/Calinteligente?src=hash&amp;ref_src=twsrc%5Etfw">#Calinteligente</a>
+                💙❤️💚 <a href="https://t.co/kydnJ7RqoQ">pic.twitter.com/kydnJ7RqoQ</a></p>&mdash; Alcaldía de Cali
+            (@AlcaldiaDeCali) <a
+                href="https://twitter.com/AlcaldiaDeCali/status/1582476502935179265?ref_src=twsrc%5Etfw">October 18,
+                2022</a>
         </blockquote>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
@@ -3090,6 +3279,22 @@
 
         <div class="row alianzas">
 
+            <div class="">
+                <a
+                    href="https://www.cali.gov.co/desarrolloeconomico/publicaciones/150333/la-unesco-reconoce-a-cali-como-la-primera-ciudad-creativa-de-las-artes-digitales-en-suramerica/">
+                    <img alt="" class="imagenes-principios2"
+                        src="https://www.cali.gov.co/info/principal/media/galeria255209.png" />
+                </a>
+            </div>
+
+            <div class="">
+                <a
+                    href="https://www.cali.gov.co/gobierno/publicaciones/171717/organismo-internacional-destaca-enfoque-humano-en-proyectos-de-la-alcaldia-de-cali/">
+
+                    <img alt="" class="imagenes-principios2"
+                        src="https://www.cali.gov.co/info/principal/media/galeria253632.png" />
+                </a>
+            </div>
             <div class="">
                 <a
                     href="https://www.cali.gov.co/tic/publicaciones/166850/cali-ingresa-a-la-alianza-global-de-ciudades-inteligentes-del-g20/">
@@ -3116,11 +3321,11 @@
         <div class="row alianzas">
             <div class="">
                 <img alt="" class="imagenes-principios2"
-                    src="https://www.cali.gov.co/info/principal/media/galeria232199.png" /> </a>
+                    src="https://www.cali.gov.co/info/principal/media/galeria232199.png" />
             </div>
             <div class="">
                 <img alt="" class="imagenes-principios2"
-                    src="https://www.cali.gov.co/info/principal/media/galeria232200.png" /> </a>
+                    src="https://www.cali.gov.co/info/principal/media/galeria232200.png" />
             </div>
         </div>
 
@@ -3132,9 +3337,6 @@
 <script>
 
     $(document).ready(function () {
-        setTimeout(function () {
-            $("#quienes").trigger('click');
-        }, 1400);
         $('.imagen-desplegable').click(function (e) {
             $this = $(this).attr("id");
             $div = '#d' + $this;
