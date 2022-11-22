@@ -1,4 +1,9 @@
 <style>
+    .micrositio img {
+        width: 100%;
+
+    }
+
     .d-flex {
         display: flex;
     }
@@ -11,16 +16,80 @@
         gap: 5em;
     }
 
-    .datos {
+    .margin-2 {
+        margin-bottom: 2em;
+    }
+
+    .margin-4 {
+        margin-bottom: 4em;
+    }
+
+    .micrositio .datos {
         color: #0090cf;
         font-size: 6em;
         font-weight: bolder;
     }
 
-    .info {
+    .micrositio .info {
         color: #cd2723;
         font-size: 3rem;
         font-weight: bold;
+    }
+
+
+    .nav-mic {
+        width: 100%;
+        gap: 1em;
+        margin-bottom: 5em;
+    }
+
+    .nav-mic>a {
+        padding: 0 2rem;
+        border: 3px solid #0090cf;
+        font-weight: bold;
+        color: #4d973a;
+        font-size: x-large;
+        text-align: center;
+        border-radius: 20px;
+        padding-inline: 2em;
+        position: relative;
+    }
+
+    .nav-mic>a::after {
+        position: absolute;
+        content: '';
+        width: 1em;
+        height: 1em;
+        background-color: #0090cf;
+        border-radius: 50%;
+        left: 5px;
+        top: .25em;
+    }
+
+    .disabled {
+        pointer-events: none;
+        background: #0090cf;
+        color: #FAFAFA !important;
+    }
+
+    .disabled::after {
+        background-color: #FAFAFA !important;
+    }
+
+    .justify-content-evenly {
+        justify-content: space-evenly;
+    }
+
+    .align-center {
+        align-items: center;
+    }
+
+    .justify-content-center {
+        justify-content: center;
+    }
+
+    .flex-wrap {
+        flex-wrap: wrap;
     }
 
     .border-right {
@@ -36,16 +105,24 @@
         color: white;
         padding-inline: 5em;
         padding-block: 3em;
+        overflow: hidden;
     }
 
-    .blue-background::after {
-        content: "";
+    .hideoverflow {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .inner-circle {
         position: absolute;
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        border: 25px linear-gradient(to right, #9ac04e, #4d973a) #4d973a;
-        bottom: 16%;
+        width: 10em;
+        height: 10em;
+        background: linear-gradient(#0090cf, #0090cf) padding-box, linear-gradient(to right, #4d973a, #9ac04e) border-box;
+        border-radius: 50em;
+        border: 2em solid transparent;
+        bottom: 12%;
         right: 0px;
     }
 
@@ -59,48 +136,214 @@
         translate: 1em -3.4em;
         position: absolute;
     }
+
+
+    .titulos {
+        color: #0090cf;
+        font-weight: bold;
+        font-size: 4em;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    .historia {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-width: 20em;
+        -moz-column-width: 20em;
+        column-width: 20em;
+        text-align: justify;
+    }
+
+    .repMp4 {
+        box-shadow: -20px 22px 16px rgba(0,0,0,0.30), 0 11px 26px rgba(0,0,0,0.22);
+        
+    }
+
+
+
+
+    @media (max-width: 660px) {
+
+        .border-right {
+            border: none !important;
+        }
+
+        .align-right {
+            text-align: left !important;
+        }
+
+        .beneficiarios {
+            translate: -0.7em -3.4em;
+        }
+
+        .blue-background {
+            padding-inline: 5px;
+        }
+
+        .margin-2 {
+            margin-bottom: 1em;
+        }
+
+        .margin-4 {
+            margin-bottom: 2em;
+        }
+
+        .titulos {
+            margin-bottom: 1em;
+        }
+
+        .historia img {
+            margin-bottom: 5px;
+        }
+
+    }
 </style>
 
-<div class="row">
-    <div class="col-md-6">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus a esse ipsum tempore unde error
-            architecto facilis eos quos dicta?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque itaque dignissimos quis reprehenderit qui
-            amet ipsa facere ad? Odit aperiam veniam at quaerat nulla error, pariatur, omnis reiciendis quia ipsum ex
-            minus corrupti quos cupiditate totam nihil asperiores. Inventore, consequatur.</p>
-    </div>
-    <div class="col-md-6">
-        <video src=""></video>
-    </div>
-</div>
-<div class="row d-flex justify-center">
-    <div class="col-md-6 align-right border-right">
-        <span class="datos">762 <br></span>
-        <span class="info">comedores</span>
-    </div>
-    <div class="col-md-6 ">
-        <span class="datos">89.000 <br></span>
-        <span class="info">beneficiarios</span>
-    </div>
-</div>
 
-<div class="blue-background">
-    <h3 class="beneficiarios">Beneficiarios</h3>
-    <ul>
-        <li>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus unde veniam natus esse et explicabo.
+<div class="micrositio">
+
+
+    <div class="[ nav-mic ] [ d-flex justify-content-center align-center flex-wrap ]">
+        <a href="#" class="disabled" data-target="inicio" aria-controls="principal">Programa</a>
+        <a href="#" class="" data-target="documentos" aria-controls="principal">Atención</a>
+        <a href="#" data-target="historia" aria-controls="principal">Historia</a>
+        <a href="https://www.cali.gov.co/galeria/20389/" target="_blank">Galería</a>
+    </div>
+
+    <div data-parent="principal" id="inicio">
+        <div class="row margin-2">
+            <div class="col-md-5">
+                <p>El programa busca garantizar el acceso a los alimentos para las poblaciones más vulnerables, en
+                    particular a aquellas personas que se encuentran en situación de pobreza extrema, a través de
+                    comedores comunitarios.</p>
+                <p>Estos son escenarios de encuentro donde además de alimento a las poblaciones en situación de hambre
+                    se incentiva y promueve la organización y desarrollo de las comunidades; son espacios para la
+                    reconstrucción del tejido social, donde se motiva el reconocimiento de habilidades y competencias de
+                    las/los gestores y las/los usuarios, posibilitando la formación de líderes para la comunidad.</p>
+            </div>
+            <div class="col-md-7">
+                <video class="item repMp4" style="width:100%;" id="mp4" controls="">
+                    <source src="info/principal/media/videos/mp4256835.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="row margin-4">
+            <div class="col-md-6 col-sm-12 align-right border-right">
+                <span class="datos">762 <br></span>
+                <span class="info">comedores</span>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <span class="datos">89.000 <br></span>
+                <span class="info">beneficiarios</span>
+            </div>
+        </div>
+
+        <div class="blue-background">
+            <div class="hideoverflow">
+                <div class="inner-circle" style="display: none;"></div>
+            </div>
+            <h3 class="beneficiarios">Beneficiarios</h3>
             <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, numquam.
+                <li>
+                    Las personas que no estén inscritas por los gestores de los comedores comunitarios en el momento de
+                    habilitar el comedor podrán seguir la siguiente ruta para acceder a sus servicios:
+                    <ul>
+                        <li>Suministrar al programa los datos de ubicación de las personas sujetas de asistencia
+                            alimentaria.</li>
+                        <li>El programa se pondrá en contacto con los beneficiarios y les ubicará en el comedor más
+                            cercano a su lugar de rsidencia y les explicará el funcionamiento del comedor para su uso.
+                        </li>
+                    </ul>
                 </li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, expedita.</li>
+                <li>Las personas beneficiarias podrán asistir al comedor seleccionado para atenderles de lunes a
+                    viernes, con su respectivo porta vianda, donde se les entregará una ración diaria, equivalente a 800
+                    calorías, de acuerdo con el modelo establecido para los beneficiarios del programa como mínimo vital
+                    alimentario.</li>
+                <li>Los beneficiarios podrán recibir, si así lo desean, acompañamiento psicosocial por parte de los
+                    equipos del programa.</li>
             </ul>
-        </li>
-        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, amet voluptas. Et provident quasi in enim
-            quis. Exercitationem facere possimus aliquid numquam fugit, provident neque!</li>
-        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint consequatur, odit unde distinctio quaerat
-            ipsam.</li>
-    </ul>
+        </div>
+
+
+        DISPLAYBLOQUE(217725)
+    </div>
+
+
+    <div data-parent="principal" id="documentos" style="display: none;">
+        <h3 class="titulos">Datos de contacto</h3>
+        <ul>
+            <li>Avenida 5AN No 20 - 08 Oficina 601. Subsecretaría de Poblaciones y Étnias</li>
+            <li>Sede del Asociado, Comisión Arquidiocesana Vida, Justicia y Paz (carrera 17 # 31A - 14, barrio La
+                Floresta, Parroquia San Pablo</li>
+            <li>Lunes a viernes: 9:00 a.m. a 12:00 m. y de 2:00 p.m. a 5:00 p.m.</li>
+            <li>(60+2)8896332</li>
+            <li>(60+2)4103421</li>
+        </ul>
+
+    </div>
+
+    <div data-parent="principal" id="historia" style="display: none;">
+        <h3 class="titulos">
+            Así nacieron los comedores
+        </h3>
+
+        <div class="historia">
+            <p>El modelo de los comedores comunitarios en nuestra ciudad tiene su génesis en los esfuerzos en la
+                arquidiócesis de Cali, liderada en ese entonces por el arzobispo Isaías Duarte Cancino, quien, a finales
+                de los años 90, inició el programa bajo el nombre de Ollas Comunitarias.</p>
+            <p>En ese esfuerzo, las comunidades organizadas bajo el liderazgo de unos vecinos, avalados por las
+                parroquias locales, apelaban al espíritu de solidaridad, para que, entre aportes en especie, dinero o en
+                trabajo humano, juntaran lo necesario para una ola común, donde los más necesitados de la zona tuvieran
+                garantizado el acceso a los alimentos.</p>
+            <p>La Arquidiócesis de Cali logró fortalecer más de 20 ollas comunitarias permanentes en los barrios más
+                deprimidos de la ciudad, y acompañar esfuerzos en 20 más que, a pesar de ser “intermitentes”, lograban
+                aportar esperanza y apoyo a las comunidades vulnerables.</p>
+            <img src="https://www.cali.gov.co/info/principal/media/galeria256833.jpg" alt="">
+            <img src="https://www.cali.gov.co/info/principal/media/galeria256832.jpg" alt="">
+            <p>Al observar el efecto positivo que esta acción de la Iglesia provocaba en las comunidades, en términos de
+                convivencia, solidaridad y reducción de la violencia, la Alcaldía de Cali, a través de la entonces
+                Asesoría de Paz, decidió aunar esfuerzo con la Arquidiócesis para fortalecer y profundizar este modelo,
+                dándole estabilidad a la entrega de alimentos, así como las condiciones mínimas de equipos y menajes
+                para que esta acción fuese permanente y, de esta manera, transformar las ollas comunitarias en comedores
+                comunitarios.</p>
+            <p>Fue así, como en 2015 se generaron las acciones para apoyar 47 ollas y se destinaron los recursos para su
+                continuidad en 2016, esfuerzo que recogió la Administración de Maurice Armitage, haciendo lo necesario
+                para fortalecer sus capacidades en términos de accesibilidad a los alimentos, ampliación de la cobertura
+                y profundización de la intervención psicosocial.</p>
+            <p>De esta manera, el trabajo conjunto entre Alcaldía, Arquidiócesis y comunidad hace posible que este
+                programa siga avanzando en su objetivo de disminuir el hambre en la ciudad, al mismo tiempo en que
+                fortalece los escenarios de construcción de tejido social.</p>
+
+        </div>
+    </div>
+
 </div>
+<script>
+    $(document).ready(function () {
+        // Handle toggles
+        $("[data-target]").click(function (e) {
+            // Guarda atributo de elemento clickeado
+            const dataAttr = $(this).attr("data-target");
+            const dataControls = $(this).attr("aria-controls")
 
+            const menuItems = $("[aria-controls='" + dataControls + "']")
+            const contentItems = $("[data-parent='" + dataControls + "']")
+            const selectedElement = document.getElementById(dataAttr)
 
-DISPLAYBLOQUE()
+            // Manejo de clases
+            $(this).addClass("disabled");
+            menuItems.not($(this)).removeClass("disabled");
+
+            // Esconde todos menos el seleccionado
+            contentItems.not($(this)).hide("fast")
+
+            //Abre elemento seleccionado
+            $(selectedElement).toggle("fast");
+
+            return false;
+        });
+
+    });
+</script>
