@@ -26,6 +26,10 @@
         gap: 1em;
     }
 
+    .justify-center {
+        justify-content: center;
+    }
+
     .flex-column {
         flex-direction: column;
     }
@@ -179,7 +183,6 @@
     .botones-menu {
         position: relative;
         border: none;
-        background-color: #df4617;
         width: 100%;
         padding: 2rem;
         font-weight: bolder;
@@ -188,23 +191,51 @@
         border-top: #fafafa;
     }
 
+    .menu a:nth-child(1) .botones-menu {
+        background-color: #df4617 !important;
+    }
+
+    .menu a:nth-child(2) .botones-menu {
+        background-color: #39b54a !important;
+    }
+
+    .menu a:nth-child(3) .botones-menu {
+        background-color: #913fdc !important;
+    }
+
+    .menu a:nth-child(4) .botones-menu {
+        background-color: #28cec2 !important;
+    }
+
     .botones-menu>a {
         color: #FAFAFA;
     }
 
     .clip-box {
         position: absolute;
-        top: 1px;
-        left: calc(25% + .7rem);
-        clip-path: inset(0% 100% 0% 35%);
+        top: -5px;
+        clip-path: inset(0% 100% 0% 25%);
         transition: clip-path 1s;
+        max-width: 135px;
+        left: 7rem;
     }
 
-    .clip-box:hover {
+    /* .clip-box:hover {
         clip-path: inset(0% 100% 0% 70%)
+    } */
+
+    .menu a {
+        color: #FAFAFA !important;
+        width: 100%;
+        min-width: 227px;
     }
 
-    .btn-group>a::after {}
+
+    .menu a:hover .clip-box {
+
+        clip-path: inset(0% 100% 0% 98%)
+    }
+
 
     .zigzag {
         margin: 7.5% 0;
@@ -405,6 +436,11 @@
         color: transparent;
     }
 
+    .btn-group a {
+        color: #FAFAFA !important;
+    }
+
+
     @media (min-width: 40em) {
 
         .on-top {
@@ -417,11 +453,22 @@
 
     }
 
+    @media (max-width: 1000px) {
+        .menu {
+            flex-wrap: wrap;
+        }
+
+        .clip-box {
+            left: 40%;
+        }
+    }
+
     @media (max-width: 40em) {
 
 
         [data-type="green"] {
             padding: 1em;
+            background-size: cover;
         }
 
         [data-type="gray"] {
@@ -447,127 +494,143 @@
     <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In  -->
 
     <div class="menu">
-        <div class="botones-menu">
-            <div class="clip-box">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                    y="0px" width="165.4px" height="11px" viewBox="0 0 165.4 11"
-                    style="overflow:visible;enable-background:new 0 0 165.4 11;" xml:space="preserve">
-                    <style type="text/css">
-                        .st0 {
-                            fill: none;
-                            stroke: #D9E021;
-                            stroke-miterlimit: 10;
-                        }
-                    </style>
-                    <defs>
-                    </defs>
-                    <g>
-                        <path class="st0"
-                            d="M0,0.5c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10
-                c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10s7.5,10,15,10" />
-                    </g>
-                </svg>
-            </div>
-            <a aria-controls="principal" class="disabled" data-target="ciudad"
-                href="https://www.cali.gov.co/info/principal/media/galeria245195.png#">
+
+        <a aria-controls="principal" class="disabled" data-target="ciudad"
+            href="https://www.cali.gov.co/info/principal/media/galeria245195.png#">
+            <div class="botones-menu">
+                <div class="clip-box">
+                    <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In  -->
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" width="252.3px" height="5.5px" viewBox="0 0 252.3 5.5"
+                        style="overflow:visible;enable-background:new 0 0 252.3 5.5;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0 {
+                                fill: none;
+                                stroke: #D9E021;
+                                stroke-width: 1.5;
+                                stroke-miterlimit: 10;
+                            }
+                        </style>
+                        <defs>
+                        </defs>
+                        <g>
+                            <path class="st0"
+                                d="M0,0.8c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4
+		c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4
+		c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4
+		c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4
+		s3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.7-4s3.8,4,7.7,4" />
+                        </g>
+                    </svg>
+
+
+                </div>
                 MI CIUDAD
-            </a>
-        </div>
-
-        <div class="botones-menu">
-
-            <div class="clip-box">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                    y="0px" width="165.4px" height="11px" viewBox="0 0 165.4 11"
-                    style="overflow:visible;enable-background:new 0 0 165.4 11;" xml:space="preserve">
-                    <style type="text/css">
-                        .st0 {
-                            fill: none;
-                            stroke: #D9E021;
-                            stroke-miterlimit: 10;
-                        }
-                    </style>
-                    <defs>
-                    </defs>
-                    <g>
-                        <path class="st0"
-                            d="M0,0.5c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10
-                c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10s7.5,10,15,10" />
-                    </g>
-                </svg>
             </div>
-            <a aria-controls="principal" data-target="biodiversidad"
-                href="https://www.cali.gov.co/info/principal/media/galeria245197.png#">
+        </a>
+
+        <a aria-controls="principal" data-target="biodiversidad"
+            href="https://www.cali.gov.co/info/principal/media/galeria245197.png#">
+            <div class="botones-menu">
+
+                <div class="clip-box">
+                    <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In  -->
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" width="252.3px" height="5.5px" viewBox="0 0 252.3 5.5"
+                        style="overflow:visible;enable-background:new 0 0 252.3 5.5;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0 {
+                                fill: none;
+                                stroke: #D9E021;
+                                stroke-width: 1.5;
+                                stroke-miterlimit: 10;
+                            }
+                        </style>
+                        <defs>
+                        </defs>
+                        <g>
+                            <path class="st0"
+                                d="M0,0.8c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4
+		c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4
+		c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4
+		c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4
+		s3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.7-4s3.8,4,7.7,4" />
+                        </g>
+                    </svg>
+
+                </div>
                 BIODIVERSIDAD
-            </a>
-        </div>
-        <div class="botones-menu">
-            <div class="clip-box">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                    y="0px" width="165.4px" height="11px" viewBox="0 0 165.4 11"
-                    style="overflow:visible;enable-background:new 0 0 165.4 11;" xml:space="preserve">
-                    <style type="text/css">
-                        .st0 {
-                            fill: none;
-                            stroke: #D9E021;
-                            stroke-miterlimit: 10;
-                        }
-                    </style>
-                    <defs>
-                    </defs>
-                    <g>
-                        <path class="st0"
-                            d="M0,0.5c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10
-                c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10s7.5,10,15,10" />
-                    </g>
-                </svg>
-            </div>
-            <a aria-controls="principal" data-target="cultura"
-                href="https://www.cali.gov.co/info/principal/media/galeria245196.png#">
-                ASÍ ES CALI
-            </a>
-        </div>
-        <div class="botones-menu">
-            <div class="clip-box">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                    y="0px" width="165.4px" height="11px" viewBox="0 0 165.4 11"
-                    style="overflow:visible;enable-background:new 0 0 165.4 11;" xml:space="preserve">
-                    <style type="text/css">
-                        .st0 {
-                            fill: none;
-                            stroke: #D9E021;
-                            stroke-miterlimit: 10;
-                        }
-                    </style>
-                    <defs>
-                    </defs>
-                    <g>
-                        <path class="st0"
-                            d="M0,0.5c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10
-                c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10s7.5,10,15,10" />
-                    </g>
-                </svg>
-            </div>
-            <a aria-controls="principal" data-target="juguemos"
-                href="https://www.cali.gov.co/info/principal/media/galeria245194.png#">
-                JUGUEMOS
-            </a>
-        </div>
 
-    </div>
-    <div aria-label="Basic example" class="btn-group" role="group">
-        <a aria-controls="principal" class="disabled" data-target="ciudad" href="#">
-            <img alt="" class="menu-img" src="https://www.cali.gov.co/info/principal/media/galeria245195.png" />
+            </div>
         </a>
-        <a aria-controls="principal" data-target="biodiversidad" href="#">
-            <img alt="" class="menu-img" src="https://www.cali.gov.co/info/principal/media/galeria245197.png" />
+
+        <a aria-controls="principal" data-target="cultura"
+            href="https://www.cali.gov.co/info/principal/media/galeria245196.png#">
+            <div class="botones-menu">
+                <div class="clip-box">
+                    <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In  -->
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" width="252.3px" height="5.5px" viewBox="0 0 252.3 5.5"
+                        style="overflow:visible;enable-background:new 0 0 252.3 5.5;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0 {
+                                fill: none;
+                                stroke: #D9E021;
+                                stroke-width: 1.5;
+                                stroke-miterlimit: 10;
+                            }
+                        </style>
+                        <defs>
+                        </defs>
+                        <g>
+                            <path class="st0"
+                                d="M0,0.8c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4
+		c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4
+		c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4
+		c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4
+		s3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.7-4s3.8,4,7.7,4" />
+                        </g>
+                    </svg>
+
+                </div>
+                ASÍ ES CALI
+
+            </div>
         </a>
-        <a aria-controls="principal" data-target="cultura" href="#">
-            <img alt="" class="menu-img" src="https://www.cali.gov.co/info/principal/media/galeria245196.png" />
+
+        <a aria-controls="principal" data-target="juguemos"
+            href="https://www.cali.gov.co/info/principal/media/galeria245194.png#">
+            <div class="botones-menu">
+                <div class="clip-box">
+                    <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In  -->
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" width="252.3px" height="5.5px" viewBox="0 0 252.3 5.5"
+                        style="overflow:visible;enable-background:new 0 0 252.3 5.5;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0 {
+                                fill: none;
+                                stroke: #D9E021;
+                                stroke-width: 1.5;
+                                stroke-miterlimit: 10;
+                            }
+                        </style>
+                        <defs>
+                        </defs>
+                        <g>
+                            <path class="st0"
+                                d="M0,0.8c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4
+		c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4
+		c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4
+		c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4
+		s3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.7-4s3.8,4,7.7,4" />
+                        </g>
+                    </svg>
+
+                </div>
+                JUGUEMOS
+            </div>
         </a>
-        <a aria-controls="principal" data-target="juguemos" href="#">
-            <img alt="" class="menu-img" src="https://www.cali.gov.co/info/principal/media/galeria245194.png" />
-        </a>
+
     </div>
 
     <div data-parent="principal" id="ciudad">
@@ -978,7 +1041,40 @@
                 <p>Nuestra ciudad es sede de eventos deportivos y culturales como el Petronio, el Mundial de
                     F&uacute;tbol Femenino, el Mundial de Atletismo, el alumbrado, el Festival Internacional de Cine, el
                     Mundial de Salsa&hellip;, entre otros.</p>
-                <a href="">LINK A AGENDA CULTURAL DE CALI</a>
+
+                <div class="menu">
+                    <a href="https://www.cali.gov.co/info/principal/media/galeria245194.png#">
+                        <div class="botones-menu" style="background-color: #913fdc !important;">
+                            <div class="clip-box">
+                                <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In  -->
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="252.3px"
+                                    height="5.5px" viewBox="0 0 252.3 5.5"
+                                    style="overflow:visible;enable-background:new 0 0 252.3 5.5;" xml:space="preserve">
+                                    <style type="text/css">
+                                        .st0 {
+                                            fill: none;
+                                            stroke: #D9E021;
+                                            stroke-width: 1.5;
+                                            stroke-miterlimit: 10;
+                                        }
+                                    </style>
+                                    <defs>
+                                    </defs>
+                                    <g>
+                                        <path class="st0"
+                                            d="M0,0.8c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4
+                                c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4
+                                c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4
+                                c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4
+                                s3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.6-4c3.8,0,3.8,4,7.6,4c3.8,0,3.8-4,7.7-4s3.8,4,7.7,4" />
+                                    </g>
+                                </svg>
+                            </div>
+                            Agenda Cultural
+                        </div>
+                    </a>
+                </div>
             </div>
 
             <div class="bloque-slider no-title">DISPLAYBLOQUE(216902)</div>
