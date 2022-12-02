@@ -1774,3 +1774,1091 @@
         });
     });
 </script>
+<style type="text/css">
+    /* .micrositio *+*:not(.menu a) {
+    margin-bottom: 3em;
+} */
+
+    .micrositio img {
+        max-width: 100%;
+    }
+
+    .imgAsociada169828 {
+        display: none;
+    }
+
+    .imgAsociada173055 {
+        display: none;
+    }
+
+    .resumenImgint {
+        display: none;
+    }
+
+    .d-flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .flex-column {
+        flex-direction: column;
+    }
+
+    .no-wrap {
+        flex-wrap: nowrap;
+    }
+
+    .grid {
+        display: grid;
+    }
+
+    .relative {
+        position: relative;
+    }
+
+    .g-2by2 {
+        grid-template-columns: calc(50% - 60px) calc(50% - 60px);
+        gap: 60px;
+    }
+
+    .g-2by2 p {
+        align-self: center;
+    }
+
+    .g-4by4 {
+        grid-template-columns: calc(50% - 60px) calc(50% - 60px);
+        gap: 60px;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .purple-sub,
+    .nxBlockTitle {
+        color: #913fdc !important;
+        margin: 0 !important;
+        margin-bottom: 1rem !important;
+        font-weight: bolder !important;
+    }
+
+    .yellow-sub {
+        color: #cbdc22 !important;
+        font-weight: bold;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    .yellow-text {
+        color: #fcee21 !important;
+        margin-top: 4em;
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    .green-text {
+        color: #006837 !important;
+        margin-top: 4em;
+        font-weight: bold;
+    }
+
+    .bg-gray {
+        background-color: #e8efeb;
+    }
+
+    .video {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .logo {
+        width: 55px;
+        height: 55px;
+        right: 10px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2em;
+        column-gap: 1rem;
+    }
+
+
+    .micrositio .open>.dropdown-menu {
+        border: none;
+        background: none;
+        width: 0;
+        height: 0;
+        box-shadow: none;
+    }
+
+
+
+
+    .micrositio .dropdown-menu>li>a {
+        width: 370px;
+        border: none !important;
+        color: #FAFAFA !important;
+        font-weight: bolder !important;
+    }
+
+    .micrositio .dropdown-menu>li>a:focus,
+    .dropdown-menu>li>a:hover {
+        color: #565555 !important;
+    }
+
+    .botonera .title.titlePosition {
+        background-color: #006837 !important;
+        padding: 2rem !important;
+        font-weight: bolder !important;
+        font-size: 2rem !important;
+        text-align: center !important;
+        border: none !important;
+        color: #FAFAFA !important;
+    }
+
+    .slick-prev:hover,
+    .slick-next:hover .slick-prev:focus,
+    .slick-next:focus {
+        background: #cbdc22 !important;
+    }
+
+    .botonera .dotsDynamic li.slick-active button {
+        background: #cbdc22 !important;
+    }
+
+    .micrositio .dotsDynamic li button::before,
+    .slick-dots li button::before {
+        background: #cbdc22 !important;
+    }
+
+    .micrositio .dropdown button:focus,
+    button:hover {
+        background-color: #cad11f !important;
+    }
+
+    .micrositio .dotsDynamic li.slick-active button {
+        background-color: #cad11f !important;
+    }
+
+    .menu a {}
+
+    .menu-img {}
+
+    .btn-group {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2em;
+    }
+
+    .botones-menu {
+        position: relative;
+        border: none;
+        background-color: #df4617;
+        width: 100%;
+        padding: 2rem;
+        font-weight: bolder;
+        font-size: x-large;
+        text-align: center;
+        border-top: #fafafa;
+    }
+
+    .botones-menu>a {
+        color: #FAFAFA;
+    }
+
+    .clip-box {
+        position: absolute;
+        top: 1px;
+        left: calc(25% + .7rem);
+        clip-path: inset(0% 100% 0% 35%);
+        transition: clip-path 1s;
+    }
+
+    .clip-box:hover {
+        clip-path: inset(0% 100% 0% 70%)
+    }
+
+    .btn-group>a::after {}
+
+    .zigzag {
+        margin: 7.5% 0;
+        background: #f7f2e2;
+        position: relative;
+        height: 16px;
+        z-index: 1;
+    }
+
+    .zigzag:before,
+    .zigzag:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    .zigzag:before {
+        height: 12px;
+        top: 110%;
+        background: linear-gradient(-135deg, #f7a9b9 8px, transparent 0) 0 8px, linear-gradient(135deg, #f7a9b9 8px, transparent 0) 0 8px;
+        background-position: top left;
+        background-repeat: repeat-x;
+        background-size: 16px 16px;
+    }
+
+    .zigzag:after {
+        height: 16px;
+        top: 100%;
+        background: linear-gradient(-135deg, #f7f2e2 8px, transparent 0) 0 8px, linear-gradient(135deg, #f7f2e2 8px, transparent 0) 0 8px;
+        background-position: top left;
+        background-repeat: repeat-x;
+        background-size: 16px 16px;
+    }
+
+    .article {
+        margin-bottom: 2em;
+    }
+
+
+    /* slider styles */
+
+    .nxBlockDynamicLayout3 a:hover .image::before {
+        display: none !important;
+        /* No blue background */
+    }
+
+    .nxBlock {
+        background-color: transparent;
+    }
+
+    .nxBlockDynamicLayout3 a:hover .image::after {
+        display: none !important;
+        /* No + ICON */
+    }
+
+    /* PhotoLike Styles */
+    .image.mediaPosition {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        padding-inline: 1em;
+        padding-bottom: 2em;
+        padding-top: 1em;
+        text-align: center;
+        line-height: 2em;
+        font-size: 18px;
+        color: #565555;
+        background-color: #fafafa;
+    }
+
+    .nxBlockDynamicLayout3 a .title {
+        font-size: 0;
+        height: 0;
+        background-color: transparent;
+    }
+
+    .nxBlockDynamicLayout3 a .image {
+        height: unset;
+    }
+
+    .item.nxImgAdjustHeight>a>span.image>img {
+        width: 100%;
+    }
+
+    .datePosition {
+        display: none;
+    }
+
+    [background-type="cristo"] {
+        background-image: url(https://www.cali.gov.co/info/principal/media/galeria243221.png);
+    }
+
+    [background-type="cana"] {
+        background-image: url(https://www.cali.gov.co/info/principal/media/galeria243220.png);
+    }
+
+    [background-type="chonta"] {
+        background-image: url(https://www.cali.gov.co/info/principal/media/galeria243219.png);
+    }
+
+    [data-type="green"] {
+        background-position: left;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #006837;
+        padding: 60px;
+    }
+
+    [data-type="gray"] {
+        background-color: #e8efeb;
+        padding: 60px;
+    }
+
+    [data-type="green"] p {
+        color: #fafafa;
+    }
+
+    [data-type="absolute"] {
+        position: relative;
+        top: -100px;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+
+    .end-text {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        background-image: url(https://www.cali.gov.co/info/principal/media/galeria260339.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .final-text {
+
+        color: #4ee0da !important;
+        font-size: 85px;
+        font-weight: bolder;
+        line-height: 77px;
+        max-width: 16ch;
+        text-align: center;
+    }
+
+    .new-tools-box>.date {
+        display: none;
+    }
+
+    /* From uiverse.io by @Voxybuns */
+    button {
+        /* Variables */
+        --button_radius: 0.75em;
+        --button_color: #e8e8e8;
+        --button_outline_color: #000000;
+        font-size: 17px;
+        font-weight: bold;
+        border: none;
+        border-radius: var(--button_radius);
+        background: var(--button_outline_color);
+    }
+
+    .button_top {
+        display: block;
+        box-sizing: border-box;
+        border: 2px solid var(--button_outline_color);
+        border-radius: var(--button_radius);
+        padding: 0.75em 1.5em;
+        background: var(--button_color);
+        color: var(--button_outline_color);
+        transform: translateY(-0.2em);
+        transition: transform 0.1s ease;
+    }
+
+    button:hover .button_top {
+        /* Pull the button upwards when hovered */
+        transform: translateY(-0.33em);
+    }
+
+    button:active .button_top {
+        /* Push the button downwards when pressed */
+        transform: translateY(0);
+    }
+
+    .disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+
+    .botonera .image.mediaPosition {
+        display: none !important;
+    }
+
+    .botonera .description.descriptionPosition {
+        display: none !important;
+    }
+
+    .no-title .image.mediaPosition {
+        color: transparent;
+    }
+
+    @media (min-width: 40em) {
+
+        .on-top {
+            margin-bottom: -5em;
+        }
+
+        [data-type="absolute"] {
+            grid-column: 2;
+        }
+
+    }
+
+    @media (max-width: 40em) {
+
+
+        [data-type="green"] {
+            padding: 1em;
+        }
+
+        [data-type="gray"] {
+            padding: 1em;
+        }
+
+        .g-4by4 {
+            grid-template-columns: 1fr !important;
+        }
+
+        .grid {
+            display: block;
+        }
+
+        .bloque-slider {
+            position: unset;
+        }
+    }
+</style>
+<div class="micrositio">
+    <img alt="" src="https://www.cali.gov.co/info/principal/media/galeria260509.jpg" style="width:100%" />
+
+    <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In  -->
+
+    <div class="menu">
+        <div class="botones-menu">
+            <div class="clip-box">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                    y="0px" width="165.4px" height="11px" viewBox="0 0 165.4 11"
+                    style="overflow:visible;enable-background:new 0 0 165.4 11;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0 {
+                            fill: none;
+                            stroke: #D9E021;
+                            stroke-miterlimit: 10;
+                        }
+                    </style>
+                    <defs>
+                    </defs>
+                    <g>
+                        <path class="st0"
+                            d="M0,0.5c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10
+                c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10s7.5,10,15,10" />
+                    </g>
+                </svg>
+            </div>
+            <a aria-controls="principal" class="disabled" data-target="ciudad"
+                href="https://www.cali.gov.co/info/principal/media/galeria245195.png#">
+                MI CIUDAD
+            </a>
+        </div>
+
+        <div class="botones-menu">
+
+            <div class="clip-box">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                    y="0px" width="165.4px" height="11px" viewBox="0 0 165.4 11"
+                    style="overflow:visible;enable-background:new 0 0 165.4 11;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0 {
+                            fill: none;
+                            stroke: #D9E021;
+                            stroke-miterlimit: 10;
+                        }
+                    </style>
+                    <defs>
+                    </defs>
+                    <g>
+                        <path class="st0"
+                            d="M0,0.5c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10
+                c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10s7.5,10,15,10" />
+                    </g>
+                </svg>
+            </div>
+            <a aria-controls="principal" data-target="biodiversidad"
+                href="https://www.cali.gov.co/info/principal/media/galeria245197.png#">
+                BIODIVERSIDAD
+            </a>
+        </div>
+        <div class="botones-menu">
+            <div class="clip-box">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                    y="0px" width="165.4px" height="11px" viewBox="0 0 165.4 11"
+                    style="overflow:visible;enable-background:new 0 0 165.4 11;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0 {
+                            fill: none;
+                            stroke: #D9E021;
+                            stroke-miterlimit: 10;
+                        }
+                    </style>
+                    <defs>
+                    </defs>
+                    <g>
+                        <path class="st0"
+                            d="M0,0.5c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10
+                c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10s7.5,10,15,10" />
+                    </g>
+                </svg>
+            </div>
+            <a aria-controls="principal" data-target="cultura"
+                href="https://www.cali.gov.co/info/principal/media/galeria245196.png#">
+                ASÍ ES CALI
+            </a>
+        </div>
+        <div class="botones-menu">
+            <div class="clip-box">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                    y="0px" width="165.4px" height="11px" viewBox="0 0 165.4 11"
+                    style="overflow:visible;enable-background:new 0 0 165.4 11;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0 {
+                            fill: none;
+                            stroke: #D9E021;
+                            stroke-miterlimit: 10;
+                        }
+                    </style>
+                    <defs>
+                    </defs>
+                    <g>
+                        <path class="st0"
+                            d="M0,0.5c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10
+                c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10c7.5,0,7.5,10,15,10c7.5,0,7.5-10,15-10s7.5,10,15,10" />
+                    </g>
+                </svg>
+            </div>
+            <a aria-controls="principal" data-target="juguemos"
+                href="https://www.cali.gov.co/info/principal/media/galeria245194.png#">
+                JUGUEMOS
+            </a>
+        </div>
+
+    </div>
+    <div aria-label="Basic example" class="btn-group" role="group">
+        <a aria-controls="principal" class="disabled" data-target="ciudad" href="#">
+            <img alt="" class="menu-img" src="https://www.cali.gov.co/info/principal/media/galeria245195.png" />
+        </a>
+        <a aria-controls="principal" data-target="biodiversidad" href="#">
+            <img alt="" class="menu-img" src="https://www.cali.gov.co/info/principal/media/galeria245197.png" />
+        </a>
+        <a aria-controls="principal" data-target="cultura" href="#">
+            <img alt="" class="menu-img" src="https://www.cali.gov.co/info/principal/media/galeria245196.png" />
+        </a>
+        <a aria-controls="principal" data-target="juguemos" href="#">
+            <img alt="" class="menu-img" src="https://www.cali.gov.co/info/principal/media/galeria245194.png" />
+        </a>
+    </div>
+
+    <div data-parent="principal" id="ciudad">
+        <div class="article grid g-2by2">
+            <div>
+                <h3 class="purple-sub">Su nombre</h3>
+
+                <p>Imponente sobre el Valle, protegida por verdes monta&ntilde;as y murallas naturales como los
+                    Farallones de Cali. Si hay algo precioso que nuestros ojos pueden contemplar, es la vista que nos
+                    regala la Cordillera Occidental de los Andes colombianos.</p>
+
+                <p>Santiago de Cali se presenta como una mezcla de colores, templanza y magia.</p>
+            </div>
+
+            <div class="embed-responsive embed-responsive-16by9"><iframe frameborder="0" height="443" marginheight="0"
+                    marginwidth="0" scrolling="no"
+                    src="https://www.youtube.com/embed/haBW4q97RPA?autoplay=0&amp;fs=0&amp;iv_load_policy=3&amp;showinfo=0&amp;rel=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;origin=https://youtubeembedcode.com"
+                    type="text/html" width="788.54"></iframe>
+
+                <div><iframe frameborder="0" height="443" marginheight="0" marginwidth="0" scrolling="no"
+                        src="https://www.youtube.com/embed/haBW4q97RPA?autoplay=0&amp;fs=0&amp;iv_load_policy=3&amp;showinfo=0&amp;rel=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;origin=https://youtubeembedcode.com"
+                        type="text/html" width="788.54">https://youtubeembedcode.com/es/</iframe></div>
+
+                <div><small><a href="https://theimpossiblequiz.info/the-impossible-quiz-book/">the impossible quiz book
+                            ch 3 answers</a></small></div>
+            </div>
+            <!-- <div class="embed-responsive embed-responsive-16by9"><iframe frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="https://www.youtube.com/embed/haBW4q97RPA" type="text/html"></iframe></div> -->
+        </div>
+
+        <div background-type="cristo" class="article" data-type="green">
+            <h3 class="yellow-sub">&iquest;Qu&eacute; significa &lsquo;Cali&rsquo;?</h3>
+
+            <div class="grid g-2by2">
+                <div class="d-flex justify-center flex-column ">
+                    <p>Santiago de Cali tiene un nombre compuesto. Santiago, uno de los nombres m&aacute;s difundidos en
+                        el continente, y hace honor al Ap&oacute;stol Santiago.</p>
+
+                    <p class="relative">Ahora, si buscamos en Internet qu&eacute; significa esta palabra llana de 2
+                        s&iacute;labas, Cali, esto es lo que nos dice:</p>
+
+                    <p class="yellow-text">Hay quienes aseguran que fueron los ind&iacute;genas mexicanos al servicio de
+                        los conquistadores quienes dieron el nombre a Cali, que viene del Azteca Calli
+                        (&rsquo;casa&rsquo;).</p>
+                </div>
+
+                <div>
+                    <p>Otros confirman que es una palabra de origen quechua introducida por los indios Yanaconas. Aunque
+                        realmente, existe una poblaci&oacute;n ind&iacute;gena de nombre &lsquo;Cali Cali&rsquo; en las
+                        proximidades de Quito.</p>
+
+                    <p>Pero esto no para aqu&iacute;, el nombre de Cali puede provenir del paez Caly, cuyo significado
+                        es tejido sin agujas, o posiblemente su nombre se deba a la regi&oacute;n y a un r&iacute;o al
+                        sur de la ciudad, Lili, en paez, &lsquo;h&uacute;medo&rsquo;.</p>
+
+                    <p>Mira las siguientes fotograf&iacute;as para que conozcas c&oacute;mo tambi&eacute;n es conocida
+                        Santiago de Cali.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="article grid g-2by2 on-top">
+            <div>
+                <h3 class="purple-sub">Conocida como...</h3>
+
+                <p>A la ciudad tambi&eacute;n se lo conoce con otros nombres, aquellos que se originaron para quedarse
+                    en la colectividad cale&ntilde;a.</p>
+            </div>
+
+            <div class="bloque-slider" data-type="absolute">DISPLAYBLOQUE(216780)</div>
+        </div>
+
+        <h3 class="purple-sub" style="column-span: 2;">&iquest;D&oacute;nde se ubica Cali?</h3>
+        <div class="article grid g-2by2">
+
+            <div>
+
+                <div class="embed-responsive embed-responsive-16by9" style="width: 100%"><iframe frameborder="0"
+                        height="443" marginheight="0" marginwidth="0" scrolling="no"
+                        src="https://www.youtube.com/embed/HS54MLCWNo8?autoplay=0&amp;fs=0&amp;iv_load_policy=3&amp;showinfo=0&amp;rel=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;origin=https://youtubeembedcode.com"
+                        type="text/html" width="788.54"></iframe>
+
+                    <div><iframe frameborder="0" height="443" marginheight="0" marginwidth="0" scrolling="no"
+                            src="https://www.youtube.com/embed/HS54MLCWNo8?autoplay=0&amp;fs=0&amp;iv_load_policy=3&amp;showinfo=0&amp;rel=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;origin=https://youtubeembedcode.com"
+                            type="text/html" width="788.54">https://youtubeembedcode.com/es/</iframe></div>
+
+                    <div><small><a href="https://theimpossiblequiz.info/the-impossible-quiz-book/">the impossible quiz
+                                book ch 3 answers</a></small></div>
+                </div>
+                <!-- <div class="embed-responsive embed-responsive-16by9">
+      <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="https://www.youtube.com/embed/HS54MLCWNo8?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"></iframe>
+    </div> -->
+            </div>
+
+            <div>
+                <p style="grid-row: 3; grid-column: 2">Como una pieza que encaja perfectamente, la ciudad tiene una
+                    ubicaci&oacute;n privilegiada, por el norte, tiene como vecinos a los municipios de Yumbo y la
+                    Cumbre, al nororiente, se encuentra con la capital agr&iacute;cola de Colombia, Palmira y al oriente
+                    la gran Candelaria. Vamos ahora al sur, all&iacute;, a pocos minutos, se encuentra el municipio de
+                    Jamund&iacute;, al suroccidente la costa pac&iacute;fica y Buenaventura y al noroccidente, Dagua.
+                </p>
+                <a class="spreaker-player" data-height="80px" data-playlist="false" data-resource="episode_id=49945337"
+                    data-theme="light" data-width="100%"
+                    href="https://www.spreaker.com/user/14669930/iglesia-san-francisco-online-audio-conve">Listen to
+                    &quot;Complejo Religioso de San Francisco, un dise&ntilde;o arquitect&oacute;nico imponente en
+                    Cali.&quot; on Spreaker.</a>
+                <script async src="https://widget.spreaker.com/widgets.js"></script>
+            </div>
+        </div>
+    </div>
+
+    <div data-parent="principal" id="biodiversidad" style="display: none">
+
+        <h3 class="purple-sub">Cali es fauna y flora</h3>
+        <div class="article grid g-2by2">
+            <div>
+                <p>Las condiciones geogr&aacute;ficas y clim&aacute;ticas, hacen de este territorio 4080 metros de
+                    altura en los farallones a 926 metros sobre el nivel del mar en el oriente de la ciudad -564 Km2 de
+                    extensi&oacute;n, un para&iacute;so de riqueza natural y de fauna silvestre.</p>
+
+                <p>32 especies de mam&iacute;feros terrestres y voladores, 6 especies de felinos, 58 especies de
+                    anfibios y m&aacute;s 605 especies de aves.</p>
+
+                <p class="green-text" style="margin-top: 0;">&iquest;Sab&iacute;as que tenemos aves migratorias que
+                    vuelan desde Europa y llegan finalizando el a&ntilde;o para protegerse del invierno, aparearse y
+                    ense&ntilde;arles a sus cr&iacute;as sobre la vida animal?</p>
+
+                <p>&iquest;Ves por qu&eacute; Cali es m&aacute;gica? Un maravilloso abanico de animales, flora y fauna
+                    que conviven en este lugar.</p>
+            </div>
+
+            <div class="bloque-slider no-title">DISPLAYBLOQUE(216799)</div>
+        </div>
+
+        <div background-type="cana" class="article" data-type="green">
+            <div class="grid g-2by2">
+                <div>
+                    <p>Un buen colorido nos acompa&ntilde;a. Es que Cali es la ciudad de Colombia que m&aacute;s
+                        Ecobarrios tiene. Santiago de Cali cuenta con barrios en transici&oacute;n a ecobarrios: Altos
+                        de Santa Elena / Aguacatal / Sena - Salomia / San Antonio, Libertadores y San Cayetano.</p>
+
+                    <p>El Ecobarrio San Antonio fue el primer Ecobarrio de Latinoam&eacute;rica en recibir el segundo
+                        sello Ecoquartier del Ministerio de Transici&oacute;n Ecol&oacute;gica de Francia.</p>
+
+                    <p>Dentro de los ecobarrios de Santiago de Cali se han implementado diversas ecotecnias como la
+                        recolecci&oacute;n de aguas lluvias, composteras, huertas familiares y comunitarias.</p>
+
+                    <p class="yellow-text">&iquest;Lo sab&iacute;as? Los ecobarrios cuentan con 3 instituciones
+                        educativas sostenibles que generan su energ&iacute;a por medio de paneles solares.</p>
+
+                    <p>El ecobarrio San Antonio cuenta con su propio mercado org&aacute;nico y agrotur&iacute;stico. En
+                        el a&ntilde;o 2000, San Antonio fue declarado Hito Urbano, &Aacute;rea de Inter&eacute;s
+                        Patrimonial y de Preservaci&oacute;n Urban&iacute;stica.</p>
+                </div>
+
+                <div class="bloque-slider">DISPLAYBLOQUE(216805)</div>
+            </div>
+        </div>
+
+        <div class="article grid g-2by2">
+            <div class="d-flex justify-center flex-column">
+                <p>Cali tiene 64 &aacute;reas protegidas y 61 humedales urbanos. Conoce el humedal El Pondaje,
+                    considerado un remanente del gran complejo de humedales del valle geogr&aacute;fico del r&iacute;o
+                    Cauca y un excelente lugar para realizar avistamiento de aves.</p>
+                <a class="spreaker-player" data-height="80px" data-playlist="false" data-resource="episode_id=49753724"
+                    data-theme="light" data-width="100%"
+                    href="https://www.spreaker.com/user/14669930/ortalis-ruficauda">Escucha&quot;Guacharaca
+                    Culirroja&quot; en Spreaker.</a>
+                <script async src="https://widget.spreaker.com/widgets.js"></script>
+            </div>
+
+            <div class="bloque-slider">DISPLAYBLOQUE(216814)</div>
+        </div>
+
+        <div class="article grid">
+            <div>
+                <h3 class="purple-sub">Sus r&iacute;os</h3>
+
+                <div style="width: 100%">
+                    <div style="
+              position: relative;
+              padding-bottom: 64.5%;
+              padding-top: 0;
+              height: 0;
+            "><iframe allowfullscreen="true" allownetworking="all" allowscriptaccess="always" frameborder="0"
+                            height="1238.4" scrolling="yes" src="https://view.genial.ly/62d489669438780012d7cca4" style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              " type="text/html" width="1920"></iframe></div>
+                </div>
+            </div>
+
+            <div>
+                <p style="margin-top: 2rem">La temperatura media es de 24.0 &deg;C. En la madrugada, la temperatura
+                    m&iacute;nima est&aacute; entre 17 y 24 &deg;C y un m&aacute;ximo promedio entre 30 y 34 &deg;C en
+                    las tardes, las noches generalmente son m&aacute;s frescas, con un promedio entre 21 y 24 &deg;C.
+                </p>
+
+                <p>Pero calma, la frescura que se vive en la ciudad, tambi&eacute;n se debe a estos 7 r&iacute;os que la
+                    acompa&ntilde;an. R&iacute;o Pance, R&iacute;o Mel&eacute;ndez, R&iacute;o Ca&ntilde;averalejo,
+                    R&iacute;o Lili, R&iacute;o Aguacatal, R&iacute;o Cali y el gran r&iacute;o Cauca.</p>
+                <a class="spreaker-player" data-height="80px" data-playlist="false" data-resource="episode_id=49635711"
+                    data-theme="light" data-width="100%"
+                    href="https://www.spreaker.com/user/14669930/rios-de-cali">Listen
+                    to &quot;R&iacute;os de Cali&quot;
+                    on Spreaker.</a>
+                <script async src="https://widget.spreaker.com/widgets.js"></script>
+            </div>
+        </div>
+    </div>
+
+    <div data-parent="principal" id="cultura" style="display: none">
+        <div class="article grid g-2by2">
+            <div>
+                <h3 class="purple-sub">Su arquitectura</h3>
+
+                <p>La influencia urban&iacute;stica lleg&oacute; de Europa al Valle del Cauca, a trav&eacute;s de Cali.
+                    Por eso, podemos contemplar espacios arquitect&oacute;nicos tan bien conservados y cuidados por sus
+                    ciudadanos como un tesoro. Un interesante contraste entre unos cimientos neocl&aacute;sicos con unos
+                    edificios de arquitectura moderna.</p>
+
+                <p class="green-text" style="margin-top: 0">Torre de Cali de 44 pisos y 183 m de altura<br />
+                    de terraza finalizada en 1980.</p>
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="788.54" height="443"
+                        type="text/html"
+                        src="https://www.youtube.com/embed/FtAICdJacaI?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com">
+                    </iframe>
+                </div>
+            </div>
+
+            <div>
+                <div class="bloque-slider">DISPLAYBLOQUE(216823)</div>
+            </div>
+        </div>
+
+        <div class="article grid g-2by2">
+            <div>
+                <h3 class="purple-sub">Sus monumentos</h3>
+
+                <p>M&aacute;s de 62 monumentos, fuentes y puntos hist&oacute;ricos vas a encontrar en un recorrido por
+                    sus calles. Espacios tan reconocidos como: El Gato del R&iacute;o, La Tertulia, Cristo Rey, el Cerro
+                    de las Tres Cruces, Monumento a la Infancia, Edificio Coltabaco, el &Aacute;rbol de la Vida, la
+                    Virgen de Yanaconas, Los Muertos del 7 de Agosto, Pipper Pimienta, La M&uacute;sica, Aves del
+                    R&iacute;o, El Perro, Solidaridad, Parque Panamericano, Parque El Pe&ntilde;&oacute;n, Iglesia La
+                    Merced, Teatro Jorge Isaac, Teatro Municipal, entre otros.</p>
+                <a class="spreaker-player" data-height="80px" data-playlist="false" data-resource="episode_id=49963626"
+                    data-theme="light" data-width="100%"
+                    href="https://www.spreaker.com/user/14669930/la-casa-lepra-mezcla">Listen to &quot;La Casa
+                    Lepra&quot; on Spreaker.</a>
+                <script async src="https://widget.spreaker.com/widgets.js"></script> <a class="spreaker-player"
+                    data-height="80px" data-playlist="false" data-resource="episode_id=49975816" data-theme="light"
+                    data-width="100%" href="https://www.spreaker.com/user/14669930/loma-de-la-cruz-mezcla">Listen to
+                    &quot;La Loma de la Cruz&quot; on Spreaker.</a>
+                <script async src="https://widget.spreaker.com/widgets.js"></script>
+            </div>
+
+            <div>
+                <div class="bloque-slider">DISPLAYBLOQUE(216832)</div>
+            </div>
+        </div>
+
+        <div style="width: 100%">
+            <div style="
+          position: relative;
+          padding-bottom: 64.5%;
+          padding-top: 0;
+          height: 0;
+        "><iframe allowfullscreen="true" allownetworking="all" allowscriptaccess="always" frameborder="0"
+                    height="1238.4" scrolling="yes" src="https://view.genial.ly/62687c6d77040900114acbf0"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%" type="text/html"
+                    width="1920"></iframe></div>
+        </div>
+
+        <div background-type="chonta" class="article" data-type="green">
+            <div>
+                <h3 class="yellow-sub">Productos t&iacute;picos</h3>
+
+                <p>La gastronom&iacute;a es tan variada en Cali, que hay platos t&iacute;picos de otras regiones que han
+                    llegado y se han quedado.</p>
+
+                <p>Cali cuenta con cinco zonas gastron&oacute;micas: Granada, El Pe&ntilde;&oacute;n, San Antonio, El
+                    Parque del Perro y Ciudad Jard&iacute;n, y dos zonas emergentes como la Galer&iacute;a Alameda y la
+                    Calle Novena.</p>
+
+                <p>Arranquemos con este peque&ntilde;o pero tentador recorrido por la comida local.</p>
+
+                <p>Y si quieres fr&iacute;o, a 15 minutos de Cali, en sus laderas, vas a encontrar temperaturas de
+                    15&deg; promedio, y una buena ruta gastron&oacute;mica perfecta para el clima.</p>
+            </div>
+
+            <div class="grid g-2by2">
+                <div class="bloque-slider">DISPLAYBLOQUE(217929)</div>
+
+                <div class="bloque-slider">DISPLAYBLOQUE(216841)</div>
+            </div>
+        </div>
+
+        <div class="article grid g-2by2">
+            <div>
+                <h3 class="purple-sub">Su gente</h3>
+
+                <p>As&iacute; hablamos en Cali. &iquest;Ten&eacute;s una chuspa pa llevar las cosas? &iquest;Qu&eacute;
+                    hay pa este desparche?</p>
+
+                <div class="d-flex no-wrap">
+                    <p>Su gente es tan jovial y descomplicada que han creado sus propias formas de comunicarse, al
+                        punto, que producen palabras que hoy son famosas canciones.</p>
+                </div>
+
+                <div class="d-flex no-wrap">
+                    <p>Esta es su gente, un abanico de colores, y expresiones perfectas que encantan a todo el mundo.
+                    </p>
+                </div>
+                <a class="spreaker-player" data-height="80px" data-playlist="false" data-resource="episode_id=49620887"
+                    data-theme="light" data-width="100%"
+                    href="https://www.spreaker.com/user/14669930/podcast-cali-es-cultura">Listen to &quot;Podcast Cali
+                    es Cultura&quot; on Spreaker.</a>
+                <script async src="https://widget.spreaker.com/widgets.js"></script>
+
+                <p class="green-text">Y si te preguntan &iquest;c&oacute;mo es Cali?</p>
+
+                <p>Comparte este maravilloso recorrido.</p>
+
+            </div>
+
+            <div class="bloque-slider">DISPLAYBLOQUE(216850)</div>
+        </div>
+
+        <div class="article grid g-2by2">
+            <div>
+                <img alt="" src="https://www.cali.gov.co/info/principal/media/galeria245641.png" />
+                <div>DISPLAYBLOQUE(216948)</div>
+            </div>
+            <div>
+                <h3 class="purple-sub">Podcast para la familia</h3>
+                <div>DISPLAYBLOQUE(216869)</div>
+            </div>
+        </div>
+
+        <div class="article grid g-2by2">
+            <div>
+                <h3 class="purple-sub">Una ciudad resiliente con un gran futuro</h3>
+
+                <p>Pero Cali tambi&eacute;n ha sido una ciudad de momentos hist&oacute;ricos, momentos para el
+                    aprendizaje y para la vida.</p>
+
+                <p>El 7 de agosto de 1956 una fuerte explosi&oacute;n retumb&oacute; al norte de la ciudad, casi que el
+                    30% de Cali qued&oacute; en cenizas. 7 de los 10 camiones del ej&eacute;rcito colombiano, que
+                    llevaban dinamita para unas carreteras que se constru&iacute;an en la ciudad de Bogot&aacute;,
+                    explotaron.</p>
+            </div>
+
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe frameborder="0" height="443" marginheight="0" marginwidth="0" scrolling="no"
+                    src="https://www.youtube.com/embed/Rb23D8h8fBU?autoplay=0&amp;fs=0&amp;iv_load_policy=3&amp;showinfo=0&amp;rel=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;origin=https://youtubeembedcode.com"
+                    type="text/html" width="788.54"></iframe>
+
+                <div><iframe frameborder="0" height="443" marginheight="0" marginwidth="0" scrolling="no"
+                        src="https://www.youtube.com/embed/Rb23D8h8fBU?autoplay=0&amp;fs=0&amp;iv_load_policy=3&amp;showinfo=0&amp;rel=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;origin=https://youtubeembedcode.com"
+                        type="text/html" width="788.54">https://youtubeembedcode.com/es/</iframe></div>
+
+                <div><small><a href="https://theimpossiblequiz.info/the-impossible-quiz-book/">the impossible quiz book
+                            ch 3 answers</a></small></div>
+            </div>
+        </div>
+
+        <div class="article grid g-2by2">
+            <div class="bloque-slider">DISPLAYBLOQUE(214764)</div>
+
+            <p>Pero si escuchas hablar de resiliencia, Cali es un gran referente. La ciudadan&iacute;a sac&oacute; de su
+                interior esa tenacidad que los caracteriza, que va en su ADN y le dio vida a un evento cultural que por
+                tantos a&ntilde;os demuestra de qu&eacute; estamos hechos.</p>
+        </div>
+
+        <div class="article grid g-2by2">
+            <p>Casi que como un reconocimiento por todos sus procesos culturales por los que atravesaba la ciudad, por
+                su gente y m&aacute;s bondades, Cali es elegida como sede de los IX Juegos Panamericanos en el
+                a&ntilde;o 1971. Momentos guardados para la historia de la humanidad.</p>
+
+            <div class="bloque-slider no-title">DISPLAYBLOQUE(217947)</div>
+        </div>
+
+        <div class="article grid g-2by2">
+
+            <div class="bloque-slider no-title">DISPLAYBLOQUE(216887)</div>
+            <p>Cali no se detiene, su gente analiza, toma decisiones y sigue adelante, porque su ciudad naci&oacute;
+                para ser grande</p>
+
+        </div>
+
+        <div class="article grid g-2by2">
+            <p>En ese mismo a&ntilde;o, contra todas las adversidades, la ciudad celebr&oacute; los I Juegos
+                Panamericanos Junior 2021. Un evento que alberg&oacute; atletas entre los 18 y 21 a&ntilde;os, en 28
+                deportes divididos en 42 disciplinas. Fue algo maravilloso que le record&oacute; al mundo que Cali es
+                una ciudad resiliente.</p>
+
+            <div class="bloque-slider no-title">DISPLAYBLOQUE(216896)</div>
+        </div>
+
+        <div class="article grid g-2by2" data-type="gray">
+            <div>
+                <h3 class="purple-sub">Eventos culturales y deportivos en Cali</h3>
+
+                <p>Nuestra ciudad es sede de eventos deportivos y culturales como el Petronio, el Mundial de
+                    F&uacute;tbol Femenino, el Mundial de Atletismo, el alumbrado, el Festival Internacional de Cine, el
+                    Mundial de Salsa&hellip;, entre otros.</p>
+                <a href="">LINK A AGENDA CULTURAL DE CALI</a>
+            </div>
+
+            <div class="bloque-slider no-title">DISPLAYBLOQUE(216902)</div>
+        </div>
+
+        <div class="botonera">
+            DISPLAYBLOQUE(217956)
+        </div>
+
+        <div class="end-text">
+            <p class="final-text">&iquest;Ves por qu&eacute; Cali es un solo coraz&oacute;n?</p>
+        </div>
+    </div>
+
+    <div data-parent="principal" id="juguemos" style="display: none">
+        <div class="menu"><button aria-controls="games" class="disabled" data-target="adivina"><span
+                    class="button_top">Adivina la canci&oacute;n </span></button><button aria-controls="games"
+                data-target="laberinto"><span class="button_top">Laberinto Cale&ntilde;o </span></button><button
+                aria-controls="games" data-target="calenidad"><span class="button_top">&iquest;Qu&eacute; tanto sabes de
+                    Cali? </span></button></div>
+
+        <div data-parent="games" id="adivina" style="width: 100%">
+            <div style="
+          position: relative;
+          padding-bottom: 56.25%;
+          padding-top: 0;
+          height: 0;
+        "><iframe allowfullscreen="true" allownetworking="all" allowscriptaccess="always" frameborder="0" height="675"
+                    scrolling="yes" src="https://view.genial.ly/62ba68d7ae77c40017630e62"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%" type="text/html"
+                    width="1200"></iframe></div>
+        </div>
+
+        <div data-parent="games" id="laberinto" style="width: 100%; display: none">
+            <div style="
+          position: relative;
+          padding-bottom: 56.25%;
+          padding-top: 0;
+          height: 0;
+        "><iframe allowfullscreen="true" allownetworking="all" allowscriptaccess="always" frameborder="0" height="675"
+                    scrolling="yes" src="https://view.genial.ly/62ba681a8ad9d20011ea2b8e"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%" type="text/html"
+                    width="1200"></iframe></div>
+        </div>
+
+        <div data-parent="games" id="calenidad" style="width: 100%; display: none">
+            <div style="
+          position: relative;
+          padding-bottom: 56.25%;
+          padding-top: 0;
+          height: 0;
+        "><iframe allowfullscreen="true" allownetworking="all" allowscriptaccess="always" frameborder="0" height="675"
+                    scrolling="yes" src="https://view.genial.ly/62d1e9cd1ac4d100126bf7dc"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%" type="text/html"
+                    width="1200"></iframe></div>
+        </div>
+    </div>
+    <!-- <div class="btn-group" role="group" aria-label="Basic example">
+    <a type="button" class="btn btn-success" href="">Left</a>
+    <a type="button" class="btn btn-danger" href="">Middle</a>
+    <a type="button" class="btn btn-warning" href="">Right</a>
+    <a type="button" class="btn btn-info" href="">Right</a>
+  </div> -->
+</div>
+<script>
+    $(document).ready(function () {
+        // Handle toggles
+        $("[data-target]").click(function (e) {
+            //Make sliders work properly
+            var buttons = document.getElementsByClassName("slick-next");
+            for (var i = 0; i < buttons.length; i++) buttons[i].click();
+            // Guarda atributo de elemento clickeado
+            const dataAttr = $(this).attr("data-target");
+            const dataControls = $(this).attr("aria-controls");
+
+            const menuItems = $("[aria-controls='" + dataControls + "']");
+            const contentItems = $("[data-parent='" + dataControls + "']");
+            const selectedElement = document.getElementById(dataAttr);
+            const menu = document.getElementsByClassName("menu");
+
+            // Manejo de clases
+            $(this).addClass("disabled");
+            menuItems.not($(this)).removeClass("disabled");
+
+            // Esconde todos menos el seleccionado
+            contentItems.not($(this)).hide("fast");
+            contentItems.not($(this)).attr("aria-hidden", "true");
+
+            //Abre elemento seleccionado
+            $(selectedElement).toggle("fast");
+            $(selectedElement).attr("aria-hidden", "false");
+            const mediaQuery = window.matchMedia("(max-width: 480px)");
+            const mediaQuery2 = window.matchMedia("(min-width: 481px)");
+
+            let item = selectedElement.querySelectorAll(".slick-next");
+            if (mediaQuery.matches) {
+                $("html, body").animate(
+                    {
+                        scrollTop: $(menu).position().top + 1200,
+                    },
+                    1000
+                );
+            }
+            return false;
+        });
+    });
+</script>
