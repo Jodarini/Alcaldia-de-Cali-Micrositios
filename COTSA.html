@@ -36,6 +36,10 @@
         padding-bottom: 1em;
     }
 
+    .pb-1-5 {
+        padding-bottom: 1.5em;
+    }
+
     .pt-1 {
         padding-top: 1em
     }
@@ -48,13 +52,36 @@
         color: #FAFAFA !important;
     }
 
+    .bg-blue {
+        background-color: #02a9be;
+    }
+
     .bg-teal {
         background-color: #449799;
     }
 
     .bg-green {
         background-color: #3aa836;
-        padding-bottom: 1.5em;
+    }
+
+    .bg-yellow {
+        background-color: #fdb400;
+    }
+
+    .bg-lightblue {
+        background-color: #0bdab8;
+    }
+
+    .bg-mustard {
+        background-color: #ff9917;
+    }
+
+    .bg-darkblue {
+        background-color: #007c7e;
+    }
+
+    .bg-pink {
+        background-color: #eb3b7b;
     }
 
     .radius-rounded {
@@ -92,7 +119,6 @@
     }
 
     .timeline__1 a {
-        background: #02a9be;
         border-top-left-radius: 50%;
         border-top-right-radius: 50%;
         width: 5em;
@@ -136,7 +162,18 @@
     .timeline a::after {
         content: "";
         position: absolute;
+    }
 
+    .timeline__1 a::before {
+        content: "";
+        width: 0.7rem;
+        height: 0.7rem;
+        background-color: #FAFAFA;
+        border-radius: 50%;
+        top: 1rem;
+        position: absolute;
+        outline: 3px solid #FAFAFA;
+        outline-offset: 2px;
     }
 
     .timeline::after {
@@ -230,6 +267,7 @@
 
         .timeline__2 a img {
             max-width: 4em;
+            margin-right: 0;
         }
 
         .timeline__2 a::after {
@@ -279,13 +317,13 @@
         <h2 class="text-center-md">Principales acciones de la salud ambiental</h2>
         <p class="text-center-md"><i>Haz clic en cada año para conocer los avances del Cotsa. </i></p>
         <div class="timeline timeline__1">
-            <a href="#" class="disabled" data-toggle="modal" data-target="#modal2022">2022</a>
-            <a href="#" class="disabled" data-toggle="modal" data-target="#modal2021">2021</a>
-            <a href="#" class="disabled" data-toggle="modal" data-target="#modal2020">2020</a>
-            <a href="#" class="disabled" data-toggle="modal" data-target="#modal2019">2019</a>
-            <a href="#" class="disabled" data-toggle="modal" data-target="#modal2018">2018</a>
-            <a href="#" class="disabled" data-toggle="modal" data-target="#modal2017">2017</a>
-            <a href="#" class="disabled" data-toggle="modal" data-target="#modal2016">2016</a>
+            <a href="#" class="disabled bg-blue" data-toggle="modal" data-target="#modal2022">2022</a>
+            <a href="#" class="disabled bg-yellow" data-toggle="modal" data-target="#modal2021">2021</a>
+            <a href="#" class="disabled bg-green" data-toggle="modal" data-target="#modal2020">2020</a>
+            <a href="#" class="disabled bg-lightblue" data-toggle="modal" data-target="#modal2019">2019</a>
+            <a href="#" class="disabled bg-mustard" data-toggle="modal" data-target="#modal2018">2018</a>
+            <a href="#" class="disabled bg-darkblue" data-toggle="modal" data-target="#modal2017">2017</a>
+            <a href="#" class="disabled bg-pink" data-toggle="modal" data-target="#modal2016">2016</a>
         </div>
         <!-- Modal -->
         <div id="modal2022" class="modal fade" role="dialog">
@@ -662,7 +700,7 @@
         </div>
     </article>
 
-    <article class="p-1 pb-1 bg-green text-center-md">
+    <article class="p-1 pb-1 bg-green pb-15 text-center-md">
         <h2 class="text-white">Política integral de salud ambiental</h2>
         <p class="text-white"><i>Obejtivo: fortalecer la gestión integral e intersectorial en salud ambiental,
                 contribuyendo a un mejor
