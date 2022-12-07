@@ -1,0 +1,735 @@
+<style>
+    .micrositio>* {
+        margin-bottom: 2em;
+    }
+
+    .micrositio h2 {
+        font-size: 25px;
+        color: #449799;
+        font-weight: bolder;
+        margin-top: 0;
+    }
+
+    .micrositio h4 {
+        color: #449799;
+        font-size: 22px;
+        font-weight: bolder;
+    }
+
+    .micrositio video {
+        width: 100%;
+    }
+
+    .micrositio img {
+        width: 100%;
+    }
+
+    .p-05 {
+        padding: .5em;
+    }
+
+    .p-1 {
+        padding: 1em;
+    }
+
+    .pb-1 {
+        padding-bottom: 1em;
+    }
+
+    .pt-1 {
+        padding-top: 1em
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .text-white {
+        color: #FAFAFA !important;
+    }
+
+    .bg-teal {
+        background-color: #449799;
+    }
+
+    .bg-green {
+        background-color: #3aa836;
+        padding-bottom: 1.5em;
+    }
+
+    .radius-rounded {
+        border-radius: 2em;
+    }
+
+    .link_more {
+        color: #3aa836;
+        background-color: #FAFAFA;
+        font-weight: bolder;
+    }
+
+    .news {
+        background-image: url(https://www.cali.gov.co/info/principal/media/galeria261031.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .micrositio .nxBlock217965 {
+        background-color: transparent;
+    }
+
+    .micrositio .dotsDynamic li button::before,
+    .slick-dots li button::before {
+        background-color: #FAFAFA;
+    }
+
+    .timeline {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        margin-top: 2em;
+    }
+
+    .timeline__1 a {
+        background: #02a9be;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        width: 5em;
+        height: 4em;
+        color: #FAFAFA;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        padding-top: 2em;
+        z-index: 1000;
+        margin: 1em;
+        position: relative;
+    }
+
+    .timeline__2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1em;
+    }
+
+    .timeline__2 a img {
+        width: 4em;
+        margin-right: 1rem;
+        min-width: 4em;
+    }
+
+    .timeline__2 a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        z-index: 999;
+    }
+
+    .timeline__2::after {
+        left: 1.95em;
+    }
+
+    .timeline a::after {
+        content: "";
+        position: absolute;
+
+    }
+
+    .timeline::after {
+        content: "";
+        position: absolute;
+        background-color: #989898;
+        width: 2px;
+        height: 100%;
+    }
+
+
+    .slick-prev:hover,
+    .slick-next:hover .slick-prev:focus,
+    .slick-next:focus {
+        background: #02a9be !important;
+    }
+
+    .botonera .dotsDynamic li.slick-active button {
+        background: #02a9be !important;
+    }
+
+    .micrositio .dotsDynamic li button::before,
+    .slick-dots li button::before {
+        background: #02a9be !important;
+    }
+
+    .dotsDynamic li button {
+        background-color: transparent;
+        border: 1px solid #02a9be
+    }
+
+    .micrositio .dotsDynamic li.slick-active button {
+        background-color: #02a9be !important;
+    }
+
+    .micrositio .modal-header {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+
+    @media (min-width:40em) {
+
+        .text-center-md {
+            text-align: center;
+        }
+
+        .micrositio>* {
+            margin-bottom: 4em;
+        }
+
+        .grid {
+            display: grid;
+            gap: 2em;
+        }
+
+        .grid__2x2 {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .pos-2 {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        .timeline {
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 2.5em;
+        }
+
+        .timeline::after {
+            width: 100%;
+            height: 2px;
+        }
+
+        .timeline__2::after {
+            top: 0;
+        }
+
+        .timeline__1 a {
+            top: -30px;
+        }
+
+        .timeline__2 a {
+            position: relative;
+            padding-top: 2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .timeline__2 a img {
+            max-width: 4em;
+        }
+
+        .timeline__2 a::after {
+            content: '';
+            width: 2px;
+            height: 1em;
+            background-color: #989898;
+            top: 0;
+            left: 50%;
+        }
+
+        .modal-dialog-2 {
+            width: 95%;
+        }
+
+        .news {
+            padding-inline: 4em;
+        }
+    }
+</style>
+
+
+<div class="micrositio">
+
+    <article class="grid grid__2x2">
+        <div class="pt-1 pos-2">
+            <h2>
+                ¿Qué es la salud ambiental?
+            </h2>
+            <p>
+                El concepto de Salud Ambiental hace referencia a la interacción entre los grupos humanos y los factores
+                físicos,
+                químicos, biológicos y sociales en un contexto socio-histórico espacialmente definido y que se encuentra
+                modulado por la estructura social.
+            </p>
+        </div>
+
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="788.54" height="443"
+                type="text/html"
+                src="https://www.youtube.com/embed/2HtTD8M78Qs?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0">
+            </iframe>
+        </div>
+    </article>
+
+    <article>
+        <h2 class="text-center-md">Principales acciones de la salud ambiental</h2>
+        <p class="text-center-md"><i>Haz clic en cada año para conocer los avances del Cotsa. </i></p>
+        <div class="timeline timeline__1">
+            <a href="#" class="disabled" data-toggle="modal" data-target="#modal2022">2022</a>
+            <a href="#" class="disabled" data-toggle="modal" data-target="#modal2021">2021</a>
+            <a href="#" class="disabled" data-toggle="modal" data-target="#modal2020">2020</a>
+            <a href="#" class="disabled" data-toggle="modal" data-target="#modal2019">2019</a>
+            <a href="#" class="disabled" data-toggle="modal" data-target="#modal2018">2018</a>
+            <a href="#" class="disabled" data-toggle="modal" data-target="#modal2017">2017</a>
+            <a href="#" class="disabled" data-toggle="modal" data-target="#modal2016">2016</a>
+        </div>
+        <!-- Modal -->
+        <div id="modal2022" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">2022</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Identificación de agentes zoonóticos de paloma doméstica (Columba livia) y su importancia en
+                            salud pública en instituciones educativas del área urbana de Cali, preparación y desarrollo
+                            del Diplomado en Gestión del Territorio, Salud y Ambiente.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div id="modal2021" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">2021</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Se realizó el estudio de carga de la enfermedad por intoxicaciones con sustancias químicas,
+                            incorporación de 4 estaciones de monitoreo (3 fijas y 1 móvil) para la vigilancia del Ruido
+                            Ambiental, desarrollo del Congreso Latinoamericano para el control de Aedes Aegypti, Informe
+                            sobre calidad de agua de los ríos de Santiago de Cali</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="modal2020" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">2020</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Implementación de un programa educativo para la tendencia responsable de mascotas,
+                            Formulación Intersectorial del Plan de Acción de la Mesa Cotsa, Realización del Seminario
+                            Virtual Gestión Ambiental y Salud Pública “Hacia una nueva normalidad”</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="modal2019" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">2019</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Participación en la construcción del Plan de Gestión Integral de Residuos Peligrosos de Cali,
+                            implementación del Plan de Atención de Contingencia por alerta en el deterioro de la calidad
+                            del aire, iimplementación de nuevos métodos de control del vectores como la siembra de peces
+                            guppies, consolidación del Comité Municipal “Entornos para la Vida”.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="modal2018" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">2018</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Implementación del modelo estandarizado de intervención, vigilancia y control para el manejo
+                            de las sustancias químicas y sus residuos peligrosos, Aprobación del Plan de Gestión para el
+                            mejoramiento de la Calidad del Aire, Seguimiento y aporte a los diseños del Centro de
+                            Zoonosis y Bienestar Animal.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="modal2017" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">2017</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Acreditación del sistema de vigilancia ante el IDEAM (el primero en Colombia), Conformación e
+                            implementación de la Mesa Técnica Zoonosis y ETV, conformación de los Comités Comunitarios
+                            “Entornos para la Vida” en la zona urbana y rural de Cali.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="modal2016" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">2016</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Se consolida el Sistema de Vigilancia de la Calidad del Aire, Creación de la Mesa Técnica
+                            Zoonosis, Formulación e Implementación del PEISD – Plan Estratégico Interinstitucional de
+                            Intervención del Sistema de Drenaje</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </article>
+
+    <article class="grid grid__2x2">
+        <div>
+            <h2>COTSA</h2>
+            <p>El Cotsa se origina en el CONPES 3550/08- Plan Nacional de Desarrollo (2014 – 2018), su principal
+                objetivo es Promover la creación de los Consejos Territoriales en Salud Ambiental por parte de los
+                Ministerios miembros de la CONASA y orientar su reglamentación de acuerdo con el Decreto 2972/2010.</p>
+
+            <p>Además de:</p>
+            <ul>
+                <li>
+                    Generar espacios intersectoriales para la toma de decisiones relevantes en salud ambiental.
+                </li>
+                <li>Coordinar y articular la gestión en salud ambiental.</li>
+                <li>Servir como enlace, monitoreo y evaluación de la PISA, a nivel territorial.</li>
+            </ul>
+        </div>
+
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="788.54" height="443"
+                type="text/html"
+                src="https://www.youtube.com/embed/hcC6-52YbQA?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0">
+            </iframe>
+        </div>
+    </article>
+
+    <article>
+        <h2 class="p-05 bg-teal radius-rounded text-white text-center">Consejo territorial de salud ambiental CALI</h2>
+        <p class="text-center-md"><i>Haz clic e infórmate de la labor de cada una de las mesas. </i></p>
+        <div class="timeline timeline__2">
+            <a href="#" class="disabled" data-toggle="modal" data-target="#mesaAgua">
+                <img src="https://www.cali.gov.co/info/principal/media/galeria261554.jpg" alt="">
+                <p>
+                    Mesa Agua
+                </p>
+            </a>
+
+            <a href="#" class="disabled" data-toggle="modal" data-target="#mesaAire">
+                <img src="https://www.cali.gov.co/info/principal/media/galeria261553.jpg" alt="">
+                <p>
+                    Mesa Aire
+                </p>
+            </a>
+            <a href="#" class="disabled" data-toggle="modal" data-target="#mesaSustancia">
+                <img src="https://www.cali.gov.co/info/principal/media/galeria261552.jpg" alt="">
+                <p>Mesa Seguridad Química y Residuos Peligrosos</p>
+            </a>
+            <a href="#" class="disabled" data-toggle="modal" data-target="#mesaZoonosis">
+                <img src="https://www.cali.gov.co/info/principal/media/galeria261551.jpg" alt="">
+                <p>
+                    Mesa Zoonosis y ETV
+                </p>
+            </a>
+            <a href="#" class="disabled" data-toggle="modal" data-target="#entornos">
+                <img src="https://www.cali.gov.co/info/principal/media/galeria261550.jpg" alt="">
+                <p>
+                    Entornos para la vida
+                </p>
+            </a>
+        </div>
+
+        <div id="mesaAgua" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-dialog-2">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Mesa Técnica Agua y Saneamiento básico</h4>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>Salud</li>
+                            <li>DAGMA</li>
+                            <li>EMCALI</li>
+                            <li>CVC</li>
+                            <li>PNNF</li>
+                            <li>ACODAL</li>
+                            <li>Planeación</li>
+                            <li>Gestión del RiesgO</li>
+                            <li>Universidades</li>
+                        </ul>
+                        <img src="https://www.cali.gov.co/info/principal/media/galeria261556.png" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="mesaAire" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-dialog-2">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Mesa Técnica Aire y Salud</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h5>Actores intersectoriales</h5>
+                        <ul>
+                            <li>Salud</li>
+                            <li>DAGMA</li>
+                            <li>Movilidad</li>
+                            <li>CVC</li>
+                            <li>Planeación</li>
+                            <li>Infraestructura</li>
+                            <li>Metrocali</li>
+                            <li>Universidades</li>
+                        </ul>
+                        <img src="https://www.cali.gov.co/info/principal/media/galeria261558.png" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="mesaSustancia" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-dialog-2">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Mesa Técnica Seguridad Química y Residuos Peligrosos</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <ul>
+                            <li>Salud</li>
+                            <li>DAGMA</li>
+                            <li>EMCALI</li>
+                            <li>CVC</li>
+                            <li>Planeación</li>
+                            <li>Bomberos</li>
+                            <li>Gobierno</li>
+                            <li>Policia</li>
+                            <li>Esp de aseo</li>
+                            <li>ANDI</li>
+                            <li>Infraestructura</li>
+                            <li>Movilidad</li>
+                            <li>Gestión del Riesgo</li>
+                        </ul>
+                        <img src="https://www.cali.gov.co/info/principal/media/galeria261559.png" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="mesaZoonosis" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-dialog-2">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Mesa Técnica Zoonosis y ETV - Enfermedades Transmitidas por Vectores
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <ul>
+                            <li>Salud</li>
+                            <li>DAGMA</li>
+                            <li>EMCALI</li>
+                            <li>Seguridad y Justicia</li>
+                            <li>Movilidad</li>
+                            <li>Policia</li>
+                            <li>Gestión del Riesgo</li>
+                            <li>Colegios médicos veterinarios</li>
+                            <li>Protectores animales</li>
+                            <li>Centros investigación</li>
+                            <li>Universidades</li>
+                        </ul>
+                        <img src="https://www.cali.gov.co/info/principal/media/galeria261560.png" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="entornos" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-dialog-2">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Comité Distrital "Entornos para la Vida"</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://www.cali.gov.co/info/principal/media/galeria261562.png" alt="">
+                        <img src="https://www.cali.gov.co/info/principal/media/galeria261561.png" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </article>
+
+    <article class="p-1 pb-1 bg-green text-center-md">
+        <h2 class="text-white">Política integral de salud ambiental</h2>
+        <p class="text-white"><i>Obejtivo: fortalecer la gestión integral e intersectorial en salud ambiental,
+                contribuyendo a un mejor
+                estado de salud y de calidad ambiental.</i></p>
+        <a href="#" class="link_more radius-rounded p-05" data-toggle="modal" data-target="#vermas" href=""> <i>Ver
+                más</i> </a>
+
+        <div id="vermas" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-dialog-2">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Política integral de salud ambiental</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://www.cali.gov.co/info/principal/media/galeria261549.png" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <div class="news">
+            DISPLAYBLOQUE(217965)
+        </div>
+    </article>
+
+    <!-- <article>
+        <div class="galeria">
+            DISPLAYBLOQUE(217974)
+        </div>
+    </article> -->
+</div>
+
+<!-- 
+<script>
+    $(document).ready(function () {
+        // Handle toggles
+        $("[data-target]").click(function (e) {
+            // Guarda atributo de elemento clickeado
+            const dataAttr = $(this).attr("data-target");
+            const dataControls = $(this).attr("aria-controls")
+
+            const menuItems = $("[aria-controls='" + dataControls + "']")
+            const contentItems = $("[data-parent='" + dataControls + "']")
+            const selectedElement = document.getElementById(dataAttr)
+
+            // Manejo de clases
+            $(this).addClass("disabled");
+            menuItems.not($(this)).removeClass("disabled");
+
+            // Esconde todos menos el seleccionado
+            contentItems.not($(this)).hide("fast")
+
+            //Abre elemento seleccionado
+            $(selectedElement).toggle("fast");
+
+            return false;
+        });
+
+    });
+</script> -->

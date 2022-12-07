@@ -7,17 +7,24 @@
         max-width: 100%;
     }
 
-    .imgAsociada169828 {
-        display: none;
+    /* Composition */
+
+    .g-2by2 {
+        grid-template-columns: calc(50% - 60px) calc(50% - 60px);
+        gap: 60px;
     }
 
-    .imgAsociada173055 {
-        display: none;
+    .g-2by2 p {
+        align-self: center;
     }
 
-    .resumenImgint {
-        display: none;
+    .g-4by4 {
+        grid-template-columns: calc(50% - 60px) calc(50% - 60px);
+        gap: 60px;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
     }
+
+    /* Utility */
 
     .d-flex {
         display: flex;
@@ -46,19 +53,10 @@
         position: relative;
     }
 
-    .g-2by2 {
-        grid-template-columns: calc(50% - 60px) calc(50% - 60px);
-        gap: 60px;
-    }
 
-    .g-2by2 p {
-        align-self: center;
-    }
-
-    .g-4by4 {
-        grid-template-columns: calc(50% - 60px) calc(50% - 60px);
-        gap: 60px;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+    .disabled {
+        pointer-events: none;
+        opacity: 0.5;
     }
 
     .purple-sub,
@@ -93,6 +91,15 @@
         background-color: #e8efeb;
     }
 
+    /* block */
+
+    .fondo {
+        /* background-image: url(https://www.cali.gov.co/info/principal/media/galeria260908.jpg); */
+        background-position: left;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
     .video {
         min-width: 100%;
         width: 100%;
@@ -108,9 +115,7 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 2em;
-        column-gap: 1rem;
     }
-
 
     .micrositio .open>.dropdown-menu {
         border: none;
@@ -119,9 +124,6 @@
         height: 0;
         box-shadow: none;
     }
-
-
-
 
     .micrositio .dropdown-menu>li>a {
         width: 370px;
@@ -135,43 +137,11 @@
         color: #565555 !important;
     }
 
-    .botonera .title.titlePosition {
-        background-color: #006837 !important;
-        padding: 2rem !important;
-        font-weight: bolder !important;
-        font-size: 2rem !important;
-        text-align: center !important;
-        border: none !important;
-        color: #FAFAFA !important;
-    }
-
-    .slick-prev:hover,
-    .slick-next:hover .slick-prev:focus,
-    .slick-next:focus {
-        background: #cbdc22 !important;
-    }
-
-    .botonera .dotsDynamic li.slick-active button {
-        background: #cbdc22 !important;
-    }
-
-    .micrositio .dotsDynamic li button::before,
-    .slick-dots li button::before {
-        background: #cbdc22 !important;
-    }
-
     .micrositio .dropdown button:focus,
     button:hover {
         background-color: #cad11f !important;
     }
 
-    .micrositio .dotsDynamic li.slick-active button {
-        background-color: #cad11f !important;
-    }
-
-    .menu a {}
-
-    .menu-img {}
 
     .btn-group {
         width: 100%;
@@ -180,7 +150,7 @@
         margin-bottom: 2em;
     }
 
-    .botones-menu {
+    .menu-button {
         position: relative;
         border: none;
         width: 100%;
@@ -191,23 +161,23 @@
         border-top: #fafafa;
     }
 
-    .menu a:nth-child(1) .botones-menu {
+    .menu a:nth-child(1) .menu-button {
         background-color: #df4617 !important;
     }
 
-    .menu a:nth-child(2) .botones-menu {
+    .menu a:nth-child(2) .menu-button {
         background-color: #39b54a !important;
     }
 
-    .menu a:nth-child(3) .botones-menu {
+    .menu a:nth-child(3) .menu-button {
         background-color: #913fdc !important;
     }
 
-    .menu a:nth-child(4) .botones-menu {
+    .menu a:nth-child(4) .menu-button {
         background-color: #28cec2 !important;
     }
 
-    .botones-menu>a {
+    .menu-button {
         color: #FAFAFA;
     }
 
@@ -220,104 +190,18 @@
         left: 7rem;
     }
 
-    /* .clip-box:hover {
-        clip-path: inset(0% 100% 0% 70%)
-    } */
-
     .menu a {
         color: #FAFAFA !important;
         width: 100%;
         min-width: 227px;
     }
 
-
     .menu a:hover .clip-box {
-
         clip-path: inset(0% 100% 0% 98%)
-    }
-
-
-    .zigzag {
-        margin: 7.5% 0;
-        background: #f7f2e2;
-        position: relative;
-        height: 16px;
-        z-index: 1;
-    }
-
-    .zigzag:before,
-    .zigzag:after {
-        content: "";
-        display: block;
-        position: absolute;
-        left: 0;
-        right: 0;
-    }
-
-    .zigzag:before {
-        height: 12px;
-        top: 110%;
-        background: linear-gradient(-135deg, #f7a9b9 8px, transparent 0) 0 8px, linear-gradient(135deg, #f7a9b9 8px, transparent 0) 0 8px;
-        background-position: top left;
-        background-repeat: repeat-x;
-        background-size: 16px 16px;
-    }
-
-    .zigzag:after {
-        height: 16px;
-        top: 100%;
-        background: linear-gradient(-135deg, #f7f2e2 8px, transparent 0) 0 8px, linear-gradient(135deg, #f7f2e2 8px, transparent 0) 0 8px;
-        background-position: top left;
-        background-repeat: repeat-x;
-        background-size: 16px 16px;
     }
 
     .article {
         margin-bottom: 2em;
-    }
-
-
-    /* slider styles */
-
-    .nxBlockDynamicLayout3 a:hover .image::before {
-        display: none !important;
-        /* No blue background */
-    }
-
-    .nxBlock {
-        background-color: transparent;
-    }
-
-    .nxBlockDynamicLayout3 a:hover .image::after {
-        display: none !important;
-        /* No + ICON */
-    }
-
-    /* PhotoLike Styles */
-    .image.mediaPosition {
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-        padding-inline: 1em;
-        padding-bottom: 2em;
-        padding-top: 1em;
-        text-align: center;
-        line-height: 2em;
-        font-size: 18px;
-        color: #565555;
-        background-color: #fafafa;
-    }
-
-    .nxBlockDynamicLayout3 a .title {
-        font-size: 0;
-        height: 0;
-        background-color: transparent;
-    }
-
-    .nxBlockDynamicLayout3 a .image {
-        height: unset;
-    }
-
-    .item.nxImgAdjustHeight>a>span.image>img {
-        width: 100%;
     }
 
     .datePosition {
@@ -368,6 +252,7 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
+        margin-top: 2em;
     }
 
     .final-text {
@@ -378,10 +263,6 @@
         line-height: 77px;
         max-width: 16ch;
         text-align: center;
-    }
-
-    .new-tools-box>.date {
-        display: none;
     }
 
     /* From uiverse.io by @Voxybuns */
@@ -419,9 +300,21 @@
         transform: translateY(0);
     }
 
-    .disabled {
-        pointer-events: none;
-        opacity: 0.5;
+    .btn-group a {
+        color: #FAFAFA !important;
+    }
+
+
+    .micrositio .item.nxImgAdjustHeight>a>span.image>img {
+        width: auto;
+        max-height: 20em;
+    }
+
+    /* .gov styling overrides */
+
+    .nxBlock216948 {
+        padding-top: 0;
+        margin-top: -4rem;
     }
 
     .botonera .image.mediaPosition {
@@ -436,20 +329,100 @@
         color: transparent;
     }
 
-    .btn-group a {
+    .new-tools-box>.date {
+        display: none;
+    }
+
+    /* slider styles */
+
+    .nxBlockDynamicLayout3 a:hover .image::before {
+        display: none !important;
+        /* No blue background */
+    }
+
+    .nxBlock {
+        background-color: transparent;
+    }
+
+    .nxBlockDynamicLayout3 a:hover .image::after {
+        display: none !important;
+        /* No + ICON */
+    }
+
+    /* PhotoLike Styles */
+    .image.mediaPosition {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        padding-inline: 1em;
+        padding-bottom: 2em;
+        padding-top: 1em;
+        text-align: center;
+        line-height: 2em;
+        font-size: 18px;
+        color: #565555;
+        background-color: #fafafa;
+        min-height: 338px;
+    }
+
+    .nxBlockDynamicLayout3 a .title {
+        font-size: 0;
+        height: 0;
+        background-color: transparent;
+    }
+
+    .nxBlockDynamicLayout3 a .image {
+        height: unset;
+    }
+
+
+    .item.nxImgAdjustHeight>a>span.image>img {
+        width: 100%;
+    }
+
+    .botonera .title.titlePosition {
+        background-color: #006837 !important;
+        padding: 2rem !important;
+        font-weight: bolder !important;
+        font-size: 2rem !important;
+        text-align: center !important;
+        border: none !important;
         color: #FAFAFA !important;
+        border-radius: 2em;
     }
 
-    .nxBlock216948 {
-        padding-top: 0;
-        margin-top: -4rem;
+    .slick-prev:hover,
+    .slick-next:hover .slick-prev:focus,
+    .slick-next:focus {
+        background: #cbdc22 !important;
     }
 
-    .micrositio .item.nxImgAdjustHeight > a > span.image > img {
-        width: auto;
-        max-height: 20em;
+    .botonera .dotsDynamic li.slick-active button {
+        background: #cbdc22 !important;
     }
 
+    .micrositio .dotsDynamic li button::before,
+    .slick-dots li button::before {
+        background: #cbdc22 !important;
+    }
+
+    .micrositio .dotsDynamic li.slick-active button {
+        background-color: #cad11f !important;
+    }
+
+    .resumenImgint {
+        display: none;
+    }
+
+    /* hide internal image for better resolution */
+    .imgAsociada169828 {
+        display: none;
+    }
+
+    .imgAsociada173055 {
+        display: none;
+    }
+
+
+    /* End .gov styling overrides */
 
     @media (min-width: 40em) {
 
@@ -498,6 +471,7 @@
         }
     }
 </style>
+
 <div class="micrositio">
     <img alt="" src="https://www.cali.gov.co/info/principal/media/galeria260509.jpg" style="width:100%" />
 
@@ -505,9 +479,8 @@
 
     <div class="menu">
 
-        <a aria-controls="principal" class="disabled" data-target="ciudad"
-            href="https://www.cali.gov.co/info/principal/media/galeria245195.png#">
-            <div class="botones-menu">
+        <a aria-controls="principal" class="disabled" data-target="ciudad" href="">
+            <div class="menu-button">
                 <div class="clip-box">
                     <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In  -->
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -539,9 +512,8 @@
             </div>
         </a>
 
-        <a aria-controls="principal" data-target="biodiversidad"
-            href="https://www.cali.gov.co/info/principal/media/galeria245197.png#">
-            <div class="botones-menu">
+        <a aria-controls="principal" data-target="biodiversidad" href="">
+            <div class="menu-button">
 
                 <div class="clip-box">
                     <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In  -->
@@ -574,9 +546,8 @@
             </div>
         </a>
 
-        <a aria-controls="principal" data-target="cultura"
-            href="https://www.cali.gov.co/info/principal/media/galeria245196.png#">
-            <div class="botones-menu">
+        <a aria-controls="principal" data-target="cultura" href="">
+            <div class="menu-button">
                 <div class="clip-box">
                     <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In  -->
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -608,9 +579,8 @@
             </div>
         </a>
 
-        <a aria-controls="principal" data-target="juguemos"
-            href="https://www.cali.gov.co/info/principal/media/galeria245194.png#">
-            <div class="botones-menu">
+        <a aria-controls="principal" data-target="juguemos" href="">
+            <div class="menu-button">
                 <div class="clip-box">
                     <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In  -->
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -656,15 +626,11 @@
             </div>
 
             <div class="embed-responsive embed-responsive-16by9">
-
-                <div><iframe kkuframeborder="0" height="443" marginheight="0" marginwidth="0" scrolling="no"
-                        src="https://www.youtube.com/embed/GpQ9PS0ZbWY?autoplay=0&amp;fs=0&amp;iv_load_policy=3&amp;showinfo=0&amp;rel=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;origin=https://youtubeembedcode.com"
-                        type="text/html" width="788.54">https://youtubeembedcode.com/es/</iframe></div>
-
-                <div><small><a href="https://theimpossiblequiz.info/the-impossible-quiz-book/">the impossible quiz book
-                            ch 3 answers</a></small></div>
+                <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="788.54" height="443"
+                    type="text/html"
+                    src="https://www.youtube.com/embed/GpQ9PS0ZbWY?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0">
+                </iframe>
             </div>
-            <!-- <div class="embed-responsive embed-responsive-16by9"><iframe frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="https://www.youtube.com/embed/haBW4q97RPA" type="text/html"></iframe></div> -->
         </div>
 
         <div background-type="cristo" class="article" data-type="green">
@@ -704,36 +670,18 @@
 
                 <p>A la ciudad tambi&eacute;n se lo conoce con otros nombres, aquellos que se originaron para quedarse
                     en la colectividad cale&ntilde;a.</p>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="788.54" height="443"
-                        type="text/html"
-                        src="https://www.youtube.com/embed/GpQ9PS0ZbWY?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"></iframe>
-                </div>
             </div>
-
             <div class="bloque-slider" data-type="absolute">DISPLAYBLOQUE(216780)</div>
         </div>
 
         <h3 class="purple-sub" style="column-span: 2;">&iquest;D&oacute;nde se ubica Cali?</h3>
         <div class="article grid g-2by2">
 
-            <div>
-
-                <div class="embed-responsive embed-responsive-16by9" style="width: 100%"><iframe frameborder="0"
-                        height="443" marginheight="0" marginwidth="0" scrolling="no"
-                        src="https://www.youtube.com/embed/HS54MLCWNo8?autoplay=0&amp;fs=0&amp;iv_load_policy=3&amp;showinfo=0&amp;rel=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;origin=https://youtubeembedcode.com"
-                        type="text/html" width="788.54"></iframe>
-
-                    <div><iframe frameborder="0" height="443" marginheight="0" marginwidth="0" scrolling="no"
-                            src="https://www.youtube.com/embed/HS54MLCWNo8?autoplay=0&amp;fs=0&amp;iv_load_policy=3&amp;showinfo=0&amp;rel=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;origin=https://youtubeembedcode.com"
-                            type="text/html" width="788.54">https://youtubeembedcode.com/es/</iframe></div>
-
-                    <div><small><a href="https://theimpossiblequiz.info/the-impossible-quiz-book/">the impossible quiz
-                                book ch 3 answers</a></small></div>
-                </div>
-                <!-- <div class="embed-responsive embed-responsive-16by9">
-      <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="https://www.youtube.com/embed/HS54MLCWNo8?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"></iframe>
-    </div> -->
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="788.54" height="443"
+                    type="text/html"
+                    src="https://www.youtube.com/embed/HS54MLCWNo8?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0">
+                </iframe>
             </div>
 
             <div>
@@ -772,7 +720,6 @@
                 <p>&iquest;Ves por qu&eacute; Cali es m&aacute;gica? Un maravilloso abanico de animales, flora y fauna
                     que conviven en este lugar.</p>
             </div>
-
             <div class="bloque-slider no-title">DISPLAYBLOQUE(216799)</div>
         </div>
 
@@ -807,15 +754,12 @@
                     considerado un remanente del gran complejo de humedales del valle geogr&aacute;fico del r&iacute;o
                     Cauca y un excelente lugar para realizar avistamiento de aves.</p>
 
-            <div class="embed-responsive embed-responsive-16by9">
-
-                <div><iframe kkuframeborder="0" height="443" marginheight="0" marginwidth="0" scrolling="no"
-                        src="https://www.youtube.com/embed/agraIahAtDU?autoplay=0&amp;fs=0&amp;iv_load_policy=3&amp;showinfo=0&amp;rel=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;origin=https://youtubeembedcode.com"
-                        type="text/html" width="788.54">https://youtubeembedcode.com/es/</iframe></div>
-
-                <div><small><a href="https://theimpossiblequiz.info/the-impossible-quiz-book/">the impossible quiz book
-                            ch 3 answers</a></small></div>
-            </div>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="788.54" height="443"
+                        type="text/html"
+                        src="https://www.youtube.com/embed/agraIahAtDU?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0">
+                    </iframe>
+                </div>
                 <a class="spreaker-player" data-height="80px" data-playlist="false" data-resource="episode_id=49753724"
                     data-theme="light" data-width="100%"
                     href="https://www.spreaker.com/user/14669930/ortalis-ruficauda">Escucha&quot;Guacharaca
@@ -831,19 +775,11 @@
                 <h3 class="purple-sub">Sus r&iacute;os</h3>
 
                 <div style="width: 100%">
-                    <div style="
-              position: relative;
-              padding-bottom: 64.5%;
-              padding-top: 0;
-              height: 0;
-            "><iframe allowfullscreen="true" allownetworking="all" allowscriptaccess="always" frameborder="0"
-                            height="1238.4" scrolling="yes" src="https://view.genial.ly/62d489669438780012d7cca4" style="
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-              " type="text/html" width="1920"></iframe></div>
+                    <div style="position: relative; padding-bottom: 64.5%; padding-top: 0; height: 0;">
+                        <iframe allowfullscreen="true" allownetworking="all" allowscriptaccess="always" frameborder="0"
+                            height="1238.4" scrolling="yes" src="https://view.genial.ly/62d489669438780012d7cca4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+              " type="text/html" width="1920"></iframe>
+                    </div>
                 </div>
             </div>
 
@@ -882,7 +818,7 @@
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="788.54" height="443"
                         type="text/html"
-                        src="https://www.youtube.com/embed/FtAICdJacaI?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com">
+                        src="https://www.youtube.com/embed/FtAICdJacaI?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0">
                     </iframe>
                 </div>
             </div>
@@ -905,9 +841,7 @@
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="788.54" height="443"
                         type="text/html"
-                        src="https://www.youtube.com/embed/G8C2tRw4VwA?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com">
-                        <div><small><a href="https://youtubeembedcode.com/pl/">youtubeembedcode pl</a></small></div>
-                        <div><small><a href="https://unoregler.com/">uno regler sista kortet</a></small></div>
+                        src="https://www.youtube.com/embed/G8C2tRw4VwA?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0">
                     </iframe>
                 </div>
 
@@ -1007,64 +941,53 @@
             </div>
         </div>
 
-        <div class="article grid g-2by2">
-            <div>
-                <h3 class="purple-sub">Una ciudad resiliente con un gran futuro</h3>
-
-                <p>Pero Cali tambi&eacute;n ha sido una ciudad de momentos hist&oacute;ricos, momentos para el
-                    aprendizaje y para la vida.</p>
-
-                <p>El 7 de agosto de 1956 una fuerte explosi&oacute;n retumb&oacute; al norte de la ciudad, casi que el
-                    30% de Cali qued&oacute; en cenizas. 7 de los 10 camiones del ej&eacute;rcito colombiano, que
-                    llevaban dinamita para unas carreteras que se constru&iacute;an en la ciudad de Bogot&aacute;,
-                    explotaron.</p>
+        <div class="fondo">
+            <div class="article grid g-2by2">
+                <div>
+                    <h3 class="purple-sub">Una ciudad resiliente con un gran futuro</h3>
+                    <p>Pero Cali tambi&eacute;n ha sido una ciudad de momentos hist&oacute;ricos, momentos para el
+                        aprendizaje y para la vida.</p>
+                    <p>El 7 de agosto de 1956 una fuerte explosi&oacute;n retumb&oacute; al norte de la ciudad, casi que
+                        el
+                        30% de Cali qued&oacute; en cenizas. 7 de los 10 camiones del ej&eacute;rcito colombiano, que
+                        llevaban dinamita para unas carreteras que se constru&iacute;an en la ciudad de Bogot&aacute;,
+                        explotaron.</p>
+                </div>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="788.54" height="443"
+                        type="text/html"
+                        src="https://www.youtube.com/embed/Rb23D8h8fBU?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0">
+                    </iframe>
+                </div>
             </div>
-
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe frameborder="0" height="443" marginheight="0" marginwidth="0" scrolling="no"
-                    src="https://www.youtube.com/embed/Rb23D8h8fBU?autoplay=0&amp;fs=0&amp;iv_load_policy=3&amp;showinfo=0&amp;rel=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;origin=https://youtubeembedcode.com"
-                    type="text/html" width="788.54"></iframe>
-
-                <div><iframe frameborder="0" height="443" marginheight="0" marginwidth="0" scrolling="no"
-                        src="https://www.youtube.com/embed/Rb23D8h8fBU?autoplay=0&amp;fs=0&amp;iv_load_policy=3&amp;showinfo=0&amp;rel=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;origin=https://youtubeembedcode.com"
-                        type="text/html" width="788.54">https://youtubeembedcode.com/es/</iframe></div>
-
-                <div><small><a href="https://theimpossiblequiz.info/the-impossible-quiz-book/">the impossible quiz book
-                            ch 3 answers</a></small></div>
+            <div class="article grid g-2by2">
+                <div class="bloque-slider">DISPLAYBLOQUE(214764)</div>
+                <p>Pero si escuchas hablar de resiliencia, Cali es un gran referente. La ciudadan&iacute;a sac&oacute;
+                    de su
+                    interior esa tenacidad que los caracteriza, que va en su ADN y le dio vida a un evento cultural que
+                    por
+                    tantos a&ntilde;os demuestra de qu&eacute; estamos hechos.</p>
             </div>
-        </div>
-
-        <div class="article grid g-2by2">
-            <div class="bloque-slider">DISPLAYBLOQUE(214764)</div>
-
-            <p>Pero si escuchas hablar de resiliencia, Cali es un gran referente. La ciudadan&iacute;a sac&oacute; de su
-                interior esa tenacidad que los caracteriza, que va en su ADN y le dio vida a un evento cultural que por
-                tantos a&ntilde;os demuestra de qu&eacute; estamos hechos.</p>
-        </div>
-
-        <div class="article grid g-2by2">
-            <p>Casi que como un reconocimiento por todos sus procesos culturales por los que atravesaba la ciudad, por
-                su gente y m&aacute;s bondades, Cali es elegida como sede de los IX Juegos Panamericanos en el
-                a&ntilde;o 1971. Momentos guardados para la historia de la humanidad.</p>
-
-            <div class="bloque-slider no-title">DISPLAYBLOQUE(217947)</div>
-        </div>
-
-        <div class="article grid g-2by2">
-
-            <div class="bloque-slider no-title">DISPLAYBLOQUE(216887)</div>
-            <p>Cali no se detiene, su gente analiza, toma decisiones y sigue adelante, porque su ciudad naci&oacute;
-                para ser grande</p>
-
-        </div>
-
-        <div class="article grid g-2by2">
-            <p>En ese mismo a&ntilde;o, contra todas las adversidades, la ciudad celebr&oacute; los I Juegos
-                Panamericanos Junior 2021. Un evento que alberg&oacute; atletas entre los 18 y 21 a&ntilde;os, en 28
-                deportes divididos en 42 disciplinas. Fue algo maravilloso que le record&oacute; al mundo que Cali es
-                una ciudad resiliente.</p>
-
-            <div class="bloque-slider no-title">DISPLAYBLOQUE(216896)</div>
+            <div class="article grid g-2by2">
+                <p>Casi que como un reconocimiento por todos sus procesos culturales por los que atravesaba la ciudad,
+                    por
+                    su gente y m&aacute;s bondades, Cali es elegida como sede de los IX Juegos Panamericanos en el
+                    a&ntilde;o 1971. Momentos guardados para la historia de la humanidad.</p>
+                <div class="bloque-slider no-title">DISPLAYBLOQUE(217947)</div>
+            </div>
+            <div class="article grid g-2by2">
+                <div class="bloque-slider no-title">DISPLAYBLOQUE(216887)</div>
+                <p>Cali no se detiene, su gente analiza, toma decisiones y sigue adelante, porque su ciudad naci&oacute;
+                    para ser grande</p>
+            </div>
+            <div class="article grid g-2by2">
+                <p>En ese mismo a&ntilde;o, contra todas las adversidades, la ciudad celebr&oacute; los I Juegos
+                    Panamericanos Junior 2021. Un evento que alberg&oacute; atletas entre los 18 y 21 a&ntilde;os, en 28
+                    deportes divididos en 42 disciplinas. Fue algo maravilloso que le record&oacute; al mundo que Cali
+                    es
+                    una ciudad resiliente.</p>
+                <div class="bloque-slider no-title">DISPLAYBLOQUE(216896)</div>
+            </div>
         </div>
 
         <div class="article grid g-2by2" data-type="gray">
@@ -1077,7 +1000,7 @@
 
                 <div class="menu">
                     <a href="https://www.cali.gov.co/info/principal/media/galeria245194.png#">
-                        <div class="botones-menu" style="background-color: #913fdc !important;">
+                        <div class="menu-button" style="background-color: #913fdc !important;">
                             <div class="clip-box">
                                 <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In  -->
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
