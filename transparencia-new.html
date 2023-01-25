@@ -731,6 +731,7 @@
         <div data-parent="principal" id="contratacion">
 
             <h2 class='dependencia'>Contratación</h2>
+            DISPLAYBLOQUE(218070)
 
             <!-- Slideshow container -->
             <div id="slider-contratacion" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -5811,7 +5812,6 @@
         possibleSlider.each(function (i, obj) {
             let numItems = $('.persona', this).length;
             let numItems2 = $('.persona', this)[0];
-            let itemDivToAppend = $('.persona', this);
             console.log('numitems2 =' + numItems2)
             if (numItems > 3) {
 
@@ -5845,8 +5845,8 @@
 
                 obj.prepend(itemDiv)
 
-                numItems2.each(function (i, obj2) {
-                    itemDiv.appendChild(obj2)
+                $(this).children('.persona').each(function (j, obj2) {
+                    itemDiv.prepend(obj2);
                 })
             }
 
