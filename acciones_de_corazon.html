@@ -3,12 +3,30 @@
         margin-bottom: 2em;
     }
 
+    .micrositio .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .micrositio button {
+        background: none;
+        border: none;
+    }
+
     .text-center {
         text-align: center;
     }
 
+    .text-left {
+        text-align: left;
+    }
+
     .align-center {
         align-items: center;
+    }
+
+    .justify-content-center {
+        justify-content: center;
     }
 
     .text-blue {
@@ -48,6 +66,18 @@
         height: 55px;
     }
 
+    .w-80 {
+        width: 80%;
+    }
+
+    .m-auto {
+        margin: auto;
+    }
+
+    .mb-2 {
+        margin-bottom: 2em;
+    }
+
     .g-1 {
         gap: 1em
     }
@@ -83,6 +113,52 @@
     .row-gap-1 {
         row-gap: 1em;
     }
+
+    .col-gap-1 {
+        column-gap: 1em;
+    }
+
+    .text-large {
+        font-size: large;
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    .disabled {
+        pointer-events: none;
+        cursor: not-allowed;
+        filter: alpha(opacity=65);
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        opacity: .65;
+        text-decoration: none;
+        transition: all 250ms ease-in-out;
+    }
+
+    @media (max-width: 768px) {
+        .text-center {
+            text-align: left;
+        }
+
+        .columns-3 {
+            grid-template-columns: 1fr;
+        }
+
+        .flex-row {
+            flex-direction: column;
+            flex-flow: column-reverse;
+        }
+
+        .text-large {
+            font-size: medium;
+        }
+
+        .w-80 {
+            width: 100%;
+        }
+    }
 </style>
 
 <div class="micrositio">
@@ -104,9 +180,10 @@
 
     </div>
 
+    <div class="flex justify-content-center">
 
-    <img src="https://www.cali.gov.co/info/principal/media/galeria269182.jpg" alt=""
-        style="max-width:60%; translate: 25%;">
+        <img src="https://www.cali.gov.co/info/principal/media/galeria269182.jpg" alt="" style="max-width:60%;">
+    </div>
 
     <div class="row flex flex-column">
         <p class="text-center"><span class="text-blue font-bold">Haz clic y conoce los proyectos de ciudad</span> en los
@@ -117,102 +194,112 @@
 
         <div class="grid columns-3 row-gap-1">
 
-            <div class="flex flex-1 g-1">
+            <button class="flex flex-1 g-1 disabled text-left" data-target="obras-de-corazon" aria-controls="principal">
                 <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269183.jpg" />
                 <p class="text-blue">
                     <span class="font-bold">Obras de corazón</span>
                     <br />
                     $117.000 millones
                 </p>
-            </div>
+            </button>
 
-            <div class="flex flex-1 g-1">
+            <button class="flex flex-1 g-1 text-left" data-target="transporte-masivo" aria-controls="principal">
                 <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269184.jpg" />
                 <p class="text-blue">
                     <span class="font-bold">Sistema de Transporte Masivo</span>
                     <br />
                     $30.000 millones
                 </p>
-            </div>
+            </button>
 
-            <div class="flex flex-1 g-1">
+            <button class="flex flex-1 g-1 text-left" data-target="fondo-solidario" aria-controls="principal">
                 <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269199.jpg" />
                 <p class="text-blue">
                     <span class="font-bold">Fondo Solidario y de Oportunidades </span>
                     <br />
                     $20.000 millones
                 </p>
+            </button>
+
+        </div>
+    </div>
+
+    <div class="w-80 m-auto mb-2">
+        <div class="flex flex-row g-1 p-2 bg-aqua shadow align-center" data-parent="principal" id="obras-de-corazon">
+            <div>
+                <p>Programa de rehabilitación integral de la malla vial que busca impactar 400
+                    kilómetros de corredores, tanto en los barrios como en las vías principales, con
+                    intervención de redes de acueducto y alcantarillado, cuando sea necesario.
+                    El objetivo de la iniciativa es recuperar el 35% de vías locales.Esta inversión
+                    complementa el trabajo de recuperación de la malla vial que se adelanta con
+                    otras fuentes de financiación.</p>
+
+                <img src="https://www.cali.gov.co/info/principal/media/galeria269182.jpg" alt=""
+                    style="width:100%; max-width: 100%;">
             </div>
 
+            <img src="https://www.cali.gov.co/info/principal/media/galeria269185.jpg" alt=""
+                style="width:100%; max-width: 100%;">
+        </div>
+
+        <div class="flex flex-row g-1 p-2 bg-aqua shadow align-center " data-parent="principal" id="transporte-masivo"
+            style="display: none;">
+            <div>
+                <p>El propósito de este programa es recuperar un total de 17 estaciones que
+                    presentaban deterioro: San Bosco, El Trébol, Chiminangos, Buitrera,
+                    Conquistadores, Belalcázar, Siete de Agosto, Univalle, Meléndez, Nuevo Latir,
+                    Paso del Comercio, Santa Librada , San Pascual, Universidades, Popular,
+                    Villacolombia, Manzana del Saber y Tequendama, además de la terminal Calipso.</p>
+
+                <img src="https://www.cali.gov.co/info/principal/media/galeria269182.jpg" alt=""
+                    style="width:100%; max-width: 100%;">
+            </div>
+
+            <img src="https://www.cali.gov.co/info/principal/media/galeria269185.jpg" alt=""
+                style="width:100%; max-width: 100%;">
+        </div>
+
+        <div class="flex flex-row g-1 p-2 bg-aqua shadow align-center" data-parent="principal" id="fondo-solidario"
+            style="display: none;">
+            <div>
+                <p>Estrategia de inclusión financiera y recuperación económica impulsada por la
+                    Administración Distrital, diseñada para reconstruir y fortalecer el tejido
+                    empresarial de la ciudad, a través de condiciones y políticas más favorables que
+                    las ofrecidas por la banca tradicional. La iniciativa busca consolidarse en una
+                    alternativa para los microempresarios que han sido excluidos del sistemafinanciero
+                    con el ánimo de fortalecer las unidades de negocio por medio de un crédito público.</p>
+
+                <img src="https://www.cali.gov.co/info/principal/media/galeria269182.jpg" alt=""
+                    style="width:100%; max-width: 100%;">
+            </div>
+
+            <img src="https://www.cali.gov.co/info/principal/media/galeria269185.jpg" alt=""
+                style="width:100%; max-width: 100%;">
         </div>
     </div>
 
 
-    <div class="flex flex-row g-1 p-2 bg-aqua shadow align-center">
-        <div>
-            <p>Programa de rehabilitación integral de la malla vial que busca impactar 400
-                kilómetros de corredores, tanto en los barrios como en las vías principales, con
-                intervención de redes de acueducto y alcantarillado, cuando sea necesario.
-                El objetivo de la iniciativa es recuperar el 35% de vías locales.Esta inversión
-                complementa el trabajo de recuperación de la malla vial que se adelanta con
-                otras fuentes de financiación.</p>
-
-            <img src="https://www.cali.gov.co/info/principal/media/galeria269182.jpg" alt="" style="max-width:100%;">
-        </div>
-
-        <img src="https://www.cali.gov.co/info/principal/media/galeria269185.jpg" alt="">
-    </div>
-
-    <div class="flex flex-row g-1 p-2 bg-aqua shadow align-center">
-        <div>
-            <p>El propósito de este programa es recuperar un total de 17 estaciones que
-                presentaban deterioro: San Bosco, El Trébol, Chiminangos, Buitrera,
-                Conquistadores, Belalcázar, Siete de Agosto, Univalle, Meléndez, Nuevo Latir,
-                Paso del Comercio, Santa Librada , San Pascual, Universidades, Popular,
-                Villacolombia, Manzana del Saber y Tequendama, además de la terminal Calipso.</p>
-
-            <img src="https://www.cali.gov.co/info/principal/media/galeria269182.jpg" alt="" style="max-width:100%;">
-        </div>
-
-        <img src="https://www.cali.gov.co/info/principal/media/galeria269185.jpg" alt="">
-    </div>
-
-    <div class="flex flex-row g-1 p-2 bg-aqua shadow align-center">
-        <div>
-            <p>Estrategia de inclusión financiera y recuperación económica impulsada por la
-                Administración Distrital, diseñada para reconstruir y fortalecer el tejido
-                empresarial de la ciudad, a través de condiciones y políticas más favorables que
-                las ofrecidas por la banca tradicional. La iniciativa busca consolidarse en una
-                alternativa para los microempresarios que han sido excluidos del sistemafinanciero
-                con el ánimo de fortalecer las unidades de negocio por medio de un crédito público.</p>
-
-            <img src="https://www.cali.gov.co/info/principal/media/galeria269182.jpg" alt="" style="max-width:100%;">
-        </div>
-
-        <img src="https://www.cali.gov.co/info/principal/media/galeria269185.jpg" alt="">
-    </div>
-
-    <div class="grid columns-3 row-gap-1">
+    <div class="grid columns-3 row-gap-1 col-gap-1">
         <div class="flex flex-1 g-1">
             <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269189.jpg" />
-            <p class="text-blue">
-                <span class="font-bold">Parque Tecnológico San Fernando</span>
+            <p class="font-bold text-large">
+                <span class="text-blue ">Parque Tecnológico San Fernando</span>
                 <br />
                 $60.000 millones
             </p>
         </div>
         <div class="flex flex-1 g-1">
             <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269191.jpg" />
-            <p class="text-blue">
-                <span class="font-bold">Revitalización del IPC</span>
+            <p class="font-bold text-large">
+                <span class="text-blue ">Revitalización del IPC</span>
                 <br />
                 $29.234 millones
             </p>
         </div>
         <div class="flex flex-1 g-1">
             <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269194.jpg" />
-            <p class="text-blue">
-                <span class="font-bold">Construcción Tejido Social en Territorios</span>
+            <p class="font-bold text-large">
+                <span class="text-blue ">Construcción Tejido Social en Territorios</span>
                 <br />
                 $10.000 millones
             </p>
@@ -220,8 +307,8 @@
 
         <div class="flex flex-1 g-1">
             <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269191.jpg" />
-            <p class="text-blue">
-                <span class="font-bold">Parque Pacífico</span>
+            <p class="font-bold text-large">
+                <span class="text-blue ">Parque Pacífico</span>
                 <br />
                 $30.000 millones
             </p>
@@ -229,8 +316,8 @@
 
         <div class="flex flex-1 g-1">
             <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269192.jpg" />
-            <p class="text-blue">
-                <span class="font-bold">Comedores Comunitario</span>
+            <p class="font-bold text-large">
+                <span class="text-blue ">Comedores Comunitario</span>
                 <br />
                 $4.100 millones
             </p>
@@ -238,8 +325,8 @@
 
         <div class="flex flex-1 g-1">
             <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269196.jpg" />
-            <p class="text-blue">
-                <span class="font-bold">Todas y Todos a Estudiar</span>
+            <p class="font-bold text-large">
+                <span class="text-blue ">Todas y Todos a Estudiar</span>
                 <br />
                 $56.277 millones
             </p>
@@ -247,8 +334,8 @@
 
         <div class="flex flex-1 g-1">
             <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269187.jpg" />
-            <p class="text-blue">
-                <span class="font-bold">Bulevar de Oriente</span>
+            <p class="font-bold text-large">
+                <span class="text-blue ">Bulevar de Oriente</span>
                 <br />
                 $31.534 millones
             </p>
@@ -256,8 +343,8 @@
 
         <div class="flex flex-1 g-1">
             <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269193.jpg" />
-            <p class="text-blue">
-                <span class="font-bold">Parque Ambiental Corazón de Pance</span>
+            <p class="font-bold text-large">
+                <span class="text-blue ">Parque Ambiental Corazón de Pance</span>
                 <br />
                 $60.000 millones
             </p>
@@ -266,8 +353,8 @@
 
         <div class="flex flex-1 g-1">
             <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269195.jpg" />
-            <p class="text-blue">
-                <span class="font-bold">Proyecto Cristo Rey</span>
+            <p class="font-bold text-large">
+                <span class="text-blue ">Proyecto Cristo Rey</span>
                 <br />
                 $73.266 millones
             </p>
@@ -275,8 +362,8 @@
 
         <div class="flex flex-1 g-1">
             <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269188.jpg" />
-            <p class="text-blue">
-                <span class="font-bold">Semaforización Inteligente</span>
+            <p class="font-bold text-large">
+                <span class="text-blue ">Semaforización Inteligente</span>
                 <br />
                 $55.000 millones
             </p>
@@ -284,8 +371,8 @@
 
         <div class="flex flex-1 g-1">
             <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269190.jpg" />
-            <p class="text-blue">
-                <span class="font-bold">Laboratorio de Innovación Digital</span>
+            <p class="font-bold text-large">
+                <span class="text-blue ">Laboratorio de Innovación Digital</span>
                 <br />
                 $15.000 millones
             </p>
@@ -293,16 +380,16 @@
 
         <div class="flex flex-1 g-1">
             <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269197.jpg" />
-            <p class="text-blue">
-                <span class="font-bold">Catastro con enfoque Multipropósito</span>
+            <p class="font-bold text-large">
+                <span class="text-blue ">Catastro con enfoque Multipropósito</span>
                 <br />
                 $50.000 millones
             </p>
         </div>
         <div class="flex flex-1 g-1">
             <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269198.jpg" />
-            <p class="text-blue">
-                <span class="font-bold">Centro de Prevención y Atención Integral al Consumo de Sustancias
+            <p class="font-bold text-large">
+                <span class="text-blue ">Centro de Prevención y Atención Integral al Consumo de Sustancias
                     Psicoactivas</span>
                 <br />
                 $8.587 millones
@@ -310,3 +397,31 @@
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function () {
+        // Handle toggles
+        $("[data-target]").click(function (e) {
+            // Guarda atributo de elemento clickeado
+            const dataAttr = $(this).attr("data-target");
+            const dataControls = $(this).attr("aria-controls")
+
+            const menuItems = $("[aria-controls='" + dataControls + "']")
+            const contentItems = $("[data-parent='" + dataControls + "']")
+            const selectedElement = document.getElementById(dataAttr)
+
+            // Manejo de clases
+            $(this).addClass("disabled");
+            menuItems.not($(this)).removeClass("disabled");
+
+            // Esconde todos menos el seleccionado
+            contentItems.not($(this)).hide("fast")
+
+            //Abre elemento seleccionado
+            $(selectedElement).toggle("fast");
+
+            return false;
+        });
+
+    });
+</script>
