@@ -1,0 +1,701 @@
+<style>
+    .micrositio>* {
+        margin-bottom: 2em;
+    }
+
+    .micrositio .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .micrositio button {
+        background: none;
+        border: none;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .text-left {
+        text-align: left;
+    }
+
+    .align-center {
+        align-items: center;
+    }
+
+    .justify-content-center {
+        justify-content: center;
+    }
+
+    .text-blue {
+        color: #1f5b9a !important;
+    }
+
+    .font-bold {
+        font-weight: bold;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .flex-row {
+        flex-direction: row;
+    }
+
+    .flex-column {
+        flex-direction: column;
+    }
+
+    .space-between {
+        justify-content: space-between;
+    }
+
+    .justify-center {
+        justify-items: center
+    }
+
+    .flex-1 {
+        flex: 1;
+    }
+
+    .logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .w-80 {
+        width: 80%;
+    }
+
+    .m-auto {
+        margin: auto;
+    }
+
+    .mb-2 {
+        margin-bottom: 2em;
+    }
+
+    .g-1 {
+        gap: 1em
+    }
+
+    .p-1 {
+        padding: 1em
+    }
+
+    .p-2 {
+        padding: 2em;
+    }
+
+    .p-3 {
+        padding: 3em;
+    }
+
+    .shadow {
+        box-shadow: rgb(0 0 0 / 15%) 6.95px 7.95px 6.6px
+    }
+
+    .bg-aqua {
+        background-color: #ecf7fe;
+    }
+
+    .grid {
+        display: grid;
+    }
+
+    .columns-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .row-gap-1 {
+        row-gap: 1em;
+    }
+
+    .col-gap-1 {
+        column-gap: 1em;
+    }
+
+    .text-large {
+        font-size: large;
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    .disabled {
+        pointer-events: none;
+        cursor: not-allowed;
+        filter: alpha(opacity=65);
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        opacity: .65;
+        text-decoration: none;
+        transition: all 250ms ease-in-out;
+    }
+
+    @media (max-width: 768px) {
+        .text-center {
+            text-align: left;
+        }
+
+        .columns-3 {
+            grid-template-columns: 1fr;
+        }
+
+        .flex-row {
+            flex-direction: column;
+            flex-flow: column-reverse;
+        }
+
+        .text-large {
+            font-size: medium;
+        }
+
+        .w-80 {
+            width: 100%;
+        }
+    }
+</style>
+
+<div class="micrositio">
+    <div class="row text-center">
+        <span class="text-center text-blue font-bold">Caleños y caleñas:</span>
+        <p>Cada uno de ustedes merece soñar con una mejor ciudad. con más espacio público. oportunidades. calidad de
+            vida y
+            un compromiso medio ambiental que asegure el agua. Tras la situación de la pandemia debimos reorientar los
+            recursos con los que contábamos originalmente. para atender necesidades urgentes: redefinir una
+            infraestructura
+            hospitalaria de emergencia, salvar vidas y apoyar a la población más vulnerable para cubrir sus necesidades
+            básicas. Aunque la situación de la pandemia nos demandó un esfuerzo fiscal enorme. también nos invitó a
+            reorientar una nueva hoja de ruta enfocada en el renacer de nuestra amada ciudad. surgió entonces 'Cali
+            Unida
+            por la Vida': derrotero que financiamos gestionando un empréstito que nos ha permitido sacar adelante varias
+            iniciativas que transformarán el presente y futuro de todas y todos. </p>
+
+        <span class="text-center font-bold">Contigo es posible. </span>
+
+    </div>
+
+    <div class="flex justify-content-center">
+
+        <img src="https://www.cali.gov.co/info/principal/media/galeria269182.jpg" alt="" style="max-width:60%;">
+    </div>
+
+    <div class="row flex flex-column">
+        <p class="text-center">
+            <span class="text-blue font-bold">Haz clic y conoce los proyectos de ciudad</span> en los
+            que
+            se han invertido
+            $650.000
+            millones de pesos del empréstito.
+        </p>
+    </div>
+
+    <div class="grid columns-3 row-gap-1 col-gap-1">
+
+
+        <div class="flex flex-1 g-1">
+            <button class="flex flex-1 g-1 text-left" data-target="obras-de-corazon" aria-controls="principal">
+                <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269183.jpg" />
+                <span class="font-bold text-large">
+                    <span class="text-blue ">Obras de corazón</span>
+                    <br />
+                    $117.000 millones
+                </span>
+            </button>
+        </div>
+
+        <div class="flex flex-1 g-1">
+            <button class="flex flex-1 g-1 text-left" data-target="transporte-masivo" aria-controls="principal">
+                <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269184.jpg" />
+                <span class="font-bold text-large">
+                    <span class="text-blue ">Sistema de Transporte Masivo</span>
+                    <br />
+                    $30.000 millones
+                </span>
+            </button>
+        </div>
+
+        <div class="flex flex-1 g-1">
+            <button class="flex flex-1 g-1 text-left" data-target="fondo-solidario" aria-controls="principal">
+                <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269199.jpg" />
+                <span class="font-bold text-large">
+                    <span class="text-blue ">Fondo Solidario y de Oportunidades</span>
+                    <br />
+                    $20.000 millones
+                </span>
+            </button>
+        </div>
+
+    </div>
+
+    <div class="w-80 m-auto mb-2">
+        <div class="flex flex-row g-1 p-2 bg-aqua shadow align-center" data-parent="principal" id="obras-de-corazon"
+            style="display: none;">
+            <div>
+                <p>Programa de rehabilitación integral de la malla vial que busca impactar 400
+                    kilómetros de corredores, tanto en los barrios como en las vías principales, con
+                    intervención de redes de acueducto y alcantarillado, cuando sea necesario.
+                    El objetivo de la iniciativa es recuperar el 35% de vías locales.Esta inversión
+                    complementa el trabajo de recuperación de la malla vial que se adelanta con
+                    otras fuentes de financiación.</p>
+
+                <img src="https://www.cali.gov.co/info/principal/media/galeria269182.jpg" alt=""
+                    style="width:100%; max-width: 100%; min-width: 40%;">
+            </div>
+
+            <img src="https://www.cali.gov.co/info/principal/media/galeria269666.jpg" alt=""
+                style="width:100%; max-width: 100%; min-width: 40%;">
+        </div>
+
+        <div class="flex flex-row g-1 p-2 bg-aqua shadow align-center " data-parent="principal" id="transporte-masivo"
+            style="display: none;">
+            <div>
+                <p>El propósito de este programa es recuperar un total de 17 estaciones que
+                    presentaban deterioro: San Bosco, El Trébol, Chiminangos, Buitrera,
+                    Conquistadores, Belalcázar, Siete de Agosto, Univalle, Meléndez, Nuevo Latir,
+                    Paso del Comercio, Santa Librada , San Pascual, Universidades, Popular,
+                    Villacolombia, Manzana del Saber y Tequendama, además de la terminal Calipso.</p>
+
+                <img src="https://www.cali.gov.co/info/principal/media/galeria269182.jpg" alt=""
+                    style="width:100%; max-width: 100%; min-width: 40%;">
+            </div>
+
+            <img src="https://www.cali.gov.co/info/principal/media/galeria269667.jpg" alt=""
+                style="width:100%; max-width: 100%; min-width: 40%;">
+        </div>
+
+        <div class="flex flex-row g-1 p-2 bg-aqua shadow align-center" data-parent="principal" id="fondo-solidario"
+            style="display: none;">
+            <div>
+                <p>Estrategia de inclusión financiera y recuperación económica impulsada por la
+                    Administración Distrital, diseñada para reconstruir y fortalecer el tejido
+                    empresarial de la ciudad, a través de condiciones y políticas más favorables que
+                    las ofrecidas por la banca tradicional. La iniciativa busca consolidarse en una
+                    alternativa para los microempresarios que han sido excluidos del sistemafinanciero
+                    con el ánimo de fortalecer las unidades de negocio por medio de un crédito público.</p>
+
+                <img src="https://www.cali.gov.co/info/principal/media/galeria269182.jpg" alt=""
+                    style="width:100%; max-width: 100%; min-width: 40%;">
+            </div>
+
+            <img src="https://www.cali.gov.co/info/principal/media/galeria269668.jpg" alt=""
+                style="width:100%; max-width: 100%; min-width: 40%;">
+        </div>
+    </div>
+
+    <div class="grid columns-3 row-gap-1 col-gap-1">
+        <div class="flex flex-1 g-1">
+            <button class="flex flex-1 g-1 text-left" data-target="san-fernando" aria-controls="principal">
+                <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269189.jpg" />
+                <span class="font-bold text-large">
+                    <span class="text-blue ">Parque Tecnológico San Fernando</span>
+                    <br />
+                    $75.000 millones
+                </span>
+            </button>
+        </div>
+        <div class="flex flex-1 g-1">
+            <button class="flex flex-1 g-1 text-left" data-target="revitalizacion-ipc" aria-controls="principal">
+                <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269191.jpg" />
+                <span class="font-bold text-large">
+                    <span class="text-blue ">Revitalización del IPC</span>
+                    <br />
+                    $29.234 millones
+                </span>
+            </button>
+        </div>
+        <div class="flex flex-1 g-1">
+            <button class="flex flex-1 g-1 text-left" data-target="tejido-social" aria-controls="principal">
+                <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269194.jpg" />
+                <span class="font-bold text-large">
+                    <span class="text-blue ">Construcción Tejido Social en Territorios</span>
+                    <br />
+                    $10.000 millones
+                </span>
+            </button>
+        </div>
+
+
+    </div>
+
+    <div class="w-80 m-auto mb-2">
+        <div class="flex flex-row g-1 p-2 bg-aqua shadow align-center" data-parent="principal" id="san-fernando"
+            style="display: none;">
+            <div>
+                <p>Epicentro de la ciencia, la innovación digital y las artes performativas que se
+                    desarrollará en 23.000 m en el lote donde antiguamente se instaló en Club
+                    San Fernando. Con una proyección de 3.350 empleos directos e indirectos,
+                    la iniciativa tiene el propósito de convertirse en núcleo para el ingenio, la
+                    creación y el desarrollo de conocimiento en un espacio lúdico, con
+                    infraestructura de calidad e impacto.</p>
+
+                <img src="https://www.cali.gov.co/info/principal/media/galeria269182.jpg" alt=""
+                    style="width:100%; max-width: 100%; min-width: 40%;">
+            </div>
+
+            <img src="https://www.cali.gov.co/info/principal/media/galeria269683.jpg" alt=""
+                style="width:100%; max-width: 100%; min-width: 40%;">
+        </div>
+
+        <div class="flex flex-row g-1 p-2 bg-aqua shadow align-center " data-parent="principal" id="revitalizacion-ipc"
+            style="display: none;">
+            <div>
+                <p>Proyecto que comprende la restauración patrimonial del emblemático edificio
+                    Coltabaco y la adecuación de la nueva sede educativa del IPC, mediante el
+                    diseño de ambientes públicos, formativos y paisajísticos. Un espacio de
+                    encuentro y arte para los cerca de 3 mil jóvenes y adultos en proceso de
+                    formación en artes populares y tradicionales, posibilitando además la
+                    reactivación de uno de los nodos urbanos más representativos de la ciudad.</p>
+
+                <img src="https://www.cali.gov.co/info/principal/media/galeria269182.jpg" alt=""
+                    style="width:100%; max-width: 100%; min-width: 40%;">
+            </div>
+
+            <img src="https://www.cali.gov.co/info/principal/media/galeria269670.jpg" alt=""
+                style="width:100%; max-width: 100%; min-width: 40%;">
+        </div>
+
+        <div class="flex flex-row g-1 p-2 bg-aqua shadow align-center" data-parent="principal" id="tejido-social"
+            style="display: none;">
+            <div>
+                <p>Implementación de acciones sociales que promueven la participación
+                    ciudadana y acciones que contribuyen a la reconstrucción del tejido social en
+                    los territorios del Distrito, promoviendo la apropiación de espacios físicos y
+                    simbólicos como garantía para la continuidad de iniciativas de ciudad. El
+                    programa permite proyectar así una ciudad más incluyente y participativa
+                    transformando la realidad en acciones conjuntas en beneficio de todos.</p>
+
+                <img src="https://www.cali.gov.co/info/principal/media/galeria269182.jpg" alt=""
+                    style="width:100%; max-width: 100%; min-width: 40%;">
+            </div>
+
+            <img src="https://www.cali.gov.co/info/principal/media/galeria269671.jpg" alt=""
+                style="width:100%; max-width: 100%; min-width: 40%;">
+        </div>
+    </div>
+
+    <div class="grid columns-3 row-gap-1 col-gap-1">
+        <div class="flex flex-1 g-1">
+
+            <button class="flex flex-1 g-1 text-left font-bold text-lager" data-target="parque-pacifico"
+                aria-controls="principal">
+                <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269191.jpg" />
+                <span class="font-bold text-large">
+                    <span class="text-blue ">Parque Pacífico</span>
+                    <br />
+                    $30.000 millones
+                </span>
+            </button>
+
+        </div>
+
+        <div class="flex flex-1 g-1">
+
+            <button class="flex flex-1 g-1 text-left" data-target="comedores-comunitarios" aria-controls="principal">
+                <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269192.jpg" />
+                <span class="font-bold text-large">
+                    <span class="text-blue ">Comedores Comunitarios</span>
+                    <br />
+                    $4.100 millones
+                </span>
+            </button>
+
+        </div>
+
+        <div class="flex flex-1 g-1">
+            <button class="flex flex-1 g-1 text-left" data-target="todas-y-todos" aria-controls="principal">
+                <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269196.jpg" />
+                <span class="font-bold text-large">
+                    <span class="text-blue ">Todas y Todos a Estudiar</span>
+                    <br />
+                    $56.277 millones
+                </span>
+            </button>
+
+        </div>
+
+
+    </div>
+
+    <div class="w-80 m-auto mb-2">
+        <div class="flex flex-row g-1 p-2 bg-aqua shadow align-center" data-parent="principal" id="parque-pacifico"
+            style="display: none;">
+            <div>
+                <p>Un espacio para las expresiones culturales y ancestrales localizado sobre el
+                    corredor del río Cali, entre la Terminal de Transportes y el Parque del
+                    Chontaduro. Serán 29.456 m de espacio público con un diseño arquitectónico
+                    moderno que permitirá a propios y visitantes vivir una experiencia y conectarse
+                    con la esencia del Pacífico en Cali. Este proyecto movilizador expande la
+                    tradición cultural de nuestra región a través de la renovación urbana.</p>
+
+                <img src="https://www.cali.gov.co/info/principal/media/galeria269182.jpg" alt=""
+                    style="width:100%; max-width: 100%; min-width: 40%;">
+            </div>
+
+            <img src="https://www.cali.gov.co/info/principal/media/galeria269675.jpg" alt=""
+                style="width:100%; max-width: 100%; min-width: 40%;">
+        </div>
+
+        <div class="flex flex-row g-1 p-2 bg-aqua shadow align-center " data-parent="principal"
+            id="comedores-comunitarios" style="display: none;">
+            <div>
+                <p>Programa de seguridad alimentaria más ambicioso en la historia de la ciudad
+                    que impacta más de 85.000 personas con raciones diarias de comida en 762
+                    comedores comunitarios, atendidos de manera voluntaria por 2600
+                    gestoras y gestores, quienes a su vez reciben procesos formativos de
+                    liderazgo organizacional, empoderamiento económico, bioseguridad
+                    alimentaria, gastronomía y formalización de emprendimientos sociales,
+                    ratificando así el carácter integral de la iniciativa.</p>
+
+                <img src="https://www.cali.gov.co/info/principal/media/galeria269182.jpg" alt=""
+                    style="width:100%; max-width: 100%; min-width: 40%;">
+            </div>
+
+            <img src="https://www.cali.gov.co/info/principal/media/galeria269672.jpg" alt=""
+                style="width:100%; max-width: 100%; min-width: 40%;">
+        </div>
+
+        <div class="flex flex-row g-1 p-2 bg-aqua shadow align-center" data-parent="principal" id="todas-y-todos"
+            style="display: none;">
+            <div>
+                <p>Garantizar el derecho a un proceso educativo gratuito, a la promoción e
+                    integración laboral y a un desarrollo socio cultural para los jóvenes entre 14 y
+                    28 años de edad es el objetivo del programa que en la actualidad impacta a
+                    7.000 jóvenes de la ciudad. En 7 líneas educativas, Todas y Todos a Estudiar
+                    es el resultado de un trabajo de articulación con 50 instituciones de alta
+                    calidad.</p>
+
+                <img src="https://www.cali.gov.co/info/principal/media/galeria269182.jpg" alt=""
+                    style="width:100%; max-width: 100%; min-width: 40%;">
+            </div>
+
+            <img src="https://www.cali.gov.co/info/principal/media/galeria269673.jpg" alt=""
+                style="width:100%; max-width: 100%; min-width: 40%;">
+        </div>
+    </div>
+
+    <div class="grid columns-3 row-gap-1 col-gap-1">
+        <div class="flex flex-1 g-1">
+            <button class="flex flex-1 g-1 text-left font-bold text-lager" data-target="bulevar-de-oriente"
+                aria-controls="principal">
+                <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269187.jpg" />
+                <span>
+                    <span class="text-blue ">Bulevar de Oriente</span>
+                    <br />
+                    $31.534 millones
+                </span>
+            </button>
+        </div>
+
+        <div class="flex flex-1 g-1">
+            <button class="flex flex-1 g-1 text-left" data-target="corazon-de-pance" aria-controls="principal">
+                <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269193.jpg" />
+                <span class="font-bold text-large">
+                    <span class="text-blue ">Parque Ambiental Corazón de Pance</span>
+                    <br />
+                    $60.000 millones
+                </span>
+            </button>
+
+        </div>
+
+
+        <div class="flex flex-1 g-1">
+            <button class="flex flex-1 g-1 text-left" data-target="cristo-rey" aria-controls="principal">
+                <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269195.jpg" />
+                <span class="font-bold text-large">
+                    <span class="text-blue ">Proyecto Cristo Rey</span>
+                    <br />
+                    $73.266 millones
+                </span>
+            </button>
+        </div>
+
+
+
+    </div>
+
+    <div class="w-80 m-auto mb-2">
+        <div class="flex flex-row g-1 p-2 bg-aqua shadow align-center" data-parent="principal" id="bulevar-de-oriente"
+            style="display: none;">
+            <div>
+                <p>Corredor ambiental de 1.1 kilómetros, pensado para mejorar el hábitat y la
+                    calidad de vida de los 51.600 habitantes de las comunas 13, 14 y 15. Cinturón
+                    ecológico de 47.000 metros cuadrados que ofrecerá pabellones culturales,
+                    huertas urbanas, jardines, biblio parques y áreas para la recreación,
+                    impactando de manera positiva la calidad de vida del oriente de la ciudad.</p>
+
+                <img src="https://www.cali.gov.co/info/principal/media/galeria269182.jpg" alt=""
+                    style="width:100%; max-width: 100%; min-width: 40%;">
+            </div>
+
+            <img src="https://www.cali.gov.co/info/principal/media/galeria269676.jpg" alt=""
+                style="width:100%; max-width: 100%; min-width: 40%;">
+        </div>
+
+        <div class="flex flex-row g-1 p-2 bg-aqua shadow align-center " data-parent="principal" id="corazon-de-pance"
+            style="display: none;">
+            <div>
+                <p>En la margen izquierda del río Pance se localiza uno de los proyectos más
+                    ambiciosos para la conservación del medio ambiente, considerado el más
+                    grande que se proyecta en Latinoamérica con 92 hectáreas, hábitat de 250
+                    especies de aves y 21 mil tipos de plantas. El proyecto que contará con diseños
+                    paisajísticos y arquitectónicos de senderos, ciclorruta, huertas y 3.000 m de
+                    jardines polinizadores, generará 1.330 empleos directos e indirectos.</p>
+
+                <img src="https://www.cali.gov.co/info/principal/media/galeria269182.jpg" alt=""
+                    style="width:100%; max-width: 100%; min-width: 40%;">
+            </div>
+
+            <img src="https://www.cali.gov.co/info/principal/media/galeria269674.jpg" alt=""
+                style="width:100%; max-width: 100%; min-width: 40%;">
+        </div>
+
+        <div class="flex flex-row g-1 p-2 bg-aqua shadow align-center" data-parent="principal" id="cristo-rey"
+            style="display: none;">
+            <div>
+                <p>Considerado el segundo mirador más importante de la ciudad y atendido
+                    por artesanos, el proyecto permitirá transformar el espacio con 1,7 km de
+                    senderos y 2.100 m de espacio público. El proyecto, que conectará la zona
+                    alta del barrio San Fernando y el mirador, tendrá un bosque urbano 370
+                    árboles, espacios ecológicos, plazoleta de comidas y un museo que le
+                    permitirán a los visitantes tener nuevas experiencias.</p>
+
+                <img src="https://www.cali.gov.co/info/principal/media/galeria269182.jpg" alt=""
+                    style="width:100%; max-width: 100%; min-width: 40%;">
+            </div>
+
+            <img src="https://www.cali.gov.co/info/principal/media/galeria269677.jpg" alt=""
+                style="width:100%; max-width: 100%; min-width: 40%;">
+        </div>
+    </div>
+    <div class="grid columns-3 row-gap-1 col-gap-1">
+        <div class="flex flex-1 g-1">
+            <button class="flex flex-1 g-1 text-left" data-target="semaforizacion-inteligente"
+                aria-controls="principal">
+                <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269188.jpg" />
+                <span class="font-bold text-large">
+                    <span class="text-blue ">Semaforización Inteligente</span>
+                    <br />
+                    $55.000 millones
+                </span>
+            </button>
+
+        </div>
+
+        <div class="flex flex-1 g-1">
+            <button class="flex flex-1 g-1 text-left" data-target="sustancias-psicoactivas" aria-controls="principal">
+                <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269198.jpg" />
+                <span class="font-bold text-large">
+                    <span class="text-blue ">Centro de Prevención y Atención Integral al Consumo de Sustancias
+                        Psicoactivas</span>
+                    <br />
+                    $8.587 millones
+                </span>
+            </button>
+
+        </div>
+
+        <div class="flex flex-1 g-1">
+            <button class="flex flex-1 g-1 text-left" data-target="catastro" aria-controls="principal">
+                <img alt="" class="logo" src="https://www.cali.gov.co/info/principal/media/galeria269197.jpg" />
+                <span class="font-bold text-large">
+                    <span class="text-blue ">Catastro con enfoque Multipropósito</span>
+                    <br />
+                    $50.000 millones
+                </span>
+            </button>
+
+        </div>
+    </div>
+
+    <div class="w-80 m-auto mb-2">
+        <div class="flex flex-row g-1 p-2 bg-aqua shadow align-center" data-parent="principal"
+            id="semaforizacion-inteligente" style="display: none;">
+            <div>
+                <p>La iniciativa busca incorporar, en una primera fase, un sistema moderno e
+                    innovador que haciendo uso de las tecnologías de la información y las
+                    comunicaciones se adapte a las condiciones del tráfico en tiempo real. Será
+                    alimentado por un sistema que permitirá un ahorro del 80% del consumo
+                    energético, resistente a las diferentes condiciones atmosféricas y amigable con el
+                    medio ambiente, disminuyendo así la siniestralidad y la contaminación.
+                    50 intersecciones en 11 comunas de la ciudad, 37 barrios beneficiados.</p>
+
+                <img src="https://www.cali.gov.co/info/principal/media/galeria269182.jpg" alt=""
+                    style="width:100%; max-width: 100%; min-width: 40%;">
+            </div>
+
+            <img src="https://www.cali.gov.co/info/principal/media/galeria269678.jpg" alt=""
+                style="width:100%; max-width: 100%; min-width: 40%;">
+        </div>
+
+        <div class="flex flex-row g-1 p-2 bg-aqua shadow align-center" data-parent="principal"
+            id="sustancias-psicoactivas" style="display: none;">
+            <div>
+                <p>Ofrecer una atención integral desde el modelo comunitario de salud mental a
+                    la población en riesgo o en consumo problemático de sustancias psicoactivas
+                    (SPA) es el propósito de esta iniciativa que busca convertirse en una respuesta
+                    social, institucional y comunitaria para la población afectada. El centro estará
+                    localizado en el Hospital Cañaveralejo.</p>
+
+                <img src="https://www.cali.gov.co/info/principal/media/galeria269182.jpg" alt=""
+                    style="width:100%; max-width: 100%; min-width: 40%;">
+            </div>
+
+            <img src="https://www.cali.gov.co/info/principal/media/galeria269681.jpg" alt=""
+                style="width:100%; max-width: 100%; min-width: 40%;">
+        </div>
+
+        <div class="flex flex-row g-1 p-2 bg-aqua shadow align-center" data-parent="principal" id="catastro"
+            style="display: none;">
+            <div>
+                <p>Instrumento para el ordenamiento territorial que permitirá garantizar
+                    información detallada y en tiempo real de la condición jurídica, económica y
+                    física de la ciudad, integrando datos de distintas entidades administrativas
+                    del orden local y nacional que permitan una mejor planeación, gestión
+                    ambiental y creación de políticas públicas efectivas en la orientación de la
+                    inversión y el desarrollo de la ciudad.</p>
+
+                <img src="https://www.cali.gov.co/info/principal/media/galeria269182.jpg" alt=""
+                    style="width:100%; max-width: 100%; min-width: 40%;">
+            </div>
+
+            <img src="https://www.cali.gov.co/info/principal/media/galeria269680.jpg" alt=""
+                style="width:100%; max-width: 100%; min-width: 40%;">
+        </div>
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(function () {
+        // Handle toggles
+        $("[data-target]").click(function (e) {
+            // Guarda atributo de elemento clickeado
+            const dataAttr = $(this).attr("data-target");
+            const dataControls = $(this).attr("aria-controls")
+
+            const menuItems = $("[aria-controls='" + dataControls + "']")
+            const contentItems = $("[data-parent='" + dataControls + "']")
+            const selectedElement = document.getElementById(dataAttr)
+
+            // Manejo de clases
+            $(this).addClass("disabled");
+            menuItems.not($(this)).removeClass("disabled");
+
+            // Esconde todos menos el seleccionado
+            contentItems.not($(this)).hide("fast")
+
+            //Abre elemento seleccionado
+            $(selectedElement).toggle("fast");
+
+            return false;
+        });
+
+    });
+</script>
