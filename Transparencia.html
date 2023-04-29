@@ -252,7 +252,6 @@
 </style>
 
 <script>
-
     // Lógica sliders
     function plusDivs(n, no) {
         showDivs(slideIndex[no] += n, no);
@@ -268,9 +267,6 @@
         }
         x[slideIndex[no] - 1].style.display = "block";
     }
-
-
-
 
 
     $(document).ready(function () {
@@ -298,7 +294,6 @@
             item.classList.add('active');
             slider.appendChild(item);
             let numero_funcionario_slide_actual = 0;
-            let multiplier = 0;
             let funcionarios_por_slide = 3;
 
             funcionarios.forEach((funcionario, index) => {
@@ -314,8 +309,10 @@
                     }
                 }
             });
-        })
+
+        });
     });
+
 </script>
 
 <img src="https://www.cali.gov.co/info/principal/media/galeria198927.jpg" width="100%"
@@ -376,8 +373,6 @@
 
 <div class="row">
     <div class="col-md-3">
-
-
         <div class="panel-group" id="menu-group">
             <div class="panel panel-default">
                 <div class="panel-heading">
@@ -4800,7 +4795,6 @@
                 </div>
             </div>
 
-            <!-- Proteccion animal -->
             <div id="proteccion-animal" class="collapse" data-parent="#wrapper">
 
                 <h2 class="dependencia">Protección Animal</h2>
@@ -4863,7 +4857,6 @@
                 </div>
             </div>
 
-            <!-- Takeshima -->
             <div id="takeshima" class="collapse" data-parent="#wrapper">
 
                 <h2 class="dependencia">Takeshima</h2>
@@ -4929,7 +4922,6 @@
                 </div>
             </div>
 
-            <!-- Teatro Municipal -->
             <div id="teatro" class="collapse" data-parent="#wrapper">
 
                 <h2 class="dependencia">Teatro Municipal</h2>
@@ -4992,10 +4984,8 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
-            <!-- Servicios publicos municipales -->
+            
             <div id="uaespm" class="collapse" data-parent="#wrapper">
 
                 <h2 class="dependencia">Servicios Públicos Municipales</h2>
