@@ -228,16 +228,20 @@
         padding-bottom: 0;
     }
 
+
     .logos {
+        width: 50px;
+        height: 65px;
         border-radius: 50%;
-        height: 100px;
         border: 5px solid gray;
-        width: 100px !important;
-        max-width: 100px !important;
     }
 
-
     @media (min-width:40em) {
+        .logos {
+            height: 100px;
+            width: 100px !important;
+            max-width: 100px !important;
+        }
 
         .text-center-md {
             text-align: center;
@@ -344,10 +348,11 @@
         </div>
 
         <div class="embed-responsive embed-responsive-16by9">
-            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="788.54" height="443"
-                type="text/html"
-                src="https://www.youtube.com/embed/2HtTD8M78Qs?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0">
-            </iframe>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" type="text/html"
+                    src="https://www.youtube.com/embed/2HtTD8M78Qs">
+                </iframe>
+            </div>
         </div>
     </article>
 
