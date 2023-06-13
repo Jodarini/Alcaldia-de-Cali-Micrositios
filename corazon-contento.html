@@ -37,6 +37,16 @@
     }
 
 
+    .grid-videos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3em;
+    }
+
+    .grid-videos video {
+        width: 100%;
+    }
+
     .nav-mic {
         width: 100%;
         gap: 1em;
@@ -166,6 +176,12 @@
 
     @media (max-width: 660px) {
 
+
+        .grid-videos {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
         .border-right {
             border: none !important;
         }
@@ -209,6 +225,7 @@
         <a href="#" class="disabled" data-target="inicio" aria-controls="principal">Programa</a>
         <a href="#" class="" data-target="documentos" aria-controls="principal">Atención</a>
         <a href="#" data-target="historia" aria-controls="principal">Historia</a>
+        <a href="#" data-target="videos" aria-controls="principal">Videos</a>
         <a href="https://www.cali.gov.co/galeria/23815/" target="_blank">Galería</a>
     </div>
 
@@ -337,6 +354,18 @@
         </div>
     </div>
 
+    <div class="grid-videos" data-parent="principal" id="videos" style="display: none;">
+        <div>
+            <video src="https://www.cali.gov.co/info/principal/media/videos/mp4279072.mp4" controls>
+
+            </video>
+        </div>
+        <div>
+            <video src="https://www.cali.gov.co/info/principal/media/videos/mp4279071.mp4" controls>
+                
+            </video>
+        </div>
+    </div>
 </div>
 <script>
     $(document).ready(function () {
