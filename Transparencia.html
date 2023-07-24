@@ -269,15 +269,36 @@
     }
 
 
-    $(document).ready(function () {
 
-        const sliders = document.querySelectorAll('.carousel-inner');
-        sliders.forEach((slider) => {
+
+    $(document).ready(function () {
+        const carousel_inner_array = document.querySelectorAll('.carousel-inner');
+        carousel_inner_array.forEach((carouse_inner) => {
             /* Despliega los botones del slider unicamente si el 
             slider tiene al menos 4 hijos */
-            const numero_hijos = slider.children.length;
-            if (numero_hijos < 4) {
-                slider.nextElementSibling.style.display = 'none';
+
+            const parentId = carouse_inner.parentNode.id;
+            const numero_hijos = carouse_inner.children.length;
+
+            if (numero_hijos > 3) {
+                let container = document.createElement('div')
+                container.className = "slider-controls"
+
+                let button = document.createElement('button')
+                button.classList.add("w3-button", 'w3-black', 'w3-display-left', 'buttonsNav', 'slide-prev')
+                button.setAttribute('data-slide', 'prev')
+                button.setAttribute('href', '#slider-contratacion')
+                button.innerHTML = "&#10094;"
+
+                let button2 = document.createElement('button')
+                button2.classList.add("w3-button", 'w3-black', 'w3-display-right', 'buttonsNav', 'slide-next')
+                button2.setAttribute('data-slide', 'next')
+                button2.setAttribute('href', `#${parentId}`)
+                button2.innerHTML = "&#10095;"
+
+                container.appendChild(button)
+                container.appendChild(button2)
+                carouse_inner.after(container)
             }
 
             /* 
@@ -288,11 +309,11 @@
             De esta manera solo se debe agregar en el código desde 
             la etiqueta .funcionario, no se debe agregar HTML respecto al slider.
             */
-            const funcionarios = slider.querySelectorAll('.funcionario');
+            const funcionarios = carouse_inner.querySelectorAll('.funcionario');
             let item = document.createElement('div');
             item.classList.add('item');
             item.classList.add('active');
-            slider.appendChild(item);
+            carouse_inner.appendChild(item);
             let numero_funcionario_slide_actual = 0;
             let funcionarios_por_slide = 3;
 
@@ -305,7 +326,7 @@
                     if (numero_total_funcionarios !== funcionarios.length) {
                         item = document.createElement('div');
                         item.classList.add('item');
-                        slider.appendChild(item);
+                        carouse_inner.appendChild(item);
                     }
                 }
             });
@@ -652,12 +673,6 @@
 
 
                     </div>
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-contratacion">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-contratacion">&#10095;</button>
-                    </div>
                 </div>
 
                 <div class="panel">
@@ -805,12 +820,6 @@
                             </a>
                         </div>
                     </div>
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-disciplinario">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-disciplinario">&#10095;</button>
-                    </div>
                 </div>
                 <div class="panel">
                     <div class="collapse" id="disciplinario-director" data-parent="#control-disciplinario">
@@ -864,12 +873,6 @@
                                 <p class="blueText">Leidy Amparo Correa Erazo</p>
                             </a>
                         </div>
-                    </div>
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-interno">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-interno">&#10095;</button>
                     </div>
 
                     <div class="panel">
@@ -955,14 +958,16 @@
                                 <p class="blueText">Diana Patricia Moreno Cetina</p>
                             </a>
                         </div>
+                        <div class="funcionario">
+                            <a data-target="#dadi-subdirector-gestion" data-toggle="collapse">
+                                <img src="https://www.cali.gov.co/info/principal/media/galeria/thumbs/thgaleria_220X220_283305.jpg"
+                                    class="fotoFuncionario" alt="Foto funcionario">
+                                <p class="cargo">Subdirectora de Gestión Estratégica del Talento Humano </p>
+                                <p class="blueText">Claudia Patricia Charria Rivera</p>
+                            </a>
+                        </div>
                     </div>
 
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-dadii">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-dadii">&#10095;</button>
-                    </div>
                 </div>
 
                 <div class="panel">
@@ -1064,6 +1069,35 @@
                             </div>
                         </div>
                     </div>
+                    <div class="collapse" id="dadi-subdirector-gestion" data-parent="#dadi">
+                        <div class="squareBackground">
+                            <h4 class="blueText">Perfil profesional</h4>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <p>Es profesional en finanzas y negocios internacionales, con maestría en dirección
+                                        estratégica.
+                                    </p>
+                                    <p>
+                                        Laboró como contratista de la Alcaldía de Santiago de Cali de 2009 a 2017 y
+                                        desde el año 2020 se desempeñó en el cargo de profesional universitario. En 2023
+                                        fue nombrada como subdirectora de Gestión Estratégica del Talento Humano de la
+                                        entidad. </p>
+                                </div>
+                                <div class="col-md-4 divider">
+                                    <ul class="list-group">
+                                        <li><a target="_blank"
+                                                href="https://www.funcionpublica.gov.co/web/sigep/hdv/-/directorio/S513127-0485-4/view"
+                                                class="navlink">Hoja de vida - Sigep</a></li>
+                                        <li><a href="https://www.cali.gov.co/loader.php?lServicio=Tools2&lTipo=descargas&lFuncion=descargar&idFile=76928&id_comunidad=gobierno"
+                                                class="navlink">Declaración de renta 2021</a></li>
+
+                                        <li><a href="https://www.cali.gov.co/loader.php?lServicio=Tools2&lTipo=descargas&lFuncion=descargar&idFile=76929&id_comunidad=gobierno"
+                                                class="navlink">Declaración de bienes y rentas 2022</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <br>
@@ -1119,12 +1153,6 @@
 
                     </div>
 
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-dagma">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-dagma">&#10095;</button>
-                    </div>
 
                 </div>
                 <div class="panel">
@@ -1293,12 +1321,6 @@
                         </div>
                     </div>
 
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-juridica">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-juridica">&#10095;</button>
-                    </div>
                 </div>
 
                 <div class="panel">
@@ -1466,12 +1488,6 @@
                                 <p class="blueText">Margarita Rosa Barrera Córdoba</p>
                             </a>
                         </div> -->
-                    </div>
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-hacienda">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-hacienda">&#10095;</button>
                     </div>
                 </div>
 
@@ -1724,12 +1740,6 @@
                         </div>
                     </div>
 
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-planeacion">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-planeacion">&#10095;</button>
-                    </div>
                 </div>
 
                 <div class="panel">
@@ -1899,12 +1909,6 @@
 
                     </div>
 
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-datic">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-datic">&#10095;</button>
-                    </div>
                 </div>
 
                 <div class="panel">
@@ -2113,12 +2117,6 @@
                         </div>
                     </div>
 
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-bienestar">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-bienestar">&#10095;</button>
-                    </div>
                 </div>
 
                 <div class="panel">
@@ -2370,12 +2368,6 @@
                         </div>
                     </div>
 
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-cultura">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-cultura">&#10095;</button>
-                    </div>
                 </div>
 
                 <div class="panel">
@@ -2558,12 +2550,6 @@
                         </div>
                     </div>
 
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-deporte">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-deporte">&#10095;</button>
-                    </div>
                 </div>
 
                 <div class="panel">
@@ -2747,12 +2733,6 @@
                             </a>
                         </div>
                     </div>
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-economico">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-economico">&#10095;</button>
-                    </div>
                 </div>
 
 
@@ -2869,12 +2849,6 @@
 
                     </div>
 
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-participacion">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-participacion">&#10095;</button>
-                    </div>
                 </div>
 
 
@@ -3070,12 +3044,6 @@
 
                     </div>
 
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-educacion">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-educacion">&#10095;</button>
-                    </div>
                 </div>
 
                 <div class="panel">
@@ -3296,12 +3264,6 @@
                             </a>
                         </div>
                     </div>
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-riesgo">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-riesgo">&#10095;</button>
-                    </div>
                 </div>
 
                 <div class="panel">
@@ -3447,12 +3409,6 @@
                             </a>
                         </div>
 
-                    </div>
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-gobierno">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-gobierno">&#10095;</button>
                     </div>
                 </div>
 
@@ -3646,12 +3602,6 @@
                             </a>
                         </div>
                     </div>
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-infraestructura">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-infraestructura">&#10095;</button>
-                    </div>
                 </div>
 
                 <div class="panel">
@@ -3810,12 +3760,6 @@
                             </a>
                         </div>
 
-                    </div>
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-movilidad">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-movilidad">&#10095;</button>
                     </div>
                 </div>
 
@@ -4005,12 +3949,6 @@
                         </div>
                     </div>
 
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-paz">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-paz">&#10095;</button>
-                    </div>
                 </div>
 
                 <div class="panel">
@@ -4165,12 +4103,6 @@
                                 <p class="blueText">Maria Johanna Orozco</p>
                             </a>
                         </div>
-                    </div>
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-salud">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-salud">&#10095;</button>
                     </div>
                 </div>
 
@@ -4357,12 +4289,6 @@
                         </div>
                     </div>
 
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-seguridad">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-seguridad">&#10095;</button>
-                    </div>
                 </div>
 
                 <div class="panel">
@@ -4543,12 +4469,6 @@
                             </a>
                         </div>
                     </div>
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-turismo">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-turismo">&#10095;</button>
-                    </div>
                 </div>
 
                 <div class="panel">
@@ -4632,12 +4552,6 @@
                         </div>
                     </div>
 
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-vivienda">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-vivienda">&#10095;</button>
-                    </div>
                 </div>
 
                 <div class="panel">
@@ -4795,12 +4709,6 @@
                             </a>
                         </div>
                     </div>
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-bienes">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-bienes">&#10095;</button>
-                    </div>
                 </div>
                 <div class="panel">
                     <div class="collapse" id="bienes-secretario" data-parent="bienes">
@@ -4863,12 +4771,6 @@
                         </div>
                     </div>
 
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-proteccion">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-proteccion">&#10095;</button>
-                    </div>
                     <div class="panel">
                         <div class="collapse" id="proteccion-director" data-parent="proteccion">
                             <div class="squareBackground">
@@ -4923,12 +4825,6 @@
                             </a>
                         </div>
 
-                    </div>
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-takeshima">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-takeshima">&#10095;</button>
                     </div>
                 </div>
 
@@ -4990,12 +4886,6 @@
                         </div>
                     </div>
 
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-teatro">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-teatro">&#10095;</button>
-                    </div>
 
                     <div class="panel">
                         <div class="collapse" id="teatro-director" data-parent="#teatro">
@@ -5055,12 +4945,6 @@
 
                     </div>
 
-                    <div class="slider-controls">
-                        <button class="w3-button w3-black w3-display-left buttonsNav slide-prev" data-slide="prev"
-                            href="#slider-uaespm">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right buttonsNav slide-next" data-slide="next"
-                            href="#slider-uaespm">&#10095;</button>
-                    </div>
                 </div>
 
                 <div class="panel">
