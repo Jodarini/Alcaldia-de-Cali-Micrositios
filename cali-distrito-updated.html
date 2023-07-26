@@ -1,0 +1,3067 @@
+<style type="text/css">
+    /* GLOBAL */
+
+    h1 {
+        display: none !important;
+    }
+
+    h5 {
+        font-size: 1.2em !important;
+    }
+
+    .micrositio p {
+        color: #565555 !important;
+    }
+
+    .micrositio {
+        width: 100%;
+        min-height: 600px;
+        position: relative;
+    }
+
+    .micrositio .row {
+        margin: 0;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .micrositio ul {
+        padding-left: 2em !important;
+    }
+
+    /*     Typo      */
+
+    .menu-principal>a {
+        color: #fafafa;
+        cursor: pointer;
+        margin-left: 1em;
+    }
+
+    .subtitulos {
+        font-size: x-large;
+    }
+
+    .sub-verde {
+        color: #0f6a6a;
+    }
+
+    h5.sub-verde {
+        font-size: large;
+    }
+
+    .brown-text {
+        color: #a06c04;
+    }
+
+    #inicio h4 {
+        margin-block: 2em;
+    }
+
+    .toggle-wrapper>div>h4 {
+        margin-top: 29%;
+        max-width: 67ch;
+        margin-inline: auto;
+    }
+
+    .sub-cafe {
+        color: #774c00;
+    }
+
+    /*   UTILITIES   */
+
+    .m-l-1 {
+        margin-left: 1em;
+    }
+
+    .m-r-3 {
+        margin-right: 3rem;
+    }
+
+    .p-0 {
+        padding: 0;
+    }
+
+    .d-flex {
+        display: flex;
+    }
+
+    .f-wrap {
+        flex-wrap: wrap;
+    }
+
+    .f-column {
+        flex-direction: column;
+    }
+
+    .f-row {
+        flex-direction: row;
+    }
+
+    .f-center {
+        align-content: center;
+        align-items: center;
+    }
+
+    .f-justify-center {
+        justify-content: center;
+    }
+
+    .f-justify-between {
+        justify-content: space-between;
+    }
+
+    .justify-content-center {
+        justify-content: center;
+    }
+
+    .justify-content-around {
+        justify-content: space-around;
+    }
+
+    .w-100 {
+        width: 100%;
+    }
+
+    .w-inherit {
+        width: inherit;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .border-left {
+        border-left: 0.5rem solid #0f6a6a2b;
+        padding-left: 2rem;
+    }
+
+    .border-left-brown {
+        border-left: 0.5rem solid #a06c042b;
+        padding-left: 2rem;
+    }
+
+    .border-left-gray {
+        border-left: 1px solid #7a7a7a;
+    }
+
+    .borde-verde1 {
+        border: solid 1px #0f6a6a;
+        border-radius: 25px;
+        padding: 1em;
+        color: #0f6a6a;
+    }
+
+    .borde-verde {
+        border: solid 1px #0f6a6a;
+        border-radius: 25px;
+        padding: 1em;
+        color: #0f6a6a;
+    }
+
+    .margen-subtitulos {
+        margin-block: 2em !important;
+    }
+
+    /*     Composition     */
+
+    .navbar-distrito {
+        padding: 1em !important;
+        color: #fafafa !important;
+        display: flex;
+        flex-direction: row;
+        float: right;
+    }
+
+    .navbar-distrito li a {
+        display: flex;
+        align-items: center;
+        color: #fafafa !important;
+        cursor: pointer;
+        margin-left: 1em;
+        margin-right: 1em;
+        position: relative;
+    }
+
+    .micrositio>.navbar-default {
+        background-color: #215a9a;
+    }
+
+    .micrositio>.navbar-default>.container-fluid>.navbar-header>.navbar-toggle {
+        background-color: #215a9a;
+    }
+
+    .new-window {
+        width: 100%;
+    }
+
+    .menu-principal {
+        padding: 1em;
+        background: #215a9a;
+        float: right;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .toggle-wrapper {
+        background-image: url(https://www.cali.gov.co/info/principal/media/galeria235667.jpg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+    }
+
+    .timeline-convenciones {
+        margin-bottom: 4em;
+    }
+
+    .timeline-convenciones>.d-flex {
+        text-align: center;
+        justify-content: center;
+        padding: 0 1em;
+    }
+
+    .timeline-convenciones>.d-flex>img {
+        margin-right: 1em;
+        max-height: 15px;
+    }
+
+    .botones-menu2 {
+        padding: 0.3em;
+        color: #ffffff;
+        font-size: x-large;
+    }
+
+    .imagen-desplegable {
+        max-height: 5em;
+    }
+
+    .content-wrap a {
+        display: flex;
+        align-items: center;
+    }
+
+    span.sub-verde {
+        margin-left: 5px;
+    }
+
+    .cuadro-verde {
+        padding: 1em;
+        border: 1px solid #0f6a6a2e;
+        border-radius: 25px;
+        margin-bottom: 1em;
+    }
+
+    .borde-verde {
+        position: relative;
+        line-height: 50px;
+        text-align: center;
+        background-color: #fff;
+        z-index: 2;
+    }
+
+    .borde-verde:first-child {
+        margin-top: 0;
+    }
+
+    .borde-verde:before {
+        position: absolute;
+        border: 1px solid #999;
+        width: 0;
+        height: 100px;
+        display: block;
+        content: "";
+        left: 50%;
+        z-index: 1;
+        top: 100%;
+        margin-left: -1px;
+    }
+
+    /* TABLA */
+
+    table,
+    td,
+    th {
+        border: 1px solid #0f6a6a80;
+        text-align: left;
+        empty-cells: hide;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: none;
+        border-radius: 25%;
+    }
+
+    th {
+        text-align: center;
+        color: #0f6a6a;
+        border: none !important;
+    }
+
+    th.bg-g {
+        background-color: #0f6a6a7c;
+    }
+
+    tr>th:first-child {
+        background-color: #0f6a6a2e;
+    }
+
+    table tr:first-child td:nth-child(1) {
+        background-color: transparent;
+        border: 1px transparent;
+    }
+
+    th,
+    td {
+        padding: 15px;
+    }
+
+    .borde-verde:first-child:before {
+        display: none;
+    }
+
+    .borde-verde:last-child:before {
+        display: none;
+    }
+
+    .last::before {
+        border: none !important;
+    }
+
+    .fondo {
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .logos-historicos {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .ul-columns {
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+    }
+
+    .img-size {
+        max-height: 50px;
+        margin-right: 5px;
+    }
+
+    /* TIMELINE */
+
+    .timeline {
+        position: relative;
+    }
+
+    .timeline::before {
+        content: "";
+        background: #999999;
+        width: 5px;
+        height: 95%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .timeline-item {
+        width: 100%;
+    }
+
+    .timeline-item:nth-child(even) .timeline-content {
+        float: right;
+        left: 30px !important;
+    }
+
+    .timeline-item:nth-child(even) .timeline-content .date {
+        right: auto;
+        left: 0;
+    }
+
+    .timeline-item:nth-child(even) .timeline-content::after {
+        content: "";
+        position: absolute;
+        border-style: solid;
+        width: 0;
+        height: 0;
+        top: 30px;
+        left: -15px;
+        border-width: 10px 15px 10px 0;
+        border-color: transparent #f5f5f5 transparent transparent;
+    }
+
+    .timeline-item::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .timeline-content {
+        position: relative;
+        width: 45%;
+        padding: 10px 30px;
+        border-radius: 4px;
+        background: #f5f5f5;
+        box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+        left: -20px !important;
+    }
+
+    .timeline-content::after {
+        content: "";
+        position: absolute;
+        border-style: solid;
+        width: 0;
+        height: 0;
+        top: 30px;
+        right: -15px;
+        border-width: 10px 0 10px 15px;
+        border-color: transparent transparent transparent #f5f5f5;
+    }
+
+    .timeline-img {
+        width: 100px;
+        height: fit-content;
+        background: #ffffff;
+        position: absolute;
+        left: 50%;
+        margin-top: 25px;
+        margin-left: -50px;
+        text-align: center;
+    }
+
+    .timeline-card {
+        padding: 0 !important;
+    }
+
+    .timeline-card p {
+        padding: 0 20px;
+    }
+
+    .timeline-card a {
+        margin-left: 20px;
+    }
+
+    .timeline-item .timeline-img-header {
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)),
+            url("https://picsum.photos/1000/800/?random") center center no-repeat;
+        background-size: cover;
+    }
+
+    .timeline-img-header {
+        height: 200px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .timeline-img-header h2 {
+        color: #fff;
+        position: absolute;
+        bottom: 5px;
+        left: 20px;
+    }
+
+    blockquote {
+        margin-top: 30px;
+        color: #757575;
+        border-left-color: #3f51b5;
+        padding: 0 20px;
+    }
+
+    .date {
+        background: #ff4081;
+        display: inline-block;
+        color: #fff;
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .timeline>.container {
+        background: none !important;
+        width: 75%;
+    }
+
+    /* Botones */
+
+    .btn,
+    .button {
+        font-weight: none;
+        font-size: none;
+        line-height: none;
+        text-transform: none;
+        text-decoration: none;
+        padding: 0.3em !important;
+    }
+
+    .btn:hover,
+    .btn:focus {
+        color: #ffffff;
+        background: none;
+        border-color: none;
+        outline: none;
+    }
+
+    .btn {
+        border: none !important;
+        font-weight: none !important;
+        line-height: unset !important;
+        text-align: unset !important;
+        padding: 0;
+    }
+
+    .botones-menu3 {
+        padding: 1em;
+        border: 1px solid #0f6a6a2e;
+        border-radius: 25px;
+        margin-bottom: 1em;
+        display: flex;
+        align-items: center;
+    }
+
+    .botones-menu3:hover {
+        background-color: #0f6a6a2e;
+    }
+
+    .botones-menu3:focus {
+        background-color: #0f6a6a2e;
+    }
+
+    .gray-text-title {
+        font-weight: bold;
+        font-size: larger;
+    }
+
+    @media (max-width: 768px) {
+        .timeline-convenciones {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .border-left-gray {
+            border-left: none;
+        }
+
+        .timeline-convenciones>.d-flex {
+            margin-bottom: 1em;
+            font-size: medium;
+            font-weight: bold;
+        }
+
+        .borde-verde:before {
+            height: calc(100% * 3);
+        }
+
+        .content-wrap {
+            flex-direction: column;
+            display: flex;
+            align-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .first-row {
+            flex-direction: column;
+        }
+
+        .row-direction {
+            flex-direction: column;
+        }
+
+        .lineas-de-accion {
+            flex-direction: column;
+            justify-content: left;
+            align-items: flex-start;
+        }
+
+        .border-left {
+            border: none;
+            padding-left: 0;
+        }
+
+        .ul-columns {
+            columns: 1;
+            -webkit-columns: 1;
+            -moz-columns: 1;
+        }
+
+        .border-left-brown {
+            padding-left: 2rem;
+            border-left: none;
+            border-bottom: 0.5rem solid #a06c042b;
+            padding-bottom: 1em;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .timeline-item .timeline-content {
+            left: 30px !important;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            flex-direction: row-reverse;
+        }
+
+        .timeline-item {
+            margin-bottom: 1em;
+        }
+
+        .timeline>.container {
+            background: none !important;
+            width: 100% !important;
+            padding: 0;
+        }
+
+        .timeline::before {
+            left: 50px;
+        }
+
+        .timeline .timeline-img {
+            left: 50px;
+        }
+
+        .timeline .timeline-content {
+            max-width: 100%;
+            width: auto;
+            margin-left: 70px;
+        }
+
+        .timeline .timeline-item:nth-child(even) .timeline-content {
+            float: none;
+        }
+
+        .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+            content: "";
+            position: absolute;
+            border-style: solid;
+            width: 0;
+            height: 0;
+            top: 30px;
+            left: -15px;
+            border-width: 10px 15px 10px 0;
+            border-color: transparent #f5f5f5 transparent transparent;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .navbar-distrito {
+            flex-direction: column !important;
+            float: left !important;
+            width: 100%;
+        }
+
+        .navbar-distrito>a {
+            margin-bottom: 1em;
+        }
+
+        .new-window>i {
+            color: #fafafa !important;
+        }
+    }
+
+    .new-window:hover>i {
+        color: #fafafa !important;
+    }
+
+    .perfil {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .content-menu {
+        display: flex;
+        width: 100%;
+    }
+
+    .list-btn {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .list-btn a {
+        height: 270px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        border: 1px solid #a06c042b !important;
+        border-radius: 1rem;
+    }
+
+    .list-btn a .img-box {
+        width: 423px;
+        overflow: hidden;
+    }
+
+    .list-btn a .img-box img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .list-btn a:hover .img-box img {
+        filter: grayscale(50%);
+        transform: scale(1.2, 1.2);
+    }
+
+    .list-btn a span {
+        text-align: center;
+        color: black !important;
+        width: 100%;
+        padding: 0.5rem;
+        background-color: #d0ad5e;
+        border-radius: 0rem 0rem 1rem 1rem;
+    }
+
+    .modal-content {
+        border-radius: 1rem !important;
+    }
+
+    .modal-header {
+        text-align: center;
+        border-radius: 1rem 1rem 0rem 0rem;
+        background-color: #215a9a !important;
+    }
+
+    .modal-header h2 {
+        color: white !important;
+        margin-top: 0rem !important;
+    }
+
+    .modal-footer {
+        padding: 1rem !important;
+        text-align: center;
+    }
+
+    .modal-footer a {
+        display: inline-block !important;
+        width: max-content !important;
+        height: auto !important;
+        color: white !important;
+        padding: 9px 16px !important;
+        font-size: 16px;
+        border-radius: 1rem !important;
+        text-transform: uppercase;
+        background-color: #215a9a !important;
+    }
+
+    .modal-footer a:hover {
+        color: white !important;
+        background-color: #215a9a !important;
+    }
+
+    .modal-img img {
+        width: 100%;
+        height: auto;
+        padding-bottom: 1rem;
+    }
+
+    .table-box {
+        overflow-x: auto;
+    }
+
+    .table-box table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid #ddd;
+    }
+
+    .table-box table,
+    td,
+    th {
+        border-color: #bdbdbd !important;
+    }
+
+    .header-table {
+        background-color: #dfe6e9;
+    }
+
+    .header-v2 {
+        background-color: #911e3a !important;
+    }
+
+    .header-v2 td {
+        color: white;
+        height: 81.27px;
+    }
+
+    .header-table td {
+        text-align: center !important;
+    }
+
+    .table-box th,
+    .table-box td {
+        text-align: left;
+        padding: 8px;
+    }
+
+    .text-center {
+        text-align: center !important;
+    }
+
+    .modal-content .intro {
+        width: auto;
+    }
+
+    .modal-content .intro td {
+        border-color: transparent !important;
+        border-bottom: 1px solid #bdbdbd !important;
+    }
+
+    .botones-menu2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .botones-menu2:hover {
+        filter: brightness(0.8);
+    }
+
+    .no-styles li {
+        list-style: none !important;
+    }
+
+    .no-styles li span {
+        text-decoration: underline;
+    }
+
+    .map-g {
+        width: 100%;
+    }
+
+    @media screen and (min-width: 768px) {
+        .botones-menu2 {
+            min-height: 82.94px;
+        }
+
+        .map-g {
+            width: 50% !important;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        .info-respo {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item-info {
+            order: 2 !important;
+        }
+
+        .item-foto {
+            order: 1 !important;
+            margin-bottom: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .content-menu {
+            flex-direction: column;
+        }
+    }
+</style>
+<div class="micrositio"><!-- Navegador -->
+    <nav class="navbar navbar-default" style="margin-bottom: 0">
+        <div class="container-fluid"><!-- Toggle navbar -->
+            <div class="navbar-header"><button aria-expanded="false" class="navbar-toggle collapsed"
+                    data-target="#navbar-distrito-b" data-toggle="collapse" type="button"><span
+                        class="sr-only">Desplegar men&uacute;</span> <span class="icon-bar"> </span> <span
+                        class="icon-bar"> </span> <span class="icon-bar"> </span></button></div>
+            <!-- Menú -->
+
+            <div aria-expanded="false" class="collapse navbar-collapse" id="navbar-distrito-b">
+                <ul class="nav navbar-nav navbar-distrito"><!-- Click para desplegar -->
+                    <li><a class="botones-menu btn disabled" href="#inicio" id="inicio">Inicio</a></li>
+                    <li><a class="botones-menu" href="#normatividad" id="normatividad">Normatividad</a></li>
+                    <li><a class="botones-menu" href="#mapa" id="mapa">Mapa</a></li>
+                    <li><a class="botones-menu" href="#historico" id="historico">Hist&oacute;rico</a></li>
+                    <li><a class="new-window" href="www.cali.gov.co/174962" target="_blank">Proyecto de acuerdo 2023</a>
+                    </li>
+                    <li><a class="new-window" href="https://www.cali.gov.co/galeria/17119/cali-distrito/"
+                            target="_blank">Galer&iacute;a </a></li>
+                    <li><a class="new-window" href="https://www.cali.gov.co/168389" target="_blank">2019 </a></li>
+                    <li><a class="new-window" href="https://www.cali.gov.co/172463" target="_blank">2022 </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Contenedor toggle -->
+
+    <div class="toggle-wrapper" id="toggle-wrapper"><!-- Toggle 1 - Inicio -->
+        <div class="row" id="dinicio">
+            <h4 class="gray-text-title center">Evolucionar institucionalmente para fortalecer la autonom&iacute;a de
+                nuestro territorio</h4>
+
+            <div class="row d-flex f-center first-row" style="margin-top: 3em">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <video controls="" src="https://www.cali.gov.co/info/principal/media/videos/mp4235910.mp4"
+                        width="100%">&nbsp;</video>
+                </div>
+
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <h3 class="subtitulos sub-verde">&iquest;Por qu&eacute; Distrito Especial?</h3>
+
+                    <p>La <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=51601"
+                            target="_blank">ley 1617 de 2013</a> les otorga a los distritos especiales diferentes
+                        instrumentos de gesti&oacute;n para transformar la institucionalidad
+                        pol&iacute;tico-administrativa, profundizar la democracia y alcanzar mayores grados de
+                        desarrollo y bienestar social.</p>
+
+                    <p>Se trata de un proceso de fortalecimiento institucional que pone en el centro el mejoramiento de
+                        la capacidad de la administraci&oacute;n para gestionar y aprovechar los recursos disponibles de
+                        forma efectiva y eficiente con el fin de prestar servicios de calidad orientados a las
+                        necesidades de la poblaci&oacute;n.</p>
+                </div>
+            </div>
+
+            <div class="row d-flex f-center f-justify-center center">
+                <div class="content-menu"><!--<a
+            class="botones-menu2 btn disabled"
+            href="#componentes"
+            id="componentes"
+            style="color: #ffffff; background-color: #0b6766"
+            >Componentes
+          </a>--><a class="botones-menu2 btn disabled" href="#localidades" id="localidades"
+                        style="color: #ffffff; background-color: #b78006">Localidades </a> <a class="botones-menu2"
+                        href="#sistema" id="sistema" style="color: white; background-color: #911e3a">Sistema Distrital
+                        de Planeaci&oacute;n</a> <a class="botones-menu2" href="#gobierno" id="gobierno"
+                        style="color: white; background-color: #215a9a">Gobierno local</a></div>
+            </div>
+
+            <div class="row toggle-wrapper2"><!-- Localidades -->
+                <div class="row d-flex f-column" id="dlocalidades">
+                    <div class="row info-respo">
+                        <div class="col-md-7 col-sm-12 col-xs-12 item-info">
+                            <p>Las transformaciones de una sociedad hacen que estas evolucionen, se hacen m&aacute;s
+                                grandes, distintas y hasta dif&iacute;ciles y, en la medida que los pueblos se
+                                transforman hay que ajustar la institucionalidad y para ello, es inaplazable leer lo que
+                                sucede en esos conglomerados y lo que genera tales mutaciones.</p>
+
+                            <p>Cali tuvo el r&oacute;tulo de ser una ciudad c&iacute;vica, de una amplia cultura
+                                ciudadana, mucho antes del modelo mockusiano; un hecho que se mostr&oacute; al mundo y
+                                nos conocieron a partir de ese enfoque, construimos modelos de sanci&oacute;n social; de
+                                mucha construcci&oacute;n cultural, aqu&iacute; naci&oacute; el cine colombiano y el
+                                teatro empez&oacute; a tener impacto nacional e internacional.</p>
+
+                            <p>Igualmente, se vivieron procesos complicados en los a&ntilde;os 80 y 90 con el cartel del
+                                narcotr&aacute;fico m&aacute;s grande del planeta que transform&oacute; procesos, los
+                                rompi&oacute; o flexibiliz&oacute; y perme&oacute; el piso &eacute;tico de las personas:
+                                el proceso 8000 que destituy&oacute; alcalde,&nbsp; gobernador y la plana mayor de la
+                                representaci&oacute;n del Valle del Cauca en el Congreso.</p>
+                        </div>
+
+                        <div class="col-md-5 col-sm-12 col-xs-12 item-foto">
+                            <figure><img alt="Jorge Iván Ospina Gómez" class="perfil" id="249756"
+                                    longdesc="Jorge Iván Ospina Gómez" src="info/principal/media/galeria249756.jpg"
+                                    title="Jorge Iván Ospina Gómez" /></figure>
+                        </div>
+                    </div>
+
+                    <p>Se perdi&oacute; el respeto por la vida, con tasas de mortalidad que nos ubic&oacute; como la
+                        ciudad m&aacute;s violenta del mundo: 3.200 homicidios por a&ntilde;o; tambi&eacute;n se
+                        vivi&oacute; la guerra en el coraz&oacute;n de la ciudad con los secuestros de diputados, de
+                        personas en el kil&oacute;metro 18 y la iglesia La Mar&iacute;a; la muerte del arzobispo
+                        Isa&iacute;as Duarte Cancino, el asesinato en combate de 25 militares en Pichind&eacute;&hellip;
+                    </p>
+
+                    <p>Esas situaciones rompieron nuestra estructura tradicional y cultural, a tal punto que cambiaron
+                        hasta la composici&oacute;n del territorio y la forma de relacionarnos.</p>
+
+                    <p>Frente a estos cambios necesitamos transformar nuestra institucionalidad, pasamos de ser una
+                        Alcald&iacute;a municipal a Alcald&iacute;a Distrital, hecho que nos genera oportunidades,
+                        responsabilidades y obligaciones, transformaci&oacute;n esta que viene dada por su
+                        poblaci&oacute;n, cambios en lo sociocultural, en sus vocaciones econ&oacute;micas, en sus
+                        problem&aacute;ticas; necesitamos un ente Distrito que de institucionalidad y sea la carta de
+                        navegaci&oacute;n para los 100 a&ntilde;os pr&oacute;ximos.</p>
+
+                    <p>De comunas pasaremos a localidades; de profesionales especializados de los CALI a alcaldes
+                        locales; de ediles con poca capacidad nominativa y presupuestal, ahora con gran capacidad.</p>
+
+                    <p>La historia actual ser&aacute; superada, luego de la deliberaci&oacute;n que realicen los
+                        concejales de Santiago de Cali.</p>
+
+                    <p>Por &uacute;ltimo, esta propuesta de Municipio a Distrito ha sido una construcci&oacute;n
+                        colectiva, pensada desde lo social, pol&iacute;tico y territorial, con base t&eacute;cnica para
+                        no tener inconvenientes en el desarrollo de esta transici&oacute;n, la cual es progresiva, pues
+                        hay que moldear el Estado en esas localidades para proveer los diferentes servicios al
+                        ciudadano.</p>
+
+                    <p>Jorge Iv&aacute;n Ospina G&oacute;mez<br />
+                        Alcalde</p>
+
+                    <h4 class="text-center" style="margin-bottom: 2rem"><strong>Santiago de Cali, de comunas y
+                            corregimientos a localidades</strong></h4>
+
+                    <div class="text-center">
+                        <figure><img alt="Mapa general" class="map-g" id="250203" longdesc="Mapa general"
+                                src="info/principal/media/galeria250203.jpg" title="Mapa general" /></figure>
+                    </div>
+
+                    <p>&nbsp;</p>
+
+                    <p>A continuaci&oacute;n, la propuesta de la Administraci&oacute;n del alcalde Jorge Iv&aacute;n
+                        Ospina G&oacute;mez para reorganizar el territorio pol&iacute;tica y administrativamente, con el
+                        fin de allanar el camino hacia Santiago de Cali Distrito Especial Deportivo, Cultural,
+                        Tur&iacute;stico, Empresarial y de Servicios, la cual ser&aacute; presentada al Concejo local
+                        para su estudio y aprobaci&oacute;n.</p>
+
+                    <p>El proyecto de Acuerdo presenta la disposici&oacute;n del territorio cale&ntilde;o en siete
+                        localidades, seis en el &aacute;rea urbana y una rural, esta &uacute;ltima compuesta por los 15
+                        corregimientos existentes.</p>
+
+                    <p>Para la divisi&oacute;n territorial el Departamento Administrativo de Planeaci&oacute;n Municipal
+                        realiz&oacute; los estudios necesarios, los que luego fueron socializados a las comunidades
+                        respectivas con el fin de escuchar sus voces. Inicialmente se planteaban seis localidades, una
+                        vez escuchadas las comunidades del &aacute;rea rural se acord&oacute; que esta fuera una sola
+                        localidad, de all&iacute; que se presente la #7, donde confluyen todos los corregimientos.</p>
+
+                    <div>DISPLAYGALERIA(19370)</div>
+
+                    <p>Igualmente, la propuesta fue avalada por la primera autoridad local y el gabinete municipal. Esta
+                        se plantea as&iacute;:</p>
+
+                    <h4 class="text-center" style="margin-bottom: 2rem"><strong>Haga clic en las localidades para
+                            conocer m&aacute;s en detalle </strong></h4>
+                    <style type="text/css">
+                        .my-query {
+                            margin: auto;
+                            overflow: hidden;
+                            border-radius: 0.5rem;
+                        }
+
+                        .my-query .column {
+                            padding: 0rem !important;
+                            border: 1px solid #ccc;
+                        }
+
+                        .my-query div.header:first-child {
+                            background-color: #215a9a;
+                        }
+
+                        .my-query .header {
+                            padding: 0rem 1rem 1rem 1rem;
+                        }
+
+                        .my-query .header h2 {
+                            color: white;
+                            width: 100%;
+                            display: inline-block;
+                            margin: 1rem 0rem !important;
+                        }
+
+                        .my-query .header input {
+                            padding: 0.2rem 0.6rem;
+                            border-radius: 0.5rem;
+                            width: 100%;
+                            font-size: 1.25em;
+                            height: 40px;
+                            border-color: rgba(0, 0, 0, 0.15);
+                            box-shadow: none;
+                        }
+
+                        .my-query .header .help {
+                            color: white !important;
+                            margin-top: 0.5rem;
+                            margin-bottom: 0rem !important;
+                        }
+
+                        .my-query #myList {
+                            padding-left: 0rem !important;
+                            margin-bottom: 0rem !important;
+                        }
+
+                        .my-query #myList li {
+                            background-color: #f5f6fa;
+                            border-bottom: 1px solid #ccc;
+                            list-style: none !important;
+                            overflow: hidden;
+                            max-height: 51.42px;
+                        }
+
+                        .my-query #myList li:last-child {
+                            border-bottom: none !important;
+                        }
+
+                        .my-query #myList li:hover {
+                            filter: brightness(0.9);
+                        }
+
+                        .my-query #myList li .tablinks {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            border: none;
+                            padding: 1.5rem 0rem;
+                            background-color: transparent;
+                        }
+
+                        .my-query #myList li .tablinks span {
+                            position: absolute;
+                            width: 1px;
+                            height: 1px;
+                            padding: 0;
+                            margin: -1px;
+                            overflow: hidden;
+                            clip-path: rect(0, 0, 0, 0);
+                            border: none;
+                        }
+
+                        h2.box-title {
+                            margin: 0rem !important;
+                            padding: 1rem 0rem;
+                            text-align: center;
+                            color: white !important;
+                            background-color: #215a9a !important;
+                        }
+
+                        .my-query div.column .tabcontent .info-box {
+                            padding: 1rem !important;
+                        }
+
+                        .box-img img {
+                            width: 100%;
+                            height: auto;
+                            padding-bottom: 1rem;
+                        }
+
+                        .text-center {
+                            text-align: center !important;
+                        }
+
+                        .table-box {
+                            overflow-x: auto;
+                        }
+
+                        .table-box table {
+                            border-collapse: collapse;
+                            border-spacing: 0;
+                            width: 100%;
+                            /*border: 1px solid #ddd;*/
+                        }
+
+                        .table-box table,
+                        .table-box td,
+                        .table-box th {
+                            border: 1px solid #bdbdbd !important;
+                        }
+
+                        .header-table {
+                            background-color: #dfe6e9;
+                        }
+
+                        .header-v2 {
+                            background-color: #911e3a !important;
+                        }
+
+                        .header-v2 td {
+                            color: white;
+                            height: 81.27px;
+                        }
+
+                        .header-table td {
+                            text-align: center !important;
+                        }
+
+                        .table-box th,
+                        .table-box td,
+                        .info-box .intro td {
+                            text-align: left;
+                            padding: 8px;
+                        }
+
+                        .info-box .intro {
+                            width: auto;
+                        }
+
+                        .info-box .intro td {
+                            border-color: transparent;
+                            border-bottom: 1px solid #bdbdbd !important;
+                        }
+
+                        @media screen and (min-width: 992px) {
+                            .my-query div.col-sm-3 {
+                                border-right: 0px !important;
+                            }
+                        }
+                    </style>
+                    <div class="my-query row">
+                        <div class="column col-sm-3">
+                            <div class="header">
+                                <h2 class="text-center"><strong>&iquest;Mi barrio a qu&eacute; localidad
+                                        pertenece?</strong></h2>
+                                <input id="myLocation" onkeyup="myLocalitySearch()" placeholder="Buscar.."
+                                    title="Escriba el nombre de su barrio" type="text" />
+                                <p class="help">*Escribe el nombre de tu barrio.</p>
+                            </div>
+
+                            <ul id="myList">
+                                <li><button class="tablinks" id="defaultOpen"
+                                        onclick="tabContent(event, 'info-1L')">Localidad 1 <span> <!-- Comuna 1 -->
+                                            Terr&oacute;n Colorado<br />
+                                            Vista Hermosa<br />
+                                            Sector Patio Bonito<br />
+                                            Aguacatal<br />
+                                            <!-- Comuna 2 --> Santa Rita<br />
+                                            Santa Teresita<br />
+                                            Arboledas<br />
+                                            Normand&iacute;a<br />
+                                            Juanamb&uacute;<br />
+                                            Centenario<br />
+                                            Granada<br />
+                                            Versalles<br />
+                                            San Vicente<br />
+                                            Santa M&oacute;nica<br />
+                                            Prados del Norte<br />
+                                            La Flora<br />
+                                            La Campi&ntilde;a<br />
+                                            La Paz<br />
+                                            El Bosque<br />
+                                            Menga<br />
+                                            Ciudad los &Aacute;lamos<br />
+                                            Chipichape<br />
+                                            Brisas de Los &Aacute;lamos<br />
+                                            Urbanizaci&oacute;n la Merced<br />
+                                            Vipasa<br />
+                                            Urbanizaci&oacute;n la Flora<br />
+                                            Altos de Menga<br />
+                                            Sector Altos de Normand&iacute;a-Batacl&aacute;n<br />
+                                            &Aacute;rea en desarrollo<br />
+                                            Parque del Amor<br />
+                                            <!-- Comuna 3 --> El Nacional<br />
+                                            El Pe&ntilde;&oacute;n<br />
+                                            San Antonio<br />
+                                            San Cayetano<br />
+                                            Los Libertadores<br />
+                                            San Juan Bosco<br />
+                                            Santa Rosa<br />
+                                            La Merced<br />
+                                            San Pascual<br />
+                                            El Calvario<br />
+                                            San Pedro<br />
+                                            San Nicol&aacute;s<br />
+                                            El Hoyo<br />
+                                            El Piloto<br />
+                                            Navarro - La Chanca<br />
+                                            <!-- Comuna 4 --> F&aacute;tima<br />
+                                            Sultana - Berl&iacute;n - San Francisco<br />
+                                            Popular<br />
+                                            Ignacio Rengifo<br />
+                                            Guillermo Valencia<br />
+                                            La Isla<br />
+                                            Marco Fidel Suarez<br />
+                                            Evaristo Garc&iacute;a<br />
+                                            Bolivariano<br />
+                                            Barrio Olaya Herrera<br />
+                                            Unidad Residencial Bueno Madrid<br />
+                                            Flora Industrial<br />
+                                            Calima<br />
+                                            <!-- Comuna 6 --> Paso del Comercio<br />
+                                            Los Guaduales<br />
+                                            Ciudadela Floralia<br />
+                                            Sector Puente del Comercio<br />
+                                            <!-- Comuna 9 --> Sucre<br />
+                                            barrio Obrero<br />
+                                            <!-- Comuna 19 --> Bellavista<br />
+                                            <!-- Montebello --> Asentamientos de borde<br />
+                                            <!-- Golondrinas --> Asentamientos de borde </span></button></li>
+                                <li><button class="tablinks" id="defaultOpen"
+                                        onclick="tabContent(event, 'info-2L')">Localidad 2 <span> <!-- Comuna 4 -->
+                                            Jorge Isaacs<br />
+                                            La Alianza<br />
+                                            La Esmeralda<br />
+                                            Las Delicias<br />
+                                            Manzanares<br />
+                                            Porvenir<br />
+                                            Salomia<br />
+                                            Santander<br />
+                                            <!-- Comuna 5 --> Chiminangos I<br />
+                                            Chiminangos II<br />
+                                            El Sena<br />
+                                            Los Andes<br />
+                                            Los Andes B - La Riviera<br />
+                                            Los Guayacanes<br />
+                                            Los Parques Barranquilla<br />
+                                            Metropolitano del Norte<br />
+                                            Paseo de Los Almendros<br />
+                                            Torres de Comfandi<br />
+                                            Villa del Prado - El Guabito<br />
+                                            Villa del Sol<br />
+                                            <!-- Comuna 6 --> Fonaviemcali<br />
+                                            Jorge Eliecer Gait&aacute;n<br />
+                                            La Rivera Primera Etapa<br />
+                                            Los Alc&aacute;zares<br />
+                                            Petecuy Primera Etapa<br />
+                                            Petecuy Segunda Etapa<br />
+                                            Petecuy Tercera Etapa<br />
+                                            San Luis<br />
+                                            San Luis II<br />
+                                            Urbanizaci&oacute;n Calimio<br />
+                                            <!-- Comuna 7 --> Alfonso L&oacute;pez P. 1a. Etapa<br />
+                                            Alfonso L&oacute;pez P. 2a. Etapa<br />
+                                            Alfonso L&oacute;pez P. 3a. Etapa<br />
+                                            Fepicol Las Ceibas<br />
+                                            Los Pinos<br />
+                                            Parque de la Ca&ntilde;a<br />
+                                            Puerto Mallarino<br />
+                                            Puerto Nuevo<br />
+                                            San Marino Siete de Agosto<br />
+                                            Urbanizaci&oacute;n El &Aacute;ngel del Hogar<br />
+                                            <!-- Comuna 8 --> Atanasio Girardot<br />
+                                            Benjam&iacute;n Herrera<br />
+                                            Chapinero<br />
+                                            El Tr&eacute;bol*<br />
+                                            El Troncal<br />
+                                            Industrial<br />
+                                            La Base<br />
+                                            La Floresta<br />
+                                            Las Am&eacute;ricas<br />
+                                            Municipal<br />
+                                            Primitivo Crespo<br />
+                                            Rafael Uribe Uribe<br />
+                                            Saavedra Galindo Santa Fe<br />
+                                            Santa M&oacute;nica Popular<br />
+                                            Sim&oacute;n Bol&iacute;var Urbanizaci&oacute;n La Nueva Base<br />
+                                            Villa Colombia<br />
+                                            <!-- Comuna 12 --> Nueva Floresta<br />
+                                            <!-- Comuna 13 --> Charco Azul </span><br />
+                                    </button></li>
+                                <li><button class="tablinks" id="defaultOpen"
+                                        onclick="tabContent(event, 'info-3L')">Localidad 3 <span> <!-- Comuna 9 -->
+                                            Alameda<br />
+                                            Aranjuez<br />
+                                            Belalc&aacute;zar<br />
+                                            Breta&ntilde;a<br />
+                                            Guayaquil<br />
+                                            Jun&iacute;n<br />
+                                            Manuel Maria Buenaventura<br />
+                                            Santa M&oacute;nica Belalc&aacute;zar<br />
+                                            <!-- Comuna 17 --> El Gran Limonar<br />
+                                            <!-- Comuna 18 --> Los Chorros<br />
+                                            Caldas<br />
+                                            <!-- Comuna 19 --> 3 de Julio<br />
+                                            Camino Real - Joaqu&iacute;n Borrero Sinisterra<br />
+                                            Camino Real - Los Fundadores<br />
+                                            Ca&ntilde;averal<br />
+                                            Ca&ntilde;averalejo - Seguros Patria<br />
+                                            Champagnat<br />
+                                            Cuarto de Legua &ndash; Guadalupe<br />
+                                            El Cedro<br />
+                                            El Lido<br />
+                                            El Morti&ntilde;al<br />
+                                            El Refugio<br />
+                                            Eucar&iacute;stico<br />
+                                            La Cascada<br />
+                                            Los C&aacute;mbulos<br />
+                                            Miraflores<br />
+                                            Nueva Tequendama<br />
+                                            Pampa Linda<br />
+                                            San Fernando Nuevo<br />
+                                            San Fernando Viejo<br />
+                                            Santa Barbara<br />
+                                            Santa Isabel<br />
+                                            Sector Altos de Santa Isabel<br />
+                                            Sector Bosque Municipal<br />
+                                            Sector Ca&ntilde;averalejo Guadalupe<br />
+                                            Tejares &ndash; Cristales<br />
+                                            Unidad Residencial El Coliseo<br />
+                                            Unidad Residencial Santiago de Cali<br />
+                                            Urbanizaci&oacute;n Colseguros*<br />
+                                            Urbanizaci&oacute;n Militar<br />
+                                            Urbanizaci&oacute;n Nueva Granada<br />
+                                            Urbanizaci&oacute;n Tequendama<br />
+                                            <!-- Comuna 20 --> Bel&eacute;n<br />
+                                            Belisario Caicedo<br />
+                                            Brisas de Mayo<br />
+                                            Cementerio &ndash; Carabineros<br />
+                                            El Cortijo<br />
+                                            La Sultana<br />
+                                            Lleras Camargo<br />
+                                            Pueblo Joven<br />
+                                            Silo&eacute;<br />
+                                            Tierra Blanca<br />
+                                            Venezuela - Urbanizaci&oacute;n Ca&ntilde;averalejo </span><br />
+                                    </button></li>
+                                <li><button class="tablinks" id="defaultOpen"
+                                        onclick="tabContent(event, 'info-4L')">Localidad 4 <span> <!-- Comuna 8 --> El
+                                            Tr&eacute;bol*<br />
+                                            Santa M&oacute;nica Popular<br />
+                                            <!-- Comuna 10 --> Colseguros Andes<br />
+                                            Crist&oacute;bal Colon<br />
+                                            Departamental<br />
+                                            El Dorado<br />
+                                            El Guabal<br />
+                                            Jorge Zawadsky<br />
+                                            La Libertad<br />
+                                            La Selva<br />
+                                            Las Acacias<br />
+                                            Las Granjas<br />
+                                            Ol&iacute;mpico<br />
+                                            Panamericano<br />
+                                            Pasoancho<br />
+                                            San Crist&oacute;bal<br />
+                                            San Judas Tadeo I<br />
+                                            San Judas Tadeo II<br />
+                                            Santa Elena<br />
+                                            Santo Domingo<br />
+                                            <!-- Comuna 11 --> 20 de Julio<br />
+                                            Aguablanca<br />
+                                            El Jard&iacute;n<br />
+                                            El Prado<br />
+                                            El Recuerdo<br />
+                                            Jos&eacute; Holgu&iacute;n Garc&eacute;s<br />
+                                            Jos&eacute; Maria C&oacute;rdoba<br />
+                                            La Esperanza<br />
+                                            La Fortaleza<br />
+                                            La Gran Colombia<br />
+                                            La Independencia<br />
+                                            Le&oacute;n XIII<br />
+                                            Los Conquistadores<br />
+                                            Los Sauces<br />
+                                            Maracaibo<br />
+                                            Prados de Oriente<br />
+                                            Primavera<br />
+                                            San Benito<br />
+                                            San Carlos<br />
+                                            San Pedro Claver<br />
+                                            Urbanizaci&oacute;n Boyac&aacute;<br />
+                                            Villa del Sur<br />
+                                            <!-- Comuna 12 --> Alfonso Barberena A<br />
+                                            Asturias<br />
+                                            Bello Horizonte<br />
+                                            Doce de Octubre<br />
+                                            Eduardo Santos<br />
+                                            El Para&iacute;so<br />
+                                            El Rodeo<br />
+                                            Fenalco Kennedy<br />
+                                            Julio Rinc&oacute;n<br />
+                                            La Nueva Floresta*<br />
+                                            Sindical<br />
+                                            Villanueva<br />
+                                            <!-- Comuna 16 --> Antonio Nari&ntilde;o<br />
+                                            Mariano Ramos<br />
+                                            Republica de Israel<br />
+                                            Uni&oacute;n de Vivienda Popular<br />
+                                            <!-- Comuna 19 --> Urbanizaci&oacute;n Colseguros </span><br />
+                                    </button></li>
+                                <li><button class="tablinks" id="defaultOpen"
+                                        onclick="tabContent(event, 'info-5L')">Localidad 5 <span> <!-- Comuna 13 -->
+                                            Calipso<br />
+                                            Charco Azul*<br />
+                                            El Diamante<br />
+                                            El Poblado I<br />
+                                            El Poblado II<br />
+                                            El Pondaje<br />
+                                            El Vergel<br />
+                                            Lleras Restrepo<br />
+                                            Lleras Restrepo II<br />
+                                            Los Comuneros II<br />
+                                            Los Lagos<br />
+                                            Los Robles<br />
+                                            Marroqu&iacute;n III Omar Torrijos<br />
+                                            Ricardo Balcazar<br />
+                                            Rodrigo Lara Bonilla<br />
+                                            Sector Asprosocial &ndash; Diamante<br />
+                                            Sector Laguna del Pondaje<br />
+                                            Ulpiano Lloreda<br />
+                                            Villa del Lago<br />
+                                            Villablanca<br />
+                                            Yira Castro<br />
+                                            <!-- Comuna 14 --> Alfonso Bonilla Arag&oacute;n<br />
+                                            Alirio Mora Beltr&aacute;n<br />
+                                            Jos&eacute; Manuel Marroqu&iacute;n I<br />
+                                            Jos&eacute; Manuel Marroqu&iacute;n II<br />
+                                            Las Orqu&iacute;deas<br />
+                                            Los Naranjos<br />
+                                            Los Naranjos II<br />
+                                            Manuela Beltr&aacute;n<br />
+                                            Promociones Populares B<br />
+                                            Puerta del Sol<br />
+                                            <!-- Comuna 15 --> Ciudad C&oacute;rdoba<br />
+                                            El Morichal<br />
+                                            El Retiro<br />
+                                            El Vallado<br />
+                                            Laureano G&oacute;mez<br />
+                                            Los Comuneros I<br />
+                                            Mojica<br />
+                                            <!-- Comuna 16 --> Antonio Nari&ntilde;o<br />
+                                            <!-- Comuna 21 --> Calimio Desepaz<br />
+                                            Ciudad Talanga<br />
+                                            Ciudadela del Rio &ndash; CVC<br />
+                                            Compartir<br />
+                                            Desepaz Invicali<br />
+                                            El Remanso<br />
+                                            Los Lideres<br />
+                                            Pizamos I<br />
+                                            Pizamos II<br />
+                                            Pizamos III - Las Dalias<br />
+                                            Planta de Tratamiento<br />
+                                            Potrero Grande<br />
+                                            Valle Grande<br />
+                                            Villamercedes I - Villa Luz - Las Garzas<br />
+                                            <!-- Navarro --> Asentamientos </span></button></li>
+                                <li><button class="tablinks" id="defaultOpen"
+                                        onclick="tabContent(event, 'info-6L')">Localidad 6 <span> <!-- Comuna 16 -->
+                                            Brisas del Limonar<br />
+                                            Ciudad 2000<br />
+                                            La Alborada<br />
+                                            <!-- Comuna 17 --> Bosques del Limonar<br />
+                                            Caney<br />
+                                            Ca&ntilde;averales - Los Samanes*<br />
+                                            Ciudad Capri<br />
+                                            Ciudadela Comfandi<br />
+                                            Ciudadela Pasoancho<br />
+                                            El Gran Limonar &ndash; Cataya<br />
+                                            El Ingenio<br />
+                                            El Limonar* La Hacienda<br />
+                                            La Playa<br />
+                                            Las Quintas de Don Sim&oacute;n<br />
+                                            Lili<br />
+                                            Los Portales - Nuevo Rey<br />
+                                            Mayapan - Las Vegas<br />
+                                            Prados del Limonar<br />
+                                            Primero de Mayo*<br />
+                                            Santa Anita - La Selva<br />
+                                            Unicentro Cali<br />
+                                            Urbanizaci&oacute;n San Joaqu&iacute;n<br />
+                                            <!-- Comuna 18 --> Alf&eacute;rez Real<br />
+                                            Alto N&aacute;poles<br />
+                                            Buenos Aires<br />
+                                            Colinas del Sur<br />
+                                            Cuarteles de N&aacute;poles<br />
+                                            El Jord&aacute;n<br />
+                                            Francisco Eladio Ramirez<br />
+                                            Horizontes<br />
+                                            Los Farallones<br />
+                                            Lourdes<br />
+                                            Mario Correa Rengifo<br />
+                                            Mel&eacute;ndez<br />
+                                            N&aacute;poles<br />
+                                            Polvorines<br />
+                                            Prados del Sur<br />
+                                            Sector Alto de los Chorros<br />
+                                            Sector Alto Jord&aacute;n<br />
+                                            Sector Mel&eacute;ndez<br />
+                                            <!-- Comuna 22 --> Ciudad Campestre<br />
+                                            Club Campestre<br />
+                                            Parcelaciones Pance<br />
+                                            Urbanizaci&oacute;n Ciudad Jard&iacute;n<br />
+                                            Urbanizaci&oacute;n Rio Lili<br />
+                                            <!-- Buitrera --> Asentamientos de borde urbano </span></button></li>
+                                <li><button class="tablinks" id="defaultOpen"
+                                        onclick="tabContent(event, 'info-7L')">Localidad 7 <span> <!-- UGR 1 --> La
+                                            Elvira<br />
+                                            El Saladito<br />
+                                            La Castilla<br />
+                                            La Paz<br />
+                                            Montebello<br />
+                                            Golondrinas<br />
+                                            <!-- UGR 2 --> Felidia<br />
+                                            La Leonera<br />
+                                            Pichind&eacute;<br />
+                                            Los Andes<br />
+                                            Villacarmelo<br />
+                                            La Buitrera<br />
+                                            <!-- UGR 3 --> Pance<br />
+                                            Villacarmelo<br />
+                                            La Buitrera<br />
+                                            <!-- UGR 4 --> El Hormiguero<br />
+                                            Navarro </span></button></li>
+                            </ul>
+                        </div>
+
+                        <div class="column col-sm-9">
+                            <div class="tabcontent" id="info-1L">
+                                <h2 class="box-title"><strong>Localidad 1</strong></h2>
+
+                                <div class="box-img"><img alt="1 G" id="249661" longdesc="1 G"
+                                        src="info/principal/media/galeria249661.png" title="Localidad 1" /></div>
+
+                                <div class="info-box">
+                                    <p>Est&aacute; ubicada en la parte noroccidental del &aacute;rea urbana. Se destaca
+                                        por concentrar lugares emblem&aacute;ticos de la ciudad, presenta elementos de
+                                        alto inter&eacute;s ambiental, tiene diversidad socioecon&oacute;mica y alberga
+                                        &aacute;reas de actividad empresarial de escala urbano-regional del Distrito.
+                                    </p>
+
+                                    <table class="intro">
+                                        <tbody>
+                                            <tr>
+                                                <td>64 Barrios</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2.687 Superficie (ha)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>264.001 Habitantes</td>
+                                            </tr>
+                                            <tr>
+                                                <td>124 Habitantes/hect&aacute;rea</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p>&nbsp;</p>
+
+                                    <div class="table-box">
+                                        <table>
+                                            <tbody>
+                                                <tr class="header-table">
+                                                    <td><strong>Comunas/</strong> <strong>corregimiento</strong></td>
+                                                    <td><strong>Completa</strong></td>
+                                                    <td colspan="2"><strong>Barrios / sectores</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 1</td>
+                                                    <td class="text-center">Si</td>
+                                                    <td class="text-center">4</td>
+                                                    <td>Terr&oacute;n Colorado, Vista Hermosa, Sector Patio Bonito,
+                                                        Aguacatal&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 2</td>
+                                                    <td class="text-center">SI</td>
+                                                    <td class="text-center">25</td>
+                                                    <td>Santa Rita, Santa Teresita, Arboledas, Normand&iacute;a,
+                                                        Juanamb&uacute;, Centenario, Granada, Versalles, San Vicente,
+                                                        Santa M&oacute;nica, Prados del Norte, La Flora, La
+                                                        Campi&ntilde;a, La Paz, El Bosque, Menga, Ciudad Los
+                                                        &Aacute;lamos, Chipichape, Brisas de Los &Aacute;lamos,
+                                                        Urbanizaci&oacute;n la Merced, Vipasa, Urbanizaci&oacute;n La
+                                                        Flora, Altos de Menga, Sector Altos de
+                                                        Normand&iacute;a-Batacl&aacute;n, &Aacute;rea en desarrollo -
+                                                        Parque del Amor</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 3</td>
+                                                    <td class="text-center">SI</td>
+                                                    <td class="text-center">15</td>
+                                                    <td>El Nacional, El Pe&ntilde;&oacute;n, San Antonio, San Cayetano,
+                                                        Los Libertadores, San Juan Bosco, Santa Rosa, La Merced, San
+                                                        Pascual, El Calvario, San Pedro, San Nicol&aacute;s, El Hoyo, El
+                                                        Piloto, Navarro - La Chanca&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 4</td>
+                                                    <td class="text-center">NO</td>
+                                                    <td class="text-center">13</td>
+                                                    <td>F&aacute;tima, Sultana - Berl&iacute;n - San Francisco, Popular,
+                                                        Ignacio Rengifo, Guillermo Valencia, La Isla, Marco Fidel
+                                                        Suarez, Evaristo Garc&iacute;a, Bolivariano, Olaya Herrera,
+                                                        Unidad Residencial Bueno Madrid, Flora Industrial, Calima.&nbsp;
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 6</td>
+                                                    <td class="text-center">NO</td>
+                                                    <td class="text-center">4</td>
+                                                    <td>Paso del Comercio, Los Guaduales, Ciudadela Floralia, Sector
+                                                        Puente del Comercio&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 9</td>
+                                                    <td class="text-center">NO</td>
+                                                    <td class="text-center">2</td>
+                                                    <td>Sucre, Obrero</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 19</td>
+                                                    <td class="text-center">NO</td>
+                                                    <td class="text-center">1</td>
+                                                    <td>Bellavista</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>TOTAL</td>
+                                                    <td class="text-center">&nbsp;</td>
+                                                    <td class="text-center">64</td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabcontent" id="info-2L">
+                                <h2 class="box-title"><strong>Localidad 2</strong></h2>
+
+                                <div class="box-img"><img alt="2 G" id="249662" longdesc="2 G"
+                                        src="info/principal/media/galeria249662.png" title="Localidad 2" /></div>
+
+                                <div class="info-box">
+                                    <p>Se ubica al nororiente del &aacute;rea urbana de Santiago de Cali. Se destaca por
+                                        tener un sector industrial en proceso de transformaci&oacute;n y ser la puerta
+                                        de entrada a esta capital y conexi&oacute;n directa con Palmira, el aeropuerto
+                                        Alfonso Bonilla Arag&oacute;n y dem&aacute;s conexiones con el sur y norte del
+                                        pa&iacute;s. Cuenta con importante infraestructura de escala urbana y regional
+                                        como el tren de cercan&iacute;as y la Escuela de Aviaci&oacute;n Marco Fidel
+                                        Suarez. El r&iacute;o Cauca es el gran elemento de la estructura
+                                        ecol&oacute;gica principal.</p>
+
+                                    <table class="intro">
+                                        <tbody>
+                                            <tr>
+                                                <td>62 Barrios</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2.023 Superficie (ha)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>314.809 habitantes</td>
+                                            </tr>
+                                            <tr>
+                                                <td>195 habitantes/hect&aacute;rea</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p>&nbsp;</p>
+
+                                    <div class="table-box">
+                                        <table>
+                                            <tbody>
+                                                <tr class="header-table">
+                                                    <td><strong>Comunas/</strong> <strong>corregimiento</strong></td>
+                                                    <td><strong>Completa</strong></td>
+                                                    <td colspan="2"><strong>Barrios / sectores</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 4</td>
+                                                    <td class="text-center">NO</td>
+                                                    <td class="text-center">8</td>
+                                                    <td>Jorge Isaacs, La Alianza, La Esmeralda, Las Delicias,
+                                                        Manzanares, Porvenir, Salomia, Santander.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 5</td>
+                                                    <td class="text-center">SI</td>
+                                                    <td class="text-center">12</td>
+                                                    <td>Chiminangos I, Chiminangos II, El Sena, Los Andes, Los Andes B,
+                                                        La Riviera, Los Guayacanes, Los Parques Barranquilla,
+                                                        Metropolitano del Norte, Paseo de Los Almendros, Torres de
+                                                        Comfandi, Villa del Prado, El Guabito, Villa del Sol.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 6</td>
+                                                    <td class="text-center">NO</td>
+                                                    <td class="text-center">10</td>
+                                                    <td>Fonaviemcali, Jorge Eliecer Gait&aacute;n, La Rivera Primera
+                                                        Etapa, Los Alc&aacute;zares, Petecuy Primera Etapa, Petecuy
+                                                        Segunda Etapa, Petecuy Tercera Etapa, San Luis, San Luis II,
+                                                        Urbanizaci&oacute;n Calimio.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 7</td>
+                                                    <td class="text-center">SI</td>
+                                                    <td class="text-center">12</td>
+                                                    <td>Alfonso L&oacute;pez P. 1a. Etapa, Alfonso L&oacute;pez P. 2a.
+                                                        Etapa, Alfonso L&oacute;pez P. 3a. Etapa, Fepicol, Las Ceibas,
+                                                        Los Pinos, Parque de la Ca&ntilde;a, Puerto Mallarino, Puerto
+                                                        Nuevo, San Marino, Siete de Agosto, Urbanizaci&oacute;n El
+                                                        &Aacute;ngel del Hogar.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 8</td>
+                                                    <td class="text-center">NO</td>
+                                                    <td class="text-center">18</td>
+                                                    <td>Atanasio Girardot, Benjam&iacute;n Herrera, Chapinero, El
+                                                        Tr&eacute;bol*, El Troncal, Industrial, La Base, La Floresta,
+                                                        Las Am&eacute;ricas, Municipal, Primitivo Crespo, Rafael Uribe
+                                                        Uribe, Saavedra Galindo, Santa Fe, Santa M&oacute;nica Popular,
+                                                        Sim&oacute;n Bol&iacute;var, Urbanizaci&oacute;n La Nueva Base,
+                                                        Villa Colombia.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 12</td>
+                                                    <td class="text-center">NO</td>
+                                                    <td class="text-center">1</td>
+                                                    <td>Nueva Floresta.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 13</td>
+                                                    <td class="text-center">NO</td>
+                                                    <td class="text-center">1</td>
+                                                    <td>Charco Azul.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>TOTAL</td>
+                                                    <td class="text-center">&nbsp;</td>
+                                                    <td class="text-center">62</td>
+                                                    <td>barrios que se dividen entre 2 localidades</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabcontent" id="info-3L">
+                                <h2 class="box-title"><strong>Localidad 3</strong></h2>
+
+                                <div class="box-img"><img alt="3 G" id="249663" longdesc="3 G"
+                                        src="info/principal/media/galeria249663.png" title="Localidad 3" /></div>
+
+                                <div class="info-box">
+                                    <p>Se encuentra sobre el piedemonte de la Cordillera Occidental. Se destaca por
+                                        concentrar infraestructuras deportivas representativas de la ciudad; importantes
+                                        centros de salud y sectores que configuran la identidad de los cale&ntilde;os en
+                                        el imaginario colectivo.</p>
+
+                                    <table class="intro">
+                                        <tbody>
+                                            <tr>
+                                                <td>53 Barrios</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1.521 Superficie (ha)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>157.301 Habitantes</td>
+                                            </tr>
+                                            <tr>
+                                                <td>134 Habitantes/hect&aacute;rea</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p>&nbsp;</p>
+
+                                    <div class="table-box">
+                                        <table>
+                                            <tbody>
+                                                <tr class="header-table">
+                                                    <td><strong>Comunas/</strong> <strong>corregimiento</strong></td>
+                                                    <td><strong>Completa</strong></td>
+                                                    <td colspan="2"><strong>Barrios / sectores</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 9</td>
+                                                    <td class="text-center">NO</td>
+                                                    <td class="text-center">8</td>
+                                                    <td>Alameda, Aranjuez, Belalc&aacute;zar, Breta&ntilde;a, Guayaquil
+                                                        , Jun&iacute;n, Manuel Maria Buenaventura, Santa M&oacute;nica
+                                                        Belalc&aacute;zar.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 17</td>
+                                                    <td class="text-center">NO</td>
+                                                    <td class="text-center">1</td>
+                                                    <td>El Gran Limonar.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 18</td>
+                                                    <td class="text-center">NO</td>
+                                                    <td class="text-center">2</td>
+                                                    <td>Los Chorros, Caldas.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 19</td>
+                                                    <td class="text-center">NO</td>
+                                                    <td class="text-center">31</td>
+                                                    <td>El Refugio, La Cascada, El Lido, Urbanizaci&oacute;n Tequendama,
+                                                        Eucar&iacute;stico, San Fernando Nuevo, Urbanizaci&oacute;n
+                                                        Nueva Granada, Santa Isabel, San Fernando Viejo, Miraflores, 3
+                                                        de Julio, El Cedro, Champagnat, Urbanizaci&oacute;n Colseguros*,
+                                                        Los C&aacute;mbulos, El Morti&ntilde;al, Urbanizaci&oacute;n
+                                                        Militar, Cuarto de Legua &ndash; Guadalupe, Nueva Tequendama,
+                                                        Camino Real - Joaqu&iacute;n Borrero Sinisterra, Camino Real -
+                                                        Los Fundadores, Sector Altos de Santa Isabel, Santa
+                                                        B&aacute;rbara, Tejares &ndash; Cristales, Unidad Residencial
+                                                        Santiago de Cali, Unidad Residencial El Coliseo,
+                                                        Ca&ntilde;averalejo - Seguros Patria, Ca&ntilde;averal,
+                                                        Pampalinda, Sector Ca&ntilde;averalejo Guadalupe, Sector Bosque
+                                                        Municipal.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 20</td>
+                                                    <td class="text-center">SI</td>
+                                                    <td class="text-center">11</td>
+                                                    <td>Bel&eacute;n, Belisario Caicedo, Brisas de Mayo, Cementerio
+                                                        &ndash; Carabineros, El Cortijo, La Sultana, Lleras Camargo,
+                                                        Pueblo Joven, Silo&eacute;, Tierra Blanca, Venezuela -
+                                                        Urbanizaci&oacute;n Ca&ntilde;averalejo.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>TOTAL</td>
+                                                    <td class="text-center">&nbsp;</td>
+                                                    <td class="text-center">53</td>
+                                                    <td>barrios que se dividen entre 2 localidades</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabcontent" id="info-4L">
+                                <h2 class="box-title"><strong>Localidad 4</strong></h2>
+
+                                <div class="box-img"><img alt="4 G" id="249664" longdesc="4 G"
+                                        src="info/principal/media/galeria249664.png" title="Localidad 4" /></div>
+
+                                <div class="info-box">
+                                    <p>Se localiza en el centro geogr&aacute;fico del &aacute;rea urbana. Est&aacute;
+                                        bastante consolidada. Se caracteriza por su diversidad en usos y poblaciones.
+                                        Alberga hechos portadores de futuro como la renovaci&oacute;n del sector de
+                                        Santa Elena y uno de los retos m&aacute;s importantes para la
+                                        implementaci&oacute;n del Tren de Cercan&iacute;as, donde el corredor verde es
+                                        el eje estructurante de la localidad.</p>
+
+                                    <table class="intro">
+                                        <tbody>
+                                            <tr>
+                                                <td>59 Barrios</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1.419 Superficie (ha)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>291.519 Habitantes</td>
+                                            </tr>
+                                            <tr>
+                                                <td>274 Hab/hect&aacute;rea</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p>&nbsp;</p>
+
+                                    <div class="table-box">
+                                        <table>
+                                            <tbody>
+                                                <tr class="header-table">
+                                                    <td><strong>Comunas/</strong> <strong>corregimiento</strong></td>
+                                                    <td><strong>Completa</strong></td>
+                                                    <td colspan="2"><strong>Barrios / sectores</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 8</td>
+                                                    <td class="text-center">NO</td>
+                                                    <td class="text-center">2</td>
+                                                    <td>El Tr&eacute;bol*, Santa M&oacute;nica Popular*.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 10</td>
+                                                    <td class="text-center">SI</td>
+                                                    <td class="text-center">18</td>
+                                                    <td>Colseguros Andes, Crist&oacute;bal Col&oacute;n, Departamental,
+                                                        El Dorado, El Guabal, Jorge Zawadzky, La Libertad, La Selva, Las
+                                                        Acacias, Las Granjas, Ol&iacute;mpico, Panamericano, Pasoancho,
+                                                        San Crist&oacute;bal, San Judas Tadeo I, San Judas Tadeo II,
+                                                        Santa Elena, Santo Domingo.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 11</td>
+                                                    <td class="text-center">SI</td>
+                                                    <td class="text-center">22</td>
+                                                    <td>20 de Julio, Aguablanca, El Jard&iacute;n, El Prado, El
+                                                        Recuerdo, Jos&eacute; Holgu&iacute;n Garc&eacute;s, Jos&eacute;
+                                                        Maria C&oacute;rdoba, La Esperanza, La Fortaleza, La Gran
+                                                        Colombia, La Independencia, Le&oacute;n XIII, Los
+                                                        Conquistadores, Los Sauces, Maracaibo, Prados de Oriente,
+                                                        Primavera, San Benito, San Carlos, San Pedro Claver,
+                                                        Urbanizaci&oacute;n Boyac&aacute;, Villa del Sur.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 12</td>
+                                                    <td class="text-center">NO</td>
+                                                    <td class="text-center">12</td>
+                                                    <td>Alfonso Barberena A, Asturias, Bello Horizonte, Doce de Octubre,
+                                                        Eduardo Santos, El Para&iacute;so, El Rodeo, Fenalco Kennedy,
+                                                        Julio Rinc&oacute;n, La Nueva Floresta*, Sindical, Villanueva.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 16</td>
+                                                    <td class="text-center">NO</td>
+                                                    <td class="text-center">4</td>
+                                                    <td>Antonio Nari&ntilde;o*, Mariano Ramos, Rep&uacute;blica de
+                                                        Israel, Uni&oacute;n de Vivienda Popular.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 19</td>
+                                                    <td class="text-center">NO</td>
+                                                    <td class="text-center">1</td>
+                                                    <td>Urbanizaci&oacute;n Colseguros*</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>TOTAL</td>
+                                                    <td class="text-center">&nbsp;</td>
+                                                    <td class="text-center">59</td>
+                                                    <td>barrios que se dividen entre 2 localidades</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabcontent" id="info-5L">
+                                <h2 class="box-title"><strong>Localidad 5</strong></h2>
+
+                                <div class="box-img"><img alt="G 5" id="249665" longdesc="G 5"
+                                        src="info/principal/media/galeria249665.png" title="Localidad 5" /></div>
+
+                                <div class="info-box">
+                                    <p>Se halla en la parte oriental del &aacute;rea urbana. Se caracteriza por
+                                        concentrar las mayores inequidades del territorio y unas de las m&aacute;s altas
+                                        densidades del Distrito.</p>
+
+                                    <p>Es el espacio donde han confluido las distintas capas de migraciones en Cali, lo
+                                        que le da un reconocimiento especial en la memoria colectiva tanto por aspectos
+                                        positivos como las manifestaciones culturales particulares (entre ellas la
+                                        salsa).</p>
+
+                                    <p>Tambi&eacute;n representa importantes retos como la integraci&oacute;n efectiva
+                                        de la estructura ecol&oacute;gica del R&iacute;o Cauca, el mejoramiento de su
+                                        infraestructura y el incremento de la calidad de vida de sus habitantes.</p>
+
+                                    <table class="intro">
+                                        <tbody>
+                                            <tr>
+                                                <td>54 Barrios</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2.243 Superficie (ha)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>53.539 habitantes</td>
+                                            </tr>
+                                            <tr>
+                                                <td>254 hab/ha</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p>&nbsp;</p>
+
+                                    <div class="table-box">
+                                        <table>
+                                            <tbody>
+                                                <tr class="header-table">
+                                                    <td><strong>Comunas/</strong> <strong>corregimiento</strong></td>
+                                                    <td><strong>Completa</strong></td>
+                                                    <td colspan="2"><strong>Barrios / sectores</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 13</td>
+                                                    <td class="text-center">SI</td>
+                                                    <td class="text-center">22</td>
+                                                    <td>Calipso, Charco Azul*, El Diamante, El Poblado I, El Poblado II,
+                                                        El Pondaje, El Vergel, Lleras Restrepo, Lleras Restrepo II, Los
+                                                        Comuneros II, Los Lagos, Los Robles, Marroqu&iacute;n III, Omar
+                                                        Torrijos, Ricardo Balcazar, Rodrigo Lara Bonilla, Sector
+                                                        Asprosocial &ndash; Diamante, Sector Laguna del Pondaje, Ulpiano
+                                                        Lloreda, Villa del Lago, Villablanca, Yira Castro.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 14</td>
+                                                    <td class="text-center">SI</td>
+                                                    <td class="text-center">10</td>
+                                                    <td>Alfonso Bonilla Arag&oacute;n, Alirio Mora Beltr&aacute;n,
+                                                        Jos&eacute; Manuel Marroqu&iacute;n I, Jos&eacute; Manuel
+                                                        Marroqu&iacute;n II, Las Orqu&iacute;deas, Los Naranjos, Los
+                                                        Naranjos II, Manuela Beltr&aacute;n, Promociones Populares B,
+                                                        Puerta del Sol.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 15</td>
+                                                    <td class="text-center">NO</td>
+                                                    <td class="text-center">7</td>
+                                                    <td>Ciudad C&oacute;rdoba, El Morichal, El Retiro, El Vallado,
+                                                        Laureano G&oacute;mez, Los Comuneros I, Mojica.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 16</td>
+                                                    <td class="text-center">NO</td>
+                                                    <td class="text-center">1</td>
+                                                    <td>Antonio Nari&ntilde;o*</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 21</td>
+                                                    <td class="text-center">SI</td>
+                                                    <td class="text-center">14</td>
+                                                    <td>Calimio Desepaz, Ciudad Talanga, Ciudadela del Rio &ndash; CVC,
+                                                        Compartir, Desepaz Invicali, El Remanso, Los Lideres, Pizamos I,
+                                                        Pizamos II, Pizamos III - Las Dalias, Planta de Tratamiento,
+                                                        Potrero Grande, Valle Grande, Villamercedes I - Villa Luz - Las
+                                                        Garzas.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>TOTAL</td>
+                                                    <td class="text-center">&nbsp;</td>
+                                                    <td class="text-center">54</td>
+                                                    <td>barrios que se dividen entre 2 localidades</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabcontent" id="info-6L">
+                                <h2 class="box-title"><strong>Localidad 6</strong></h2>
+
+                                <div class="box-img"><img alt="G 5" id="249666" longdesc="G 5"
+                                        src="info/principal/media/galeria249666.png" title="Localidad 6" /></div>
+
+                                <div class="info-box">
+                                    <p>Ubicada en la parte sur del &aacute;rea urbana. Se destaca por ser la pieza de
+                                        crecimiento urbano formal m&aacute;s importante del Distrito (Valle del Lili,
+                                        Zona de Expansi&oacute;n, Comuna 22) y por su diversidad poblacional.</p>
+
+                                    <p>Es el sector donde se concentran un alto porcentaje de las sedes de
+                                        educaci&oacute;n privada de Cali y la Universidad del Valle.</p>
+
+                                    <p>Presenta una notable riqueza ambiental, con la presencia de los
+                                        <strong>corredores ambientales de los r&iacute;os Mel&eacute;ndez, Lili y
+                                            Pance,</strong> en ella se encuentran elementos complementarios al sistema
+                                        ambiental como el Batall&oacute;n Pichincha, las universidades y clubes
+                                        sociales.
+                                    </p>
+
+                                    <p>Entre sus retos est&aacute;n la formalizaci&oacute;n de los asentamientos de
+                                        borde urbano, la implementaci&oacute;n del Tren de Cercan&iacute;as y el
+                                        transporte multimodal que juegan en esta localidad el rol de elemento
+                                        articulador supramunicipal.</p>
+
+                                    <table class="intro">
+                                        <tbody>
+                                            <tr>
+                                                <td>46 Barrios</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4.610 Superficie (ha)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>270.806 habitantes</td>
+                                            </tr>
+                                            <tr>
+                                                <td>73 habitantes/hect&aacute;rea</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p>&nbsp;</p>
+
+                                    <div class="table-box">
+                                        <table>
+                                            <tbody>
+                                                <tr class="header-table">
+                                                    <td><strong>Comunas/</strong> <strong>corregimiento</strong></td>
+                                                    <td><strong>Completa</strong></td>
+                                                    <td colspan="2"><strong>Barrios / sectores</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 16</td>
+                                                    <td class="text-center">NO</td>
+                                                    <td class="text-center">3</td>
+                                                    <td>Brisas del Limonar, Ciudad 2000, La Alborada.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 17</td>
+                                                    <td class="text-center">NO</td>
+                                                    <td class="text-center">20</td>
+                                                    <td>Bosques del Limonar, Caney, Ca&ntilde;averales - Los Samanes*,
+                                                        Ciudad Capri, Ciudadela Comfandi, Ciudadela Pasoancho, El Gran
+                                                        Limonar &ndash; Cataya, El Ingenio, El Limonar, La Hacienda, La
+                                                        Playa, Las Quintas de Don Sim&oacute;n, Lili, Los Portales -
+                                                        Nuevo Rey, Mayapan - Las Vegas, Prados del Limonar, Primero de
+                                                        Mayo, Santa Anita - La Selva, Unicentro Cali,
+                                                        Urbanizaci&oacute;n San Joaqu&iacute;n.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 18</td>
+                                                    <td class="text-center">NO</td>
+                                                    <td class="text-center">18</td>
+                                                    <td>Alf&eacute;rez Real, Alto N&aacute;poles, Buenos Aires, Colinas
+                                                        del Sur, Cuarteles de N&aacute;poles, El Jord&aacute;n,
+                                                        Francisco Eladio Ramirez, Horizontes, Los Farallones, Lourdes,
+                                                        Mario Correa Rengifo, Mel&eacute;ndez, N&aacute;poles,
+                                                        Polvorines, Prados del Sur, Sector Alto de los Chorros, Sector
+                                                        Alto Jord&aacute;n, Sector Mel&eacute;ndez.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Comuna 22</td>
+                                                    <td class="text-center">SI</td>
+                                                    <td class="text-center">5</td>
+                                                    <td>Ciudad Campestre, Club Campestre, Parcelaciones Pance,
+                                                        Urbanizaci&oacute;n Ciudad Jard&iacute;n, Urbanizaci&oacute;n
+                                                        Rio Lili.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&Aacute;rea de expansi&oacute;n</td>
+                                                    <td class="text-center">SI</td>
+                                                    <td class="text-center">&nbsp;</td>
+                                                    <td>Desarrollos en planes parciales de expansi&oacute;n urbana</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Buitrera</td>
+                                                    <td class="text-center">&nbsp;</td>
+                                                    <td class="text-center">&nbsp;</td>
+                                                    <td>Asentamientos de borde urbano.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>TOTAL</td>
+                                                    <td class="text-center">&nbsp;</td>
+                                                    <td class="text-center">46</td>
+                                                    <td>barrios que se dividen entre 2 localidades</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabcontent" id="info-7L">
+                                <h2 class="box-title"><strong>Localidad 7</strong></h2>
+
+                                <div class="box-img"><img alt="7 G" id="249667" longdesc="7 G"
+                                        src="info/principal/media/galeria249667.png" title="Localidad 7" /></div>
+
+                                <div class="info-box">
+                                    <p>Esta localidad se caracteriza por una enorme riqueza ambiental, iniciando por
+                                        elementos reconocidos a nivel de Colombia como el <strong>Parque Nacional
+                                            Natural Farallones,</strong> el suelo rural protegido - zona de
+                                        amortiguaci&oacute;n-, por ser el nacimiento de las fuentes h&iacute;dricas de
+                                        ladera del Distrito <strong>(r&iacute;o Aguacatal, r&iacute;o Cali, r&iacute;o
+                                            Ca&ntilde;averalejo, r&iacute;o Lil&iacute;, r&iacute;o Pance)</strong>
+                                        generando servicios ambientales para el Distrito y su entorno supramunicipal.
+                                    </p>
+
+                                    <p>Su geograf&iacute;a condiciona el territorio en cuencas funcionales, las cuales
+                                        han sido elemento de referencia para plantear las Unidades de Gesti&oacute;n
+                                        Rural. Adem&aacute;s de la riqueza ambiental, cuenta con valores inmateriales
+                                        como los distintos modos de vida de la ruralidad.</p>
+
+                                    <p>Entre los grandes retos de la localidad 7 se encuentran la conservaci&oacute;n de
+                                        la estructura ecol&oacute;gica, la provisi&oacute;n de servicios
+                                        ecosist&eacute;micos, el control del borde urbano y la implementaci&oacute;n del
+                                        catastro multiprop&oacute;sito</p>
+
+                                    <div class="table-box">
+                                        <table>
+                                            <tbody>
+                                                <tr class="header-table">
+                                                    <td><strong>&Aacute;REA</strong></td>
+                                                    <td><strong>Corregimiento</strong></td>
+                                                    <td><strong>Superficie (ha)</strong></td>
+                                                    <td><strong>% superficie del Distrito</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="min-width: 69px">&Aacute;REA 1</td>
+                                                    <td>La Elvira, El Saladito, La Castilla, La Paz, Montebello,
+                                                        Golondrinas</td>
+                                                    <td class="text-center">6.769</td>
+                                                    <td class="text-center">12,0%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&Aacute;REA 2</td>
+                                                    <td>Felidia, La Leonera, Pichind&eacute;, Los Andes, Villacarmelo*,
+                                                        La Buitrera*</td>
+                                                    <td class="text-center">13.353</td>
+                                                    <td class="text-center">23,7%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&Aacute;REA 3</td>
+                                                    <td>Villacarmelo*, La Buitrera*, Pance</td>
+                                                    <td class="text-center">15.996</td>
+                                                    <td class="text-center">28,4%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&Aacute;REA 4</td>
+                                                    <td>El Hormiguero**, Navarro**</td>
+                                                    <td class="text-center">5.977</td>
+                                                    <td class="text-center">10,6%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Total</td>
+                                                    <td>Total poblaci&oacute;n: 69.483</td>
+                                                    <td class="text-center">42.095 ha</td>
+                                                    <td class="text-center">74,8%</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <p>&nbsp;</p>
+
+                                    <div class="box-img"><img alt="8G" id="249671" longdesc="8G"
+                                            src="info/principal/media/galeria249671.png" title="8G" /></div>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            function myLocalitySearch() {
+                                var input, filter, ul, li, a, i;
+                                input = document.getElementById("myLocation");
+                                filter = input.value.toUpperCase();
+                                ul = document.getElementById("myList");
+                                li = ul.getElementsByTagName("li");
+                                for (i = 0; i < li.length; i++) {
+                                    a = li[i].getElementsByTagName("button")[0];
+                                    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                                        li[i].style.display = "";
+                                    } else {
+                                        li[i].style.display = "none";
+                                    }
+                                }
+                            }
+                            function tabContent(evt, tabName) {
+                                var i, tabcontent, tablinks;
+                                tabcontent = document.getElementsByClassName("tabcontent");
+                                for (i = 0; i < tabcontent.length; i++) {
+                                    tabcontent[i].style.display = "none";
+                                }
+                                tablinks = document.getElementsByClassName("tablinks");
+                                for (i = 0; i < tablinks.length; i++) {
+                                    tablinks[i].className = tablinks[i].className.replace(
+                                        " active",
+                                        ""
+                                    );
+                                }
+                                document.getElementById(tabName).style.display = "block";
+                                evt.currentTarget.className += " active";
+                            }
+
+                            document.getElementById("defaultOpen").click();
+                        </script>
+                    </div>
+
+                    <p>&nbsp;</p>
+
+                    <div>DISPLAYGALERIA(19357)</div>
+
+                    <p>&nbsp;</p>
+                </div>
+                <!-- Sistema Distrital de Planeación Distrital -->
+
+                <div class="row d-flex f-column" id="dsistema" style="display: none">
+                    <h4><strong>&iquest;Qu&eacute; es el Sistema de Planeaci&oacute;n?</strong></h4>
+
+                    <p>El Sistema de Planeaci&oacute;n es el que permite el funcionamiento y la articulaci&oacute;n de
+                        la Administraci&oacute;n Distrital en todo su conjunto para realizar el proceso de
+                        planeaci&oacute;n, con la participaci&oacute;n de actores institucionales y comunitarios.
+                        Teniendo en cuenta la categorizaci&oacute;n de Santiago de Cali como Distrito Especial, esto
+                        exige cambios estructurales en la forma como se adelanta este modelo desde 1996, dado que entran
+                        a operar otros actores, mecanismos e instrumentos.</p>
+
+                    <h4><strong>Instrumentos del Sistema Distrital de Planeaci&oacute;n</strong></h4>
+
+                    <p>Estos instrumentos permiten adelantar un ordenamiento del territorio, en este caso, la localidad.
+                        Miremos, cu&aacute;les son:</p>
+
+                    <ul>
+                        <li>
+                            <h5><strong>Plan de Desarrollo Distrital</strong></h5>
+
+                            <p>Es el elemento rector de planificaci&oacute;n, el cual articula el programa de Gobierno
+                                del alcalde Distrital electo, las pol&iacute;ticas p&uacute;blicas, planes sectoriales y
+                                el Plan de Ordenamiento Territorial, toda vez que a partir de su incorporaci&oacute;n
+                                podr&aacute;n ser susceptibles de inversi&oacute;n p&uacute;blica. Es aprobado por el
+                                Concejo Distrital y se rige por la Ley 152 de 1994.</p>
+                        </li>
+                        <li>
+                            <h5><strong>Plan de Desarrollo Local</strong></h5>
+
+                            <p>Se refiere al instrumento de planificaci&oacute;n de corto plazo, formulado en cada
+                                localidad mediante un proceso de planeaci&oacute;n participativa, acatando los
+                                lineamientos emanados por el alcalde Distrital e impartidos por el Departamento
+                                Administrativo de Planeaci&oacute;n. El Plan de Desarrollo Local deber&aacute; alinearse
+                                con el Plan de Desarrollo Distrital. Su aprobaci&oacute;n est&aacute; a cargo de la
+                                Junta Administradora Local.</p>
+                        </li>
+                        <li>
+                            <h5><strong>Banco local de programas y proyectos</strong></h5>
+
+                            <p>Es un conjunto de actividades seleccionadas como viables, previamente evaluadas social,
+                                t&eacute;cnica, jur&iacute;dica, econ&oacute;mica y financieramente registradas y
+                                sistematizadas en el Departamento Administrativo de Planeaci&oacute;n, o el que haga sus
+                                veces.</p>
+                        </li>
+                    </ul>
+
+                    <h4><strong>Sistema presupuestal</strong></h4>
+
+                    <p>El sistema presupuestal de los Fondos de Desarrollo Local est&aacute; constituido por un Plan
+                        Financiero Plurianual, por un Plan Operativo Anual de Inversiones y por el Presupuesto Anual de
+                        las Localidades.</p>
+
+                    <ul class="no-styles">
+                        <li>
+                            <p><span>Plan Financiero Plurianual:</span> Es una herramienta de planificaci&oacute;n y
+                                gesti&oacute;n financiera de mediano plazo, que tiene como base las operaciones
+                                efectivas de los Fondos de Desarrollo Local. Para su elaboraci&oacute;n se
+                                tomar&aacute;n en consideraci&oacute;n las proyecciones de ingresos, gastos,
+                                super&aacute;vit o d&eacute;ficit y su financiaci&oacute;n.</p>
+                        </li>
+                        <li>
+                            <p><span>Plan Operativo Anual de Inversiones:</span> Se&ntilde;alar&aacute; los proyectos de
+                                inversi&oacute;n clasificados por sectores, entidades, prioridades y programas. Este
+                                plan guardar&aacute; concordancia con el Plan de Inversiones establecido en el Plan de
+                                Desarrollo Local.</p>
+                        </li>
+                        <li>
+                            <p><span>Presupuesto Anual:</span> Es el instrumento para el cumplimiento de los planes y
+                                programas de desarrollo econ&oacute;mico y social.</p>
+                        </li>
+                        <li>
+                            <p><span>Principios presupuestales:</span> El sistema presupuestal de los Fondos de
+                                Desarrollo Local se fundar&aacute; en principios de transparencia, legalidad y
+                                planificaci&oacute;n.</p>
+                        </li>
+                    </ul>
+
+                    <h4><strong>Composici&oacute;n del presupuesto</strong></h4>
+
+                    <p>El presupuesto anual de los Fondos de Desarrollo Local se compone de las siguientes partes:</p>
+
+                    <ol>
+                        <li>
+                            <p>El Presupuesto de Rentas e Ingresos. Comprende la disponibilidad inicial, los ingresos
+                                corrientes, las transferencias y los recursos de capital que se espera recaudar en la
+                                vigencia.</p>
+                        </li>
+                        <li>
+                            <p>El Presupuesto de Gastos. Comprende las apropiaciones de gastos de inversi&oacute;n. Los
+                                gastos causados con cargo a los presupuestos de los Fondos de Desarrollo Local que no se
+                                paguen en la vigencia respectiva deber&aacute;n incluirse en el presupuesto del
+                                a&ntilde;o siguiente como obligaciones por pagar.</p>
+                        </li>
+                        <li>
+                            <p>Disponibilidad Final. Corresponde a la diferencia existente entre el presupuesto de
+                                ingresos y el presupuesto de gastos de inversi&oacute;n.</p>
+                        </li>
+                    </ol>
+
+                    <h4><strong>Presentaci&oacute;n del proyecto de presupuesto</strong></h4>
+
+                    <p>El alcalde local presentar&aacute; a la Junta Administradora Local, dentro de los tres (3)
+                        primeros d&iacute;as del inicio de las sesiones ordinarias, el proyecto de presupuesto para su
+                        estudio y aprobaci&oacute;n.</p>
+
+                    <p>El alcalde local presentar&aacute; el mensaje presupuestal y un anexo informativo con el detalle
+                        de la composici&oacute;n del presupuesto hasta el nivel de proyectos, para facilitar el estudio
+                        y aprobaci&oacute;n del proyecto de presupuesto.</p>
+
+                    <h4><strong>El Fondo de Desarrollo Local </strong></h4>
+
+                    <p>En cada una de las localidades habr&aacute; un Fondo de Desarrollo Local que tendr&aacute; un
+                        patrimonio aut&oacute;nomo, personer&iacute;a jur&iacute;dica, cuyo ordenador del gasto
+                        ser&aacute; el alcalde local. El alcalde local ser&aacute; el representante legal de los Fondos
+                        de Desarrollo Local y ordenador de sus gastos.</p>
+
+                    <p>Con cargo a los Fondos de Desarrollo Local se financiar&aacute;n la prestaci&oacute;n de los
+                        servicios, la construcci&oacute;n de las obras de competencia de las Juntas Administradoras
+                        Locales, las erogaciones que se generen por asistencia de los ediles a sesiones plenarias y
+                        comisiones permanentes en el periodo de sesiones ordinarias y extraordinarias.</p>
+
+                    <h4><strong>Patrimonio de los Fondos de Desarrollo Local</strong></h4>
+
+                    <p>Son recursos de cada fondo:</p>
+
+                    <ol>
+                        <li>Las partidas que se asignen a cada localidad.</li>
+                        <li>Las sumas que a cualquier t&iacute;tulo se le apropien en el presupuesto del Distrito.</li>
+                        <li>El valor de las multas y sanciones econ&oacute;micas que en ejercicio de sus atribuciones
+                            impongan los alcaldes locales.</li>
+                        <li>El producto de las operaciones que realice y los dem&aacute;s bienes que adquiera como
+                            persona jur&iacute;dica.</li>
+                        <li>Las donaciones, recursos de cooperaci&oacute;n y dem&aacute;s ingresos que recibieren sin
+                            contrapartida.</li>
+                        <li>Los ingresos por rifas, juegos, conciertos, espect&aacute;culos, actividades deportivas y
+                            dem&aacute;s actividades que se organicen en la localidad.</li>
+                        <li>Los que le transfiera la Naci&oacute;n.</li>
+                    </ol>
+
+                    <p>La Naci&oacute;n podr&aacute; establecer convenios o contratos plan con alcaldes locales para el
+                        buen desarrollo de sus funciones y competencias.</p>
+
+                    <h4><strong>Participaci&oacute;n en el presupuesto distrital</strong></h4>
+
+                    <p>Corresponde al diez por ciento (10 %) de los ingresos corrientes del presupuesto de la
+                        Administraci&oacute;n central del Distrito y se asignar&aacute; a las localidades teniendo en
+                        cuenta las necesidades b&aacute;sicas insatisfechas de la poblaci&oacute;n de cada una de estas
+                        y seg&uacute;n los &iacute;ndices que establezca el Departamento Administrativo de
+                        Planeaci&oacute;n.</p>
+
+                    <p>El Concejo Distrital, a iniciativa del alcalde distrital podr&aacute; incrementar dicha
+                        participaci&oacute;n anual y acumulativamente en un dos por ciento (2 %) sin que la misma supere
+                        el total del treinta por ciento (30 %) de los ingresos mencionados.</p>
+
+                    <p>Los Fondos de Desarrollo Local solo podr&aacute;n financiar los proyectos que se encuentren en el
+                        banco de programas y proyectos de inversi&oacute;n local.</p>
+
+                    <h4><strong>Asignaci&oacute;n de las transferencias de la Administraci&oacute;n central</strong>
+                    </h4>
+
+                    <p>El Departamento Administrativo de Hacienda Municipal, o quien haga sus veces, distribuir&aacute;
+                        y comunicar&aacute; la transferencia correspondiente a cada uno de los Fondos de Desarrollo
+                        Local, con base en los &iacute;ndices de distribuci&oacute;n presupuestal que anualmente se
+                        establece.</p>
+
+                    <p>El proyecto Cali Distrito Especial plantea reorganizar a la capital vallecaucana en 7 localidades
+                        transform&aacute;ndola pol&iacute;tica y administrativamente para profundizar la democracia y
+                        alcanzar mayores grados de desarrollo y bienestar social en cada territorio</p>
+
+                    <p>Muchos ciudadanos nos dejaron sus opiniones</p>
+
+                    <h4 class="text-center"><strong>Diferencias entre el modelo de planeaci&oacute;n actual y el
+                            Distrital </strong></h4>
+
+                    <p>&nbsp;</p>
+
+                    <div class="table-box">
+                        <table>
+                            <tbody>
+                                <tr class="header-table header-v2">
+                                    <td><strong>Actividad</strong></td>
+                                    <td><strong>Modelo actual: comunas y corregimientos </strong></td>
+                                    <td><strong>Modelo de Planeaci&oacute;n Localidades</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Plan de Desarrollo Distrital</td>
+                                    <td class="text-center">SI</td>
+                                    <td class="text-center">SI</td>
+                                </tr>
+                                <tr>
+                                    <td>Estructura administrativa</td>
+                                    <td>Jefes de Oficina Centros de Administraci&oacute;n Local Integrada (CALI) y
+                                        personal de apoyo.</td>
+                                    <td>Alcald&iacute;as Locales con su correspondiente estructura administrativa,
+                                        acorde con las funciones desconcentradas.</td>
+                                </tr>
+                                <tr>
+                                    <td>Planes de Desarrollo Territoriales</td>
+                                    <td>Comunas y Corregimientos (37 documentos) alineados al Plan de Desarrollo
+                                        Distrital.</td>
+                                    <td>Planes de Desarrollo de localidades alineados al Plan de Desarrollo Distrital.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Banco de proyectos</td>
+                                    <td>Un (1) Banco de Proyectos administrado por el Departamento de Planeaci&oacute;n
+                                        Municipal.</td>
+                                    <td>Un (1) Banco de Proyectos Distrital y un (1) Banco de Proyectos en cada
+                                        localidad, administrado por la Alcald&iacute;a Local, respectiva.</td>
+                                </tr>
+                                <tr>
+                                    <td>Presupuesto de inversi&oacute;n</td>
+                                    <td>Presupuesto participativo.</td>
+                                    <td>Fondos de Desarrollo Local (10 % de los ingresos corrientes de libre
+                                        destinaci&oacute;n) m&aacute;s presupuesto participativo.</td>
+                                </tr>
+                                <tr>
+                                    <td>Orientaci&oacute;n del gasto</td>
+                                    <td>Cumplimiento de las metas de los Planes de Desarrollo de comunas y
+                                        corregimientos.</td>
+                                    <td>Cumplimiento de las metas de los Planes de Desarrollo de las localidades y pago
+                                        de ediles.</td>
+                                </tr>
+                                <tr>
+                                    <td>Ediles</td>
+                                    <td>Nueve (9) ediles para cada una de las comunas y corregimientos.</td>
+                                    <td>Entre 9 y 15 ediles por localidad.</td>
+                                </tr>
+                                <tr>
+                                    <td>Rol de la Junta Administradora Local</td>
+                                    <td>Aprueban el Plan de Desarrollo de comunas y corregimientos y distribuyen las
+                                        partidas presupuestales en el marco del Plan Operativo Anual de Inversiones
+                                        (POAI) de cada vigencia, a trav&eacute;s de ejercicios de presupuesto
+                                        participativo.</td>
+                                    <td>Aprueban el Plan de Desarrollo y presupuesto de la localidad; postulan ternas
+                                        para elecci&oacute;n de alcaldes Locales y de corregidores en el &aacute;rea
+                                        rural; adem&aacute;s de otras funciones establecidas en la normatividad que los
+                                        regula.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Gobierno local -->
+
+                <div class="row d-flex f-column" id="dgobierno" style="display: none">
+                    <h4><strong>Autoridades en la localidad</strong></h4>
+
+                    <p>Cada localidad estar&aacute; direccionada por la autoridad del alcalde Distrital, del alcalde
+                        Local y su Junta Administradora Local. Veamos sus responsabilidades y la forma de
+                        elecci&oacute;n:</p>
+
+                    <ul>
+                        <li>
+                            <h5><strong>Alcalde Distrital</strong></h5>
+
+                            <p>Es la m&aacute;xima autoridad en Santiago de Cali Distrito Especial, elegido por
+                                votaci&oacute;n popular y quien designa a los alcaldes Locales de una terna presentada
+                                por la Junta Administradora Local de cada localidad.</p>
+
+                            <p>Para ser elegido alcalde distrital se requiere ser ciudadano colombiano en ejercicio y
+                                haber nacido o ser residente en el respectivo distrito o de la correspondiente
+                                &aacute;rea metropolitana durante un (1) a&ntilde;o anterior a la fecha de la
+                                inscripci&oacute;n o durante un per&iacute;odo m&iacute;nimo de tres (3) a&ntilde;os
+                                consecutivos en cualquier &eacute;poca.</p>
+                        </li>
+                        <li>
+                            <h5><strong>Alcalde local</strong></h5>
+
+                            <p>Cada localidad tendr&aacute; un alcalde local, que ser&aacute; nombrado por el alcalde
+                                distrital de terna elaborada por la correspondiente Junta Administradora Local.</p>
+
+                            <p>Es el responsable de formular el Plan de Desarrollo, los proyectos de inversi&oacute;n
+                                con cargo a los Fondos de Desarrollo Local y de los ejercicios de presupuesto
+                                participativo de su localidad.</p>
+
+                            <p>Para ser alcalde local se debe cumplir con los mismos requisitos que el alcalde
+                                distrital.</p>
+                        </li>
+                        <li>
+                            <h5><strong>La Junta Administradora Local</strong></h5>
+
+                            <p>En cada localidad, habr&aacute; una Junta Administradora Local, elegida por voto popular,
+                                cuyo n&uacute;mero de miembros oscilar&aacute; entre 9 y 15 (Ley 1617 de 2013). Tienen
+                                la responsabilidad de estudiar y aprobar del Plan de Desarrollo y el presupuesto de la
+                                localidad, entre otras funciones.</p>
+
+                            <p>El n&uacute;mero de ediles que componen las juntas administradoras estar&aacute; entre un
+                                m&iacute;nimo de 9 y un m&aacute;ximo de 15.</p>
+
+                            <p>Para ser elegido edil se requiere ser ciudadano en ejercicio y haber residido o
+                                desempe&ntilde;ado alguna actividad profesional, industrial, comercial o laboral en la
+                                respectiva localidad, por lo menos durante los dos a&ntilde;os anteriores a la fecha de
+                                la elecci&oacute;n o del nombramiento.</p>
+                        </li>
+                        <li>
+                            <h5><strong>El corregidor</strong></h5>
+
+                            <p>Para el adecuado e inmediato desarrollo de los corregimientos, estos tendr&aacute;n
+                                corregidores como autoridades administrativas, quienes coordinadamente con la
+                                participaci&oacute;n de la comunidad, cumplir&aacute;n, en el &aacute;rea de su
+                                jurisdicci&oacute;n, las funciones que les asignen los acuerdos y les deleguen los
+                                alcaldes, con sujeci&oacute;n a las leyes vigentes.</p>
+
+                            <p>Los corregidores cumplir&aacute;n tambi&eacute;n las funciones asignadas por las
+                                disposiciones vigentes a las actuales inspecciones de Polic&iacute;a.</p>
+
+                            <p>En los corregimientos donde se designe corregidor, no habr&aacute; inspectores
+                                departamentales ni municipales de Polic&iacute;a.</p>
+
+                            <p>Los alcaldes locales designar&aacute;n a los corregidores de ternas presentadas por la
+                                respectiva Junta Administradora Local, con quienes coordinar&aacute;n sus tareas de
+                                desarrollo administrativo y comunitario.</p>
+                        </li>
+                        <li>
+                            <h5><strong>El Concejo Distrital</strong></h5>
+
+                            <p>Es una corporaci&oacute;n pol&iacute;tico-administrativa elegida popularmente para un
+                                per&iacute;odo de cuatro (4) a&ntilde;os. En materia administrativa sus atribuciones son
+                                de car&aacute;cter normativo. Tambi&eacute;n le corresponde vigilar y controlar
+                                pol&iacute;ticamente la gesti&oacute;n que cumplan las autoridades distritales.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Toggle 2 - Normatividad -->
+
+        <div class="row" id="dnormatividad" style="display: none">
+            <h4 class="gray-text-title center">Disponemos al servicio de la ciudadan&iacute;a toda la informacion
+                relacionada con normativad y documentos anexos de apoyo.</h4>
+
+            <div style="margin-top: 6em">
+                <div class="row">DISPLAYARCHIVO(63671) DISPLAYARCHIVO(63672) DISPLAYARCHIVO(63673)</div>
+
+                <div class="row" style="margin-top: 2em">
+                    <h2 class="text-center">Anexos</h2>
+                    DISPLAYARCHIVO(63674) DISPLAYARCHIVO(63675) DISPLAYARCHIVO(63676) DISPLAYARCHIVO(63677)
+                    DISPLAYARCHIVO(63678) DISPLAYARCHIVO(63679) DISPLAYARCHIVO(63680) DISPLAYARCHIVO(63681)
+                    DISPLAYARCHIVO(63682) DISPLAYARCHIVO(63683)
+                </div>
+            </div>
+        </div>
+        <!-- Toggle - Mapa interactivo -->
+
+        <div class="row" id="dmapa" style="display: none">
+            <h4 class="gray-text-title center">Mapa interactivo, de comunas y corregimientos a localidades</h4>
+
+            <p>La Infraestructura de Datos Espaciales de Santiago de Cali (IDESC) tiene como prioridad armonizar los
+                procesos de captura, an&aacute;lisis, acceso, uso y distribuci&oacute;n de la informaci&oacute;n
+                geogr&aacute;fica que ejecutan los organismos de la Administraci&oacute;n, empresas e instituciones,
+                p&uacute;blicas o privadas en Santiago de Cali, con el fin de evitar duplicidad de esfuerzos y promover
+                el intercambio de datos espaciales, dotando a la comunidad de herramientas para la planificaci&oacute;n
+                y toma de decisiones.</p>
+
+            <p>La IDESC, adscrita al Departamento Administrativo de Planeaci&oacute;n Municipal, presenta el mapa
+                interactivo sobre las localidades que se establecen en el proyecto de acuerdo presentado al Concejo
+                local y el cual se encuentra en estudio por parte de los cabildantes</p>
+            <iframe frameborder="0"
+                src="https://geoportal.cali.gov.co/arcgis/apps/webappviewer/index.html?id=b1388f8525804186ae4e4003cee0156c"
+                style="width: 100%; min-height: 500px;"></iframe>
+        </div>
+        <!-- Toggle 3 - Historico -->
+
+        <div class="row" id="dhistorico" style="display: none">
+            <h4 class="gray-text-title center">La transici&oacute;n a Distrito, un nuevo hito en el desarrollo de
+                Santiago de Cali, una historia de desaf&iacute;os y liderazgos.</h4>
+
+            <div class="row d-flex f-column" id="dtimeline" style="margin-top: 6em">
+                <div class="d-flex timeline-convenciones justify-content-center">
+                    <div class="d-flex"><img alt=""
+                            src="https://www.cali.gov.co/info/principal/media/galeria236199.png" /> <span
+                            style="color:#911f3c; font-size:smaller">Dimensi&oacute;n Pol&iacute;tica</span></div>
+
+                    <div class="d-flex border-left-gray"><img alt=""
+                            src="https://www.cali.gov.co/info/principal/media/galeria236203.png" /> <span
+                            style="color:#0f6a6a; font-size:smaller">Dimensi&oacute;n Econ&oacute;mica</span></div>
+
+                    <div class="d-flex border-left-gray"><img alt=""
+                            src="https://www.cali.gov.co/info/principal/media/galeria236202.png" /> <span
+                            style="color:#215a99; font-size:smaller">Dimensi&oacute;n Urbana y Ambiental</span></div>
+
+                    <div class="d-flex border-left-gray"><img alt=""
+                            src="https://www.cali.gov.co/info/principal/media/galeria236200.png" /> <span
+                            style="color:#b78006; font-size:smaller">Dimensi&oacute;n &Eacute;tnica</span></div>
+
+                    <div class="d-flex border-left-gray"><img alt=""
+                            src="https://www.cali.gov.co/info/principal/media/galeria236201.png" /> <span
+                            style="color:#564e3c; font-size:smaller">Dimensi&oacute;n Administrativa</span></div>
+                </div>
+                <!-- Linea de tiempo -->
+
+                <section class="timeline">
+                    <div class="container">
+                        <div class="timeline-item">
+                            <div class="timeline-img">Siglo XVI -XVIII</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em">Llegada de
+                                    poblaci&oacute;n negra esclavizada y consolidaci&oacute;n de segregaci&oacute;n
+                                    racial</p>
+                                <img alt="" class="logos-historicos"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria235876.png" />
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">Siglo XIX</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center"><img alt=""
+                                    class="logos-historicos"
+                                    src=" https://www.cali.gov.co/info/principal/media/galeria235879.png" />
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em">Ciudad aislada
+                                    y con poca din&aacute;mica urbana</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">1811</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em">Ciudades
+                                    Confederadas</p>
+                                <img alt="" class="logos-historicos"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria235877.png" />
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">1910</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center"><img alt=""
+                                    class="logos-historicos"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria235877.png" />
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em">Creaci&oacute;n
+                                    del Valle del Cauca y designaci&oacute;n de Cali como capital del departamento.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">1915</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em">Llegada del
+                                    Ferrocarril del Pac&iacute;fico a Cali</p>
+                                <img alt="" class="logos-historicos"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria235880.png" />
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">1920 - 1970</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center"><img alt=""
+                                    class="logos-historicos"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria235876.png" />
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em">Migraciones
+                                    provenientes principalmente de zonas andinas</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">1940</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em">Segundo proceso
+                                    de industrializaci&oacute;n y creaci&oacute;n de la zona industrial Cali &ndash;
+                                    Yumbo</p>
+                                <img alt="" class="logos-historicos"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria235880.png" />
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">1940 - 1950</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center"><img alt=""
+                                    class="logos-historicos"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria235879.png" />
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em">
+                                    Intensificaci&oacute;n del proceso de urbanizaci&oacute;n y problemas de
+                                    planificaci&oacute;n</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">1950 - 1970</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em">Plan piloto
+                                    modernizaci&oacute;n urbana</p>
+                                <img alt="" class="logos-historicos"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria235879.png" />
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">1950 - 1990</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center"><img alt=""
+                                    class="logos-historicos"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria235876.png" />
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em">Migrantes
+                                    relacionados con violencia pol&iacute;tica y poblaci&oacute;n proveniente del
+                                    Pac&iacute;fico</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">1960 - 1980</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em">Auge del
+                                    desarrollo regional</p>
+                                <img alt="" class="logos-historicos"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria235880.png" />
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">1980</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center"><img alt=""
+                                    class="logos-historicos"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria235879.png" />
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em">Surgimiento del
+                                    Distrito de Aguablanca (oriente de la ciudad) y ocupaci&oacute;n de laderas</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">1988</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em">Elecci&oacute;n
+                                    popular de alcaldes y el surgimiento de nuevos liderazgos.</p>
+                                <img alt="" class="logos-historicos"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria235877.png" />
+                            </div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em">
+                                    Subdivisi&oacute;n territorial del municipio en comunas y corregimientos. Centros de
+                                    Administraci&oacute;n Local Integrada (CALI).</p>
+                                <img alt="" class="logos-historicos"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria235878.png" />
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">1990</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center"><img alt=""
+                                    class="logos-historicos"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria235880.png" />
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em">
+                                    Desindustrializaci&oacute;n y p&eacute;rdida de liderazgo de la regi&oacute;n</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">1990 - 1992</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em">Sistemas
+                                    Locales de Salud (SILOS) Referentes de la planificaci&oacute;n local.</p>
+                                <img alt="" class="logos-historicos"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria235878.png" />
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">1991</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center"><img alt=""
+                                    class="logos-historicos"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria235877.png" />
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em">La
+                                    Constituci&oacute;n Pol&iacute;tica de 1991.Mayor autonom&iacute;a municipal y
+                                    crisis de los entes territoriales</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">2000-2009</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em">Reforma a la
+                                    estructura del municipio de Santiago de Cali. Desaparecen las jefaturas, incluidas
+                                    las Unidades de planeaci&oacute;n centralizadas y de los CALI</p>
+                                <img alt="" class="logos-historicos"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria235878.png" />
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">2013</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center"><img alt=""
+                                    class="logos-historicos"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria235878.png" />
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em">Se solicita
+                                    concepto favorable para categorizar a Santiago de Cali como Distrito Especial a los
+                                    senadores y representantes del Congreso de la Rep&uacute;blica de Colombia.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">2018</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em">Se categoriza a
+                                    Santiago de Cali como Distrito Especial Deportivo, Cultural, Tur&iacute;stico,
+                                    Empresarial y de Servicios. <a
+                                        href="https://www.cali.gov.co/gobierno/loader.php?lServicio=Tools2&amp;lTipo=descargas&amp;lFuncion=descargar&amp;idFile=63671"
+                                        style="font-weight: bold">(Ley 1933 de agosto de 2018).</a></p>
+                                <img alt="" class="logos-historicos"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria235877.png" />
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">2019</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center"><img alt=""
+                                    class="logos-historicos"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria235878.png" />
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em">Propuesta
+                                    t&eacute;cnica de divisi&oacute;n territorial del Distrito Especial en seis
+                                    localidades, presentada al Concejo local, no fue discutida.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img">2020</div>
+
+                            <div class="timeline-content d-flex p-0 f-center f-justify-center">
+                                <p class="text-center" style="max-width: fit-content; margin-right: 1em">
+                                    Incorporaci&oacute;n de l&iacute;nea estrat&eacute;gica de transici&oacute;n hacia
+                                    Cali Distrito Especial en el Plan de Desarrollo 2020-2023 &ldquo;Cali Unida por la
+                                    Vida&rdquo; Dimensi&oacute;n 4: Cali, Gobierno incluyente.</p>
+                                <img alt="" class="logos-historicos"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria235878.png" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div>DISPLAYBLOQUE(216489)</div>
+</div>
+<script>
+    $(document).ready(function () {
+        $(".botones-menu2").click(function (e) {
+            $this = $(this).attr("id");
+            $div = "#d" + $this;
+            $(".botones-menu2").not(this).removeClass("btn");
+            $(".botones-menu2").not(this).removeClass("disabled");
+            $(".toggle-wrapper2").children().not($div).hide("fast");
+            $($div).toggle("fast");
+            $(this).toggleClass("btn");
+            $(this).toggleClass("disabled");
+
+            // if ($(window).width() < 768) {
+
+            //     return true;
+            // }
+            // else {
+
+            //     return false;
+            // }
+            return false;
+        });
+
+        $(".botones-menu3").click(function (e) {
+            $this = $(this).attr("id");
+            $div = "#d" + $this;
+            $(".botones-menu3").not(this).removeClass("btn");
+            $(".botones-menu3").not(this).removeClass("disabled");
+            $(".toggle-wrapper3").children().not($div).hide("fast");
+            $($div).toggle("fast");
+            $(this).toggleClass("btn");
+            $(this).toggleClass("disabled");
+
+            // if ($(window).width() < 768) {
+
+            //     return true;
+            // }
+            // else {
+
+            //     return false;
+            // }
+            return false;
+        });
+
+        $(".botones-menu").click(function (e) {
+            $this = $(this).attr("id");
+            $div = "#d" + $this;
+            $(".botones-menu").not(this).removeClass("btn");
+            $(".botones-menu").not(this).removeClass("disabled");
+            $(".toggle-wrapper").children().not($div).hide("fast");
+            $($div).toggle("fast");
+            $(this).toggleClass("btn");
+            $(this).toggleClass("disabled");
+
+            // if ($(window).width() < 768) {
+
+            //     return true;
+            // }
+            // else {
+
+            //     return false;
+            // }
+            return false;
+        });
+    });
+</script>

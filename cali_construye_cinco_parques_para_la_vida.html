@@ -1,0 +1,312 @@
+<style type="text/css">
+    .d-flex {
+        display: flex;
+    }
+
+    .wrap {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .gap {
+        gap: 3em;
+    }
+
+    .d-column {
+        flex-direction: column;
+        width: 0;
+        flex: 1 1 0;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .vertical {
+        flex-direction: column;
+    }
+
+    .green-sub {
+        color: #006d3c;
+        font-weight: bold;
+        width: fit-content;
+    }
+
+    .titulos {
+        align-items: center;
+        gap: 1em;
+    }
+
+    .dot {
+        font-size: 50px;
+        position: relative;
+        line-height: 0;
+        top: 10px;
+    }
+
+    .proyecto>p {
+        margin-block: 2rem;
+    }
+
+    .dot[color="green"] {
+        color: #8bc53f !important;
+    }
+
+    .dot[color="oj"] {
+        color: #f6921e !important;
+    }
+
+    .dot[color="blue"] {
+        color: #00a89c !important;
+    }
+
+    .dot[color="mar"] {
+        color: #22b473 !important;
+    }
+
+    .dot[color="red"] {
+        color: #f05a24 !important;
+    }
+
+    .notbold {
+        font-weight: unset;
+    }
+
+    .valores {
+        color: #006d3c;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+        margin-right: 1em;
+    }
+
+    .mapa {
+        width: 100%;
+    }
+
+    .quote {
+        position: relative;
+        min-width: 130%;
+        text-indent: 1em;
+        margin-bottom: 1em;
+    }
+
+    .quote::before {
+        content: "“";
+        position: absolute;
+        top: 14px;
+        left: -20px;
+        font-size: 70px;
+        color: #006d3c;
+    }
+
+    .quote::after {
+        content: "”";
+        font-size: 70px;
+        position: absolute;
+        bottom: -22px;
+        right: 15%;
+        color: #006d3c;
+    }
+
+    .proyecto a:hover {
+        text-decoration: underline;
+    }
+
+    .enlace-micrositio {
+        background-color: #006d3c;
+        border-radius: 1rem;
+        padding: 1em;
+        font-weight: bold;
+        display: block;
+        width: fit-content;
+        text-align: center;
+        color: #FAFAFA;
+        margin-bottom: 2em;
+        margin-left: 40%;
+    }
+
+    .enlace-micrositio:hover {
+        background-color: #009954;
+        color: #FAFAFA;
+        text-decoration: none !important;
+    }
+
+    @media (max-width: 40em) {
+        .gap {
+            flex-direction: column;
+        }
+
+        .d-column {
+            width: unset;
+        }
+
+        .quote {
+            min-width: 100%
+        }
+
+
+    }
+</style>
+<p>M&aacute;s de un mill&oacute;n de metros cuadrados de espacio p&uacute;blico permitir&aacute;n a los cale&ntilde;os
+    ganar calidad de vida y aportarle a la sostenibilidad ambiental</p>
+
+<div class="d-flex gap">
+    <div class="d-flex d-column">
+        <p class="quote">Consolidar cinco Parques para la Vida en Cali representa valorar el espacio p&uacute;blico,
+            ofrecer entornos para la contemplaci&oacute;n del medio ambiente y el encuentro ciudadano. <span
+                class="valores"> Con estas iniciativas se recuperar&aacute; m&aacute;s de un mill&oacute;n de metros
+                cuadrados de espacio verde. </span></p>
+
+        <p style="text-align: right;"><em>Jorge Iv&aacute;n Ospina</em></p>
+
+        <div class="proyecto">
+            <h3 class="green-sub ">Parque Pac&iacute;fico <span class="dot" color="green">&bull;</span></h3>
+
+            <p>Iniciativa que busca resaltar las manifestaciones y pr&aacute;cticas culturales como la cocina
+                tradicional y las bebidas ancestrales del Pac&iacute;fico colombiano.</p>
+
+            <div class="d-flex wrap">
+                <div class="d-flex"><img alt="" class="logo"
+                        src="https://www.cali.gov.co/info/principal/media/galeria242742.jpg" />
+                    <p><span class="valores">$30.000 millones</span><br />
+                        (primera fase)</p>
+                </div>
+
+                <div class="d-flex"><img alt="" class="logo"
+                        src="https://www.cali.gov.co/info/principal/media/galeria242740.jpg" />
+                    <p><span class="valores">43.237m<sup>2</sup></span><br />
+                        proyectados</p>
+                </div>
+
+                <div class="d-flex"><img alt="" class="logo"
+                        src="https://www.cali.gov.co/info/principal/media/galeria242741.jpg" />
+                    <p><span class="valores">320 empleos generados</span><br />
+                        (directos e indirectos)</p>
+                </div>
+                <a class="enlace-micrositio"
+                    href="https://www.cali.gov.co/gobierno/publicaciones/170004/parque-pacifico/" target="_blank">Ver
+                    m&aacute;s</a>
+            </div>
+        </div>
+
+        <div class="proyecto">
+            <h3 class="green-sub ">Cristo Rey <span class="dot" color="oj">&bull;</span></h3>
+
+            <p>Corredor ambiental, tur&iacute;stico y cultural, con 1,7 kil&oacute;metros de senderos y 2100 metros
+                cuadrados de equipamientos. Conectar&aacute; la zona alta del barrio San Fernando y el mirador de Cristo
+                Rey, brindando nuevas experiencias a los visitantes.</p>
+
+            <div class="d-flex vertical">
+                <div class="d-flex"><img alt="" class="logo"
+                        src="https://www.cali.gov.co/info/principal/media/galeria242742.jpg" />
+                    <p><span class="valores">$38.000 millones</span><br />
+                        Invertidos</p>
+                </div>
+
+                <div class="d-flex"><img alt="" class="logo"
+                        src="https://www.cali.gov.co/info/principal/media/galeria242740.jpg" />
+                    <p><span class="valores">1.7 km. </span>de senderos, miradores,<br />
+                        zonas gastron&oacute;micas y culturales</p>
+                </div>
+            </div>
+            <a class="enlace-micrositio"
+                href="https://www.cali.gov.co/vivienda/publicaciones/168993/proyecto-cristo-rey/" target="_blank">Ver
+                m&aacute;s</a>
+
+            <div class="proyecto">
+                <h3 class="green-sub ">Bulevar<br />
+                    de Oriente<span class="dot" color="blue">&bull;</span></h3>
+
+                <p>Este cintur&oacute;n ecol&oacute;gico ofrecer&aacute; pabellones culturales, huertas urbanas,
+                    jardines, biblio parques y &aacute;reas para la recreaci&oacute;n. Impactar&aacute; el entorno y la
+                    calidad de vida de la poblaci&oacute;n en las comunas 13,14 y 15.</p>
+
+                <div class="d-flex wrap">
+                    <div class="d-flex"><img alt="" class="logo"
+                            src="https://www.cali.gov.co/info/principal/media/galeria242742.jpg" />
+                        <p><span class="valores">$30.000 millones</span><br />
+                            Invertidos</p>
+                    </div>
+
+                    <div class="d-flex"><img alt="" class="logo"
+                            src="https://www.cali.gov.co/info/principal/media/galeria242740.jpg" />
+                        <p><span class="valores">47.000 m<sup>2</sup></span><br />
+                            proyectados</p>
+                    </div>
+
+                    <div class="d-flex"><img alt="" class="logo"
+                            src="https://www.cali.gov.co/info/principal/media/galeria243343.png" />
+                        <p><span class="valores">51.600 personas</span><br />
+                            beneficiadas</p>
+                    </div>
+                </div>
+                <a class="enlace-micrositio"
+                    href="https://www.cali.gov.co/vivienda/publicaciones/169014/proyecto-movilizador-bulevar-de-oriente/"
+                    target="_blank">Ver m&aacute;s</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex d-column"><img alt="" src="https://www.cali.gov.co/info/principal/media/galeria242743.jpg" />
+        <div class="proyecto">
+            <h3 class="green-sub "><span class="notbold">Parque ambiental</span><br />
+                Coraz&oacute;n de Pance <span class="dot" color="mar">&bull;</span></h3>
+
+            <p>92 hect&aacute;reas, h&aacute;bitat de 250 especies de aves y 21 mil tipos de plantas, son algunas de las
+                caracter&iacute;sticas de este parque ambiental, considerado el m&aacute;s grande que se proyecta en
+                Latinoam&eacute;rica.</p>
+
+            <div class="d-flex vertical">
+                <div class="d-flex"><img alt="" class="logo"
+                        src="https://www.cali.gov.co/info/principal/media/galeria242742.jpg" />
+                    <p><span class="valores">$60.000 millones</span><br />
+                        Invertidos</p>
+                </div>
+
+                <div class="d-flex"><img alt="" class="logo"
+                        src="https://www.cali.gov.co/info/principal/media/galeria242741.jpg" />
+                    <p><span class="valores">1.330 empleos generadores</span><br />
+                        (directos e indirectos)</p>
+                </div>
+            </div>
+            <a class="enlace-micrositio"
+                href="https://www.cali.gov.co/dagma/publicaciones/156194/parque-ambiental-corazon-de-pance/"
+                target="_blank">Ver m&aacute;s</a>
+        </div>
+
+        <div class="proyecto">
+            <h3 class="green-sub ">Parque Tecnol&oacute;gico de<span class="dot" color="red">&bull;</span><br />
+                Innovaci&oacute;n San Fernando</h3>
+
+            <p>Con la incorporaci&oacute;n de centros de ciencias, innovaci&oacute;n digital y artes performativas, el
+                proyecto fortalecer&aacute; la generaci&oacute;n de conocimiento.</p>
+
+            <div class="d-flex wrap">
+                <div class="d-flex"><img alt="" class="logo"
+                        src="https://www.cali.gov.co/info/principal/media/galeria242742.jpg" />
+                    <p><span class="valores">$60.000 millones</span><br />
+                        Invertidos</p>
+                </div>
+
+                <div class="d-flex"><img alt="" class="logo"
+                        src="https://www.cali.gov.co/info/principal/media/galeria242740.jpg" />
+                    <p><span class="valores">23.000 m<sup>2</sup></span><br />
+                        proyectados</p>
+                </div>
+
+                <div class="d-flex"><img alt="" class="logo"
+                        src="https://www.cali.gov.co/info/principal/media/galeria242741.jpg" />
+                    <p><span class="valores">3.350 empleos generadores</span><br />
+                        (directos e indirectos)</p>
+                </div>
+            </div>
+            <a class="enlace-micrositio"
+                href="https://www.cali.gov.co/gobierno/publicaciones/168300/parque-tecnologico-de-innovacion-san-fernando/"
+                target="_blank">Ver m&aacute;s</a>
+        </div>
+    </div>
+</div>

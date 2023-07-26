@@ -56,15 +56,15 @@
 
 	/* Composition */
 
-	.micrositio > * {
+	.micrositio>* {
 		margin-bottom: 2em;
 	}
 
-	.flow > * + * {
+	.flow>*+* {
 		margin-bottom: 2rem;
 	}
 
-	.card > *:not(:last-child) {
+	.card>*:not(:last-child) {
 		margin-bottom: 2em;
 	}
 
@@ -210,7 +210,7 @@
 		gap: 1rem;
 	}
 
-	.nav-mic > a {
+	.nav-mic>a {
 		padding: 1em;
 
 		flex: 1;
@@ -220,16 +220,16 @@
 		text-align: center;
 	}
 
-	.nav-mic > a:hover {
+	.nav-mic>a:hover {
 		background-color: var(--clr-secundary);
 	}
 
-	.nav-mic > a:focus {
+	.nav-mic>a:focus {
 		background-color: var(--clr-secundary);
 		text-decoration: none;
 	}
 
-	.nav-mic > a:active {
+	.nav-mic>a:active {
 		background-color: #d7a925;
 	}
 
@@ -253,6 +253,7 @@
 
 		flex-direction: column;
 	}
+
 	.gato div:nth-child(2) {
 		flex: 2;
 	}
@@ -292,6 +293,7 @@
 		display: flex;
 		flex-wrap: wrap;
 	}
+
 	.two-columns div {
 		flex: 1;
 		padding-right: 2em;
@@ -334,7 +336,7 @@
 			justify-content: left;
 		}
 
-		.card__content:nth-of-type(even) > div {
+		.card__content:nth-of-type(even)>div {
 			flex-direction: column;
 		}
 	}
@@ -350,7 +352,7 @@
 			align-items: flex-start;
 		}
 
-		.nav-mic > a {
+		.nav-mic>a {
 			border-right: 0 !important;
 			border-bottom: 1px solid rgb(201, 201, 201);
 			width: 100%;
@@ -358,13 +360,14 @@
 			padding: 1rem;
 		}
 
-		.nav-mic > a > img {
+		.nav-mic>a>img {
 			transform: translateY(0);
 		}
 
 		.content-row div {
 			max-width: 100%;
 		}
+
 		.grid-videos {
 			display: flex;
 			flex-wrap: wrap;
@@ -378,7 +381,7 @@
 		flex-wrap: wrap;
 	}
 
-	.timeline > div {
+	.timeline>div {
 		position: relative;
 		display: flex;
 		overflow: hidden;
@@ -387,7 +390,7 @@
 		flex-direction: row;
 	}
 
-	.timeline > div p {
+	.timeline>div p {
 		max-width: 70%;
 	}
 
@@ -496,6 +499,7 @@
 	.start-empty {
 		flex: 1 0 33%;
 	}
+
 	.middle-empty {
 		flex: 1 0 33%;
 	}
@@ -630,36 +634,43 @@
 	}
 
 	@media (max-width: 768px) {
-		.order1{
+		.order1 {
 			order: 1;
 		}
 
-		.order2{
-			order:2;
+		.order2 {
+			order: 2;
 		}
-		.order3{
-			order:3;
+
+		.order3 {
+			order: 3;
 		}
-		.order4{
-			order:4;
+
+		.order4 {
+			order: 4;
 		}
-		.order5{
-			order:5;
+
+		.order5 {
+			order: 5;
 		}
-		.order6{
-			order:6;
+
+		.order6 {
+			order: 6;
 		}
-		.order7{
-			order:7;
+
+		.order7 {
+			order: 7;
 		}
-		.order8{
-			order:8;
+
+		.order8 {
+			order: 8;
 		}
 
 		.border-left {
 			border-left: none;
 			padding-left: 0;
 		}
+
 		.timeline {
 			margin-left: 2em;
 			flex-direction: column;
@@ -677,7 +688,8 @@
 		.end-left {
 			display: none !important;
 		}
-		.timeline > div {
+
+		.timeline>div {
 			flex: 1 !important;
 			justify-content: left !important;
 			align-items: center;
@@ -687,7 +699,7 @@
 			margin-bottom: 2em;
 		}
 
-		.timeline > div::after {
+		.timeline>div::after {
 			width: 1rem;
 			height: unset;
 			aspect-ratio: 1;
@@ -703,11 +715,11 @@
 			z-index: 1;
 		}
 
-		.timeline > div::before {
+		.timeline>div::before {
 			display: none;
 		}
 
-		.timeline > div p {
+		.timeline>div p {
 			max-width: 100%;
 		}
 	}
@@ -718,35 +730,20 @@
 </style>
 
 <div class="micrositio">
-	<img
-		src="https://www.cali.gov.co/info/principal/media/galeria237174.png"
-		alt=""
-		style="margin-bottom: 0"
-	/>
-	<div
-		class="[ nav-mic ] [ d-flex justify-content-between align-center flex-wrap ]"
-	>
+	<img src="https://www.cali.gov.co/info/principal/media/galeria237174.png" alt="" style="margin-bottom: 0" />
+	<div class="[ nav-mic ] [ d-flex justify-content-between align-center flex-wrap ]">
 		<a href="#" class="" menu-toggle="inicio">Inicio</a>
 		<a href="#" class="" menu-toggle="servicios">Servicios</a>
-		<a href="#" class="" menu-toggle="timeline"
-			>Línea de tiempo</a
-		>
-		<a href="#" class="" menu-toggle="documentacion"
-			>Documentación</a
-		>
+		<a href="#" class="" menu-toggle="timeline">Línea de tiempo</a>
+		<a href="#" class="" menu-toggle="documentacion">Documentación</a>
 		<a href="#" class="" menu-toggle="videos">Videos</a>
 	</div>
 
 	<div data-link="inicio">
-		<div
-			class="[ row d-flex first-row ]"
-		>
+		<div class="[ row d-flex first-row ]">
 			<div class="col-md-6 col-sm-12 col-xs-12">
-				<video
-					src="https://www.cali.gov.co/info/principal/media/videos/mp4235910.mp4"
-					width="100%"
-					controls
-				></video>
+				<video src="https://www.cali.gov.co/info/principal/media/videos/mp4235910.mp4" width="100%"
+					controls></video>
 			</div>
 			<div class="col-md-6 col-sm-12 col-xs-12">
 				<p style="text-align: left">
@@ -758,14 +755,10 @@
 
 		<div class="timeline">
 			<div class="d-flex flex-column start2"></div>
-			<div
-				class="d-flex flex-column middle order2"
-				style="
+			<div class="d-flex flex-column middle order2" style="
 					align-items: center;
 					justify-content: flex-start !important;
-				"
-				id="order2"
-			>
+				" id="order2">
 				<p>
 					Este es un espacio que unifica una estructura física con
 					procesos de atención y promoción por el bienestar animal en
@@ -773,11 +766,7 @@
 					a cargo del Dagma en el Plan de Desarrollo 2020-2023
 				</p>
 			</div>
-			<div
-				class="d-flex flex-column end-right order3"
-				style="align-items: center"
-				id="order3"
-			>
+			<div class="d-flex flex-column end-right order3" style="align-items: center" id="order3">
 				<p>
 					Una ciudad como Cali, con alrededor de 2.300.000 de
 					habitantes, requiere de un espacio que promueva el bienestar
@@ -785,23 +774,13 @@
 				</p>
 			</div>
 
-			<div
-				class="d-flex flex-column end-left"
-				style="align-items: center"
-			></div>
+			<div class="d-flex flex-column end-left" style="align-items: center"></div>
 
-			<div
-				class="d-flex flex-column middle-top order5"
-				style="justify-content: center; align-items: center"
-				id="order5"
-
-			>
+			<div class="d-flex flex-column middle-top order5" style="justify-content: center; align-items: center"
+				id="order5">
 				<div>
-					<img
-						class="timeline-img-1"
-						src="https://www.cali.gov.co/info/principal/media/galeria237179.png"
-						alt="2"
-					/>
+					<img class="timeline-img-1" src="https://www.cali.gov.co/info/principal/media/galeria237179.png"
+						alt="2" />
 					<p>
 						Asista a los animales atropellados o rescatados por la
 						Policía Ambiental o el equipo de Protección Animal, para
@@ -811,29 +790,19 @@
 				</div>
 			</div>
 
-			<div
-				class="d-flex flex-column start-right order4"
-				style="justify-content: center; align-items: center"
-				id="order4"
-			>
+			<div class="d-flex flex-column start-right order4" style="justify-content: center; align-items: center"
+				id="order4">
 				<div>
-					<img
-						class="timeline-img-1"
-						src="https://www.cali.gov.co/info/principal/media/galeria237180.png"
-						alt="1"
-						
-					/>
+					<img class="timeline-img-1" src="https://www.cali.gov.co/info/principal/media/galeria237180.png"
+						alt="1" />
 					<p>Acoja los animales en situación de vulnerabilidad.</p>
 				</div>
 			</div>
 
 			<div class="d-flex flex-column left order6" id="order6">
 				<div>
-					<img
-						class="timeline-img-1"
-						src="https://www.cali.gov.co/info/principal/media/galeria237178.png"
-						alt="3"
-					/>
+					<img class="timeline-img-1" src="https://www.cali.gov.co/info/principal/media/galeria237178.png"
+						alt="3" />
 					<p>
 						Brinde servicios veterinarios especializados (tejidos
 						blandos y huesos, oftalmología y etología) con precios
@@ -841,34 +810,20 @@
 					</p>
 				</div>
 			</div>
-			<div
-				class="d-flex flex-column middle-top order7"
-				style="align-items: center"
-				id="order7"
-			>
+			<div class="d-flex flex-column middle-top order7" style="align-items: center" id="order7">
 				<div>
-					<img
-						class="timeline-img-1"
-						src="https://www.cali.gov.co/info/principal/media/galeria237177.png"
-						alt="4"
-					/>
+					<img class="timeline-img-1" src="https://www.cali.gov.co/info/principal/media/galeria237177.png"
+						alt="4" />
 					<p>
 						Realice asesorías jurídicas y pedagógicas sobre el bienestar
 						animal.
 					</p>
 				</div>
 			</div>
-			<div
-				class="d-flex flex-column end order8"
-				style="align-items: center"
-				id="order8"
-			>
+			<div class="d-flex flex-column end order8" style="align-items: center" id="order8">
 				<div>
-					<img
-						class="timeline-img-1"
-						src="https://www.cali.gov.co/info/principal/media/galeria237176.png"
-						alt="Ubicación"
-					/>
+					<img class="timeline-img-1" src="https://www.cali.gov.co/info/principal/media/galeria237176.png"
+						alt="Ubicación" />
 					<p>
 						El Centro de Bienestar Animal está ubicado en la carrera 56
 						# 7 Oeste-455. Brinde servicios veterinarios especializados
@@ -1018,11 +973,8 @@
 		<div class="timeline">
 			<div class="d-flex flex-column start order1">
 				<div>
-					<img
-						class="timeline-img"
-						src="https://www.cali.gov.co/info/principal/media/galeria237188.png"
-						alt="2008"
-					/>
+					<img class="timeline-img" src="https://www.cali.gov.co/info/principal/media/galeria237188.png"
+						alt="2008" />
 					<p>
 						En el Plan de Desarrollo 2008-2011 se describe: 'Centro de
 						vigilancia y control de las zoonosis y protección animal'
@@ -1030,16 +982,10 @@
 					</p>
 				</div>
 			</div>
-			<div
-				class="d-flex flex-column middle order2"
-				style="align-items: center !important"
-			>
+			<div class="d-flex flex-column middle order2" style="align-items: center !important">
 				<div>
-					<img
-						class="timeline-img"
-						src="https://www.cali.gov.co/info/principal/media/galeria237182.png"
-						alt="2011"
-					/>
+					<img class="timeline-img" src="https://www.cali.gov.co/info/principal/media/galeria237182.png"
+						alt="2011" />
 					<p>
 						Sentencia del Juzgado 2 obliga a adelantar la construcción
 						del CBA, ante demanda interpuesta por la Procuraduría
@@ -1052,11 +998,8 @@
 			</div>
 			<div class="d-flex flex-column end-right order3">
 				<div>
-					<img
-						class="timeline-img"
-						src="https://www.cali.gov.co/info/principal/media/galeria237181.png"
-						alt="2012"
-					/>
+					<img class="timeline-img" src="https://www.cali.gov.co/info/principal/media/galeria237181.png"
+						alt="2012" />
 					<p>
 						Acuerdo 0330 de 2012 “Por el cual se dictan los lineamientos
 						de la política pública de protección y bienestar integral de
@@ -1069,16 +1012,10 @@
 
 			<div class="d-flex flex-column end-left"></div>
 
-			<div
-				class="d-flex flex-column middle-top order5"
-				style="justify-content: center; align-items: center"
-			>
+			<div class="d-flex flex-column middle-top order5" style="justify-content: center; align-items: center">
 				<div>
-					<img
-						class="timeline-img"
-						src="https://www.cali.gov.co/info/principal/media/galeria237184.png"
-						alt="2017"
-					/>
+					<img class="timeline-img" src="https://www.cali.gov.co/info/principal/media/galeria237184.png"
+						alt="2017" />
 					<p>
 						Se realiza la compra del predio en la carrera 56 # 7
 						Oeste-455
@@ -1086,16 +1023,10 @@
 				</div>
 			</div>
 
-			<div
-				class="d-flex flex-column start-right order4"
-				style="justify-content: center; align-items: flex-start"
-			>
+			<div class="d-flex flex-column start-right order4" style="justify-content: center; align-items: flex-start">
 				<div>
-					<img
-						class="timeline-img"
-						src="https://www.cali.gov.co/info/principal/media/galeria237187.png"
-						alt="2016"
-					/>
+					<img class="timeline-img" src="https://www.cali.gov.co/info/principal/media/galeria237187.png"
+						alt="2016" />
 					<p>
 						Se ejecutaron estudios para el diseño del modelo
 						administrativo y financiero del Centro de Prevención de
@@ -1106,29 +1037,20 @@
 
 			<div class="d-flex flex-column left order6">
 				<div>
-					<img
-						class="timeline-img"
-						src="https://www.cali.gov.co/info/principal/media/galeria237183.png"
-						alt="2018"
-					/>
+					<img class="timeline-img" src="https://www.cali.gov.co/info/principal/media/galeria237183.png"
+						alt="2018" />
 					<p>
 						Se elaboraron los diseños del CBA y gestionaron permisos
 					</p>
 				</div>
 			</div>
-			<div
-				class="d-flex flex-column middle-top order7"
-				style="
+			<div class="d-flex flex-column middle-top order7" style="
 					align-items: flex-start;
 					align-items: center !important;
-				"
-			>
+				">
 				<div>
-					<img
-						class="timeline-img"
-						src="https://www.cali.gov.co/info/principal/media/galeria237186.png"
-						alt="2020"
-					/>
+					<img class="timeline-img" src="https://www.cali.gov.co/info/principal/media/galeria237186.png"
+						alt="2020" />
 					<p>
 						La construcción del CBA queda como un indicador de producto
 						a cargo del Departamento Administrativo de Gestión del Medio
@@ -1136,16 +1058,10 @@
 					</p>
 				</div>
 			</div>
-			<div
-				class="d-flex flex-column end order8"
-				style="align-items: center"
-			>
+			<div class="d-flex flex-column end order8" style="align-items: center">
 				<div>
-					<img
-						class="timeline-img"
-						src="https://www.cali.gov.co/info/principal/media/galeria237185.png"
-						alt="2021"
-					/>
+					<img class="timeline-img" src="https://www.cali.gov.co/info/principal/media/galeria237185.png"
+						alt="2021" />
 					<p>
 						Se inicia la construcción del Centro de Bienestar Animal
 					</p>
@@ -1171,12 +1087,10 @@
 					</h5>
 					<a href="">Ley 84 de 198 (Art. 1, 14, 46 y 46A )<br /> </a>
 					<a href="">Ley 769 de 2002 (Art. 97) <br /> </a>
-					<a href=""
-						>Ley 1333 de 2009 (Art. 52-2, parágrafos 1, 2 y 3 )<br />
+					<a href="">Ley 1333 de 2009 (Art. 52-2, parágrafos 1, 2 y 3 )<br />
 					</a>
 					<a href="">Ley 1774 de 2016 (Art. 3-C, 7) <br /> </a>
-					<a href=""
-						>Ley 1801 de 2016 (Art. 119, 130 y 164) <br />
+					<a href="">Ley 1801 de 2016 (Art. 119, 130 y 164) <br />
 					</a>
 					<a href="">Ley 2054 de 2020 (Art. 3 )<br /> </a>
 				</div>
@@ -1216,8 +1130,7 @@
 						Regulación y dirección del programa de registro de los
 						caninos de manejo especial
 					</h5>
-					<a href=""
-						>Ley 1801 de 2016 (Art. 128, 131 y 133 )<br />
+					<a href="">Ley 1801 de 2016 (Art. 128, 131 y 133 )<br />
 					</a>
 				</div>
 				<div>
@@ -1263,8 +1176,7 @@
 						de protección y bienestar animal
 					</h5>
 					<a href="">Ley 5 de 1972 (Art. 3) <br /> </a>
-					<a href=""
-						>Ley 84 de 1989 (Art. 1, 2, 46 Parágrafo) <br />
+					<a href="">Ley 84 de 1989 (Art. 1, 2, 46 Parágrafo) <br />
 					</a>
 					<a href="">Ley 1774 de 2016 (Art. 7 )<br /> </a>
 				</div>
@@ -1277,99 +1189,64 @@
 					<a href="">Ley 84 de 1989 (Art. 1 y 2) <br /> </a>
 					<a href="">Ley 1774 de 2016 (Art. 1, 3 y 7) <br /> </a>
 					<a href="">Ley 1801 de 2016 (Art. 134) <br /> </a>
-					<a href=""
-						>Ley 1333 de 2009 (Art. 52, parágrafo 2) <br />
+					<a href="">Ley 1333 de 2009 (Art. 52, parágrafo 2) <br />
 					</a>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div
-		data-link="videos"
-		class="grid-videos"
-		style="display: none"
-	>
+	<div data-link="videos" class="grid-videos" style="display: none">
 		<div>
-			
-			<video
-				src="https://www.cali.gov.co/info/principal/media/videos/mp4238168.mp4"
-				controls
-			></video>
+
+			<video src="https://www.cali.gov.co/info/principal/media/videos/mp4238168.mp4" controls></video>
 			<p class="titulos-video">Avance de la obra del Centro de Bienestar Animal</p>
-			
+
 		</div>
 		<div>
-			
-			<video
-				src="https://www.cali.gov.co/info/principal/media/videos/mp4238169.mp4"
-				controls
-			></video>
+
+			<video src="https://www.cali.gov.co/info/principal/media/videos/mp4238169.mp4" controls></video>
 			<p class="titulos-video">Centro de Bienestar Animal</p>
-			
+
 		</div>
 
 		<div>
-			<video
-				src="https://www.cali.gov.co/info/principal/media/videos/mp4238831.mp4"
-				controls
-			></video>
+			<video src="https://www.cali.gov.co/info/principal/media/videos/mp4238831.mp4" controls></video>
 			<p class="titulos-video">Va Por Buen Camino El Centro De Bienestar Animal De Cali</p>
 		</div>
 
 		<div>
-			<video
-				src="https://www.cali.gov.co/info/principal/media/videos/mp4238832.mp4"
-				controls
-			></video>
+			<video src="https://www.cali.gov.co/info/principal/media/videos/mp4238832.mp4" controls></video>
 			<p class="titulos-video">Concejales Respaldan Construcción Del Centro De Bienestar Animal</p>
 		</div>
 		<div>
-			<video
-				src="https://www.cali.gov.co/info/principal/media/videos/mp4238834.mp4"
-				controls
-			></video>
+			<video src="https://www.cali.gov.co/info/principal/media/videos/mp4238834.mp4" controls></video>
 			<p class="titulos-video">Celebramos El Inicio De Obras Del Centro De Bienestar Animal</p>
 		</div>
 		<div>
-			<video
-				src="https://www.cali.gov.co/info/principal/media/videos/mp4238835.mp4"
-				controls
-			></video>
+			<video src="https://www.cali.gov.co/info/principal/media/videos/mp4238835.mp4" controls></video>
 			<p class="titulos-video">En Cerca Del 40 Avanza La Construcción Del Centro De Bienestar Animal De Cali</p>
 		</div>
 		<div>
-			<video
-				src="https://www.cali.gov.co/info/principal/media/videos/mp4238836.mp4"
-				controls
-			></video>
+			<video src="https://www.cali.gov.co/info/principal/media/videos/mp4238836.mp4" controls></video>
 			<p class="titulos-video">La Lluvia No Retrasa El Trabajo Del Centro De Bienestar Animal</p>
 		</div>
 		<div>
-			<video
-				src="https://www.cali.gov.co/info/principal/media/videos/mp4238837.mp4"
-				controls
-			></video>
+			<video src="https://www.cali.gov.co/info/principal/media/videos/mp4238837.mp4" controls></video>
 			<p class="titulos-video">Milagros Y El Centro De Bienestar Animal En Cali</p>
 		</div>
 		<div>
-			<video
-				src="https://www.cali.gov.co/info/principal/media/videos/mp4238838.mp4"
-				controls
-			></video>
+			<video src="https://www.cali.gov.co/info/principal/media/videos/mp4238838.mp4" controls></video>
 			<p class="titulos-video">Es Importante Construir Un Centro De Bienestar Animal En Cali </p>
 		</div>
 		<div>
-			<video
-				src="https://www.cali.gov.co/info/principal/media/videos/mp4238839.mp4"
-				controls
-			></video>
+			<video src="https://www.cali.gov.co/info/principal/media/videos/mp4238839.mp4" controls></video>
 			<p class="titulos-video">Aquí Se Construirá El Primer Centro De Bienestar Animal De Cali </p>
 		</div>
 	</div>
 
 
-<!--
+	<!--
 		<div>
 			<video src="" controls preload="none"></video>
 			<p>
@@ -1377,7 +1254,7 @@
 				Illo ex nulla sed.
 			</p>
 		</div> -->
-	</div>
+</div>
 </div>
 
 DISPLAYBLOQUE(216629)
