@@ -1,0 +1,480 @@
+<style>
+    .micrositio>* {
+        margin-bottom: 2em;
+    }
+
+    .micrositio .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .micrositio button {
+        background: none;
+        border: none;
+    }
+
+    .micrositio {
+        all: reset;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .text-left {
+        text-align: left;
+    }
+
+    .align-center {
+        align-items: center;
+    }
+
+    .justify-content-center {
+        justify-content: center;
+    }
+
+    .text-justify {
+        text-align: justify;
+    }
+
+    .text-white {
+        color: #FAFAFA !important;
+    }
+
+    .bg-blue {
+        background-color: #1f5b9a;
+    }
+
+    .bg-mustard {
+        background-color: #f4921d;
+    }
+
+    .bg-orange {
+        background-color: #e74038;
+    }
+
+    .color-magenta {
+        color: #9c1e60;
+    }
+
+    .color-cyan {
+        color: #4dbdc8;
+    }
+
+    .color-green {
+        color: #87b73e
+    }
+
+    .font-bold {
+        font-weight: bold;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .flex-row {
+        flex-direction: row;
+    }
+
+    .flex-column {
+        flex-direction: column;
+    }
+
+    .flex-1 {
+        flex-grow: 1
+    }
+
+    .space-between {
+        justify-content: space-between;
+    }
+
+    .justify-center {
+        justify-items: center
+    }
+
+    .place-content-center {
+        place-content: center;
+    }
+
+    .flex-1 {
+        flex: 1;
+    }
+
+    .logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .rounded-full {
+        border-radius: 9999px;
+    }
+
+    .w-80 {
+        width: 80%;
+    }
+
+    .w-full {
+        width: 100%;
+    }
+
+    .m-auto {
+        margin: auto;
+    }
+
+    .mb-2 {
+        margin-bottom: 2em;
+    }
+
+    .gap-1 {
+        gap: 1em
+    }
+
+    .gap-2 {
+        gap: 2em
+    }
+
+    .p-1 {
+        padding: 1em
+    }
+
+    .p-2 {
+        padding: 2em;
+    }
+
+    .p-3 {
+        padding: 3em;
+    }
+
+    .px-1 {
+        padding-inline: 1em;
+    }
+
+    .px-3 {
+        padding-inline: 3em;
+    }
+
+    .shadow {
+        box-shadow: rgb(0 0 0 / 15%) 6.95px 7.95px 6.6px
+    }
+
+    .bg-magenta {
+        background-color: #9c1e60;
+    }
+
+    .bg-cyan {
+        background-color: #4dbdc8;
+    }
+
+    .bg-green {
+        background-color: #87b73e;
+    }
+
+    .grid {
+        display: grid;
+    }
+
+    .columns-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .row-gap-1 {
+        row-gap: 1em;
+    }
+
+    .col-gap-1 {
+        column-gap: 1em;
+    }
+
+    .text-large {
+        font-size: large;
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    .pointer {
+        cursor: pointer;
+    }
+
+    .column-count-2 {
+        column-count: 2;
+    }
+
+    .disabled {
+        pointer-events: none;
+        cursor: not-allowed;
+        filter: alpha(opacity=65);
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        opacity: .65;
+        text-decoration: none;
+        transition: all 250ms ease-in-out;
+    }
+
+    @media (max-width: 768px) {
+        .text-center {
+            text-align: left;
+        }
+
+        .columns-3 {
+            grid-template-columns: 1fr;
+        }
+
+        .flex-row {
+            flex-direction: column;
+        }
+
+
+        .text-large {
+            font-size: medium;
+        }
+
+        .w-80 {
+            width: 100%;
+        }
+    }
+</style>
+
+
+<div class="micrositio wrapper">
+
+    <div class="flex flex-row gap-2 place-content-center px-3">
+
+        <a class="rounded-full color-white bg-magenta flex-1 font-bold px-1 text-center pointer" data-target="#historia"
+            data-toggle="collapse">Historia del
+            proyecto</a>
+        <a class="rounded-full color-white bg-cyan flex-1 font-bold px-1 text-center pointer" data-target="#corredor"
+            data-toggle="collapse">Un
+            corredor
+            Intercultural</a>
+        <a class="rounded-full color-white bg-green flex-1 font-bold px-1 text-center pointer"
+            data-target="#institucion" data-toggle="collapse">IPC a
+            institución
+            universitaria</a>
+    </div>
+
+    <div id="menu-principal">
+        <div class="panel">
+            <div class="collapse" id="historia" data-parent="#menu-principal">
+                <div class="flex flex-row gap-2 text-justify">
+                    <div class="flex-1">
+                        <p>El icónico Edificio del Puente, Piel Roja o Coltabaco fue construido en la década de los años
+                            30,
+                            como referente histórico y parte de la celebración de los 400 años de Santiago de Cali hacia
+                            1936. </p>
+                        <p>El diseño original tuvo tres pisos, de características arquitectónicas neocolonial e
+                            influencia
+                            Mudéjar (árabe); en 1950 se construyó el cuarto nivel y así se conserva hasta hoy. </p>
+                        <p>En 2016, su poseedor original, la Compañía Colombiana de Tabaco dona este ícono de la ciudad
+                            a la
+                            Alcaldía de Santiago de Cali, quien en adelante se encargará de su cuidado, aprovechamiento
+                            y
+                            conservación.</p>
+                        <p>Cabe resaltar que, el edificio fue proclamado como Patrimonio nacional en 1960; ‘Bien de
+                            interés
+                            cultural’, en 1969 y Patrimonio Urbano arquitectónico, en 1993. </p>
+                        <p>
+                            Con estos antecedentes la Administración del alcalde Jorge Iván Ospina estacó la importancia
+                            histórica y arquitectónica de la edificación y delegó en la Unidad Administrativa Especial
+                            de
+                            Gestión de Bienes y Servicios la responsabilidad de presentar el proyecto de Acuerdo ante el
+                            Concejo de Santiago de Cali, para modernizar la estructura con miras a un proceso de
+                            comodato,
+                            por espacio de cinco años, con el Instituto Popular de Cultura (IPC).
+                        </p>
+                        <p>Una vez el Concejo aprobó el presupuesto para las obras, se inició la implementación del
+                            proyecto
+                            ‘Conservación de los bienes inmuebles de interés cultural de uso institucional de Santiago
+                            de
+                            Cali’, se anunció la licitación pública para: ‘realizar intervenciones integrales y
+                            adecuaciones
+                            en la infraestructura física de los bienes inmuebles de interés cultural (edificio
+                            Coltabaco),
+                            propiedad de la Alcaldía de Santiago de Cali’.</p>
+                    </div>
+
+                    <div style="flex: 1.4;">
+                        <img class="w-full mb-2" src="https://www.cali.gov.co/info/principal/media/galeria284233.png"
+                            alt="">
+                        <p>La ejecución se inicia el 21 de septiembre de 2022, cuando se realiza el primer comité entre
+                            la
+                            Unidad de Gestión de Bienes y servicios, el contratista Consorcio reforzamiento EDICOL y la
+                            interventoría, a cargo de Diez Plus Ingeniería. </p>
+                        <p>
+                            Estos, se encargarán de ejecutar la rehabilitación y distribución de espacios en el edificio
+                            Coltabaco, obra que tiene un costo de $20.118.944.424, la que se espera finalizar y entregar
+                            el
+                            30 de noviembre de 2023. A julio de 2023 la obra tiene un avance en su ejecución del 46,67
+                            %.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse" id="corredor" data-parent="#menu-principal">
+                <div class="flex flex-row gap-2 text-justify">
+                    <div class="flex-1">
+                        <p>El Bulevar del Río, una obra que transformó el centro histórico de Santiago de Cali fue
+                            diseñado
+                            por la arquitecta caleña Elly Burckhardt, egresada de la Universidad del Valle, magíster en
+                            Administración Industrial y especialista en Urbanismo y Paisajismo. Su construcción inició
+                            el 11
+                            de enero de 2012 y fue inaugurado el 16 de mayo de 2013. </p>
+
+                        <p>A lo largo de los 980 metros de longitud se encuentran gentes venidas de toda Colombia y del
+                            exterior, todos disfrutan la historia y las voces que recogen la admiración por las
+                            edificaciones que aún están vigentes. Ellos, también se han ido impactados con las diversas
+                            muestras del folklore expuestas de manera gratuita en este corredor, presentadas por el
+                            Instituto Popular de Cultura. </p>
+
+                        <p>En medio de la brisa y el sol se levantan edificios como el de Coltabaco, el teatro Jorge
+                            Isaacs,
+                            la iglesia La Ermita, el Puente Ortiz, las generaciones del siglo pasado recuerdan el Hotel
+                            Alférez Real y el Batallón Pichincha, construcciones que hacen parte del devenir histórico
+                            de
+                            este sector, allí desde donde se puede contemplar al pueblo que se transformó en Distrito.
+                        </p>
+
+                        <p>Otra construcción icónica y de las más antiguas, es el Edificio del Puente, Piel Roja o
+                            Coltabaco, un bien inmueble propiedad de la Alcaldía local que se encuentra en etapa de
+                            reforzamiento y adecuación para ser la sede del Instituto Popular de Cultura (IPC) y pronto
+                            albergará a la Institución universitaria de las culturas y las artes populares. </p>
+
+                        <p>Cabe indicar que, el IPC ha formado una importante muestra de talento en distintas áreas de
+                            la
+                            creación cultural a lo largo de sus 90 años. </p>
+                    </div>
+
+                    <div style="flex: 1.4;">
+                        <div class="flex flex-column">
+                            <div class="flex flex-row gap-2">
+                                <img class="w-full mb-2"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria284236.png" alt="">
+                                <img class="w-full mb-2"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria284235.png" alt="">
+                            </div>
+                            <img class="w-full mb-2"
+                                src="https://www.cali.gov.co/info/principal/media/galeria284234.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="collapse" id="institucion" data-parent="#menu-principal">
+                <div class="flex flex-row gap-2 text-justify">
+                    <div class="flex-1">
+                        <p>Una historia que data de 1946 relata los inicios del <a
+                                href="https://www.institutopopulardecultura.edu.co/page/historia"
+                                target="_blank">Instituto
+                                Municipal de Cultura</a> cuya oferta educativa se enfocó en la clase obrera. El énfasis
+                            académico se hacía en la cívica, la historia del país, geografía, urbanidad e higiene y por
+                            supuesto, el componente en la enseñanza de artes resultó indispensable.</p>
+
+                        <p>Este tránsito daría para que los mandatarios reconocieran en esta institución el aporte al
+                            encadenamiento de prácticas aglutinantes que no menoscababan la individualidad de los
+                            favorecidos con esta pedagogía, pues todos los saberes, empíricos o de traza académica
+                            entraron
+                            en igualdad de condiciones a hacer parte de este universo conocido luego como Instituto
+                            Popular
+                            de Cultura (IPC).</p>
+
+                        <p>Hoy, soplan vientos favorables para su transformación, su trayectoria en el mundo académico
+                            está
+                            respaldado por cientos de egresados que poseen marca propia, reconocimiento en el ámbito
+                            cultural y dan muestra del sello surtido en las aulas de esta casa de las artes.</p>
+
+                        <p>La iniciativa partió del alcalde Jorge Iván Ospina, quien se propuso darle un empuje al
+                            legado
+                            constituido por el IPC y, apoyado en el trabajo que adelanta la Unidad Administrativa
+                            Especial
+                            de Gestión de Bienes y Servicios en favor de los bienes inmuebles del municipio, se decidió
+                            la
+                            presentación ante el Concejo de Cali del proyecto que considera la necesidad de robustecer
+                            la
+                            calidad de este ente en función de su caracterización académica y la habilitación de
+                            espacios
+                            que respalden su proyección creadora de saberes a nivel local, departamental y nacional, en
+                            la
+                            formación cultural. </p>
+
+                        <p>Con el aval del Concejo Distrital, las obras de adecuación y el cumplimiento de requisitos
+                            dispuestos por el Ministerio de Educación se abre paso la constitución de una nueva figura,
+                            la
+                            ansiada y merecida Institución Universitaria de las Culturas y las Artes Populares IPC.</p>
+                    </div>
+
+                    <div style="flex: 1.4;">
+                        <div class="flex flex-column">
+                            <div class="flex flex-row gap-2">
+                                <img class="w-full mb-2"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria284239.png" alt="">
+                                <img class="w-full mb-2"
+                                    src="https://www.cali.gov.co/info/principal/media/galeria284238.png" alt="">
+                            </div>
+                            <img class="w-full mb-2"
+                                src="https://www.cali.gov.co/info/principal/media/galeria284237.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-blue text-white text-center p-2">
+        <h3 class="font-bold">Marco legal</h3>
+        <p class="text-white">A continuación, se exponen los procesos adelantados ante el Concejo de Santiago de Cali,
+            entidad que aprobó
+            las vigencias futuras para adelantar el plan de inversiones requeridas para la recuperación, modernización y
+            aprovechamiento del Edificio Coltabaco y las actividades realizadas para crear la Institución Universitaria
+            de las Culturas y las Artes Populares y sus derivados.</p>
+        <div class="flex flex-row place-content-center gap-2">
+            <div class="flex flex-row place-content-center">
+                <a href="https://www.cali.gov.co/loader.php?lServicio=Tools2&lTipo=descargas&lFuncion=descargar&idFile=77355&id_comunidad=educacion"
+                    class="text-white font-bold">
+                    <span>Acuerdo 0531 de 2022</span>
+                    <img src="https://www.cali.gov.co/info/principal/media/galeria284240.png"
+                        alt="Descargar acuerdo 0531">
+                </a>
+            </div>
+            <div class="flex flex-row place-content-center">
+                <a href="https://www.cali.gov.co/loader.php?lServicio=Tools2&lTipo=descargas&lFuncion=descargar&idFile=77354&id_comunidad=educacion"
+                    class="text-white font-bold">
+                    <span>Acuerdo 559 de 2022</span>
+                    <img src="https://www.cali.gov.co/info/principal/media/galeria284240.png"
+                        alt="Descargar acuerdo 559">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+        <div class="bg-mustard text-white text-center p-2">
+            <span>Noticias</span>
+        </div>
+        DISPLAYBLOQUE(219273)
+    </div>
+
+    <div>
+
+        <div class="bg-orange text-white text-center p-2">
+            <span>Galería</span>
+        </div>
+
+        <div class="flex flex-row gap-2 place-content-center px-3" id="galeria">
+            <a class="flex-1 font-bold px-1 text-center pointer" data-target="#fotos" data-toggle="collapse">Fotos</a>
+            <a class="flex-1 font-bold px-1 text-center pointer" data-target="#videos" data-toggle="collapse">Videos</a>
+        </div>
+
+        <div class="panel">
+            <div class="collapse" id="fotos" data-parent="#galeria">
+                DISPLAYGALERIA(24662)
+            </div>
+            <div class="collapse" id="videos" data-parent="#galeria">
+                DISPLAYGALERIA(24660)
+            </div>
+        </div>
+    </div>
+</div>
