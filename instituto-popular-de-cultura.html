@@ -14,7 +14,7 @@
     }
 
     .micrositio {
-        all: reset;
+        all: unset;
     }
 
     .text-center {
@@ -162,12 +162,24 @@
         background-color: #9c1e60;
     }
 
+    .bg-magenta.collapsed {
+        color: #9c1e60;
+    }
+
     .bg-cyan {
         background-color: #4dbdc8;
     }
 
+    .bg-cyan.collapsed {
+        color: #4dbdc8;
+    }
+
     .bg-green {
         background-color: #87b73e;
+    }
+
+    .bg-green.collapsed {
+        color: #87b73e;
     }
 
     .grid {
@@ -202,6 +214,26 @@
         column-count: 2;
     }
 
+    .menu-link {
+        border-radius: 999999px;
+        color: #FAFAFA;
+        flex: 1;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        padding-inline: 1em;
+        padding-block: 5px;
+        user-select: none;
+        border: 3px solid transparent;
+    }
+
+
+
+    .menu-link.collapsed {
+        background-color: white !important;
+        border: 3px solid;
+    }
+
     .disabled {
         pointer-events: none;
         cursor: not-allowed;
@@ -211,6 +243,15 @@
         opacity: .65;
         text-decoration: none;
         transition: all 250ms ease-in-out;
+    }
+
+    #fotos, #videos {
+        text-decoration: underline;
+    }
+
+    #fotos.collapsed, #videos.collapsed {
+text-decoration:none;
+
     }
 
     @media (max-width: 768px) {
@@ -234,30 +275,33 @@
         .w-80 {
             width: 100%;
         }
+
+        .menu-wrapper{
+            gap: 4px;
+        }
+
+        
     }
 </style>
 
 
 <div class="micrositio wrapper">
 
-    <div class="flex flex-row gap-2 place-content-center px-3">
+    <div class="flex flex-row gap-2 place-content-center px-3 menu-wrapper">
 
-        <a class="rounded-full color-white bg-magenta flex-1 font-bold px-1 text-center pointer" data-target="#historia"
-            data-toggle="collapse">Historia del
+        <a class="menu-link bg-magenta" data-target="#historia" data-toggle="collapse">Historia del
             proyecto</a>
-        <a class="rounded-full color-white bg-cyan flex-1 font-bold px-1 text-center pointer" data-target="#corredor"
-            data-toggle="collapse">Un
+        <a class="menu-link bg-cyan collapsed" data-target="#corredor" data-toggle="collapse">Un
             corredor
             Intercultural</a>
-        <a class="rounded-full color-white bg-green flex-1 font-bold px-1 text-center pointer"
-            data-target="#institucion" data-toggle="collapse">IPC a
+        <a class="menu-link bg-green collapsed" data-target="#institucion" data-toggle="collapse">IPC a
             institución
             universitaria</a>
     </div>
 
     <div id="menu-principal">
         <div class="panel">
-            <div class="collapse" id="historia" data-parent="#menu-principal">
+            <div class="collapse in" id="historia" data-parent="#menu-principal">
                 <div class="flex flex-row gap-2 text-justify">
                     <div class="flex-1">
                         <p>El icónico Edificio del Puente, Piel Roja o Coltabaco fue construido en la década de los años
@@ -423,7 +467,7 @@
     </div>
 
     <div class="bg-blue text-white text-center p-2">
-        <h3 class="font-bold">Marco legal</h3>
+        <h3 class="font-bold" style="margin-top: 0;">Marco legal</h3>
         <p class="text-white">A continuación, se exponen los procesos adelantados ante el Concejo de Santiago de Cali,
             entidad que aprobó
             las vigencias futuras para adelantar el plan de inversiones requeridas para la recuperación, modernización y
@@ -451,28 +495,28 @@
 
     <div>
 
-        <div class="bg-mustard text-white text-center p-2">
-            <span>Noticias</span>
+        <div class="bg-mustard text-white font-bold text-center p-1">
+            Noticias
         </div>
         DISPLAYBLOQUE(219273)
     </div>
 
-    <div>
+    <div id="galeria">
 
-        <div class="bg-orange text-white text-center p-2">
-            <span>Galería</span>
+        <div class="bg-orange text-white font-bold text-center p-1 mb-2">
+            Galería
         </div>
 
-        <div class="flex flex-row gap-2 place-content-center px-3" id="galeria">
+        <div class="flex flex-row gap-2 place-content-center px-3 mb-2">
             <a class="flex-1 font-bold px-1 text-center pointer" data-target="#fotos" data-toggle="collapse">Fotos</a>
-            <a class="flex-1 font-bold px-1 text-center pointer" data-target="#videos" data-toggle="collapse">Videos</a>
+            <a class="flex-1 font-bold px-1 text-center pointer collapsed" data-target="#videos" data-toggle="collapse">Videos</a>
         </div>
 
         <div class="panel">
-            <div class="collapse" id="fotos" data-parent="#galeria">
+            <div class="collapse in mb-2" id="fotos" data-parent="#galeria">
                 DISPLAYGALERIA(24662)
             </div>
-            <div class="collapse" id="videos" data-parent="#galeria">
+            <div class="collapse mb-2" id="videos" data-parent="#galeria">
                 DISPLAYGALERIA(24660)
             </div>
         </div>
