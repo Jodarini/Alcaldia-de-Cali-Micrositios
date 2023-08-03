@@ -245,16 +245,33 @@
         transition: all 250ms ease-in-out;
     }
 
-    #fotos, #videos {
+    #fotos,
+    #videos {
         text-decoration: underline;
     }
 
-    #fotos.collapsed, #videos.collapsed {
-text-decoration:none;
+    #fotos.collapsed,
+    #videos.collapsed {
+        text-decoration: none;
 
     }
 
+    .video_content {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+    }
+
+    .gallery_menu:not(.collapsed) {
+        text-decoration: underline;
+    }
+
     @media (max-width: 768px) {
+        .video_content {
+            display: block;
+        }
+
         .text-center {
             text-align: left;
         }
@@ -276,11 +293,10 @@ text-decoration:none;
             width: 100%;
         }
 
-        .menu-wrapper{
+        .menu-wrapper {
             gap: 4px;
         }
 
-        
     }
 </style>
 
@@ -508,8 +524,10 @@ text-decoration:none;
         </div>
 
         <div class="flex flex-row gap-2 place-content-center px-3 mb-2">
-            <a class="flex-1 font-bold px-1 text-center pointer" data-target="#fotos" data-toggle="collapse">Fotos</a>
-            <a class="flex-1 font-bold px-1 text-center pointer collapsed" data-target="#videos" data-toggle="collapse">Videos</a>
+            <a class="flex-1 font-bold px-1 text-center pointer gallery_menu " data-target="#fotos"
+                data-toggle="collapse">Fotos</a>
+            <a class="flex-1 font-bold px-1 text-center pointer gallery_menu  collapsed" data-target="#videos"
+                data-toggle="collapse">Videos</a>
         </div>
 
         <div class="panel">
@@ -517,7 +535,10 @@ text-decoration:none;
                 DISPLAYGALERIA(24662)
             </div>
             <div class="collapse mb-2" id="videos" data-parent="#galeria">
-                DISPLAYGALERIA(24660)
+                <div class="flex video_content">
+                    <video width="100%" controls
+                        src="https://www.cali.gov.co/info/principal/media/videos/mp4284317.mp4"></video>
+                </div>
             </div>
         </div>
     </div>
