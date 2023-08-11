@@ -21,18 +21,6 @@
         text-align: center;
     }
 
-    .text-left {
-        text-align: left;
-    }
-
-    .align-center {
-        align-items: center;
-    }
-
-    .justify-content-center {
-        justify-content: center;
-    }
-
     .text-justify {
         text-align: justify;
     }
@@ -82,52 +70,20 @@
     }
 
     .flex-1 {
+        flex: 1;
         flex-grow: 1
-    }
-
-    .space-between {
-        justify-content: space-between;
-    }
-
-    .justify-center {
-        justify-items: center
     }
 
     .place-content-center {
         place-content: center;
     }
 
-    .flex-1 {
-        flex: 1;
-    }
-
-    .logo {
-        width: 55px;
-        height: 55px;
-    }
-
-    .rounded-full {
-        border-radius: 9999px;
-    }
-
-    .w-80 {
-        width: 80%;
-    }
-
     .w-full {
         width: 100%;
     }
 
-    .m-auto {
-        margin: auto;
-    }
-
     .mb-2 {
         margin-bottom: 2em;
-    }
-
-    .gap-1 {
-        gap: 1em
     }
 
     .gap-2 {
@@ -202,16 +158,8 @@
         font-size: large;
     }
 
-    .display-none {
-        display: none;
-    }
-
     .pointer {
         cursor: pointer;
-    }
-
-    .column-count-2 {
-        column-count: 2;
     }
 
     .menu-link {
@@ -226,8 +174,6 @@
         user-select: none;
         border: 3px solid transparent;
     }
-
-
 
     .menu-link.collapsed {
         background-color: white !important;
@@ -301,9 +247,9 @@
 </style>
 
 
-<div class="micrositio wrapper">
+<div class="micrositio">
 
-    <div class="flex flex-row gap-2 place-content-center px-3 menu-wrapper">
+    <div class="flex flex-row gap-2 place-content-center px-3 menu-wrapper collapse">
 
         <a class="menu-link bg-magenta" data-target="#historia" data-toggle="collapse">Historia del
             proyecto</a>
@@ -315,9 +261,9 @@
             universitaria</a>
     </div>
 
-    <div id="menu-principal">
+    <div id="menu-micrositio">
         <div class="panel">
-            <div class="collapse in" id="historia" data-parent="#menu-principal">
+            <div class="collapse in" id="historia" data-parent="#menu-micrositio">
                 <div class="flex flex-row gap-2 text-justify">
                     <div class="flex-1">
                         <p>El icónico Edificio del Puente, Piel Roja o Coltabaco fue construido en la década de los años
@@ -372,7 +318,7 @@
                     </div>
                 </div>
             </div>
-            <div class="collapse" id="corredor" data-parent="#menu-principal">
+            <div class="collapse" id="corredor" data-parent="#menu-micrositio">
                 <div class="flex flex-row gap-2 text-justify">
                     <div class="flex-1">
                         <p>El Bulevar del Río, una obra que transformó el centro histórico de Santiago de Cali fue
@@ -421,7 +367,7 @@
                     </div>
                 </div>
             </div>
-            <div class="collapse" id="institucion" data-parent="#menu-principal">
+            <div class="collapse" id="institucion" data-parent="#menu-micrositio">
                 <div class="flex flex-row gap-2 text-justify">
                     <div class="flex-1">
                         <p>Una historia que data de 1946 relata los inicios del <a
@@ -523,7 +469,7 @@
             Galería
         </div>
 
-        <div class="flex flex-row gap-2 place-content-center px-3 mb-2">
+        <div class="flex flex-row gap-2 place-content-center px-3 mb-2 collapse">
             <a class="flex-1 font-bold px-1 text-center pointer gallery_menu " data-target="#fotos"
                 data-toggle="collapse">Fotos</a>
             <a class="flex-1 font-bold px-1 text-center pointer gallery_menu  collapsed" data-target="#videos"
