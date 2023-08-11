@@ -252,24 +252,6 @@
 </style>
 
 <script>
-    // Lógica sliders
-    function plusDivs(n, no) {
-        showDivs(slideIndex[no] += n, no);
-    }
-
-    function showDivs(n, no) {
-        var i;
-        var x = document.getElementsByClassName(slideId[no]);
-        if (n > x.length) { slideIndex[no] = 1 }
-        if (n < 1) { slideIndex[no] = x.length }
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        x[slideIndex[no] - 1].style.display = "block";
-    }
-
-
-
 
     $(document).ready(function () {
         const carousel_inner_array = document.querySelectorAll('.carousel-inner');
@@ -1863,7 +1845,9 @@
                             <h4 class="blueText">Perfil profesional</h4>
                             <div class="row">
                                 <div class="col-md-8">
-                                    <p>Contadora Pública, egresada de la Universidad del Valle, con diplomado en Normas Internacionales de Información Financiera, cuenta con 18 años de experiencia laboral en el sector público y el sector privado.</p>
+                                    <p>Contadora Pública, egresada de la Universidad del Valle, con diplomado en Normas
+                                        Internacionales de Información Financiera, cuenta con 18 años de experiencia
+                                        laboral en el sector público y el sector privado.</p>
                                 </div>
                                 <div class="col-md-4 divider">
                                     <ul class="list-group">
