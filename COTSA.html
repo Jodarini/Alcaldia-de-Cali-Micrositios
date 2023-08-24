@@ -1,291 +1,293 @@
 <style>
-    .micrositio>* {
-        margin-bottom: 2em;
+  .micrositio > * {
+    margin-bottom: 2em;
+  }
+
+  .micrositio h2 {
+    font-size: 25px;
+    color: #449799;
+    font-weight: bolder;
+    margin-top: 0;
+  }
+
+  .micrositio h4 {
+    color: #449799;
+    font-size: 22px;
+    font-weight: bolder;
+  }
+
+  .micrositio video {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 17px 9px -11px;
+  }
+
+  .micrositio img {
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .modal-body > img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    margin-top: -2em;
+    display: block;
+  }
+
+  .w-full {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .p-05 {
+    padding: 0.5em;
+  }
+
+  .p-1 {
+    padding: 1em;
+  }
+
+  .pb-1 {
+    padding-bottom: 1em;
+  }
+
+  .pb-1-5 {
+    padding-bottom: 1.5em;
+  }
+
+  .pt-1 {
+    padding-top: 1em;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .text-white {
+    color: #fafafa !important;
+  }
+
+  .bg-blue {
+    background-color: #02a9be;
+  }
+
+  .bg-teal {
+    background-color: #449799;
+  }
+
+  .bg-green {
+    background-color: #3aa836;
+  }
+
+  .bg-yellow {
+    background-color: #fdb400;
+  }
+
+  .bg-lightblue {
+    background-color: #0bdab8;
+  }
+
+  .bg-mustard {
+    background-color: #ff9917;
+  }
+
+  .bg-darkblue {
+    background-color: #007c7e;
+  }
+
+  .bg-pink {
+    background-color: #eb3b7b;
+  }
+
+  .radius-rounded {
+    border-radius: 2em;
+  }
+
+  .link_more {
+    color: #3aa836;
+    background-color: #fafafa;
+    font-weight: bolder;
+  }
+
+  .news {
+    background-image: url(https://www.cali.gov.co/info/principal/media/galeria261031.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .micrositio .nxBlock217965 {
+    background-color: transparent;
+  }
+
+  .micrositio .dotsDynamic li button::before,
+  .slick-dots li button::before {
+    background-color: #fafafa;
+  }
+  .flex {
+    display: flex;
+  }
+
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    margin-top: 2em;
+  }
+
+  .timeline__1 a {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    width: 5em;
+    height: 4em;
+    color: #fafafa;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+    z-index: 1000;
+    margin: 1em;
+    position: relative;
+  }
+
+  .timeline__2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+  }
+
+  .timeline__2 a img {
+    width: 4em;
+    margin-right: 1rem;
+    min-width: 4em;
+  }
+
+  .timeline__2 a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    z-index: 999;
+  }
+
+  .timeline__2::after {
+    left: 1.95em;
+  }
+
+  .timeline a::after {
+    content: '';
+    position: absolute;
+  }
+
+  .timeline__1 a::before {
+    content: '';
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: #fafafa;
+    border-radius: 50%;
+    top: 1rem;
+    position: absolute;
+    outline: 3px solid #fafafa;
+    outline-offset: 2px;
+  }
+
+  .timeline::after {
+    content: '';
+    position: absolute;
+    background-color: #989898;
+    width: 2px;
+    height: 100%;
+  }
+
+  .slick-prev:hover,
+  .slick-next:hover .slick-prev:focus,
+  .slick-next:focus {
+    background: #02a9be !important;
+  }
+
+  .botonera .dotsDynamic li.slick-active button {
+    background: #02a9be !important;
+  }
+
+  .micrositio .dotsDynamic li button::before,
+  .slick-dots li button::before {
+    background: #02a9be !important;
+  }
+
+  .dotsDynamic li button {
+    background-color: transparent;
+    border: 1px solid #02a9be;
+  }
+
+  .micrositio .dotsDynamic li.slick-active button {
+    background-color: #02a9be !important;
+  }
+
+  .micrositio .modal-header {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .logos {
+    width: 50px;
+    height: 65px;
+    border-radius: 50%;
+    border: 5px solid gray;
+  }
+
+  @media (min-width: 40em) {
+    .logos {
+      height: 100px;
+      width: 100px !important;
+      max-width: 100px !important;
     }
 
-    .micrositio h2 {
-        font-size: 25px;
-        color: #449799;
-        font-weight: bolder;
-        margin-top: 0;
+    .text-center-md {
+      text-align: center;
     }
 
-    .micrositio h4 {
-        color: #449799;
-        font-size: 22px;
-        font-weight: bolder;
+    .micrositio > * {
+      margin-bottom: 4em;
     }
 
-    .micrositio video {
-        width: 100%;
-        box-shadow: rgba(0, 0, 0, 0.45) 0px 17px 9px -11px;
+    .grid {
+      display: grid;
+      gap: 2em;
     }
 
-    .micrositio img {
-        width: 100%;
-        max-width: 800px;
+    .grid__2x2 {
+      grid-template-columns: 1fr 1fr;
     }
 
-    .modal-body>img {
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 2em;
-        margin-top: -2em;
-        display: block;
-    }
-
-    .w-full {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .p-05 {
-        padding: .5em;
-    }
-
-    .p-1 {
-        padding: 1em;
-    }
-
-    .pb-1 {
-        padding-bottom: 1em;
-    }
-
-    .pb-1-5 {
-        padding-bottom: 1.5em;
-    }
-
-    .pt-1 {
-        padding-top: 1em
-    }
-
-    .text-center {
-        text-align: center;
-    }
-
-    .text-white {
-        color: #FAFAFA !important;
-    }
-
-    .bg-blue {
-        background-color: #02a9be;
-    }
-
-    .bg-teal {
-        background-color: #449799;
-    }
-
-    .bg-green {
-        background-color: #3aa836;
-    }
-
-    .bg-yellow {
-        background-color: #fdb400;
-    }
-
-    .bg-lightblue {
-        background-color: #0bdab8;
-    }
-
-    .bg-mustard {
-        background-color: #ff9917;
-    }
-
-    .bg-darkblue {
-        background-color: #007c7e;
-    }
-
-    .bg-pink {
-        background-color: #eb3b7b;
-    }
-
-    .radius-rounded {
-        border-radius: 2em;
-    }
-
-    .link_more {
-        color: #3aa836;
-        background-color: #FAFAFA;
-        font-weight: bolder;
-    }
-
-    .news {
-        background-image: url(https://www.cali.gov.co/info/principal/media/galeria261031.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .micrositio .nxBlock217965 {
-        background-color: transparent;
-    }
-
-    .micrositio .dotsDynamic li button::before,
-    .slick-dots li button::before {
-        background-color: #FAFAFA;
+    .pos-2 {
+      grid-column: 2;
+      grid-row: 1;
     }
 
     .timeline {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        align-items: center;
-        margin-top: 2em;
-    }
-
-    .timeline__1 a {
-        border-top-left-radius: 50%;
-        border-top-right-radius: 50%;
-        width: 5em;
-        height: 4em;
-        color: #FAFAFA;
-        font-weight: bolder;
-        display: flex;
-        justify-content: center;
-        padding-top: 2em;
-        z-index: 1000;
-        margin: 1em;
-        position: relative;
-    }
-
-    .timeline__2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 1em;
-    }
-
-    .timeline__2 a img {
-        width: 4em;
-        margin-right: 1rem;
-        min-width: 4em;
-    }
-
-    .timeline__2 a {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: start;
-        z-index: 999;
-    }
-
-    .timeline__2::after {
-        left: 1.95em;
-    }
-
-    .timeline a::after {
-        content: "";
-        position: absolute;
-    }
-
-    .timeline__1 a::before {
-        content: "";
-        width: 0.7rem;
-        height: 0.7rem;
-        background-color: #FAFAFA;
-        border-radius: 50%;
-        top: 1rem;
-        position: absolute;
-        outline: 3px solid #FAFAFA;
-        outline-offset: 2px;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 2.5em;
     }
 
     .timeline::after {
-        content: "";
-        position: absolute;
-        background-color: #989898;
-        width: 2px;
-        height: 100%;
+      width: 100%;
+      height: 2px;
     }
 
-    .slick-prev:hover,
-    .slick-next:hover .slick-prev:focus,
-    .slick-next:focus {
-        background: #02a9be !important;
+    .timeline__2::after {
+      top: 0;
     }
 
-    .botonera .dotsDynamic li.slick-active button {
-        background: #02a9be !important;
+    .timeline__1 a {
+      top: -30px;
     }
 
-    .micrositio .dotsDynamic li button::before,
-    .slick-dots li button::before {
-        background: #02a9be !important;
-    }
-
-    .dotsDynamic li button {
-        background-color: transparent;
-        border: 1px solid #02a9be
-    }
-
-    .micrositio .dotsDynamic li.slick-active button {
-        background-color: #02a9be !important;
-    }
-
-    .micrositio .modal-header {
-        border-bottom: none;
-        padding-bottom: 0;
-    }
-
-
-    .logos {
-        width: 50px;
-        height: 65px;
-        border-radius: 50%;
-        border: 5px solid gray;
-    }
-
-    @media (min-width:40em) {
-        .logos {
-            height: 100px;
-            width: 100px !important;
-            max-width: 100px !important;
-        }
-
-        .text-center-md {
-            text-align: center;
-        }
-
-        .micrositio>* {
-            margin-bottom: 4em;
-        }
-
-        .grid {
-            display: grid;
-            gap: 2em;
-        }
-
-        .grid__2x2 {
-            grid-template-columns: 1fr 1fr;
-        }
-
-        .pos-2 {
-            grid-column: 2;
-            grid-row: 1;
-        }
-
-        .timeline {
-            flex-direction: row;
-            justify-content: space-around;
-            margin-top: 2.5em;
-        }
-
-        .timeline::after {
-            width: 100%;
-            height: 2px;
-        }
-
-        .timeline__2::after {
-            top: 0;
-        }
-
-        .timeline__1 a {
-            top: -30px;
-        }
-
-        .timeline-start {
-            /* content: "";
+    .timeline-start {
+      /* content: "";
             width: 0.7rem;
             height: 0.7rem;
             background-color: #989898;
@@ -294,1117 +296,1821 @@
             position: absolute;
             outline: 3px solid #989898;
             outline-offset: 2px; */
-        }
-
-        .timeline__2 a {
-            position: relative;
-            padding-top: 2em;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .timeline__2 a img {
-            max-width: 4em;
-            margin-right: 0;
-        }
-
-        .timeline__2 a::after {
-            content: '';
-            width: 2px;
-            height: 1em;
-            background-color: #989898;
-            top: 0;
-            left: 50%;
-        }
-
-        .modal-dialog-2 {
-            width: 95%;
-            max-width: 1100px;
-        }
-
-        .news {
-            padding-inline: 4em;
-        }
-
-        .embed-responsive-16by9 {
-            box-shadow: rgba(0, 0, 0, 0.45) 0px 17px 9px -11px;
-        }
     }
+
+    .timeline__2 a {
+      position: relative;
+      padding-top: 2em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .timeline__2 a img {
+      max-width: 4em;
+      margin-right: 0;
+    }
+
+    .timeline__2 a::after {
+      content: '';
+      width: 2px;
+      height: 1em;
+      background-color: #989898;
+      top: 0;
+      left: 50%;
+    }
+
+    .modal-dialog-2 {
+      width: 95%;
+      max-width: 1100px;
+    }
+
+    .news {
+      padding-inline: 4em;
+    }
+
+    .embed-responsive-16by9 {
+      box-shadow: rgba(0, 0, 0, 0.45) 0px 17px 9px -11px;
+    }
+  }
 </style>
 
-
 <div class="micrositio">
+  <article class="grid grid__2x2">
+    <div class="pt-1 pos-2">
+      <h2>¿Qué es la salud ambiental?</h2>
+      <p>
+        Salud ambiental, según la Organización Mundial de la
+        Salud (OMS), es "aquella disciplina que comprende
+        los aspectos de la salud humana, incluida la calidad
+        de vida y el bienestar social, que son determinados
+        por factores sociales y psico-sociales, ambientales,
+        físicos; químicos y biológicos" se ocupa de evaluar,
+        controlar y corregir los factores que inciden
+        negativamente en la salud de las personas.
+      </p>
+    </div>
 
-    <article class="grid grid__2x2">
-        <div class="pt-1 pos-2">
-            <h2>
-                ¿Qué es la salud ambiental?
-            </h2>
-            <p>Salud ambiental, según la Organización Mundial de la Salud (OMS), es "aquella disciplina que comprende
-                los aspectos de la salud humana, incluida la calidad de vida y el bienestar social, que son determinados
-                por factores sociales y psico-sociales, ambientales, físicos; químicos y biológicos" se ocupa de
-                evaluar, controlar y corregir los factores que inciden negativamente en la salud de las personas.</p>
-        </div>
+    <div class="embed-responsive embed-responsive-16by9">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          type="text/html"
+          src="https://www.youtube.com/embed/2HtTD8M78Qs"
+        >
+        </iframe>
+      </div>
+    </div>
+  </article>
 
-        <div class="embed-responsive embed-responsive-16by9">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" type="text/html"
-                    src="https://www.youtube.com/embed/2HtTD8M78Qs">
-                </iframe>
-            </div>
-        </div>
-    </article>
+  <!-- Qué es el cotsa -->
+  <article class="grid grid__2x2">
+    <div>
+      <h2>COTSA</h2>
+      <p>
+        El Cotsa se origina en el CONPES 3550/08- Plan
+        Nacional de Desarrollo (2014 – 2018), su principal
+        objetivo es Promover la creación de los Consejos
+        Territoriales en Salud Ambiental por parte de los
+        Ministerios miembros de la Comisión Técnica Nacional
+        Intersectorial de Salud Ambiental – CONASA. y
+        orientar su reglamentación de acuerdo con el Decreto
+        2972/2010.
+      </p>
 
+      <p>Además de:</p>
+      <ul>
+        <li>
+          Generar espacios intersectoriales para la toma de
+          decisiones relevantes en salud ambiental.
+        </li>
+        <li>
+          Coordinar y articular la gestión en salud
+          ambiental.
+        </li>
+        <li>
+          Servir como enlace, monitoreo y evaluación de la
+          PISA, a nivel territorial.
+        </li>
+      </ul>
+    </div>
 
-    <!-- Qué es el cotsa -->
-    <article class="grid grid__2x2">
-        <div>
-            <h2>COTSA</h2>
-            <p>El Cotsa se origina en el CONPES 3550/08- Plan Nacional de Desarrollo (2014 – 2018), su principal
-                objetivo es Promover la creación de los Consejos Territoriales en Salud Ambiental por parte de los
-                Ministerios miembros de la Comisión Técnica Nacional Intersectorial de Salud Ambiental – CONASA. y
-                orientar su reglamentación de acuerdo con el Decreto 2972/2010.</p>
-
-            <p>Además de:</p>
-            <ul>
-                <li>
-                    Generar espacios intersectoriales para la toma de decisiones relevantes en salud ambiental.
-                </li>
-                <li>Coordinar y articular la gestión en salud ambiental.</li>
-                <li>Servir como enlace, monitoreo y evaluación de la PISA, a nivel territorial.</li>
-            </ul>
-        </div>
-
-        <video src="https://www.cali.gov.co/info/principal/media/videos/mp4276330.mp4" controls></video>
-        <!-- <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="788.54" height="443"
+    <video
+      src="https://www.cali.gov.co/info/principal/media/videos/mp4276330.mp4"
+      controls
+    ></video>
+    <!-- <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="788.54" height="443"
                 type="text/html"
                 src="https://www.youtube.com/embed/hcC6-52YbQA?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0">
             </iframe> -->
-    </article>
+  </article>
 
-    <!-- Diagrama de conformación del Cotsa -->
-    <article>
-        <h2 class="p-05 bg-teal radius-rounded text-white text-center">Consejo territorial de salud ambiental CALI</h2>
-        <p class="text-center-md"><i>Haz clic e infórmate de la labor de cada una de las mesas. </i></p>
-        <div class="timeline timeline__2">
-            <a href="#" class="disabled" data-toggle="modal" data-target="#mesaAgua">
-                <img class="logos" src="https://www.cali.gov.co/info/principal/media/galeria261554.jpg" alt="">
-                <p class="text-center">Mesa Técnica Agua y Saneamiento básico</p>
-            </a>
+  <!-- Diagrama de conformación del Cotsa -->
+  <article>
+    <h2
+      class="p-05 bg-teal radius-rounded text-white text-center"
+    >
+      Consejo territorial de salud ambiental CALI
+    </h2>
+    <p class="text-center-md">
+      <i
+        >Haz clic e infórmate de la labor de cada una de las
+        mesas.
+      </i>
+    </p>
+    <div class="timeline timeline__2">
+      <a
+        href="#"
+        class="disabled"
+        data-toggle="modal"
+        data-target="#mesaAgua"
+      >
+        <img
+          class="logos"
+          src="https://www.cali.gov.co/info/principal/media/galeria261554.jpg"
+          alt=""
+        />
+        <p class="text-center">
+          Mesa Técnica Agua y Saneamiento básico
+        </p>
+      </a>
 
-            <a href="#" class="disabled" data-toggle="modal" data-target="#mesaAire">
-                <img class="logos" src="https://www.cali.gov.co/info/principal/media/galeria261553.jpg" alt="">
-                <p class="text-center">Mesa Técnica Aire y Salud</p>
-            </a>
-            <a href="#" class="disabled" data-toggle="modal" data-target="#mesaSustancia">
-                <img class="logos" src="https://www.cali.gov.co/info/principal/media/galeria261552.jpg" alt="">
-                <p class="text-center">Mesa Técnica Seguridad Química y Residuos Peligrosos</p>
-            </a>
-            <a href="#" class="disabled" data-toggle="modal" data-target="#mesaZoonosis">
-                <img class="logos" src="https://www.cali.gov.co/info/principal/media/galeria261551.jpg" alt="">
-                <p class="text-center">Mesa Técnica Zoonosis y ETV - Enfermedades Transmitidas por Vectores</p>
-            </a>
-            <a href="#" class="disabled" data-toggle="modal" data-target="#entornos">
-                <img class="logos" src="https://www.cali.gov.co/info/principal/media/galeria261550.jpg" alt="">
-                <p class="text-center">Comité Distrital "Entornos para la Vida"</p>
-            </a>
-        </div>
+      <a
+        href="#"
+        class="disabled"
+        data-toggle="modal"
+        data-target="#mesaAire"
+      >
+        <img
+          class="logos"
+          src="https://www.cali.gov.co/info/principal/media/galeria261553.jpg"
+          alt=""
+        />
+        <p class="text-center">Mesa Técnica Aire y Salud</p>
+      </a>
+      <a
+        href="#"
+        class="disabled"
+        data-toggle="modal"
+        data-target="#mesaSustancia"
+      >
+        <img
+          class="logos"
+          src="https://www.cali.gov.co/info/principal/media/galeria261552.jpg"
+          alt=""
+        />
+        <p class="text-center">
+          Mesa Técnica Seguridad Química y Residuos
+          Peligrosos
+        </p>
+      </a>
+      <a
+        href="#"
+        class="disabled"
+        data-toggle="modal"
+        data-target="#mesaZoonosis"
+      >
+        <img
+          class="logos"
+          src="https://www.cali.gov.co/info/principal/media/galeria261551.jpg"
+          alt=""
+        />
+        <p class="text-center">
+          Mesa Técnica Zoonosis y ETV - Enfermedades
+          Transmitidas por Vectores
+        </p>
+      </a>
+      <a
+        href="#"
+        class="disabled"
+        data-toggle="modal"
+        data-target="#entornos"
+      >
+        <img
+          class="logos"
+          src="https://www.cali.gov.co/info/principal/media/galeria261550.jpg"
+          alt=""
+        />
+        <p class="text-center">
+          Comité Distrital "Entornos para la Vida"
+        </p>
+      </a>
+    </div>
 
-        <div id="mesaAgua" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-dialog-2">
+    <div id="mesaAgua" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-dialog-2">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+            >
+              &times;
+            </button>
+            <h4 class="modal-title">
+              Mesa Técnica Agua y Saneamiento Básico
+            </h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              Su gestión intersectorial está relacionada con
+              la preservación, conservación del recurso
+              hídrico y su uso para consumo humano,
+              recreativo, agrícola, pecuario e industrial,
+              realizando articulación con la Mesa Calidad
+              del Agua del COTSA Departamental.
+            </p>
 
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Mesa Técnica Agua y Saneamiento Básico</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Su gestión intersectorial está relacionada con la preservación, conservación del recurso
-                            hídrico y su uso para consumo humano, recreativo, agrícola, pecuario e industrial,
-                            realizando articulación con la Mesa Calidad del Agua del COTSA Departamental.</p>
+            <img
+              src="https://www.cali.gov.co/info/principal/media/galeria276347.png"
+              alt=""
+            />
+            <div class="w-100" style="overflow: scroll">
+              <h4 class="text-center">
+                Metas del Plan de Desarrollo de Cali 2020 –
+                2023 asociadas al Cotsa Mesa Técnica Agua y
+                Saneamiento Básico – Cotsa de Santiago de
+                Cali
+              </h4>
+              <table
+                class="table table-striped table-bordered"
+                style="width: 100%"
+              >
+                <tbody>
+                  <tr>
+                    <td style="width: 11.12%; height: 1px">
+                      <p align="center">
+                        <strong>Dimensi&oacute;n</strong>
+                      </p>
+                    </td>
+                    <td style="width: 10.32%; height: 1px">
+                      <p align="center">
+                        <strong
+                          >L&iacute;nea
+                          Estrat&eacute;gica</strong
+                        >
+                      </p>
+                    </td>
+                    <td style="width: 12.68%; height: 1px">
+                      <p align="center">
+                        <strong>Programa</strong>
+                      </p>
+                    </td>
+                    <td style="width: 24.08%; height: 1px">
+                      <p align="center">
+                        <strong
+                          >Indicador de Producto</strong
+                        >
+                      </p>
+                    </td>
+                    <td style="width: 10.14%; height: 1px">
+                      <p align="center">
+                        <strong>Unidad de Medida</strong>
+                      </p>
+                    </td>
+                    <td style="width: 10.14%; height: 1px">
+                      <p align="center">
+                        <strong>L&iacute;nea Base</strong>
+                      </p>
 
+                      <p align="center">
+                        <strong>2019</strong>
+                      </p>
+                    </td>
+                    <td style="width: 10.14%; height: 1px">
+                      <p align="center">
+                        <strong>Meta</strong>
+                      </p>
 
-                        <img src="https://www.cali.gov.co/info/principal/media/galeria276347.png" alt="">
-                        <div class="w-100" style="overflow: scroll">
-                            <h4 class="text-center">Metas del Plan de Desarrollo de Cali 2020 – 2023 asociadas al Cotsa
-                                Mesa Técnica Agua y
-                                Saneamiento Básico – Cotsa de Santiago de Cali</h4>
-                            <table class="table table-striped table-bordered" style="width:100%">
-                                <tbody>
-                                    <tr>
-                                        <td style="width:11.12%;height:1px;">
-                                            <p align="center"><strong>Dimensi&oacute;n</strong></p>
-                                        </td>
-                                        <td style="width:10.32%;height:1px;">
-                                            <p align="center"><strong>L&iacute;nea Estrat&eacute;gica</strong></p>
-                                        </td>
-                                        <td style="width:12.68%;height:1px;">
-                                            <p align="center"><strong>Programa</strong></p>
-                                        </td>
-                                        <td style="width:24.08%;height:1px;">
-                                            <p align="center"><strong>Indicador de Producto</strong></p>
-                                        </td>
-                                        <td style="width:10.14%;height:1px;">
-                                            <p align="center"><strong>Unidad de Medida</strong></p>
-                                        </td>
-                                        <td style="width:10.14%;height:1px;">
-                                            <p align="center"><strong>L&iacute;nea Base</strong></p>
-
-                                            <p align="center"><strong>2019</strong></p>
-                                        </td>
-                                        <td style="width:10.14%;height:1px;">
-                                            <p align="center"><strong>Meta</strong></p>
-
-                                            <p align="center"><strong>2020/2023</strong></p>
-                                        </td>
-                                        <td style="width:11.38%;height:1px;">
-                                            <p align="center"><strong>Responsable</strong></p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:11.12%;height:1px;">
-                                            <p align="center">Dimensi&oacute;n 3. Territorio resiliente y sustentable
-                                            </p>
-                                        </td>
-                                        <td style="width:10.32%;height:1px;">
-                                            <p align="center">Soporte Vital para el Desarrollo</p>
-                                        </td>
-                                        <td style="width:12.68%;height:1px;">
-                                            <p align="center">Saneamiento B&aacute;sico y Tratamiento de Aguas
-                                                Residuales
-                                            </p>
-                                        </td>
-                                        <td style="width:24.08%;height:1px;">
-                                            <p>Estrategia interinstitucional para el manejo de agua residual en
-                                                Asentamientos Humanos de Desarrollo Incompleto, dise&ntilde;ada y en
-                                                implementaci&oacute;n.</p>
-                                        </td>
-                                        <td style="width:10.14%;height:1px;">
-                                            <p align="center">N&uacute;mero</p>
-                                        </td>
-                                        <td style="width:10.14%;height:1px;">
-                                            <p align="center">0</p>
-                                        </td>
-                                        <td style="width:10.14%;height:1px;">
-                                            <p align="center">1</p>
-                                        </td>
-                                        <td style="width:11.38%;height:1px;">
-                                            <p align="center">DAGMA</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:11.12%;height:1px;">
-                                            <p align="center">Dimensi&oacute;n 3. Territorio resiliente y sustentable
-                                            </p>
-                                        </td>
-                                        <td style="width:10.32%;height:1px;">
-                                            <p align="center">Soporte Vital para el Desarrollo</p>
-                                        </td>
-                                        <td style="width:12.68%;height:1px;">
-                                            <p align="center">Conservaci&oacute;n de las Cuencas Hidrogr&aacute;ficas
-                                            </p>
-                                        </td>
-                                        <td style="width:24.08%;height:1px;">
-                                            <p>Obras e intervenciones para la descontaminaci&oacute;n h&iacute;drica de
-                                                las
-                                                fuentes superficiales, en el marco de la recuperaci&oacute;n del
-                                                r&iacute;o
-                                                Cauca, ejecutadas.</p>
-                                        </td>
-                                        <td style="width:10.14%;height:1px;">
-                                            <p align="center">N&uacute;mero</p>
-                                        </td>
-                                        <td style="width:10.14%;height:1px;">
-                                            <p align="center">9</p>
-                                        </td>
-                                        <td style="width:10.14%;height:1px;">
-                                            <p align="center">34</p>
-                                        </td>
-                                        <td style="width:11.38%;height:1px;">
-                                            <p align="center">DAGMA</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:11.12%;height:1px;">
-                                            <p align="center">Dimensi&oacute;n 3. Territorio resiliente y sustentable
-                                            </p>
-                                        </td>
-                                        <td style="width:10.32%;height:1px;">
-                                            <p align="center">Soporte Vital para el Desarrollo</p>
-                                        </td>
-                                        <td style="width:12.68%;height:1px;">
-                                            <p align="center">Saneamiento B&aacute;sico y Tratamiento de Aguas
-                                                Residuales
-                                            </p>
-                                        </td>
-                                        <td style="width:24.08%;height:1px;">
-                                            <p>Definir y ejecutar, Dos (2) Estrategias de reducci&oacute;n de
-                                                contaminaci&oacute;n por vertimientos l&iacute;quidos en el recurso
-                                                h&iacute;drico.</p>
-                                        </td>
-                                        <td style="width:10.14%;height:1px;">
-                                            <p align="center">N&uacute;mero</p>
-                                        </td>
-                                        <td style="width:10.14%;height:1px;">
-                                            <p align="center">0</p>
-                                        </td>
-                                        <td style="width:10.14%;height:1px;">
-                                            <p align="center">100</p>
-                                        </td>
-                                        <td style="width:11.38%;height:1px;">
-                                            <p align="center">EMCALI</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:11.12%;height:1px;">
-                                            <p align="center">Dimensi&oacute;n 3. Territorio resiliente y sustentable
-                                            </p>
-                                        </td>
-                                        <td style="width:10.32%;height:1px;">
-                                            <p align="center">Soporte Vital para el Desarrollo</p>
-                                        </td>
-                                        <td style="width:12.68%;height:1px;">
-                                            <p align="center">Gobernanza, Gobernabilidad y Cultura Ambiental</p>
-                                        </td>
-                                        <td style="width:24.08%;height:1px;">
-                                            <p>Herramientas para la gesti&oacute;n, uso eficiente y ahorro de agua,
-                                                dise&ntilde;adas y en implementaci&oacute;n.</p>
-                                        </td>
-                                        <td style="width:10.14%;height:1px;">
-                                            <p align="center">N&uacute;mero</p>
-                                        </td>
-                                        <td style="width:10.14%;height:1px;">
-                                            <p align="center">1</p>
-                                        </td>
-                                        <td style="width:10.14%;height:1px;">
-                                            <p align="center">3</p>
-                                        </td>
-                                        <td style="width:11.38%;height:1px;">
-                                            <p align="center">DAGMA</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:11.12%;height:1px;">
-                                            <p align="center">Dimensi&oacute;n 3. Territorio resiliente y sustentable
-                                            </p>
-                                        </td>
-                                        <td style="width:10.32%;height:1px;">
-                                            <p align="center">Soporte Vital para el Desarrollo</p>
-                                        </td>
-                                        <td style="width:12.68%;height:1px;">
-                                            <p align="center">Gesti&oacute;n del Agua</p>
-                                        </td>
-                                        <td style="width:24.08%;height:1px;">
-                                            <p>Proyectos definidos en el Plan de Manejo Ambiental del Acu&iacute;fero de
-                                                Cali -PMAA, priorizados y ejecutados.</p>
-                                        </td>
-                                        <td style="width:10.14%;height:1px;">
-                                            <p align="center">N&uacute;mero</p>
-                                        </td>
-                                        <td style="width:10.14%;height:1px;">
-                                            <p align="center">0</p>
-                                        </td>
-                                        <td style="width:10.14%;height:1px;">
-                                            <p align="center">4</p>
-                                        </td>
-                                        <td style="width:11.38%;height:1px;">
-                                            <p align="center">DAGMA</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:11.12%;height:1px;">
-                                            <p align="center">Dimensi&oacute;n 3. Territorio resiliente y sustentable
-                                            </p>
-                                        </td>
-                                        <td style="width:10.32%;height:1px;">
-                                            <p align="center">Soporte Vital para el Desarrollo</p>
-                                        </td>
-                                        <td style="width:12.68%;height:1px;">
-                                            <p align="center">Gesti&oacute;n del Agua</p>
-                                        </td>
-                                        <td style="width:24.08%;height:1px;">
-                                            <p>Instrumentos de planificaci&oacute;n (PORH) para garantizar calidad y
-                                                cantidad de agua, para el sostenimiento de los ecosistemas
-                                                acu&aacute;ticos
-                                                y los usos actuales y potenciales del agua, formulados, adoptados y en
-                                                ejecuci&oacute;n.</p>
-                                        </td>
-                                        <td style="width:10.14%;height:1px;">
-                                            <p align="center">N&uacute;mero</p>
-                                        </td>
-                                        <td style="width:10.14%;height:1px;">
-                                            <p align="center">3</p>
-                                        </td>
-                                        <td style="width:10.14%;height:1px;">
-                                            <p align="center">4</p>
-                                        </td>
-                                        <td style="width:11.38%;height:1px;">
-                                            <p align="center">DAGMA</p>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-
+                      <p align="center">
+                        <strong>2020/2023</strong>
+                      </p>
+                    </td>
+                    <td style="width: 11.38%; height: 1px">
+                      <p align="center">
+                        <strong>Responsable</strong>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: 11.12%; height: 1px">
+                      <p align="center">
+                        Dimensi&oacute;n 3. Territorio
+                        resiliente y sustentable
+                      </p>
+                    </td>
+                    <td style="width: 10.32%; height: 1px">
+                      <p align="center">
+                        Soporte Vital para el Desarrollo
+                      </p>
+                    </td>
+                    <td style="width: 12.68%; height: 1px">
+                      <p align="center">
+                        Saneamiento B&aacute;sico y
+                        Tratamiento de Aguas Residuales
+                      </p>
+                    </td>
+                    <td style="width: 24.08%; height: 1px">
+                      <p>
+                        Estrategia interinstitucional para
+                        el manejo de agua residual en
+                        Asentamientos Humanos de Desarrollo
+                        Incompleto, dise&ntilde;ada y en
+                        implementaci&oacute;n.
+                      </p>
+                    </td>
+                    <td style="width: 10.14%; height: 1px">
+                      <p align="center">N&uacute;mero</p>
+                    </td>
+                    <td style="width: 10.14%; height: 1px">
+                      <p align="center">0</p>
+                    </td>
+                    <td style="width: 10.14%; height: 1px">
+                      <p align="center">1</p>
+                    </td>
+                    <td style="width: 11.38%; height: 1px">
+                      <p align="center">DAGMA</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: 11.12%; height: 1px">
+                      <p align="center">
+                        Dimensi&oacute;n 3. Territorio
+                        resiliente y sustentable
+                      </p>
+                    </td>
+                    <td style="width: 10.32%; height: 1px">
+                      <p align="center">
+                        Soporte Vital para el Desarrollo
+                      </p>
+                    </td>
+                    <td style="width: 12.68%; height: 1px">
+                      <p align="center">
+                        Conservaci&oacute;n de las Cuencas
+                        Hidrogr&aacute;ficas
+                      </p>
+                    </td>
+                    <td style="width: 24.08%; height: 1px">
+                      <p>
+                        Obras e intervenciones para la
+                        descontaminaci&oacute;n
+                        h&iacute;drica de las fuentes
+                        superficiales, en el marco de la
+                        recuperaci&oacute;n del r&iacute;o
+                        Cauca, ejecutadas.
+                      </p>
+                    </td>
+                    <td style="width: 10.14%; height: 1px">
+                      <p align="center">N&uacute;mero</p>
+                    </td>
+                    <td style="width: 10.14%; height: 1px">
+                      <p align="center">9</p>
+                    </td>
+                    <td style="width: 10.14%; height: 1px">
+                      <p align="center">34</p>
+                    </td>
+                    <td style="width: 11.38%; height: 1px">
+                      <p align="center">DAGMA</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: 11.12%; height: 1px">
+                      <p align="center">
+                        Dimensi&oacute;n 3. Territorio
+                        resiliente y sustentable
+                      </p>
+                    </td>
+                    <td style="width: 10.32%; height: 1px">
+                      <p align="center">
+                        Soporte Vital para el Desarrollo
+                      </p>
+                    </td>
+                    <td style="width: 12.68%; height: 1px">
+                      <p align="center">
+                        Saneamiento B&aacute;sico y
+                        Tratamiento de Aguas Residuales
+                      </p>
+                    </td>
+                    <td style="width: 24.08%; height: 1px">
+                      <p>
+                        Definir y ejecutar, Dos (2)
+                        Estrategias de reducci&oacute;n de
+                        contaminaci&oacute;n por
+                        vertimientos l&iacute;quidos en el
+                        recurso h&iacute;drico.
+                      </p>
+                    </td>
+                    <td style="width: 10.14%; height: 1px">
+                      <p align="center">N&uacute;mero</p>
+                    </td>
+                    <td style="width: 10.14%; height: 1px">
+                      <p align="center">0</p>
+                    </td>
+                    <td style="width: 10.14%; height: 1px">
+                      <p align="center">100</p>
+                    </td>
+                    <td style="width: 11.38%; height: 1px">
+                      <p align="center">EMCALI</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: 11.12%; height: 1px">
+                      <p align="center">
+                        Dimensi&oacute;n 3. Territorio
+                        resiliente y sustentable
+                      </p>
+                    </td>
+                    <td style="width: 10.32%; height: 1px">
+                      <p align="center">
+                        Soporte Vital para el Desarrollo
+                      </p>
+                    </td>
+                    <td style="width: 12.68%; height: 1px">
+                      <p align="center">
+                        Gobernanza, Gobernabilidad y Cultura
+                        Ambiental
+                      </p>
+                    </td>
+                    <td style="width: 24.08%; height: 1px">
+                      <p>
+                        Herramientas para la gesti&oacute;n,
+                        uso eficiente y ahorro de agua,
+                        dise&ntilde;adas y en
+                        implementaci&oacute;n.
+                      </p>
+                    </td>
+                    <td style="width: 10.14%; height: 1px">
+                      <p align="center">N&uacute;mero</p>
+                    </td>
+                    <td style="width: 10.14%; height: 1px">
+                      <p align="center">1</p>
+                    </td>
+                    <td style="width: 10.14%; height: 1px">
+                      <p align="center">3</p>
+                    </td>
+                    <td style="width: 11.38%; height: 1px">
+                      <p align="center">DAGMA</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: 11.12%; height: 1px">
+                      <p align="center">
+                        Dimensi&oacute;n 3. Territorio
+                        resiliente y sustentable
+                      </p>
+                    </td>
+                    <td style="width: 10.32%; height: 1px">
+                      <p align="center">
+                        Soporte Vital para el Desarrollo
+                      </p>
+                    </td>
+                    <td style="width: 12.68%; height: 1px">
+                      <p align="center">
+                        Gesti&oacute;n del Agua
+                      </p>
+                    </td>
+                    <td style="width: 24.08%; height: 1px">
+                      <p>
+                        Proyectos definidos en el Plan de
+                        Manejo Ambiental del Acu&iacute;fero
+                        de Cali -PMAA, priorizados y
+                        ejecutados.
+                      </p>
+                    </td>
+                    <td style="width: 10.14%; height: 1px">
+                      <p align="center">N&uacute;mero</p>
+                    </td>
+                    <td style="width: 10.14%; height: 1px">
+                      <p align="center">0</p>
+                    </td>
+                    <td style="width: 10.14%; height: 1px">
+                      <p align="center">4</p>
+                    </td>
+                    <td style="width: 11.38%; height: 1px">
+                      <p align="center">DAGMA</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: 11.12%; height: 1px">
+                      <p align="center">
+                        Dimensi&oacute;n 3. Territorio
+                        resiliente y sustentable
+                      </p>
+                    </td>
+                    <td style="width: 10.32%; height: 1px">
+                      <p align="center">
+                        Soporte Vital para el Desarrollo
+                      </p>
+                    </td>
+                    <td style="width: 12.68%; height: 1px">
+                      <p align="center">
+                        Gesti&oacute;n del Agua
+                      </p>
+                    </td>
+                    <td style="width: 24.08%; height: 1px">
+                      <p>
+                        Instrumentos de planificaci&oacute;n
+                        (PORH) para garantizar calidad y
+                        cantidad de agua, para el
+                        sostenimiento de los ecosistemas
+                        acu&aacute;ticos y los usos actuales
+                        y potenciales del agua, formulados,
+                        adoptados y en ejecuci&oacute;n.
+                      </p>
+                    </td>
+                    <td style="width: 10.14%; height: 1px">
+                      <p align="center">N&uacute;mero</p>
+                    </td>
+                    <td style="width: 10.14%; height: 1px">
+                      <p align="center">3</p>
+                    </td>
+                    <td style="width: 10.14%; height: 1px">
+                      <p align="center">4</p>
+                    </td>
+                    <td style="width: 11.38%; height: 1px">
+                      <p align="center">DAGMA</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div id="mesaAire" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-dialog-2">
+    <div id="mesaAire" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-dialog-2">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+            >
+              &times;
+            </button>
+            <h4 class="modal-title">
+              Mesa Técnica Aire y Salud
+            </h4>
+          </div>
+          <p>
+            Su gestión intersectorial está relacionada con
+            la vigilancia y desarrollo de medidas para el
+            mejoramiento de la calidad de aire, tales como
+            el control de emisiones atmosféricas por fuentes
+            fijas y móviles, y la vigilancia de la
+            contaminación electromagnética, acústica y la
+            generada por olores ofensivos, realizando
+            articulación con la Mesa Calidad del Aire del
+            COTSA Departamental.
+          </p>
+          <div class="modal-body">
+            <img
+              src="https://www.cali.gov.co/info/principal/media/galeria276348.png"
+              alt=""
+            />
 
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Mesa Técnica Aire y Salud</h4>
-                    </div>
-                    <p>Su gestión intersectorial está relacionada con la vigilancia y desarrollo de medidas para el
-                        mejoramiento de la calidad de aire, tales como el control de emisiones atmosféricas por fuentes
-                        fijas y móviles, y la vigilancia de la contaminación electromagnética, acústica y la generada
-                        por olores ofensivos, realizando articulación con la Mesa Calidad del Aire del COTSA
-                        Departamental.</p>
-                    <div class="modal-body">
+            <div class="w-100" style="overflow: scroll">
+              <h4 class="text-center">
+                Metas del Plan de Desarrollo de Cali 2020 –
+                2023 asociadas al Cotsa Mesa Técnica Aire y
+                Salud – Cotsa de Santiago de Cali
+              </h4>
+              <table
+                class="table table-striped table-bordered"
+                style="width: 100%"
+              >
+                <tbody>
+                  <tr>
+                    <td style="width: 11.18%; height: 15px">
+                      <p align="center">
+                        <strong>Dimensi&oacute;n </strong>
+                      </p>
+                    </td>
+                    <td style="width: 10%; height: 15px">
+                      <p align="center">
+                        <strong
+                          >L&iacute;nea Estrat&eacute;gica
+                        </strong>
+                      </p>
+                    </td>
+                    <td style="width: 12.52%; height: 15px">
+                      <p align="center">
+                        <strong>Programa</strong>
+                      </p>
+                    </td>
+                    <td style="width: 23.8%; height: 15px">
+                      <p align="center">
+                        <strong
+                          >Indicador de Producto</strong
+                        >
+                      </p>
+                    </td>
+                    <td style="width: 10%; height: 15px">
+                      <p align="center">
+                        <strong>Unidad de Medida</strong>
+                      </p>
+                    </td>
+                    <td style="width: 10%; height: 15px">
+                      <p align="center">
+                        <strong>L&iacute;nea Base</strong>
+                      </p>
 
+                      <p align="center">
+                        <strong>2019</strong>
+                      </p>
+                    </td>
+                    <td style="width: 10.56%; height: 15px">
+                      <p align="center">
+                        <strong>Meta</strong>
+                      </p>
 
-                        <img src="https://www.cali.gov.co/info/principal/media/galeria276348.png" alt="">
-
-                        <div class="w-100" style="overflow: scroll">
-                            <h4 class="text-center">Metas del Plan de Desarrollo de Cali 2020 – 2023 asociadas al Cotsa
-                                Mesa Técnica Aire y Salud – Cotsa de Santiago de Cali
-                            </h4>
-                            <table class="table table-striped table-bordered" style="width:100%">
-                                <tbody>
-                                    <tr>
-                                        <td style="width:11.18%;height:15px;">
-                                            <p align="center"><strong>Dimensi&oacute;n </strong></p>
-                                        </td>
-                                        <td style="width:10.0%;height:15px;">
-                                            <p align="center"><strong>L&iacute;nea Estrat&eacute;gica </strong></p>
-                                        </td>
-                                        <td style="width:12.52%;height:15px;">
-                                            <p align="center"><strong>Programa</strong></p>
-                                        </td>
-                                        <td style="width:23.8%;height:15px;">
-                                            <p align="center"><strong>Indicador de Producto</strong></p>
-                                        </td>
-                                        <td style="width:10.0%;height:15px;">
-                                            <p align="center"><strong>Unidad de Medida</strong></p>
-                                        </td>
-                                        <td style="width:10.0%;height:15px;">
-                                            <p align="center"><strong>L&iacute;nea Base</strong></p>
-
-                                            <p align="center"><strong>2019</strong></p>
-                                        </td>
-                                        <td style="width:10.56%;height:15px;">
-                                            <p align="center"><strong>Meta</strong></p>
-
-                                            <p align="center"><strong>2020/2023</strong></p>
-                                        </td>
-                                        <td style="width:11.94%;height:15px;">
-                                            <p align="center"><strong>Responsable</strong></p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:11.18%;height:15px;">
-                                            <p align="center">Dimensi&oacute;n 3. Territorio resiliente y sustentable
-                                            </p>
-                                        </td>
-                                        <td style="width:10.0%;height:15px;">
-                                            <p align="center">Soporte Vital para el Desarrollo</p>
-                                        </td>
-                                        <td style="width:12.52%;height:15px;">
-                                            <p align="center">Gesti&oacute;n de la Calidad del Aire y disminuci&oacute;n
-                                                y control del impacto sonoro</p>
-                                        </td>
-                                        <td style="width:23.8%;height:15px;">
-                                            <p>Acciones del Programa de Aire Limpio implementadas</p>
-                                        </td>
-                                        <td style="width:10.0%;height:15px;">
-                                            <p align="center">N&uacute;mero</p>
-                                        </td>
-                                        <td style="width:10.0%;height:15px;">
-                                            <p align="center">1</p>
-                                        </td>
-                                        <td style="width:10.56%;height:15px;">
-                                            <p align="center">3</p>
-                                        </td>
-                                        <td style="width:11.94%;height:15px;">
-                                            <p align="center">DAGMA</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:11.18%;height:15px;">
-                                            <p align="center">Dimensi&oacute;n 3. Territorio resiliente y sustentable
-                                            </p>
-                                        </td>
-                                        <td style="width:10.0%;height:15px;">
-                                            <p align="center">Soporte Vital para el Desarrollo</p>
-                                        </td>
-                                        <td style="width:12.52%;height:15px;">
-                                            <p align="center">Gesti&oacute;n de la Calidad del Aire y disminuci&oacute;n
-                                                y control del impacto sonoro</p>
-                                        </td>
-                                        <td style="width:23.8%;height:15px;">
-                                            <p>Plan de Mejora del Ambiente Sonoro, actualizado, adoptado y ejecutado</p>
-                                        </td>
-                                        <td style="width:10.0%;height:15px;">
-                                            <p align="center">N&uacute;mero</p>
-                                        </td>
-                                        <td style="width:10.0%;height:15px;">
-                                            <p align="center">1</p>
-                                        </td>
-                                        <td style="width:10.56%;height:15px;">
-                                            <p align="center">1</p>
-                                        </td>
-                                        <td style="width:11.94%;height:15px;">
-                                            <p align="center">DAGMA</p>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-
+                      <p align="center">
+                        <strong>2020/2023</strong>
+                      </p>
+                    </td>
+                    <td style="width: 11.94%; height: 15px">
+                      <p align="center">
+                        <strong>Responsable</strong>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: 11.18%; height: 15px">
+                      <p align="center">
+                        Dimensi&oacute;n 3. Territorio
+                        resiliente y sustentable
+                      </p>
+                    </td>
+                    <td style="width: 10%; height: 15px">
+                      <p align="center">
+                        Soporte Vital para el Desarrollo
+                      </p>
+                    </td>
+                    <td style="width: 12.52%; height: 15px">
+                      <p align="center">
+                        Gesti&oacute;n de la Calidad del
+                        Aire y disminuci&oacute;n y control
+                        del impacto sonoro
+                      </p>
+                    </td>
+                    <td style="width: 23.8%; height: 15px">
+                      <p>
+                        Acciones del Programa de Aire Limpio
+                        implementadas
+                      </p>
+                    </td>
+                    <td style="width: 10%; height: 15px">
+                      <p align="center">N&uacute;mero</p>
+                    </td>
+                    <td style="width: 10%; height: 15px">
+                      <p align="center">1</p>
+                    </td>
+                    <td style="width: 10.56%; height: 15px">
+                      <p align="center">3</p>
+                    </td>
+                    <td style="width: 11.94%; height: 15px">
+                      <p align="center">DAGMA</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: 11.18%; height: 15px">
+                      <p align="center">
+                        Dimensi&oacute;n 3. Territorio
+                        resiliente y sustentable
+                      </p>
+                    </td>
+                    <td style="width: 10%; height: 15px">
+                      <p align="center">
+                        Soporte Vital para el Desarrollo
+                      </p>
+                    </td>
+                    <td style="width: 12.52%; height: 15px">
+                      <p align="center">
+                        Gesti&oacute;n de la Calidad del
+                        Aire y disminuci&oacute;n y control
+                        del impacto sonoro
+                      </p>
+                    </td>
+                    <td style="width: 23.8%; height: 15px">
+                      <p>
+                        Plan de Mejora del Ambiente Sonoro,
+                        actualizado, adoptado y ejecutado
+                      </p>
+                    </td>
+                    <td style="width: 10%; height: 15px">
+                      <p align="center">N&uacute;mero</p>
+                    </td>
+                    <td style="width: 10%; height: 15px">
+                      <p align="center">1</p>
+                    </td>
+                    <td style="width: 10.56%; height: 15px">
+                      <p align="center">1</p>
+                    </td>
+                    <td style="width: 11.94%; height: 15px">
+                      <p align="center">DAGMA</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div id="mesaSustancia" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-dialog-2">
+    <div
+      id="mesaSustancia"
+      class="modal fade"
+      role="dialog"
+    >
+      <div class="modal-dialog modal-dialog-2">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+            >
+              &times;
+            </button>
+            <h4 class="modal-title">
+              Mesa Técnica Seguridad Química y Residuos
+              Peligrosos
+            </h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              Su gestión intersectorial está relacionada con
+              el manejo y disposición final de sustancias
+              químicas y residuos peligrosos y alternativas
+              para reducción del riesgo, realizando
+              articulación con el Consejo Seccional de
+              Plaguicidas del COTSA Departamental.
+            </p>
 
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Mesa Técnica Seguridad Química y Residuos Peligrosos</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Su gestión intersectorial está relacionada con el manejo y disposición final de sustancias
-                            químicas y residuos peligrosos y alternativas para reducción del riesgo, realizando
-                            articulación con el Consejo Seccional de Plaguicidas del COTSA Departamental.</p>
-
-
-                        <img src="https://www.cali.gov.co/info/principal/media/galeria276349.png" alt="">
-                        <div class="w-100" style="overflow: scroll">
-                            <h4 class="text-center">Metas del Plan de Desarrollo de Cali 2020 – 2023 asociadas al Cotsa
-                                Mesa Técnica de Seguridad Química y Respel - Cotsa de Santiago de Cali
-                            </h4>
-                            <table class="table table-striped table-bordered" style="width: 100%">
-                                <tbody>
-                                    <tr>
-                                        <td style="width:11.4%;">
-                                            <p align="center"><strong>Dimensi&oacute;n</strong></p>
-                                        </td>
-                                        <td style="width:10.12%;">
-                                            <p align="center"><strong>L&iacute;nea Estrat&eacute;gica </strong></p>
-                                        </td>
-                                        <td style="width:12.66%;">
-                                            <p align="center"><strong>Programa </strong></p>
-                                        </td>
-                                        <td style="width:23.88%;">
-                                            <p align="center"><strong>Indicador de Producto</strong></p>
-                                        </td>
-                                        <td style="width:10.32%;">
-                                            <p align="center"><strong>Unidad de Medida</strong></p>
-                                        </td>
-                                        <td style="width:10.12%;">
-                                            <p align="center"><strong>L&iacute;nea Base 2019</strong></p>
-                                        </td>
-                                        <td style="width:10.1%;">
-                                            <p align="center"><strong>Meta 2020/2023</strong></p>
-                                        </td>
-                                        <td style="width:11.4%;">
-                                            <p align="center"><strong>Responsable</strong></p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:11.4%;">
-                                            <p align="center">Protecci&oacute;n Solidaria de la Vida.</p>
-                                        </td>
-                                        <td style="width:10.12%;">
-                                            <p align="center">Territorios para la Vida</p>
-                                        </td>
-                                        <td style="width:12.66%;">
-                                            <p align="center">Salud Ambiental Territorial</p>
-                                        </td>
-                                        <td style="width:23.88%;">
-                                            <p>Empresas priorizadas con manejo eficiente de Residuos Peligrosos (RESPEL)
-                                            </p>
-                                        </td>
-                                        <td style="width:10.32%;">
-                                            <p align="center">N&uacute;mero</p>
-                                        </td>
-                                        <td style="width:10.12%;">
-                                            <p align="center">0</p>
-                                        </td>
-                                        <td style="width:10.1%;">
-                                            <p align="center">100</p>
-                                        </td>
-                                        <td style="width:11.4%;">
-                                            <p align="center">DAGMA</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:11.4%;">
-                                            <p align="center">Gobierno Interconectado e Incluyente</p>
-                                        </td>
-                                        <td style="width:10.12%;">
-                                            <p align="center">Gobierno Inteligente</p>
-                                        </td>
-                                        <td style="width:12.66%;">
-                                            <p align="center">Gesti&oacute;n de Informaci&oacute;n Estad&iacute;stica y
-                                                Geogr&aacute;fica para la Evaluaci&oacute;n de Resultados</p>
-                                        </td>
-                                        <td style="width:23.88%;">
-                                            <p>Sistema de Informaci&oacute;n Geogr&aacute;fico -SIG para el manejo de
-                                                Sustancias Qu&iacute;micas y Residuos Peligrosos en el marco del COTSA,
-                                                bajo el modelo de arquitectura empresarial, estructurado y en
-                                                implementaci&oacute;n.</p>
-                                        </td>
-                                        <td style="width:10.32%;">
-                                            <p align="center">N&uacute;mero</p>
-                                        </td>
-                                        <td style="width:10.12%;">
-                                            <p align="center">0</p>
-                                        </td>
-                                        <td style="width:10.1%;">
-                                            <p align="center">1</p>
-                                        </td>
-                                        <td style="width:11.4%;">
-                                            <p align="center">DAGMA</p>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-
+            <img
+              src="https://www.cali.gov.co/info/principal/media/galeria276349.png"
+              alt=""
+            />
+            <div class="w-100" style="overflow: scroll">
+              <h4 class="text-center">
+                Metas del Plan de Desarrollo de Cali 2020 –
+                2023 asociadas al Cotsa Mesa Técnica de
+                Seguridad Química y Respel - Cotsa de
+                Santiago de Cali
+              </h4>
+              <table
+                class="table table-striped table-bordered"
+                style="width: 100%"
+              >
+                <tbody>
+                  <tr>
+                    <td style="width: 11.4%">
+                      <p align="center">
+                        <strong>Dimensi&oacute;n</strong>
+                      </p>
+                    </td>
+                    <td style="width: 10.12%">
+                      <p align="center">
+                        <strong
+                          >L&iacute;nea Estrat&eacute;gica
+                        </strong>
+                      </p>
+                    </td>
+                    <td style="width: 12.66%">
+                      <p align="center">
+                        <strong>Programa </strong>
+                      </p>
+                    </td>
+                    <td style="width: 23.88%">
+                      <p align="center">
+                        <strong
+                          >Indicador de Producto</strong
+                        >
+                      </p>
+                    </td>
+                    <td style="width: 10.32%">
+                      <p align="center">
+                        <strong>Unidad de Medida</strong>
+                      </p>
+                    </td>
+                    <td style="width: 10.12%">
+                      <p align="center">
+                        <strong
+                          >L&iacute;nea Base 2019</strong
+                        >
+                      </p>
+                    </td>
+                    <td style="width: 10.1%">
+                      <p align="center">
+                        <strong>Meta 2020/2023</strong>
+                      </p>
+                    </td>
+                    <td style="width: 11.4%">
+                      <p align="center">
+                        <strong>Responsable</strong>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: 11.4%">
+                      <p align="center">
+                        Protecci&oacute;n Solidaria de la
+                        Vida.
+                      </p>
+                    </td>
+                    <td style="width: 10.12%">
+                      <p align="center">
+                        Territorios para la Vida
+                      </p>
+                    </td>
+                    <td style="width: 12.66%">
+                      <p align="center">
+                        Salud Ambiental Territorial
+                      </p>
+                    </td>
+                    <td style="width: 23.88%">
+                      <p>
+                        Empresas priorizadas con manejo
+                        eficiente de Residuos Peligrosos
+                        (RESPEL)
+                      </p>
+                    </td>
+                    <td style="width: 10.32%">
+                      <p align="center">N&uacute;mero</p>
+                    </td>
+                    <td style="width: 10.12%">
+                      <p align="center">0</p>
+                    </td>
+                    <td style="width: 10.1%">
+                      <p align="center">100</p>
+                    </td>
+                    <td style="width: 11.4%">
+                      <p align="center">DAGMA</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: 11.4%">
+                      <p align="center">
+                        Gobierno Interconectado e Incluyente
+                      </p>
+                    </td>
+                    <td style="width: 10.12%">
+                      <p align="center">
+                        Gobierno Inteligente
+                      </p>
+                    </td>
+                    <td style="width: 12.66%">
+                      <p align="center">
+                        Gesti&oacute;n de Informaci&oacute;n
+                        Estad&iacute;stica y
+                        Geogr&aacute;fica para la
+                        Evaluaci&oacute;n de Resultados
+                      </p>
+                    </td>
+                    <td style="width: 23.88%">
+                      <p>
+                        Sistema de Informaci&oacute;n
+                        Geogr&aacute;fico -SIG para el
+                        manejo de Sustancias Qu&iacute;micas
+                        y Residuos Peligrosos en el marco
+                        del COTSA, bajo el modelo de
+                        arquitectura empresarial,
+                        estructurado y en
+                        implementaci&oacute;n.
+                      </p>
+                    </td>
+                    <td style="width: 10.32%">
+                      <p align="center">N&uacute;mero</p>
+                    </td>
+                    <td style="width: 10.12%">
+                      <p align="center">0</p>
+                    </td>
+                    <td style="width: 10.1%">
+                      <p align="center">1</p>
+                    </td>
+                    <td style="width: 11.4%">
+                      <p align="center">DAGMA</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div id="mesaZoonosis" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-dialog-2">
+    <div id="mesaZoonosis" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-dialog-2">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+            >
+              &times;
+            </button>
+            <h4 class="modal-title">
+              Mesa Técnica Zoonosis y ETV - Enfermedades
+              Transmitidas por Vectores
+            </h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              Su gestión intersectorial está relacionada con
+              la prevención, investigación, vigilancia y
+              control de enfermedades zoonóticas y
+              transmitidas por vectores, la protección y
+              bienestar integral de la fauna doméstica,
+              silvestre y exótica, la tenencia responsable
+              de animales domésticos como resultado de la
+              convivencia con el ser humano, realizando
+              articulación con el Consejo Seccional de
+              Zoonosis y el Grupo Funcional de ETV del COTSA
+              Departamental.
+            </p>
 
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Mesa Técnica Zoonosis y ETV - Enfermedades Transmitidas por Vectores
-                        </h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Su gestión intersectorial está relacionada con la prevención, investigación, vigilancia y
-                            control de enfermedades zoonóticas y transmitidas por vectores, la protección y bienestar
-                            integral de la fauna doméstica, silvestre y exótica, la tenencia responsable de animales
-                            domésticos como resultado de la convivencia con el ser humano, realizando articulación con
-                            el Consejo Seccional de Zoonosis y el Grupo Funcional de ETV del COTSA Departamental.</p>
+            <img
+              src="https://www.cali.gov.co/info/principal/media/galeria276350.png"
+              alt=""
+            />
+            <div class="w-100" style="overflow: scroll">
+              <h4 class="text-center">
+                Metas del Plan de Desarrollo de Cali 2020 –
+                2023 asociadas al Cotsa Mesa Técnica
+                Zoonosis / ETV – Cotsa de Santiago de Cali
+              </h4>
+              <table
+                class="table table-striped table-bordered"
+                style="width: 100%"
+              >
+                <tbody>
+                  <tr>
+                    <td style="width: 11.4%">
+                      <p align="center">
+                        <strong>Dimensi&oacute;n</strong>
+                      </p>
+                    </td>
+                    <td style="width: 10.12%">
+                      <p align="center">
+                        <strong
+                          >L&iacute;nea Estrat&eacute;gica
+                        </strong>
+                      </p>
+                    </td>
+                    <td style="width: 12.66%">
+                      <p align="center">
+                        <strong>Programa </strong>
+                      </p>
+                    </td>
+                    <td style="width: 24.04%">
+                      <p align="center">
+                        <strong
+                          >Indicador de Producto</strong
+                        >
+                      </p>
+                    </td>
+                    <td style="width: 10.14%">
+                      <p align="center">
+                        <strong>Unidad de Medida</strong>
+                      </p>
+                    </td>
+                    <td style="width: 10.14%">
+                      <p align="center">
+                        <strong
+                          >L&iacute;nea Base 2019</strong
+                        >
+                      </p>
+                    </td>
+                    <td style="width: 10.14%">
+                      <p align="center">
+                        <strong>Meta 2020/2023</strong>
+                      </p>
+                    </td>
+                    <td style="width: 11.36%">
+                      <p align="center">
+                        <strong>Responsable</strong>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: 11.4%">
+                      <p align="center">
+                        Protecci&oacute;n Solidaria de la
+                        Vida.
+                      </p>
+                    </td>
+                    <td style="width: 10.12%">
+                      <p align="center">
+                        Territorios para la Vida
+                      </p>
+                    </td>
+                    <td style="width: 12.66%">
+                      <p align="center">
+                        Salud Ambiental Territorial
+                      </p>
+                    </td>
+                    <td style="width: 24.04%">
+                      <p align="center">
+                        &Iacute;ndice de eficacia de la
+                        Estrategia de Gesti&oacute;n
+                        Integrada - EGI de Zoonosis
+                        aumentada
+                      </p>
+                    </td>
+                    <td style="width: 10.14%">
+                      <p align="center">Porcentaje</p>
+                    </td>
+                    <td style="width: 10.14%">
+                      <p align="center">36,7</p>
+                    </td>
+                    <td style="width: 10.14%">
+                      <p align="center">88</p>
+                    </td>
+                    <td style="width: 11.36%">
+                      <p align="center">
+                        Secretar&iacute;a de Salud
+                        P&uacute;blica
+                      </p>
 
-
-                        <img src="https://www.cali.gov.co/info/principal/media/galeria276350.png" alt="">
-                        <div class="w-100" style="overflow: scroll">
-                            <h4 class="text-center">Metas del Plan de Desarrollo de Cali 2020 – 2023 asociadas al Cotsa
-                                Mesa Técnica Zoonosis / ETV – Cotsa de Santiago de Cali
-                            </h4>
-                            <table class="table table-striped table-bordered" style="width: 100%">
-                                <tbody>
-                                    <tr>
-                                        <td style="width:11.4%;">
-                                            <p align="center"><strong>Dimensi&oacute;n</strong></p>
-                                        </td>
-                                        <td style="width:10.12%;">
-                                            <p align="center"><strong>L&iacute;nea Estrat&eacute;gica </strong></p>
-                                        </td>
-                                        <td style="width:12.66%;">
-                                            <p align="center"><strong>Programa </strong></p>
-                                        </td>
-                                        <td style="width:24.04%;">
-                                            <p align="center"><strong>Indicador de Producto</strong></p>
-                                        </td>
-                                        <td style="width:10.14%;">
-                                            <p align="center"><strong>Unidad de Medida</strong></p>
-                                        </td>
-                                        <td style="width:10.14%;">
-                                            <p align="center"><strong>L&iacute;nea Base 2019</strong></p>
-                                        </td>
-                                        <td style="width:10.14%;">
-                                            <p align="center"><strong>Meta 2020/2023</strong></p>
-                                        </td>
-                                        <td style="width:11.36%;">
-                                            <p align="center"><strong>Responsable</strong></p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:11.4%;">
-                                            <p align="center">Protecci&oacute;n Solidaria de la Vida.</p>
-                                        </td>
-                                        <td style="width:10.12%;">
-                                            <p align="center">Territorios para la Vida</p>
-                                        </td>
-                                        <td style="width:12.66%;">
-                                            <p align="center">Salud Ambiental Territorial</p>
-                                        </td>
-                                        <td style="width:24.04%;">
-                                            <p align="center">&Iacute;ndice de eficacia de la Estrategia de
-                                                Gesti&oacute;n Integrada - EGI de Zoonosis aumentada</p>
-                                        </td>
-                                        <td style="width:10.14%;">
-                                            <p align="center">Porcentaje</p>
-                                        </td>
-                                        <td style="width:10.14%;">
-                                            <p align="center">36,7</p>
-                                        </td>
-                                        <td style="width:10.14%;">
-                                            <p align="center">88</p>
-                                        </td>
-                                        <td style="width:11.36%;">
-                                            <p align="center">Secretar&iacute;a de Salud P&uacute;blica</p>
-
-                                            <p align="center">&nbsp;</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:11.4%;">
-                                            <p align="center">Protecci&oacute;n Solidaria de la Vida.</p>
-                                        </td>
-                                        <td style="width:10.12%;">
-                                            <p align="center">Territorios para la Vida</p>
-                                        </td>
-                                        <td style="width:12.66%;">
-                                            <p align="center">Salud Ambiental Territorial</p>
-                                        </td>
-                                        <td style="width:24.04%;">
-                                            <p align="center">Estrategia de Gesti&oacute;n Integral - EGI de ETV
-                                                implementada</p>
-                                        </td>
-                                        <td style="width:10.14%;">
-                                            <p align="center">Porcentaje</p>
-                                        </td>
-                                        <td style="width:10.14%;">
-                                            <p align="center">45</p>
-                                        </td>
-                                        <td style="width:10.14%;">
-                                            <p align="center">90</p>
-                                        </td>
-                                        <td style="width:11.36%;">
-                                            <p align="center">Secretar&iacute;a de Salud P&uacute;blica</p>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-
+                      <p align="center">&nbsp;</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: 11.4%">
+                      <p align="center">
+                        Protecci&oacute;n Solidaria de la
+                        Vida.
+                      </p>
+                    </td>
+                    <td style="width: 10.12%">
+                      <p align="center">
+                        Territorios para la Vida
+                      </p>
+                    </td>
+                    <td style="width: 12.66%">
+                      <p align="center">
+                        Salud Ambiental Territorial
+                      </p>
+                    </td>
+                    <td style="width: 24.04%">
+                      <p align="center">
+                        Estrategia de Gesti&oacute;n
+                        Integral - EGI de ETV implementada
+                      </p>
+                    </td>
+                    <td style="width: 10.14%">
+                      <p align="center">Porcentaje</p>
+                    </td>
+                    <td style="width: 10.14%">
+                      <p align="center">45</p>
+                    </td>
+                    <td style="width: 10.14%">
+                      <p align="center">90</p>
+                    </td>
+                    <td style="width: 11.36%">
+                      <p align="center">
+                        Secretar&iacute;a de Salud
+                        P&uacute;blica
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div id="entornos" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-dialog-2">
+    <div id="entornos" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-dialog-2">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+            >
+              &times;
+            </button>
+            <h4 class="modal-title">
+              Comité Distrital "Entornos para la Vida"
+            </h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              Su gestión Intersectorial contribuye a la
+              equidad en salud y al desarrollo humano
+              sostenible, impulsando la gestión
+              intersectorial de las políticas públicas que
+              permitan impactar los determinantes
+              sanitarios, ambientales y sociales, en los
+              entornos de vida cotidiana con énfasis en los
+              más vulnerables, con la participación
+              corresponsable de las comunidades con enfoque
+              diferencial, promoviendo factores protectores
+              en salud ambiental tendientes a mejorar la
+              salud y calidad de vida de la población en el
+              Distrito Santiago de Cali.
+            </p>
 
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Comité Distrital "Entornos para la Vida"</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Su gestión Intersectorial contribuye a la equidad en salud y al desarrollo humano sostenible,
-                            impulsando la gestión intersectorial de las políticas públicas que permitan impactar los
-                            determinantes sanitarios, ambientales y sociales, en los entornos de vida cotidiana con
-                            énfasis en los más vulnerables, con la participación corresponsable de las comunidades con
-                            enfoque diferencial, promoviendo factores protectores en salud ambiental tendientes a
-                            mejorar la salud y calidad de vida de la población en el Distrito Santiago de Cali.</p>
+            <img
+              src="https://www.cali.gov.co/info/principal/media/galeria276351.png"
+              alt=""
+            />
+            <div class="w-100" style="overflow: scroll">
+              <h4 class="text-center">
+                Metas del Plan de Desarrollo de Cali 2020 –
+                2023 asociadas al Cotsa Comité Entornos para
+                la Vida - Cotsa de Santiago de Cali
+              </h4>
 
-                        <img src="https://www.cali.gov.co/info/principal/media/galeria276351.png" alt="">
-                        <div class="w-100" style="overflow: scroll">
-                            <h4 class="text-center">Metas del Plan de Desarrollo de Cali 2020 – 2023 asociadas al Cotsa
-                                Comité Entornos para la Vida - Cotsa de Santiago de Cali
-                            </h4>
-
-
-                            <table class="table table-striped table-bordered" style="width:100%">
-                                <tbody>
-                                    <tr>
-                                        <td style="width:11.26%;height:1px;">
-                                            <p align="center"><strong>Dimensi&oacute;n</strong></p>
-                                        </td>
-                                        <td style="width:10.0%;height:1px;">
-                                            <p align="center"><strong>L&iacute;nea Estrat&eacute;gica</strong></p>
-                                        </td>
-                                        <td style="width:13.76%;height:1px;">
-                                            <p align="center"><strong>Programa</strong></p>
-                                        </td>
-                                        <td style="width:22.5%;height:1px;">
-                                            <p align="center"><strong>Indicador de Producto</strong></p>
-                                        </td>
-                                        <td style="width:10.0%;height:1px;">
-                                            <p align="center"><strong>Unidad de Medida</strong></p>
-                                        </td>
-                                        <td style="width:10.0%;height:1px;">
-                                            <p align="center"><strong>L&iacute;nea Base 2019</strong></p>
-                                        </td>
-                                        <td style="width:11.42%;height:1px;">
-                                            <p align="center"><strong>Meta 2020/2023</strong></p>
-                                        </td>
-                                        <td style="width:11.06%;height:1px;">
-                                            <p align="center"><strong>Responsable</strong></p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:11.26%;height:1px;">
-                                            <p align="center">Dimensi&oacute;n 2. Protecci&oacute;n Solidaria de la
-                                                Vida.</p>
-                                        </td>
-                                        <td style="width:10.0%;height:1px;">
-                                            <p align="center">Territorios para la Vida</p>
-                                        </td>
-                                        <td style="width:13.76%;height:1px;">
-                                            <p align="center">Espacio P&uacute;blico para la Integraci&oacute;n
-                                                Socio-Ecol&oacute;gica</p>
-                                        </td>
-                                        <td style="width:22.5%;height:1px;">
-                                            <p>Parque de la Vida incluido en la estructura ecol&oacute;gica distrital y
-                                                adecuado ambiental y paisaj&iacute;sticamente &nbsp;</p>
-                                        </td>
-                                        <td style="width:10.0%;height:1px;">
-                                            <p align="center">ha</p>
-                                        </td>
-                                        <td style="width:10.0%;height:1px;">
-                                            <p align="center">0</p>
-                                        </td>
-                                        <td style="width:11.42%;height:1px;">
-                                            <p align="center">12</p>
-                                        </td>
-                                        <td style="width:11.06%;height:1px;">
-                                            <p align="center">DAGMA</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:11.26%;height:1px;">
-                                            <p align="center">Dimensi&oacute;n 2. Protecci&oacute;n Solidaria de la
-                                                Vida.</p>
-                                        </td>
-                                        <td style="width:10.0%;height:1px;">
-                                            <p align="center">Territorios para la Vida</p>
-                                        </td>
-                                        <td style="width:13.76%;height:1px;">
-                                            <p align="center">Espacio P&uacute;blico para la Integraci&oacute;n
-                                                Socio-Ecol&oacute;gica</p>
-                                        </td>
-                                        <td style="width:22.5%;height:1px;">
-                                            <p>Espacios p&uacute;blicos efectivos adecuados arquitect&oacute;nica y
-                                                paisaj&iacute;sticamente con empoderamiento ciudadano</p>
-                                        </td>
-                                        <td style="width:10.0%;height:1px;">
-                                            <p align="center">N&uacute;mero</p>
-                                        </td>
-                                        <td style="width:10.0%;height:1px;">
-                                            <p align="center">334</p>
-                                        </td>
-                                        <td style="width:11.42%;height:1px;">
-                                            <p align="center">673</p>
-                                        </td>
-                                        <td style="width:11.06%;height:1px;">
-                                            <p align="center">DAGMA</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:11.26%;height:1px;">
-                                            <p align="center">Dimensi&oacute;n 2. Protecci&oacute;n Solidaria de la
-                                                Vida.</p>
-                                        </td>
-                                        <td style="width:10.0%;height:1px;">
-                                            <p align="center">Territorios para la Vida</p>
-                                        </td>
-                                        <td style="width:13.76%;height:1px;">
-                                            <p align="center">Salud Ambiental Territorial</p>
-                                        </td>
-                                        <td style="width:22.5%;height:1px;">
-                                            <p>Territorios que concentran el mayor riesgo epidemiol&oacute;gico,
-                                                sanitario, social y ambiental intervenidos integralmente</p>
-                                        </td>
-                                        <td style="width:10.0%;height:1px;">
-                                            <p align="center">N&uacute;mero</p>
-                                        </td>
-                                        <td style="width:10.0%;height:1px;">
-                                            <p align="center">0</p>
-                                        </td>
-                                        <td style="width:11.42%;height:1px;">
-                                            <p align="center">40</p>
-                                        </td>
-                                        <td style="width:11.06%;height:1px;">
-                                            <p align="center">Secretar&iacute;a de Salud P&uacute;blica</p>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-
+              <table
+                class="table table-striped table-bordered"
+                style="width: 100%"
+              >
+                <tbody>
+                  <tr>
+                    <td style="width: 11.26%; height: 1px">
+                      <p align="center">
+                        <strong>Dimensi&oacute;n</strong>
+                      </p>
+                    </td>
+                    <td style="width: 10%; height: 1px">
+                      <p align="center">
+                        <strong
+                          >L&iacute;nea
+                          Estrat&eacute;gica</strong
+                        >
+                      </p>
+                    </td>
+                    <td style="width: 13.76%; height: 1px">
+                      <p align="center">
+                        <strong>Programa</strong>
+                      </p>
+                    </td>
+                    <td style="width: 22.5%; height: 1px">
+                      <p align="center">
+                        <strong
+                          >Indicador de Producto</strong
+                        >
+                      </p>
+                    </td>
+                    <td style="width: 10%; height: 1px">
+                      <p align="center">
+                        <strong>Unidad de Medida</strong>
+                      </p>
+                    </td>
+                    <td style="width: 10%; height: 1px">
+                      <p align="center">
+                        <strong
+                          >L&iacute;nea Base 2019</strong
+                        >
+                      </p>
+                    </td>
+                    <td style="width: 11.42%; height: 1px">
+                      <p align="center">
+                        <strong>Meta 2020/2023</strong>
+                      </p>
+                    </td>
+                    <td style="width: 11.06%; height: 1px">
+                      <p align="center">
+                        <strong>Responsable</strong>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: 11.26%; height: 1px">
+                      <p align="center">
+                        Dimensi&oacute;n 2.
+                        Protecci&oacute;n Solidaria de la
+                        Vida.
+                      </p>
+                    </td>
+                    <td style="width: 10%; height: 1px">
+                      <p align="center">
+                        Territorios para la Vida
+                      </p>
+                    </td>
+                    <td style="width: 13.76%; height: 1px">
+                      <p align="center">
+                        Espacio P&uacute;blico para la
+                        Integraci&oacute;n
+                        Socio-Ecol&oacute;gica
+                      </p>
+                    </td>
+                    <td style="width: 22.5%; height: 1px">
+                      <p>
+                        Parque de la Vida incluido en la
+                        estructura ecol&oacute;gica
+                        distrital y adecuado ambiental y
+                        paisaj&iacute;sticamente &nbsp;
+                      </p>
+                    </td>
+                    <td style="width: 10%; height: 1px">
+                      <p align="center">ha</p>
+                    </td>
+                    <td style="width: 10%; height: 1px">
+                      <p align="center">0</p>
+                    </td>
+                    <td style="width: 11.42%; height: 1px">
+                      <p align="center">12</p>
+                    </td>
+                    <td style="width: 11.06%; height: 1px">
+                      <p align="center">DAGMA</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: 11.26%; height: 1px">
+                      <p align="center">
+                        Dimensi&oacute;n 2.
+                        Protecci&oacute;n Solidaria de la
+                        Vida.
+                      </p>
+                    </td>
+                    <td style="width: 10%; height: 1px">
+                      <p align="center">
+                        Territorios para la Vida
+                      </p>
+                    </td>
+                    <td style="width: 13.76%; height: 1px">
+                      <p align="center">
+                        Espacio P&uacute;blico para la
+                        Integraci&oacute;n
+                        Socio-Ecol&oacute;gica
+                      </p>
+                    </td>
+                    <td style="width: 22.5%; height: 1px">
+                      <p>
+                        Espacios p&uacute;blicos efectivos
+                        adecuados arquitect&oacute;nica y
+                        paisaj&iacute;sticamente con
+                        empoderamiento ciudadano
+                      </p>
+                    </td>
+                    <td style="width: 10%; height: 1px">
+                      <p align="center">N&uacute;mero</p>
+                    </td>
+                    <td style="width: 10%; height: 1px">
+                      <p align="center">334</p>
+                    </td>
+                    <td style="width: 11.42%; height: 1px">
+                      <p align="center">673</p>
+                    </td>
+                    <td style="width: 11.06%; height: 1px">
+                      <p align="center">DAGMA</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: 11.26%; height: 1px">
+                      <p align="center">
+                        Dimensi&oacute;n 2.
+                        Protecci&oacute;n Solidaria de la
+                        Vida.
+                      </p>
+                    </td>
+                    <td style="width: 10%; height: 1px">
+                      <p align="center">
+                        Territorios para la Vida
+                      </p>
+                    </td>
+                    <td style="width: 13.76%; height: 1px">
+                      <p align="center">
+                        Salud Ambiental Territorial
+                      </p>
+                    </td>
+                    <td style="width: 22.5%; height: 1px">
+                      <p>
+                        Territorios que concentran el mayor
+                        riesgo epidemiol&oacute;gico,
+                        sanitario, social y ambiental
+                        intervenidos integralmente
+                      </p>
+                    </td>
+                    <td style="width: 10%; height: 1px">
+                      <p align="center">N&uacute;mero</p>
+                    </td>
+                    <td style="width: 10%; height: 1px">
+                      <p align="center">0</p>
+                    </td>
+                    <td style="width: 11.42%; height: 1px">
+                      <p align="center">40</p>
+                    </td>
+                    <td style="width: 11.06%; height: 1px">
+                      <p align="center">
+                        Secretar&iacute;a de Salud
+                        P&uacute;blica
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
         </div>
-    </article>
+      </div>
+    </div>
+  </article>
 
-    <!-- Línea de tiempo -->
-    <article>
-        <h2 class="text-center-md">Principales Acciones del Consejo Territorial de Salud Ambiental – Cotsa;</h2>
-        <p class="text-center-md"><i>Haz clic en cada año para conocer los avances del Cotsa. </i></p>
-        <div class="timeline timeline__1">
-            <div class="timeline-start"></div>
-            <a href="#" class="disabled bg-pink" data-toggle="modal" data-target="#modal2016">2016</a>
-            <a href="#" class="disabled bg-darkblue" data-toggle="modal" data-target="#modal2017">2017</a>
-            <a href="#" class="disabled bg-mustard" data-toggle="modal" data-target="#modal2018">2018</a>
-            <a href="#" class="disabled bg-lightblue" data-toggle="modal" data-target="#modal2019">2019</a>
-            <a href="#" class="disabled bg-green" data-toggle="modal" data-target="#modal2020">2020</a>
-            <a href="#" class="disabled bg-yellow" data-toggle="modal" data-target="#modal2021">2021</a>
-            <a href="#" class="disabled bg-blue" data-toggle="modal" data-target="#modal2022">2022</a>
-            <div class="timeline-end"></div>
+  <!-- Línea de tiempo -->
+  <article>
+    <h2 class="text-center-md">
+      Principales Acciones del Consejo Territorial de Salud
+      Ambiental – Cotsa;
+    </h2>
+    <p class="text-center-md">
+      <i
+        >Haz clic en cada año para conocer los avances del
+        Cotsa.
+      </i>
+    </p>
+    <div class="timeline timeline__1">
+      <div class="timeline-start"></div>
+      <a
+        href="#"
+        class="disabled bg-pink"
+        data-toggle="modal"
+        data-target="#modal2016"
+        >2016</a
+      >
+      <a
+        href="#"
+        class="disabled bg-darkblue"
+        data-toggle="modal"
+        data-target="#modal2017"
+        >2017</a
+      >
+      <a
+        href="#"
+        class="disabled bg-mustard"
+        data-toggle="modal"
+        data-target="#modal2018"
+        >2018</a
+      >
+      <a
+        href="#"
+        class="disabled bg-lightblue"
+        data-toggle="modal"
+        data-target="#modal2019"
+        >2019</a
+      >
+      <a
+        href="#"
+        class="disabled bg-green"
+        data-toggle="modal"
+        data-target="#modal2020"
+        >2020</a
+      >
+      <a
+        href="#"
+        class="disabled bg-yellow"
+        data-toggle="modal"
+        data-target="#modal2021"
+        >2021</a
+      >
+      <a
+        href="#"
+        class="disabled bg-blue"
+        data-toggle="modal"
+        data-target="#modal2022"
+        >2022</a
+      >
+      <div class="timeline-end"></div>
+    </div>
+    <!-- Modal -->
+    <div id="modal2022" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+            >
+              &times;
+            </button>
+            <h4 class="modal-title">2022</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              Términos de referencia para ejecución proyecto
+              SIG sustancias químicas; Recepción avance
+              resultados proyecto Investigación “Calidad
+              Aire y Salud Ambiental Urbana en 5 ciudades de
+              Colombia; Identificación agentes zoonóticos
+              paloma doméstica, su importancia en salud
+              pública en instituciones educativas; Gestión
+              Intersectorial para desarrollo de Escuela de
+              Formación Permanente en Gestión del Territorio
+              Salud y Ambiente y Propuesta módulos
+              capacitación Calidad Agua Consumo Humano.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
         </div>
-        <!-- Modal -->
-        <div id="modal2022" class="modal fade" role="dialog">
-            <div class="modal-dialog">
+      </div>
+    </div>
 
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">2022</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Términos de referencia para ejecución proyecto SIG sustancias químicas;
-                            Recepción avance resultados proyecto Investigación “Calidad Aire y Salud Ambiental
-                            Urbana en 5 ciudades de Colombia; Identificación agentes zoonóticos paloma
-                            doméstica, su importancia en salud pública en instituciones educativas; Gestión
-                            Intersectorial para desarrollo de Escuela de Formación Permanente en Gestión del
-                            Territorio Salud y Ambiente y Propuesta módulos capacitación Calidad Agua
-                            Consumo Humano.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-
-            </div>
+    <div id="modal2021" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+            >
+              &times;
+            </button>
+            <h4 class="modal-title">2021</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              Estudio Carga Ambiental de la Enfermedad por
+              sustancias Químicas; Incorporación vigilancia
+              de Ruido Ambiental con 4 estaciones de
+              monitoreo; Dinamización Mesa Técnica Zoonosis
+              y ETV; Informe calidad de agua ríos de Cali;
+              Metodología Territorial del Comité Municipal
+              “Entornos para la Vida” reconocida e
+              implementada como modelo para el mejoramiento
+              de condiciones sanitarias, ambientales y
+              sociales, por parte de la Alcaldía Distrital
+              en las 40 Zonas “Te Queremos Cali”
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div id="modal2021" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">2021</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Estudio Carga Ambiental de la Enfermedad por sustancias Químicas;
-                            Incorporación vigilancia de Ruido Ambiental con 4 estaciones de monitoreo;
-                            Dinamización Mesa Técnica Zoonosis y ETV; Informe calidad de agua ríos de Cali;
-                            Metodología Territorial del Comité Municipal “Entornos para la Vida” reconocida e
-                            implementada como modelo para el mejoramiento de condiciones sanitarias,
-                            ambientales y sociales, por parte de la Alcaldía Distrital en las 40 Zonas “Te
-                            Queremos Cali”</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-
-            </div>
+    <div id="modal2020" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+            >
+              &times;
+            </button>
+            <h4 class="modal-title">2020</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              Circular “No uso de sistema de aspersión
+              desinfectantes sobre personas para prevención
+              transmisión COVID -19”; Vinculación proyecto
+              Investigación “ Calidad de Aire y Salud
+              Ambiental Urbana en 5 ciudades de Colombia con
+              Minciencias y diseño herramienta educativa
+              para Atención Contingencias; Programa
+              educativo Intersectorial para prevención de
+              zoonosis; Seminario Virtual Intersectorial
+              Gestión Ambiental y Salud Pública “Hacia una
+              nueva normalidad”, en Comité Municipal
+              “Entornos para la Vida”
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div id="modal2020" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">2020</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Circular “No uso de sistema de aspersión desinfectantes sobre personas para
-                            prevención transmisión COVID -19”; Vinculación proyecto Investigación “ Calidad de
-                            Aire y Salud Ambiental Urbana en 5 ciudades de Colombia con Minciencias y diseño
-                            herramienta educativa para Atención Contingencias; Programa educativo
-                            Intersectorial para prevención de zoonosis; Seminario Virtual Intersectorial Gestión
-                            Ambiental y Salud Pública “Hacia una nueva normalidad”, en Comité Municipal
-                            “Entornos para la Vida”</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-
-            </div>
+    <div id="modal2019" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+            >
+              &times;
+            </button>
+            <h4 class="modal-title">2019</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              Participación formulación PGIRS Respel Cali;
+              Estudio Carga Ambiental de Enfermedad por
+              calidad de aire 2015-2018 e implementación
+              Plan Contingencia; Siembra peces guppies y
+              evaluación de eficacia en control de larvas
+              Aedes aegypti; Instalación retenes de control
+              insumos minería ilegal con Batallón Alta
+              Montaña; 1er Boletín Preventivo Conservación y
+              Manejo eficiente del agua; Alianzas
+              estratégicas en Comité de Entornos mejorando
+              condiciones socioambientales y sanitarias en
+              territorios priorizados
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div id="modal2019" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">2019</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Participación formulación PGIRS Respel Cali; Estudio Carga Ambiental de
-                            Enfermedad por calidad de aire 2015-2018 e implementación Plan Contingencia;
-                            Siembra peces guppies y evaluación de eficacia en control de larvas Aedes aegypti;
-                            Instalación retenes de control insumos minería ilegal con Batallón Alta Montaña; 1er
-                            Boletín Preventivo Conservación y Manejo eficiente del agua; Alianzas estratégicas
-                            en Comité de Entornos mejorando condiciones socioambientales y sanitarias en
-                            territorios priorizados</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-
-            </div>
+    <div id="modal2018" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+            >
+              &times;
+            </button>
+            <h4 class="modal-title">2018</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              Implementación modelo IVC manejo Sustancias
+              Químicas y Respel; Aprobación Plan Gestión
+              mejoramiento Calidad Aire y Vinculación a
+              “Campaña Respira la Vida” - OMS; Aporte a
+              diseño Centro de Zoonosis y Bienestar Animal;
+              Establecimiento Plan Monitoreo Mercurio y
+              Cianuro en agua, sedimentos y afluentes río
+              Cali; Consolidación metodología Intersectorial
+              para la gestión integral en territorios
+              priorizados en el Comité Municipal Entornos
+              para la Vida y dinamización de 15 Comités
+              Comunitarios
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div id="modal2018" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">2018</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Implementación modelo IVC manejo Sustancias Químicas y Respel;
-                            Aprobación Plan Gestión mejoramiento Calidad Aire y Vinculación a “Campaña
-                            Respira la Vida” - OMS; Aporte a diseño Centro de Zoonosis y Bienestar Animal;
-                            Establecimiento Plan Monitoreo Mercurio y Cianuro en agua, sedimentos y
-                            afluentes río Cali; Consolidación metodología Intersectorial para la gestión integral
-                            en territorios priorizados en el Comité Municipal Entornos para la Vida y
-                            dinamización de 15 Comités Comunitarios</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-
-            </div>
+    <div id="modal2017" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+            >
+              &times;
+            </button>
+            <h4 class="modal-title">2017</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              Análisis, estandarización y construcción Línea
+              Base; Acreditación Sistema Vigilancia con
+              IDEAM en PM10 y PM 2.5 para conocer
+              concentraciones e incidencias en salud;
+              Implementación Mesa Zoonosis y ETV;
+              Intervención intersectorial e
+              interinstitucional para recuperar desviación
+              cauce quebrada El Socorro, Sectores Minas y
+              Alto del Buey; Vinculación y apropiación a
+              comunidad conformando Comités Comunitarios
+              “Entornos para la Vida” para la promoción de
+              entornos saludables en 12 Territorios
+              Priorizados
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div id="modal2017" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">2017</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Análisis, estandarización y construcción Línea Base; Acreditación Sistema
-                            Vigilancia con IDEAM en PM10 y PM 2.5 para conocer concentraciones e incidencias
-                            en salud; Implementación Mesa Zoonosis y ETV; Intervención intersectorial e
-                            interinstitucional para recuperar desviación cauce quebrada El Socorro, Sectores
-                            Minas y Alto del Buey; Vinculación y apropiación a comunidad conformando
-                            Comités Comunitarios “Entornos para la Vida” para la promoción de entornos
-                            saludables en 12 Territorios Priorizados</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-
-            </div>
+    <div id="modal2016" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+            >
+              &times;
+            </button>
+            <h4 class="modal-title">2016</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              Consolidación Sistema Vigilancia Calidad del
+              Aire; línea base intersectorial
+              establecimientos que manejan sustancias
+              químicas y Respel; Creación Mesa Zoonosis y
+              ETV; Formulación e Implementación
+              intersectorial Res. 4145.0.21.0382 Sistemas
+              Almacenamiento de Agua Potable y PEISD – Plan
+              Estratégico Interinstitucional Sistemas
+              Drenaje; Congreso Internacional Entornos de
+              Color para la Vida e Impacto positivo sobre
+              determinantes sanitarios, ambientales y
+              sociales en 11 Territorios Priorizados
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
         </div>
+      </div>
+    </div>
+  </article>
 
-        <div id="modal2016" class="modal fade" role="dialog">
-            <div class="modal-dialog">
+  <article class="p-1 pb-1 bg-green pb-15 text-center-md">
+    <h2 class="text-white">
+      Política Integral de Salud Ambiental – PISA
+    </h2>
+    <p class="text-white">
+      <i
+        >Obejtivo: fortalecer la gestión integral e
+        intersectorial en salud ambiental, contribuyendo a
+        un mejor estado de salud y de calidad ambiental.</i
+      >
+    </p>
+    <a
+      href="#"
+      class="link_more radius-rounded p-05"
+      data-toggle="modal"
+      data-target="#vermas"
+      href=""
+    >
+      <i>Ver más</i>
+    </a>
 
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">2016</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Consolidación Sistema Vigilancia Calidad del Aire; línea base intersectorial
-                            establecimientos que manejan sustancias químicas y Respel; Creación Mesa
-                            Zoonosis y ETV; Formulación e Implementación intersectorial Res. 4145.0.21.0382
-                            Sistemas Almacenamiento de Agua Potable y PEISD – Plan Estratégico
-                            Interinstitucional Sistemas Drenaje; Congreso Internacional Entornos de Color para
-                            la Vida e Impacto positivo sobre determinantes sanitarios, ambientales y sociales en
-                            11 Territorios Priorizados</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-
-            </div>
+    <div id="vermas" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-dialog-2">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+            >
+              &times;
+            </button>
+            <h4 class="modal-title">
+              Política integral de salud ambiental
+            </h4>
+          </div>
+          <div class="modal-body">
+            <img
+              style="margin-top: 2em"
+              src="https://www.cali.gov.co/info/principal/media/galeria261549.png"
+              alt=""
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default"
+              data-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
         </div>
-    </article>
+      </div>
+    </div>
+  </article>
 
-    <article class="p-1 pb-1 bg-green pb-15 text-center-md">
-        <h2 class="text-white">Política Integral de Salud Ambiental – PISA</h2>
-        <p class="text-white"><i>Obejtivo: fortalecer la gestión integral e intersectorial en salud ambiental,
-                contribuyendo a un mejor
-                estado de salud y de calidad ambiental.</i></p>
-        <a href="#" class="link_more radius-rounded p-05" data-toggle="modal" data-target="#vermas" href=""> <i>Ver
-                más</i> </a>
+  <article>
+    <div class="flex">
+      <img
+        src="https://www.cali.gov.co/info/principal/media/galeria286812.png"
+        alt=""
+      />
+      <img
+        src="https://www.cali.gov.co/info/principal/media/galeria286813.png"
+        alt=""
+      />
+    </div>
+    <div class="news">DISPLAYBLOQUE(217965)</div>
+  </article>
 
-        <div id="vermas" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-dialog-2">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Política integral de salud ambiental</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img style="margin-top: 2em"
-                            src="https://www.cali.gov.co/info/principal/media/galeria261549.png" alt="">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </article>
-
-    <article>
-        <div class="news">
-            DISPLAYBLOQUE(217965)
-        </div>
-    </article>
-
-    <!-- <article>
+  <!-- <article>
         <div class="galeria">
             DISPLAYBLOQUE(217974)
         </div>
