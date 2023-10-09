@@ -1,0 +1,654 @@
+<style>
+  .row {
+    margin: 0;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .f-column {
+    flex-direction: column;
+  }
+
+  .justify-content-center {
+    justify-content: center;
+  }
+
+  .f-justify-center {
+    justify-content: center;
+  }
+
+  .border-left-gray {
+    border-left: 1px solid #7a7a7a;
+  }
+
+  .p-0 {
+    padding: 0;
+  }
+
+  .w-fit {
+    max-width: fit-content;
+  }
+
+  .m-r-1 {
+    margin-right: 1em;
+  }
+
+  .f-center {
+    align-content: center;
+    align-items: center;
+  }
+
+  /* TIMELINE */
+
+  .timeline {
+    position: relative;
+  }
+
+  .timeline::before {
+    content: '';
+    background: #999999;
+    width: 5px;
+    height: 95%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .timeline-item {
+    width: 100%;
+  }
+
+  .timeline-item:nth-child(even) .timeline-content {
+    float: right;
+    left: 30px !important;
+  }
+
+  .timeline-item:nth-child(even) .timeline-content .date {
+    right: auto;
+    left: 0;
+  }
+
+  .timeline-item:nth-child(even) .timeline-content::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #f5f5f5 transparent
+      transparent;
+  }
+
+  .timeline-item::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .timeline-content {
+    position: relative;
+    width: 45%;
+    padding: 10px 30px;
+    border-radius: 4px;
+    background: #f5f5f5;
+    box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+    left: -20px !important;
+  }
+
+  .timeline-content::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    right: -15px;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent
+      #f5f5f5;
+  }
+
+  .timeline-img {
+    width: 100px;
+    height: fit-content;
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    margin-top: 25px;
+    margin-left: -50px;
+    text-align: center;
+  }
+
+  .timeline-card {
+    padding: 0 !important;
+  }
+
+  .timeline-card p {
+    padding: 0 20px;
+  }
+
+  .timeline-card a {
+    margin-left: 20px;
+  }
+
+  .timeline-item .timeline-img-header {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url('https://picsum.photos/1000/800/?random') center
+        center no-repeat;
+    background-size: cover;
+  }
+
+  .timeline-img-header {
+    height: 200px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .timeline-img-header h2 {
+    color: #fff;
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+  }
+
+  blockquote {
+    margin-top: 30px;
+    color: #757575;
+    border-left-color: #3f51b5;
+    padding: 0 20px;
+  }
+
+  .date {
+    background: #ff4081;
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .timeline > .container {
+    background: none !important;
+    width: 75%;
+  }
+
+  .timeline-convenciones {
+    margin-bottom: 4em;
+  }
+
+  .timeline-convenciones > .d-flex {
+    text-align: center;
+    justify-content: center;
+    padding: 0 1em;
+  }
+
+  .timeline-convenciones > .d-flex > img {
+    margin-right: 1em;
+    max-height: 15px;
+  }
+</style>
+<div class="row flex f-column">
+  <div
+    class="flex timeline-convenciones justify-content-center"
+  >
+    <div class="flex">
+      <img
+        src="https://www.cali.gov.co/info/principal/media/galeria236199.png"
+        alt=""
+      />
+      <span style="font-size: smaller; color: #911f3c"
+        >Dimensión Política</span
+      >
+    </div>
+    <div class="flex border-left-gray">
+      <img
+        src="https://www.cali.gov.co/info/principal/media/galeria236203.png"
+        alt=""
+      />
+      <span style="font-size: smaller; color: #0f6a6a"
+        >Dimensión Económica</span
+      >
+    </div>
+    <div class="flex border-left-gray">
+      <img
+        src="https://www.cali.gov.co/info/principal/media/galeria236202.png"
+        alt=""
+      />
+      <span style="font-size: smaller; color: #215a99"
+        >Dimensión Urbana y Ambiental</span
+      >
+    </div>
+    <div class="flex border-left-gray">
+      <img
+        src="https://www.cali.gov.co/info/principal/media/galeria236200.png"
+        alt=""
+      />
+      <span style="font-size: smaller; color: #b78006"
+        >Dimensión Étnica</span
+      >
+    </div>
+    <div class="flex border-left-gray">
+      <img
+        src="https://www.cali.gov.co/info/principal/media/galeria236201.png"
+        alt=""
+      />
+      <span style="font-size: smaller; color: #564e3c"
+        >Dimensión Administrativa</span
+      >
+    </div>
+  </div>
+
+  <!-- Linea de tiempo -->
+  <section class="timeline">
+    <div class="container">
+      <div class="timeline-item">
+        <div class="timeline-img">Siglo XVI -XVIII</div>
+        <div
+          class="timeline-content flex p-0 f-center f-justify-center"
+        >
+          <p class="text-center m-r-1">
+            Llegada de población negra esclavizada y
+            consolidación de segregación racial
+          </p>
+          <img
+            src="https://www.cali.gov.co/info/principal/media/galeria235876.png"
+            class="logos-historicos"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-img">Siglo XIX</div>
+
+        <div
+          class="timeline-content flex p-0 f-center f-justify-center"
+        >
+          <img
+            src=" https://www.cali.gov.co/info/principal/media/galeria235879.png"
+            class="logos-historicos"
+            alt=""
+          />
+          <p class="text-center w-fit m-r-1">
+            Ciudad aislada y con poca dinámica urbana
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-img">1811</div>
+
+        <div
+          class="timeline-content flex p-0 f-center f-justify-center"
+        >
+          <p class="text-center m-r-1 w-fit">
+            Ciudades Confederadas
+          </p>
+          <img
+            src="https://www.cali.gov.co/info/principal/media/galeria235877.png"
+            class="logos-historicos"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-img">1910</div>
+
+        <div
+          class="timeline-content flex p-0 f-center f-justify-center"
+        >
+          <img
+            src="https://www.cali.gov.co/info/principal/media/galeria235877.png"
+            class="logos-historicos"
+            alt=""
+          />
+          <p class="text-center m-r-1 w-fit">
+            Creación del Valle del Cauca y designación de
+            Cali como capital del departamento.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-img">1915</div>
+
+        <div
+          class="timeline-content flex p-0 f-center f-justify-center"
+        >
+          <p class="text-center m-r-1 w-fit">
+            Llegada del Ferrocarril del Pacífico a Cali
+          </p>
+          <img
+            src="https://www.cali.gov.co/info/principal/media/galeria235880.png"
+            class="logos-historicos"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-img">1920 - 1970</div>
+
+        <div
+          class="timeline-content flex p-0 f-center f-justify-center"
+        >
+          <img
+            src="https://www.cali.gov.co/info/principal/media/galeria235876.png"
+            class="logos-historicos"
+            alt=""
+          />
+          <p class="text-center m-r-1 w-fit">
+            Migraciones provenientes principalmente de zonas
+            andinas
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-img">1940</div>
+
+        <div
+          class="timeline-content flex p-0 f-center f-justify-center"
+        >
+          <p class="text-center m-r-1 w-fit">
+            Segundo proceso de industrialización y creación
+            de la zona industrial Cali – Yumbo
+          </p>
+          <img
+            src="https://www.cali.gov.co/info/principal/media/galeria235880.png"
+            class="logos-historicos"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-img">1940 - 1950</div>
+
+        <div
+          class="timeline-content flex p-0 f-center f-justify-center"
+        >
+          <img
+            src="https://www.cali.gov.co/info/principal/media/galeria235879.png"
+            class="logos-historicos"
+            alt=""
+          />
+          <p class="text-center m-r-1 w-fit">
+            Intensificación del proceso de urbanización y
+            problemas de planificación
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-img">1950 - 1970</div>
+
+        <div
+          class="timeline-content flex p-0 f-center f-justify-center"
+        >
+          <p class="text-center m-r-1 w-fit">
+            Plan piloto modernización urbana
+          </p>
+          <img
+            src="https://www.cali.gov.co/info/principal/media/galeria235879.png"
+            class="logos-historicos"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-img">1950 - 1990</div>
+
+        <div
+          class="timeline-content flex p-0 f-center f-justify-center"
+        >
+          <img
+            src="https://www.cali.gov.co/info/principal/media/galeria235876.png"
+            class="logos-historicos"
+            alt=""
+          />
+          <p class="text-center m-r-1 w-fit">
+            Migrantes relacionados con violencia política y
+            población proveniente del Pacífico
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-img">1960 - 1980</div>
+
+        <div
+          class="timeline-content flex p-0 f-center f-justify-center"
+        >
+          <p class="text-center m-r-1 w-fit">
+            Auge del desarrollo regional
+          </p>
+          <img
+            src="https://www.cali.gov.co/info/principal/media/galeria235880.png"
+            class="logos-historicos"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-img">1980</div>
+
+        <div
+          class="timeline-content flex p-0 f-center f-justify-center"
+        >
+          <img
+            src="https://www.cali.gov.co/info/principal/media/galeria235879.png"
+            class="logos-historicos"
+            alt=""
+          />
+          <p class="text-center m-r-1 w-fit">
+            Surgimiento del Distrito de Aguablanca (oriente
+            de la ciudad) y ocupación de laderas
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-img">1988</div>
+
+        <div
+          class="timeline-content flex p-0 f-center f-justify-center"
+        >
+          <p class="text-center m-r-1 w-fit">
+            Elección popular de alcaldes y el surgimiento de
+            nuevos liderazgos.
+          </p>
+          <img
+            src="https://www.cali.gov.co/info/principal/media/galeria235877.png"
+            class="logos-historicos"
+            alt=""
+          />
+        </div>
+        <div
+          class="timeline-content flex p-0 f-center f-justify-center"
+        >
+          <p class="text-center m-r-1 w-fit">
+            Subdivisión territorial del municipio en comunas
+            y corregimientos. Centros de Administración
+            Local Integrada (CALI).
+          </p>
+          <img
+            src="https://www.cali.gov.co/info/principal/media/galeria235878.png"
+            class="logos-historicos"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-img">1990</div>
+
+        <div
+          class="timeline-content flex p-0 f-center f-justify-center"
+        >
+          <img
+            src="https://www.cali.gov.co/info/principal/media/galeria235880.png"
+            class="logos-historicos"
+            alt=""
+          />
+          <p class="text-center m-r-1 w-fit">
+            Desindustrialización y pérdida de liderazgo de
+            la región
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-img">1990 - 1992</div>
+
+        <div
+          class="timeline-content flex p-0 f-center f-justify-center"
+        >
+          <p class="text-center m-r-1 w-fit">
+            Sistemas Locales de Salud (SILOS) Referentes de
+            la planificación local.
+          </p>
+          <img
+            src="https://www.cali.gov.co/info/principal/media/galeria235878.png"
+            class="logos-historicos"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-img">1991</div>
+
+        <div
+          class="timeline-content flex p-0 f-center f-justify-center"
+        >
+          <img
+            src="https://www.cali.gov.co/info/principal/media/galeria235877.png"
+            class="logos-historicos"
+            alt=""
+          />
+          <p class="text-center m-r-1 w-fit">
+            La Constitución Política de 1991.Mayor autonomía
+            municipal y crisis de los entes territoriales
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-img">2000-2009</div>
+
+        <div
+          class="timeline-content flex p-0 f-center f-justify-center"
+        >
+          <p class="text-center m-r-1 w-fit">
+            Reforma a la estructura del municipio de
+            Santiago de Cali. Desaparecen las jefaturas,
+            incluidas las Unidades de planeación
+            centralizadas y de los CALI
+          </p>
+          <img
+            src="https://www.cali.gov.co/info/principal/media/galeria235878.png"
+            class="logos-historicos"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-img">2013</div>
+
+        <div
+          class="timeline-content flex p-0 f-center f-justify-center"
+        >
+          <img
+            src="https://www.cali.gov.co/info/principal/media/galeria235878.png"
+            class="logos-historicos"
+            alt=""
+          />
+          <p class="text-center m-r-1 w-fit">
+            Se solicita concepto favorable para categorizar
+            a Santiago de Cali como Distrito Especial a los
+            senadores y representantes del Congreso de la
+            República de Colombia.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-img">2018</div>
+
+        <div
+          class="timeline-content flex p-0 f-center f-justify-center"
+        >
+          <p class="text-center m-r-1 w-fit">
+            Se categoriza a Santiago de Cali como Distrito
+            Especial Deportivo, Cultural, Turístico,
+            Empresarial y de Servicios.
+            <a
+              href="https://www.cali.gov.co/gobierno/loader.php?lServicio=Tools2&lTipo=descargas&lFuncion=descargar&idFile=63671"
+              style="font-weight: bold"
+              >(Ley 1933 de agosto de 2018).</a
+            >
+          </p>
+          <img
+            src="https://www.cali.gov.co/info/principal/media/galeria235877.png"
+            class="logos-historicos"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-img">2019</div>
+
+        <div
+          class="timeline-content flex p-0 f-center f-justify-center"
+        >
+          <img
+            src="https://www.cali.gov.co/info/principal/media/galeria235878.png"
+            class="logos-historicos"
+            alt=""
+          />
+          <p class="text-center m-r-1 w-fit">
+            Propuesta técnica de división territorial del
+            Distrito Especial en seis localidades,
+            presentada al Concejo local, no fue discutida.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-img">2020</div>
+
+        <div
+          class="timeline-content flex p-0 f-center f-justify-center"
+        >
+          <p class="text-center m-r-1 w-fit">
+            Incorporación de línea estratégica de transición
+            hacia Cali Distrito Especial en el Plan de
+            Desarrollo 2020-2023 “Cali Unida por la Vida”
+            Dimensión 4: Cali, Gobierno incluyente.
+          </p>
+          <img
+            src="https://www.cali.gov.co/info/principal/media/galeria235878.png"
+            class="logos-historicos"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
